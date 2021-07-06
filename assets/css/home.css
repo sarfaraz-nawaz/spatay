@@ -268,4 +268,14 @@
 	.menu-links li {
 	    margin-right: 1.5rem !important;
 	}
+	.style-heading {
+	    margin-top: -2rem;
+	    font-size: 2.1rem;
+	}
+	.main-heading {
+	    font-size: 2.1rem;
+	}
+	.copyright {
+	    font-size: 1rem;
+	}
 }
