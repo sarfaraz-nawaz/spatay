@@ -1,0 +1,53 @@
+body {
+    font-family: 'Product sans';
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: auto;
+}
+
+
+.nav-item 
+{
+    font-family: "Product sans";
+    text-transform: uppercase;
+    padding-right: 8px;
+    padding-left: 8px;
+   
+    
+
+}
+.nav-item .nav-link
+{
+ color: #1A1C3D;
+ font-weight: bold;
+}
+.navbar-toggler-icon
+{
+    color: brown;
+    background-color: burlywood;
+}
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media (min-width: 992px)
+{
+
+}
+
+@media (max-width: 1200px)
+{
+
+}
+
+@media(max-width: 767px)
+{
+
+}
