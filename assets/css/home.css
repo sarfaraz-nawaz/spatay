@@ -1,3 +1,16 @@
+
+.main-menu li{
+	margin-right: 2.5rem !important;
+}
+.main-menu li a{
+	color: #1A1C3D;
+	text-decoration: none;
+	font-size: 1.1rem;
+}
+.main-menu li a img{
+	width: 70%;
+	padding-bottom: 12px;
+}
 /************Home CSS*************/
 .banner-section{
 	background-image: url('../media/home/banner.png');
@@ -172,7 +185,7 @@
 /*Footer*/
 .footer{
 	padding-top: 3rem;
-	padding-bottom: 2rem;
+	padding-bottom: 1rem;
 }
 .social-icons li:first-child{
 	background-color: #DE5921;
@@ -205,6 +218,20 @@
 	}
 }
 @media(max-width: 767px){
+	.main-menu li {
+	    margin-right: 0rem !important;
+	}
+	.main-menu li a {
+	    font-size: 0.9rem;
+	}
+	.main-menu li a img {
+	    width: 50%;
+	    padding-bottom: 12px;
+	}
+	.menu-col{
+		padding-left: 0;
+		padding-right: 0;
+	}
 	.destination-box {
 	    padding: 2rem 1.5rem;
 	}
