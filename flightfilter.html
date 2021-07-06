@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatay</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!---------------------------------------------- start nav section -------------------------------------->
+    <section class="nav-section">
+        <nav class="navbar navbar-expand-lg  bg-white pt-2 pb-2  ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="/assets/media/logo.png" class="w-75"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto  mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MY TRIPS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Profile</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!---------------------------------------------- end nav section -------------------------------------->
+
+    <!---------------------------------------------- start Flight search -------------------------------------->
+    <section class="flight-search pt-4 pb-4 mt-2 ">
+        <div class="container">
+            <form action="" method="POST">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-1 text-end ">
+                        <img src="/assets/media/flightfilter/plane.png" alt="plane" class="w-75 planeimage">
+                    </div>
+
+                    <div class="col-lg-2  ">
+                        <label class="from">From</label>
+                        <div class="input-container d-flex align-items-center">
+                            <i class="fas fa-map-marker-alt locationicon"></i><input type="text"
+                                placeholder="Lahore (LHE)" name="From" class="inputfield">
+
+                        </div>
+                        <div>
+                        </div>
+                        <!-- <h5><i class="fas fa-map-marker-alt"></i>Lahore (LHE) </h5> -->
+
+
+
+                    </div>
+                    <div class="col-lg-1 toway">
+                        <img src="/assets/media/flightfilter/twoway.png" alt="Twoway" class="mt-4">
+                    </div>
+
+                    <div class="col-lg-2 ">
+                        <label class="from">To</label>
+                        <div class="input-container d-flex align-items-center">
+                            <i class="fas fa-map-marker-alt locationicon"></i><input type="text"
+                                placeholder="Karachi (KHI)" name="From" class="inputfield">
+
+                        </div>
+                        <div>
+                        </div>
+                        <!-- <h5><i class="fas fa-map-marker-alt"></i>Lahore (LHE) </h5> -->
+
+
+
+                    </div>
+
+                    <div class="col-lg-2 ">
+                        <label class="from">Date</label>
+                        <div class="input-container d-flex align-items-center">
+                            <i class="far fa-calendar-alt locationicon"></i>
+                            <input type="text" placeholder="12 May - Return" name="calander" class="inputfield">
+
+
+                        </div>
+                        <div>
+                        </div>
+                        <!-- <h5><i class="fas fa-map-marker-alt"></i>Lahore (LHE) </h5> -->
+
+
+
+                    </div>
+
+                    <div class="col-lg-2 ">
+                        <label class="from">Travellers</label>
+                        <div class="input-container d-flex align-items-center">
+                            <i class="fas fa-user-friends locationicon"></i>
+                            <select id="items">
+                                <option value="item-1">1 Travellers</option>
+                                <option value="item-2">2 Travellers</option>
+                                <option value="item-3">3 Travellers</option>
+                            </select>
+
+
+                        </div>
+                        <div>
+                        </div>
+                        <!-- <h5><i class="fas fa-map-marker-alt"></i>Lahore (LHE) </h5> -->
+
+
+
+                    </div>
+
+                    <div class="col-lg-2  ">
+                        <button type="button" id="search-btn" class="btn">Search Again</button>
+                    </div>
+
+
+
+
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <!---------------------------------------------- end Flight search-------------------------------------->
+
+    <!---------------------------------------------- start Filter section-------------------------------------->
+
+    <section class="filter-section">
+
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="/assets/media/flightfilter/filter.png"> &nbsp&nbsp
+                        Filters</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown secondnavitem">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Stops
+                                    <!-- <i class="fa fa-heart"></i> -->
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Time
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Airelines
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Price Range
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </section>
+
+
+    <!---------------------------------------------- end Filter section-------------------------------------->
+
+    <!---------------------------------------------- start booking card section-------------------------------------->
+
+    <section class="card-booking-section mt-5">
+        <div class="container">
+            <div class="card" style="width:full-wdth;">
+                <div class="card-body">
+                    <div class="row justify-content-center align-items-center d-flex">
+                        <div class="col-lg-2">
+                            <img src="/assets/media/flightfilter/pia.png" class="w-50">
+                            <p class="pia">Pakistan Airelines</p>
+
+                        </div>
+
+                        <div class="col-lg-2">
+                            <p class="pia">24 JAN' 21</p>
+                            <h6 class="cityname">LAHORE</h6>
+                            <h6 class="timeandcity">15:15 &nbsp LHE</h6>
+
+
+                        </div>
+
+                        <div class="col-lg-2">
+                            <img src="/assets/media/flightfilter/Plane icon.png" class="w-100">
+
+
+                        </div>
+                        <div class="col-lg-2">
+                            <p class="pia">25 JAN' 21</p>
+                            <h6 class="cityname">KARACHI</h6>
+                            <h6 class="timeandcity">22:15 &nbsp LHE</h6>
+
+
+                        </div>
+
+                        <div class="col-lg-1">
+                            <p class="durationstop">Duration</p>
+                            <h6 class="hoursandminute">18 hrs 10 min</h6>
+                        </div>
+
+                        <div class="col-lg-1">
+                            <p class="durationstop">Stops</p>
+                            <h6 class="hoursandminute">NonStops</h6>
+                        </div>
+
+                        <div class="col-lg-2 text-center">
+
+                            <h6 class="ticketprice">PKR 19,000</h6>
+                            <button type="button" id="select-btn" class="btn">Select</button>
+
+
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+                    <section class="tabs-section pt-1 pb-1">
+
+                         <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                    aria-selected="false">Flight Information </button>
+
+                                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                    aria-selected="false">Cancellation</button>
+
+                                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                    aria-selected="false">Date Change</button>
+
+                                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-contact" type="button" role="tab"
+                                        aria-controls="nav-contact" aria-selected="false">Baggage</button>
+                            </div>
+                        </nav>
+                        
+
+                    </section>
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            .uuuu.</div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <!---------------------------------------------- end booking card section-------------------------------------->
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript -->
+
+    <script src='assets/js/bootstrap.min.js'></script>
+    <script src="assets/js/jquery.js"></script>
+
+    </script>
+
+</body>
+
+</html>

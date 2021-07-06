@@ -4,7 +4,42 @@ body {
     font-size: 14px;
     padding-bottom: auto;
 }
+.from
+{
+    color: white;
+    font-size: 11px;
+    padding: 0;
+    font-family: "Product sans";
+}
 
+.inputfield
+{
+    outline: 0;
+    background-color:transparent;
+    border: 0;
+    /* border-bottom: 2px solid white; */
+     font-family: "Product sans";
+     font-size: 16px;
+     font-weight: bold;
+    color: white;
+    padding-left: 14px;
+   
+    
+    
+}
+.input-container
+{
+    border-bottom: 3px solid white;
+    width: 100%;
+}
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color:white;
+}
+.locationicon
+{
+    color:white;
+}
 
 .nav-item 
 {
@@ -27,8 +62,197 @@ body {
     background-color: burlywood;
 }
 
+/* start Flight search */
+.flight-search
+{
+    background-color: #1A1C3D;
+  
+    
+}
+
+#items{
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    color: white;
+    font-size: 16px;
+    font-family: "Product sans";
+    font-weight: bold;
+    padding-left: 14px;
+}
+option{
+    background-color: #1A1C3D;
+    padding-left: 20px;
+}
+ #search-btn
+{
+   
+     font-size: 16px;
+     background: white;
+     font-family: "Product sans";
+     font-weight: bold;
+     margin-top: 15px;
+     color: #1A1C3D;
+     padding-left: 30px;
+     padding-right: 30px;
+
+}
+ .toway
+{
+    width: 5% !important;
+}
 
 
+
+/* end Flight search */
+
+/* filter section */
+.filter-section
+{
+    background: white;
+   
+    margin-top: 4px;
+
+    box-shadow: 0 8px 20px 0 #ebecf0;
+    ;
+}
+
+.navbar-brand
+{
+    color: #1A1C3D;
+     font-family: "Product sans";
+     font-size: 20px !important;
+     font-weight: bold;
+
+}
+
+.filter-section .nav-link
+{
+    color: #707070;
+   
+}
+.filter-section .nav-link:active {
+    color: #1A1C3D;
+}
+
+.filter-section .nav-item
+{
+ padding-left: 25px;
+ padding-right: 25px;
+}
+.filter-section .dropdown-toggle::after {
+   display: inline-block;
+   margin-left: .255em;
+   vertical-align: .1em;
+   content: "\f078";
+   font-family: 'Font Awesome 5 Free';
+   border-top: 0.3em solid transparent;
+   border-right: .3em solid transparent;
+   border-bottom: 0;
+   border-left: .3em solid transparent;
+   display: contents;
+   }
+
+   /* booking card section */
+   .card
+   {
+      box-shadow: 0 8px 20px 0 #ebecf0;
+      border: none;
+      
+   }
+   .pia
+   {
+        font-family: "Product sans";
+        font-size: 13px !important;
+        color: #A1A1B4;
+        font-weight: bold;
+   }
+   .cityname
+   {
+       font-family: "Product sans";
+       font-size: 25px !important;
+       color: #1A1C3D;
+       font-weight: bold;
+   }
+   .timeandcity
+   {
+        font-family: "Product sans";
+        font-size: 16px !important;
+        color: #1A1C3D;
+         font-weight: bold;
+        
+   }
+   .durationstop
+   {
+       font-family: "Product sans";
+       font-size: 11px !important;
+       color: #A1A1B4;
+       
+   }
+   .hoursandminute
+   {
+       font-family: "Product sans";
+       font-size: 11px !important;
+       color: #1A1C3D;
+       font-weight: bold;
+   }
+   .ticketprice
+   {
+        font-family: "Roboto";
+        font-size: 20px !important;
+        color: #1A1C3D;
+       
+        font-weight: bold;
+   }
+   #select-btn
+   {
+       background-color: #DE5921;
+        font-family: "Roboto";
+       font-size: 13px !important;
+       color: white;
+       
+       padding-left: 3rem;
+       padding-right: 3rem;
+
+    
+   }
+   .tabs-section
+   {
+       background-color:#F5F5F8;
+   }
+ .tabs-section .nav-tabs .nav-link
+  {
+      color: #A1A1B4;
+      font-family: "Product sans";
+      font-size: 16px !important;
+     
+      font-weight: bold;
+  }
+
+  /* .tabs-section .nav-tabs .nav-link .active{
+      color: #1A1C3D;
+     
+  } */
+ .tabs-section .nav-tabs {
+      border-bottom: 0px solid #dee2e6;
+  }
+
+  .tabs-section .nav-tabs
+  .nav-link.active {
+      color: #1A1C3D;
+      background-color:transparent;
+     
+      border-color:transparent;
+  }
+  .tabs-section .nav-tabs .nav-link:focus,
+  .tabs-section .nav-tabs .nav-link:hover {
+      /* color: #4c4d58; */
+      background-color: transparent;
+     /* border: none; */
+
+      border-color: transparent;
+  }
+   
 
 
 
@@ -49,5 +273,8 @@ body {
 
 @media(max-width: 767px)
 {
-
+ .planeimage img
+{
+   width :5%
+}
 }
