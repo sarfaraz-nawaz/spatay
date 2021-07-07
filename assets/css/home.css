@@ -377,6 +377,9 @@ input[type="number"] {
 	.special-offers{
 		padding-bottom: 0;
 	}
+	.card.offer-card {
+	    width: 100% !important;
+	}
 	.offer-box {
 	    padding: 3rem 2rem 3rem 2rem;
 	}
