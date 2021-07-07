@@ -1,0 +1,66 @@
+
+.top-bar{
+	background-color: #1A1C3D;
+}
+.register-box{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	box-shadow: 0 8px 20px rgb(49 52 129 / 24%);
+	border-radius: 8px;
+	padding: 2rem;
+}
+.register-box input{
+  border:none;
+  background-color: transparent;
+}
+.register-box input:focus,
+.register-box select:focus,
+.register-box textarea:focus,
+.register-box button:focus {
+    outline: none;
+    box-shadow: none;
+}
+.register-box .input-group{
+	border-color: #A1A1B4;
+	border-radius: 4px;
+}
+.register-box .input-group{
+  border: 1px gray solid;
+  padding: 10px;
+}
+.form-check-input:checked {
+    background-color: #de5921;
+    border-color: #de5921;
+}
+.register-box .form-label{
+	color: #1A1C3D;
+	font-size: 14px;
+	font-weight: bold;
+}
+.google-circle{
+	background-color: #EBECF0;
+	border-color: #EBECF0;
+	height: 55px;
+	width: 55px;
+	border-radius: 50%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.fb-circle{
+	background-color: #3B5A98;
+	border-color: #3B5A98;
+	height: 55px;
+	width: 55px;
+	border-radius: 50%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.input-group-text img{
+	width: 20px;
+	height: 20px;
+}
+.forget-text{
+	color: #A1A1B4;
+}

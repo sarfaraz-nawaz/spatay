@@ -1,6 +1,13 @@
-
+.site-font{
+	color: #1A1C3D;
+}
+.top-menu{
+	background: white;
+    position: relative;
+    opacity: .5;
+}
 .main-menu li{
-	margin-right: 2.5rem !important;
+	margin-right: 2rem !important;
 }
 .main-menu li a{
 	color: #1A1C3D;
@@ -17,6 +24,111 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+#flightbox{
+	background: white;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgb(49 52 129 / 24%);
+}
+#flightbox .nav-pills .nav-link{
+	border: 1px solid #A1A1B4;
+	color: #A1A1B4;
+	font-weight: 800;
+	font-size: 16px;
+}
+#flightbox .nav-pills .nav-item{
+	padding-left: 0;
+}
+#flightbox .nav-pills .nav-item:last-Child{
+	padding-right: 0;
+}
+#flightbox .nav-pills .nav-link.active{
+	background-color: #1A1C3D;
+	font-weight: 800;
+	color: #fff;
+}
+input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-group {
+  clear: both;
+  border-color: #A1A1B4;
+  position: relative;
+  border: 1px solid #A1A1B4;
+  height: 35px;
+  border-radius: 4px;
+  padding: 0 10px;
+}
+#flightbox .input-group input{
+	border: 0;
+	font-size: 12px;
+	color: #A1A1B4;
+}
+#flightbox .input-group .form-control-feedback{
+	color: #A1A1B4;
+}
+#flightbox form .form-label{
+	color: #1A1C3D;
+	font-size: 14px;
+	font-weight: 600;
+}
+#flightbox form h4{
+	font-size: 21px;
+	font-weight: 600;
+	line-height: 28px;
+}
+#flightbox form .col-3{
+	padding-right: 0;
+}
+#flightbox .form-check .form-check-label{
+	font-size: 12px;
+}
+#flightbox .input-group input:focus{
+	box-shadow: none;
+}
+.input-group .button-minus,
+.input-group .button-plus {
+  font-weight: bold;
+  height: 20px;
+  padding: 0;
+  width: 20px;
+  border-radius: 50% !important;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+  color: #fff !important;
+  font-size: 14px !important;
+}
+.input-group .button-minus{
+	background-color: #A1A1B4;
+}
+.input-group .button-plus{
+	background-color: #DE5921;
+}
+.input-group .quantity-field {
+  position: relative;
+  height: 30px;
+  /*left: -6px;*/
+  text-align: center;
+  width: 98px;
+  display: inline-block;
+  font-size: 13px;
+  margin: 0 0px;
+  resize: vertical;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
 }
 /*Offers*/
 .special-offers{
@@ -56,6 +168,7 @@
 	margin-bottom: 3rem;
 }
 .main-heading{
+	font-family: "Cream Candy", sans-serif;
 	color: #1A1C3D;
 	font-weight: 900;
 	font-size: 3.1rem;
@@ -85,7 +198,7 @@
 	font-weight: 900;
 }
 .offer-box .offer-subtitle{
-	font-size: 3.7rem;
+	font-size: 3.4rem;
 	font-weight: 500;
 }
 .offer-box .btn{
@@ -97,7 +210,7 @@
 	color: #fff;
     font-size: 1.7rem;
     padding-top: 27px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 /********Destination*******/
 .popular-section{
@@ -132,7 +245,7 @@
 	margin-top: 2rem;
 }
 .dest-footer h2{
-	font-size: 2.5rem;
+	font-size: 2rem;
     font-weight: 900;
     color: #1A1C3D;
 }
@@ -218,6 +331,12 @@
 	}
 }
 @media(max-width: 767px){
+	.navbar-brand{
+		text-align: right;
+	}
+	.navbar-toggler:focus {
+	    box-shadow: none;
+	}
 	.main-menu li {
 	    margin-right: 0rem !important;
 	}
@@ -232,6 +351,17 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
+	#flightbox {
+	    background: white;
+	    padding: 1rem;
+	    margin: 2rem 0rem;
+	}
+	#flightbox .nav-pills .nav-link {
+	    font-size: 12px;
+	}
+	.input-group .quantity-field {
+	    width: 30px;
+	}
 	.destination-box {
 	    padding: 2rem 1.5rem;
 	}
@@ -239,10 +369,10 @@
 	    margin-right: 5px;
 	}
 	.dest-footer h2 {
-	    font-size: 1.4rem;
+	    font-size: 1.1rem;
 	}
 	.destination-box .flight h4{
-		font-size: calc(1.275rem + .3vw);
+		font-size: calc(1rem + .3vw);
 	}
 	.special-offers{
 		padding-bottom: 0;
@@ -252,6 +382,9 @@
 	}
 	.offer-box .offer-subtitle {
 	    font-size: 2.3rem;
+	}
+	.offer-box .btn {
+	    width: 90%
 	}
 	.home-newsletter {
 	    padding: 5rem 0;
@@ -277,5 +410,15 @@
 	}
 	.copyright {
 	    font-size: 1rem;
+	}
+}
+@media(max-width: 400px){
+	.input-group .quantity-field {
+	    width: 30px;
+	}
+}
+@media(max-width: 500px){
+	.input-group .quantity-field {
+	    width: 52px;
 	}
 }
