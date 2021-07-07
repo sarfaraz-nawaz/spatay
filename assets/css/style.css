@@ -158,7 +158,12 @@ option{
    {
       box-shadow: 0 8px 20px 0 #ebecf0;
       border: none;
+
       
+   }
+ .card-booking-section .card-body {
+       flex: 1 1 auto;
+       padding: 0rem 0rem;
    }
    .pia
    {
@@ -219,14 +224,17 @@ option{
    .tabs-section
    {
        background-color:#F5F5F8;
+       width: 100%;
+       margin: auto;
    }
  .tabs-section .nav-tabs .nav-link
   {
       color: #A1A1B4;
       font-family: "Product sans";
-      font-size: 16px !important;
+      font-size: 17px !important;
+      
      
-      font-weight: bold;
+     
   }
 
   /* .tabs-section .nav-tabs .nav-link .active{
@@ -241,7 +249,7 @@ option{
   .nav-link.active {
       color: #1A1C3D;
       background-color:transparent;
-     
+     font-weight: bold;
       border-color:transparent;
   }
   .tabs-section .nav-tabs .nav-link:focus,
@@ -251,6 +259,20 @@ option{
      /* border: none; */
 
       border-color: transparent;
+  }
+
+  .flight-details
+  {
+      font-family: "Product sans";
+      font-size: 14px !important;
+      color: #A1A1B4;
+  }
+  .flight-details-heading
+  {
+      font-family: "Product sans";
+      font-size: 20px !important;
+     color: #1A1C3D;
+      font-weight: bold;
   }
    
 
@@ -273,7 +295,7 @@ option{
 
 @media(max-width: 767px)
 {
- .planeimage img
+ .planeimage 
 {
    width :5%
 }
