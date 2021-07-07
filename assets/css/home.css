@@ -1,0 +1,281 @@
+
+.main-menu li{
+	margin-right: 2.5rem !important;
+}
+.main-menu li a{
+	color: #1A1C3D;
+	text-decoration: none;
+	font-size: 1.1rem;
+}
+.main-menu li a img{
+	width: 70%;
+	padding-bottom: 12px;
+}
+/************Home CSS*************/
+.banner-section{
+	background-image: url('../media/home/banner.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/*Offers*/
+.special-offers{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+.special-offers .offer-card:not(.first){
+	box-shadow: 0 8px 20px 0 #ebecf0;
+}
+.offer-card .card-title{
+	color: #1A1C3D;
+	font-size: 25px;
+	font-weight: 900;
+}
+.code-text{
+	font-size: 22px;
+	font-weight: 900;
+	color: #1A1C3D;
+}
+.btn-style-one{
+	background-color: #1A1C3D;
+	border-color: #1A1C3D;
+	font-size: 16px;
+	padding: 8px 30px;
+	font-weight: 600;
+}
+.btn-style-2{
+	background-color: #DE5921;
+	border-color: #DE5921;
+	padding: 8px 30px;
+	font-weight: 600;
+}
+.offer-card .btn-style-one, .offer-card .btn-style-2{
+	width: 50%;
+}
+.section-heading{
+	margin-bottom: 3rem;
+}
+.main-heading{
+	color: #1A1C3D;
+	font-weight: 900;
+	font-size: 3.1rem;
+}
+.style-heading{
+	color: #DE5921;
+	margin-top: -3rem;
+    font-size: 4.1rem;
+}
+/*Offer*/
+.offer-banner{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+.offer-banner .col-sm-6{
+	padding: 0;
+}
+.offer-box{
+	background-color: #000033;
+	padding: 3rem 2rem 3rem 5rem;
+}
+.offer-box h1{
+	color: #fff;
+}
+.offer-box .offer-title{
+	font-size: 4rem;
+	font-weight: 900;
+}
+.offer-box .offer-subtitle{
+	font-size: 3.7rem;
+	font-weight: 500;
+}
+.offer-box .btn{
+	width: 47%;
+    font-weight: 800;
+    font-size: 17px;
+}
+.offer-desc{
+	color: #fff;
+    font-size: 1.7rem;
+    padding-top: 27px;
+    margin-bottom: 15px;
+}
+/********Destination*******/
+.popular-section{
+	padding-bottom: 5rem;
+}
+.destination-box{
+	/*box-shadow: 0 8px 20px 0 #303380;*/
+	box-shadow: 0 8px 20px 0 rgb(48 51 128 / 40%);
+	/*filter: drop-shadow(0 8px 20px #303380);*/
+	border-color: #EBECF0;
+	border-radius: 8px;
+	padding: 2rem;
+	margin-bottom: 4rem;
+}
+.destination-box .location{
+	justify-content: space-between;
+}
+.destination-box .flight{
+	display: grid;
+	margin-right: 20px;
+}
+.destination-box .flight h4{
+	color: #1B1B23;
+	font-size: 1.8rem;
+    font-weight: 600
+}
+.bottom-flight{
+	display: flex;
+    align-items: flex-end;
+}
+.dest-footer{
+	margin-top: 2rem;
+}
+.dest-footer h2{
+	font-size: 2.5rem;
+    font-weight: 900;
+    color: #1A1C3D;
+}
+/*******Stay Touch******/
+.stayTouch-section{
+	
+}
+.home-newsletter {
+	padding: 10rem 0;
+	background-image: url('../media/home/stayTouch.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.home-newsletter .single {
+	max-width: 650px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	z-index: 2; 
+}
+.home-newsletter .single h2 {
+	font-size: 2.4rem;
+	color: white;
+	text-transform: uppercase; 
+}
+.home-newsletter .single p{
+	font-size: 1.7rem;
+}
+.home-newsletter .single .form-control {
+	height: 50px;
+	background: rgba(255, 255, 255, 0.6);
+	border-color: transparent;
+	/*border-radius: 20px 0 0 20px; */
+}
+.home-newsletter .single .form-control:focus {
+	box-shadow: none;
+	border-color: #243c4f; 
+}
+.home-newsletter .single .btn {
+	min-height: 50px; 
+	/*border-radius: 0 20px 20px 0;*/
+	background: #2d5d9b;
+	color: #fff;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	padding: 10px 25px;
+}
+/*Footer*/
+.footer{
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+}
+.social-icons li:first-child{
+	background-color: #DE5921;
+}
+.social-icons li{
+	width: 55px;
+	height: 55px;
+	background-color: #ECEEF0;
+	border-radius: 50%;
+	padding: 14px;
+	margin-right: 2.5rem !important;
+}
+.menu-links li{
+	margin-right: 2rem !important;
+}
+.menu-links li a{
+	color: #1A1C3D;
+	text-decoration: none;
+	font-size: 1.3rem;
+}
+.copyright{
+	font-size: 1.4rem;
+	color: #1A1C3D;
+	margin-top: 2rem;
+}
+/*******Responsive*******/
+@media(min-width: 767px){
+	.flight-row .col-sm-4{
+		width: 31%;
+	}
+}
+@media(max-width: 767px){
+	.main-menu li {
+	    margin-right: 0rem !important;
+	}
+	.main-menu li a {
+	    font-size: 0.9rem;
+	}
+	.main-menu li a img {
+	    width: 50%;
+	    padding-bottom: 12px;
+	}
+	.menu-col{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.destination-box {
+	    padding: 2rem 1.5rem;
+	}
+	.destination-box .flight {
+	    margin-right: 5px;
+	}
+	.dest-footer h2 {
+	    font-size: 1.4rem;
+	}
+	.destination-box .flight h4{
+		font-size: calc(1.275rem + .3vw);
+	}
+	.special-offers{
+		padding-bottom: 0;
+	}
+	.offer-box {
+	    padding: 3rem 2rem 3rem 2rem;
+	}
+	.offer-box .offer-subtitle {
+	    font-size: 2.3rem;
+	}
+	.home-newsletter {
+	    padding: 5rem 0;
+	}
+	.social-icons li{
+		margin-right: 0.5rem !important;
+	}
+	.home-newsletter .single h2 {
+    	font-size: 2rem;
+	}
+	.home-newsletter .single p {
+	    font-size: 1.2rem;
+	}
+	.menu-links li {
+	    margin-right: 1.5rem !important;
+	}
+	.style-heading {
+	    margin-top: -2rem;
+	    font-size: 2.1rem;
+	}
+	.main-heading {
+	    font-size: 2.1rem;
+	}
+	.copyright {
+	    font-size: 1rem;
+	}
+}
