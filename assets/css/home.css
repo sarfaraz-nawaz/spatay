@@ -59,7 +59,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-.input-group {
+#flightbox .input-group {
   clear: both;
   border-color: #A1A1B4;
   position: relative;
