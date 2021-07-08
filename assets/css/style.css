@@ -1,105 +1,116 @@
 body {
-    font-family: 'Product sans';
-    font-weight: 400;
-    font-size: 14px;
-    padding-bottom: auto;
-}
-.from
-{
-    color: white;
-    font-size: 11px;
-    padding: 0;
-    font-family: "Product sans";
+  font-family: "Product sans",
+    Sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: auto;
 }
 
-.inputfield
-{
-    outline: 0;
-    background-color:transparent;
-    border: 0;
-    /* border-bottom: 2px solid white; */
-     font-family: "Product sans";
-     font-size: 16px;
-     font-weight: bold;
-    color: white;
-    padding-left: 14px;
-   
-    
-    
+.from {
+  color: white;
+  font-size: 11px;
+  padding: 0;
+  font-family: "Product sans";
 }
-.input-container
-{
-    border-bottom: 3px solid white;
-    width: 100%;
+
+.inputfield {
+  outline: 0;
+  background-color: transparent;
+  border: 0;
+  /* border-bottom: 2px solid white; */
+  font-family: "Product sans";
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding-left: 14px;
+
+
+
 }
+
+.input-container {
+  border-bottom: 3px solid white;
+  width: 100%;
+}
+
 ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color:white;
-}
-.locationicon
-{
-    color:white;
+  /* Chrome/Opera/Safari */
+  color: white;
 }
 
-.nav-item 
-{
-    font-family: "Product sans";
-    text-transform: uppercase;
-    padding-right: 8px;
-    padding-left: 8px;
-   
-    
+.locationicon {
+  color: white;
+}
 
+.nav-item {
+  font-family: "Product sans";
+  text-transform: uppercase;
+  padding-right: 8px;
+  padding-left: 8px;
 }
-.nav-item .nav-link
-{
- color: #1A1C3D;
- font-weight: bold;
+
+.nav-item .nav-link {
+  color: #1A1C3D;
+  font-weight: bold;
 }
-.navbar-toggler-icon
-{
-    color: brown;
-    background-color: burlywood;
+
+.navbar-toggler-icon {
+  color: brown;
+  background-color: burlywood;
 }
 
 /* start Flight search */
-.flight-search
-{
-    background-color: #1A1C3D;
-  
-    
-}
+.flight-search {
+  background-color: #1A1C3D;
 
-#items{
-    background-color: transparent;
-    border: none;
-    outline: 0;
-    color: white;
-    font-size: 16px;
-    font-family: "Product sans";
-    font-weight: bold;
-    padding-left: 14px;
-}
-option{
-    background-color: #1A1C3D;
-    padding-left: 20px;
-}
- #search-btn
-{
-   
-     font-size: 16px;
-     background: white;
-     font-family: "Product sans";
-     font-weight: bold;
-     margin-top: 15px;
-     color: #1A1C3D;
-     padding-left: 30px;
-     padding-right: 30px;
 
 }
- .toway
-{
-    width: 5% !important;
+
+#items {
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  color: white;
+  font-size: 16px;
+  font-family: "Product sans";
+  font-weight: bold;
+  padding-left: 14px;
+}
+
+option {
+  background-color: #1A1C3D;
+  padding-left: 20px;
+}
+
+#search-btn {
+
+  font-size: 16px;
+  background: white;
+  font-family: "Product sans";
+  font-weight: bold;
+  margin-top: 15px;
+  color: #1A1C3D;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+
+.toway {
+  width: 5% !important;
+}
+
+.planeimage {
+  width: 100%;
+  text-align: end;
+}
+
+.secondplaneimage {
+  width: 100%;
+}
+
+.towayimage {
+  text-align: end;
+  margin-top: 2.8rem;
 }
 
 
@@ -107,174 +118,342 @@ option{
 /* end Flight search */
 
 /* filter section */
-.filter-section
-{
-    background: white;
-   
-    margin-top: 4px;
+.filter-section {
+  background: white;
 
-    box-shadow: 0 8px 20px 0 #ebecf0;
-    ;
+  margin-top: 4px;
+
+  box-shadow: 0 8px 20px 0 #ebecf0;
+  ;
 }
 
-.navbar-brand
-{
-    color: #1A1C3D;
-     font-family: "Product sans";
-     font-size: 20px !important;
-     font-weight: bold;
+.navbar-brand {
+  color: #1A1C3D;
+  font-family: "Product sans";
+  font-size: 20px !important;
+  font-weight: bold;
 
 }
 
-.filter-section .nav-link
-{
-    color: #707070;
-   
+.filter-section .nav-link {
+  color: #707070;
+
 }
+
 .filter-section .nav-link:active {
-    color: #1A1C3D;
+  color: #1A1C3D;
 }
 
-.filter-section .nav-item
-{
- padding-left: 25px;
- padding-right: 25px;
+.filter-section .nav-item {
+  padding-left: 25px;
+  padding-right: 25px;
 }
+
 .filter-section .dropdown-toggle::after {
-   display: inline-block;
-   margin-left: .255em;
-   vertical-align: .1em;
-   content: "\f078";
-   font-family: 'Font Awesome 5 Free';
-   border-top: 0.3em solid transparent;
-   border-right: .3em solid transparent;
-   border-bottom: 0;
-   border-left: .3em solid transparent;
-   display: contents;
-   }
+  display: inline-block;
+  margin-left: .255em;
+  vertical-align: .1em;
+  content: "\f078";
+  font-family: 'Font Awesome 5 Free';
+  border-top: 0.3em solid transparent;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+  display: contents;
+}
 
-   /* booking card section */
-   .card
-   {
-      box-shadow: 0 8px 20px 0 #ebecf0;
-      border: none;
+/* booking card section */
+.card {
+  box-shadow: 0 8px 20px 0 #ebecf0;
+  border: none;
 
-      
-   }
- .card-booking-section .card-body {
-       flex: 1 1 auto;
-       padding: 0rem 0rem;
-   }
-   .pia
-   {
-        font-family: "Product sans";
-        font-size: 13px !important;
-        color: #A1A1B4;
-        font-weight: bold;
-   }
-   .cityname
-   {
-       font-family: "Product sans";
-       font-size: 25px !important;
-       color: #1A1C3D;
-       font-weight: bold;
-   }
-   .timeandcity
-   {
-        font-family: "Product sans";
-        font-size: 16px !important;
-        color: #1A1C3D;
-         font-weight: bold;
-        
-   }
-   .durationstop
-   {
-       font-family: "Product sans";
-       font-size: 11px !important;
-       color: #A1A1B4;
-       
-   }
-   .hoursandminute
-   {
-       font-family: "Product sans";
-       font-size: 11px !important;
-       color: #1A1C3D;
-       font-weight: bold;
-   }
-   .ticketprice
-   {
-        font-family: "Roboto";
-        font-size: 20px !important;
-        color: #1A1C3D;
-       
-        font-weight: bold;
-   }
-   #select-btn
-   {
-       background-color: #DE5921;
-        font-family: "Roboto";
-       font-size: 13px !important;
-       color: white;
-       
-       padding-left: 3rem;
-       padding-right: 3rem;
 
-    
-   }
-   .tabs-section
-   {
-       background-color:#F5F5F8;
-       width: 100%;
-       margin: auto;
-   }
- .tabs-section .nav-tabs .nav-link
-  {
-      color: #A1A1B4;
-      font-family: "Product sans";
-      font-size: 17px !important;
-      
-     
-     
-  }
+}
 
-  /* .tabs-section .nav-tabs .nav-link .active{
+.card-booking-section .card-body {
+  flex: 1 1 auto;
+  padding: 0rem 0rem;
+}
+
+.pia {
+  font-family: "Product sans";
+  font-size: 13px !important;
+  color: #A1A1B4;
+  font-weight: bold;
+}
+
+.piaimage {
+  width: 50%;
+}
+
+.cityname {
+  font-family: "Product sans";
+  font-size: 25px !important;
+  color: #1A1C3D;
+  font-weight: bold;
+}
+
+.timeandcity {
+  font-family: "Product sans";
+  font-size: 16px !important;
+  color: #1A1C3D;
+  font-weight: bold;
+
+}
+
+.durationstop {
+  font-family: "Product sans";
+  font-size: 11px !important;
+  color: #A1A1B4;
+
+}
+
+.hoursandminute {
+  font-family: "Product sans";
+  font-size: 11px !important;
+  color: #1A1C3D;
+  font-weight: bold;
+}
+
+.ticketprice {
+  font-family: "Roboto";
+  font-size: 20px !important;
+  color: #1A1C3D;
+
+  font-weight: bold;
+}
+
+#select-btn {
+  background-color: #DE5921;
+  font-family: "Roboto";
+  font-size: 13px !important;
+  color: white;
+
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+
+}
+
+#refund-btn {
+  background-color: #00D060;
+  font-family: "Roboto";
+  font-size: 13px !important;
+  color: white;
+
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+
+}
+
+.tabs-section {
+  background-color: #F5F5F8;
+  width: 100%;
+  margin: auto;
+}
+
+.tabs-section .nav-tabs .nav-link {
+  color: #A1A1B4;
+  font-family: "Product sans";
+  font-size: 17px !important;
+
+
+
+}
+
+/* .tabs-section .nav-tabs .nav-link .active{
       color: #1A1C3D;
      
   } */
- .tabs-section .nav-tabs {
-      border-bottom: 0px solid #dee2e6;
-  }
+.tabs-section .nav-tabs {
+  border-bottom: 0px solid transparent;
+}
 
-  .tabs-section .nav-tabs
-  .nav-link.active {
-      color: #1A1C3D;
-      background-color:transparent;
-     font-weight: bold;
-      border-color:transparent;
-  }
-  .tabs-section .nav-tabs .nav-link:focus,
-  .tabs-section .nav-tabs .nav-link:hover {
-      /* color: #4c4d58; */
-      background-color: transparent;
-     /* border: none; */
+.tabs-section .nav-tabs .nav-link.active {
+  color: #1A1C3D;
+  background-color: transparent;
+  font-weight: bold;
+  border-color: transparent;
+}
 
-      border-color: transparent;
-  }
+.tabs-section .nav-tabs .nav-link:focus,
+.tabs-section .nav-tabs .nav-link:hover {
+  /* color: #4c4d58; */
+  background-color: transparent;
+  /* border: none; */
 
-  .flight-details
-  {
-      font-family: "Product sans";
-      font-size: 14px !important;
-      color: #A1A1B4;
-  }
-  .flight-details-heading
-  {
-      font-family: "Product sans";
-      font-size: 20px !important;
-     color: #1A1C3D;
-      font-weight: bold;
-  }
-   
+  border-color: transparent;
+}
+
+.flight-details {
+  font-family: "Product sans";
+  font-size: 14px !important;
+  color: #A1A1B4;
+}
+
+.flight-details-heading {
+  font-family: "Product sans";
+  font-size: 20px !important;
+  color: #1A1C3D;
+  font-weight: bold;
+}
+
+.dh {
+  text-align: center !important;
+}
+
+/* //hide show section */
+.hideshow {
+  background-color: white;
+  box-shadow: 0 0px 10px 0 #ebecf0;
+
+}
+
+.briefcase {
+  color: #1A1C3D;
+  padding-left: 1rem;
+
+}
+
+.toggle-arrow:not(.collapsed) {
+  color: #A1A1B4 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.toggle-arrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 50px !important;
+  padding: 0 !important;
+  font-size: 1rem;
+  padding-left: .1rem;
+  color: #A1A1B4 !important;
+  text-align: left;
+  background-color: transparent !important;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+}
+
+.checkdetail {
+  color: #A1A1B4;
+  padding-left: .7rem;
+}
+
+/* table css */
+th {
+  font-family: "Product sans";
+  font-size: 16px !important;
+  color: #1A1C3D;
+  font-weight: bold;
+}
+
+td {
+  font-family: "Product sans";
+  font-size: 12px !important;
+  color: #A1A1B4;
+
+}
+
+.econmy-section {
+  background-color: white;
+  box-shadow: 0 8px 10px 0 #ebecf0;
+  margin: 0;
+}
+
+.baggage-include {
+  font-family: "Product sans";
+  font-size: 15px !important;
+  color: #A1A1B4;
+  padding-left: 1rem;
+}
+
+.brie-fcase {
+  color: #1A1C3D;
+}
+
+#farebtn {
+  background-color: #DE5921;
+  font-family: "Roboto";
+  font-size: 13px !important;
+  color: white;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #25272a !important;
+  margin-top: -2px !important;
+  background-color: #e7f1ff;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-item {
+  background-color: #fff;
+  border: 0px solid transparent !important;
+}
+
+.accordion-body {
+  padding: 0rem 0rem !important;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: 10px !important;
+  content: "";
+  background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform .1s ease-in-out !important;
+}
+
+
+
+/* summary page */
+.maincity {
+  color: white;
+  font-family: "Product sans";
+  font-weight: bold;
+
+}
+
+.airport {
+  color: white;
+  font-family: "Product sans";
+  font-size: 12px !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -283,20 +462,113 @@ option{
 
 /* Media Queries */
 
-@media (min-width: 992px)
-{
+@media (min-width: 992px) {}
 
+@media (max-width: 1200px) {
+  .planeimage {
+    width: 45%;
+    text-align: center;
+  }
+
+  .piaimage {
+    width: 20%;
+  }
+
+  .secondplaneimage {
+    width: 50%;
+  }
+
+  .dh {
+    text-align: start !important;
+
+  }
 }
 
-@media (max-width: 1200px)
-{
+@media(max-width: 767px) {
+  .planeimage {
+    width: 15%;
+    text-align: center;
+  }
 
-}
+  .toway {
+    width: 100% !important;
+  }
 
-@media(max-width: 767px)
-{
- .planeimage 
-{
-   width :5%
-}
+  .towayimage {
+    text-align: start;
+    margin-top: .8rem;
+
+  }
+
+  .tabs-section .nav-tabs .nav-link {
+    color: #A1A1B4;
+    font-family: "Product sans";
+    font-size: 13px !important;
+  }
+
+  .piaimage {
+    width: 20%;
+  }
+
+  .secondplaneimage {
+    width: 50%;
+  }
+
+  .dh {
+    text-align: start !important;
+
+  }
+
+  th {
+    font-family: "Product sans";
+    font-size: 14px !important;
+    color: #1A1C3D;
+    font-weight: bold;
+  }
+
+  td {
+    font-family: "Product sans";
+    font-size: 12px !important;
+    color: #A1A1B4;
+
+  }
+
+  #farebtn {
+    background-color: #DE5921;
+    font-family: "Roboto";
+    font-size: 11px !important;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .cityname {
+    font-family: "Product sans";
+    font-size: 18px !important;
+    color: #1A1C3D;
+    font-weight: bold;
+  }
+
+  .flight-details-heading {
+    font-family: "Product sans";
+    font-size: 16px !important;
+    color: #1A1C3D;
+    font-weight: bold;
+  }
+
+  .ticketprice {
+    font-family: Roboto;
+    color: rgb(26, 28, 61);
+    font-weight: bold;
+    font-size: 16px !important;
+  }
+
+  #select-btn {
+    background-color: #DE5921;
+    font-family: "Roboto";
+    font-size: 13px !important;
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
