@@ -1,0 +1,33 @@
+@font-face {
+font-family: "Cream Candy";
+src: url("CustomFont.eot");
+src: url("CustomFont.woff") format("woff"),
+url("../fonts/Cream Candy.otf") format("opentype"),
+url("CustomFont.svg#filename") format("svg");
+}
+@font-face {
+font-family: "Product Sans";
+src: url("CustomFont.eot");
+src: url("CustomFont.woff") format("woff"),
+url("../fonts/Product Sans Regular.ttf") format('truetype'),
+url("CustomFont.svg#filename") format("svg");
+}
+body{
+	font-family: "Product Sans";
+}
+/*****Flights Filter*****/
+.flight-search .inputfield{
+	font-size: 14px;
+}
+.filter-section .nav-link {
+    color: #A1A1B4 !important;
+    text-transform: capitalize;
+}
+.filter-section .nav-link {
+    color: #A1A1B4 !important;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.filter-section .dropdown-toggle::after{
+	font-weight: 600;
+}
