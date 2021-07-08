@@ -1,22 +1,37 @@
+@font-face {
+font-family: "Cream Candy";
+src: url("CustomFont.eot");
+src: url("CustomFont.woff") format("woff"),
+url("../fonts/Cream Candy.otf") format("opentype"),
+url("CustomFont.svg#filename") format("svg");
+}
+@font-face {
+font-family: "Product Sans";
+src: url("CustomFont.eot");
+src: url("CustomFont.woff") format("woff"),
+url("../fonts/Product Sans Regular.ttf") format('truetype'),
+url("CustomFont.svg#filename") format("svg");
+}
+body{
+	font-family: "Product Sans";
+}
 .site-font{
 	color: #1A1C3D;
 }
 .top-menu{
-	background: white;
+	background: rgb(255, 255, 255, 0.5);
     position: relative;
-    opacity: .5;
 }
 .main-menu{
 	margin-bottom: 0; 
 	padding: 10px 0;
 }
 .main-menu li{
-	margin-right: 2rem !important;
+	margin-right: 4rem !important;
 }
 .main-menu li a{
 	color: #1A1C3D;
 	text-decoration: none;
-	font-size: 1.1rem;
 }
 .main-menu li a img{
 	width: 50px;
@@ -146,13 +161,20 @@ input[type="number"] {
 }
 .offer-card .card-title{
 	color: #1A1C3D;
-	font-size: 25px;
-	font-weight: 900;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 60px;
 }
 .code-text{
 	font-size: 22px;
 	font-weight: 900;
 	color: #1A1C3D;
+}
+.card-text{
+	color: #A1A1B4;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 23px;
 }
 .btn-style-one{
 	background-color: #1A1C3D;
@@ -166,6 +188,7 @@ input[type="number"] {
 	border-color: #DE5921;
 	padding: 8px 30px;
 	font-weight: 600;
+	letter-spacing: 1px;
 }
 .offer-card .btn-style-one, .offer-card .btn-style-2{
 	width: 50%;
@@ -174,15 +197,16 @@ input[type="number"] {
 	margin-bottom: 3rem;
 }
 .main-heading{
-	font-family: "Cream Candy", sans-serif;
+	font-family: "Product Sans";
 	color: #1A1C3D;
 	font-weight: 900;
-	font-size: 3.1rem;
+	font-size: 3.5rem;
 }
 .style-heading{
+	font-family: "Cream Candy";
 	color: #DE5921;
-	margin-top: -3rem;
-    font-size: 4.1rem;
+	margin-top: -3.4rem;
+    font-size: 4.5rem;
 }
 /*Offer*/
 .offer-banner{
@@ -325,11 +349,11 @@ input[type="number"] {
 	text-decoration: none;
 	font-size: 1.3rem;
 }
-.copyright{
+/*.copyright{
 	font-size: 1.4rem;
 	color: #1A1C3D;
 	margin-top: 2rem;
-}
+}*/
 /*******Responsive*******/
 @media(min-width: 767px){
 	.flight-row .col-sm-4{
