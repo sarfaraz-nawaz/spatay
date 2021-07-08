@@ -6,6 +6,10 @@
     position: relative;
     opacity: .5;
 }
+.main-menu{
+	margin-bottom: 0; 
+	padding: 10px 0;
+}
 .main-menu li{
 	margin-right: 2rem !important;
 }
@@ -15,8 +19,10 @@
 	font-size: 1.1rem;
 }
 .main-menu li a img{
-	width: 70%;
-	padding-bottom: 12px;
+	width: 50px;
+    padding-bottom: 12px;
+    height: 50px;
+    object-fit: fill;
 }
 /************Home CSS*************/
 .banner-section{
@@ -194,11 +200,11 @@ input[type="number"] {
 	color: #fff;
 }
 .offer-box .offer-title{
-	font-size: 4rem;
+	font-size: 3rem;
 	font-weight: 900;
 }
 .offer-box .offer-subtitle{
-	font-size: 3.4rem;
+	font-size: 2.4rem;
 	font-weight: 500;
 }
 .offer-box .btn{
@@ -209,7 +215,7 @@ input[type="number"] {
 .offer-desc{
 	color: #fff;
     font-size: 1.7rem;
-    padding-top: 27px;
+    padding-top: 15px;
     margin-bottom: 20px;
 }
 /********Destination*******/
@@ -222,7 +228,7 @@ input[type="number"] {
 	/*filter: drop-shadow(0 8px 20px #303380);*/
 	border-color: #EBECF0;
 	border-radius: 8px;
-	padding: 2rem;
+	padding: 2rem 1.5rem;
 	margin-bottom: 4rem;
 }
 .destination-box .location{
@@ -329,6 +335,12 @@ input[type="number"] {
 	.flight-row .col-sm-4{
 		width: 31%;
 	}
+	.banner-section{
+		margin-top: -6rem;
+	}
+	#flightbox{
+	    margin-top: 8rem;
+	}
 }
 @media(max-width: 767px){
 	.navbar-brand{
@@ -344,7 +356,7 @@ input[type="number"] {
 	    font-size: 0.9rem;
 	}
 	.main-menu li a img {
-	    width: 50%;
+	    width: 65%;
 	    padding-bottom: 12px;
 	}
 	.menu-col{
@@ -417,7 +429,7 @@ input[type="number"] {
 }
 @media(max-width: 400px){
 	.input-group .quantity-field {
-	    width: 30px;
+	    width: 30px !important;
 	}
 }
 @media(max-width: 500px){

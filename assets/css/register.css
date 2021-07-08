@@ -1,4 +1,6 @@
-
+body{
+	font-family: "Product sans", Sans-serif;
+}
 .top-bar{
 	background-color: #1A1C3D;
 }
@@ -12,6 +14,7 @@
 .register-box input{
   border:none;
   background-color: transparent;
+  font-size: 12px;
 }
 .register-box input:focus,
 .register-box select:focus,
