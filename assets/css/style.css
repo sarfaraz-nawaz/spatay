@@ -479,8 +479,210 @@ td {
 .copyright {
   font-size: 15px;
   color: #92989F;
-   font-family: "Product sans";
+  font-family: "Product sans";
   margin-top: 2rem;
+}
+#farebtn2 {
+  background-color: #DE5921;
+  font-family: "Roboto";
+  font-size: 13px !important;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+/* summary box */
+
+.maincitymobile
+{
+  text-align: end;
+  padding-right: 4rem;
+}
+.summarycolumn
+{
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+
+.summarybox
+{
+  background-color: white;
+  box-shadow: 0 8px 10px 0 #ebecf0;
+  padding-top: 1rem;
+   border: 1px solid #EBECF0;
+   border-radius: 8px;
+  padding-bottom: 1rem;
+}
+.summary-name
+{
+   font-family: "Product sans";
+    color: #1A1C3D;
+    font-size: 35px;
+    padding-top: 9px;
+    font-weight: bold;
+    text-align: center;
+}
+.summarydetailscl
+{
+  font-family: "Product sans";
+  font-size: 13px;
+  color: #92989F;
+}
+.summarydetailpkr
+{
+  font-family: "Product sans";
+  font-size: 13px;
+  padding-left: 5.4rem;
+  color: #92989F;
+}
+.taxdetailpkr
+{
+ font-family: "Product sans";
+ font-size: 13px;
+ padding-left: 7.8rem;
+ color: #92989F;
+}
+hr
+{
+  margin: auto !important;
+  opacity: .6;
+}
+.summarydetailtext
+{
+  font-family: "Product sans";
+  font-size: 14px;
+  color: #1A1C3D;
+  font-weight: bold;
+}
+.taxdetailprice
+{
+  font-family: "Product sans";
+  font-size: 14px;
+  padding-left: 6.9rem;
+  color: #1A1C3D;
+   font-weight: bold;
+}
+.promo
+{
+  font-size: 14px;
+  font-family: "Product sans";
+}
+.promo::placeholder {
+  font-size: 11px;
+  font-family: "Product sans";
+  
+}
+.promo:focus {
+  color: #1A1C3D;
+  background-color: #fff;
+  border-color: #1A1C3D !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+#cb-btn {
+  background-color: #DE5921;
+  font-family: "Roboto";
+  font-size: 13px !important;
+  color: white;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+/* Booking Process page */
+.booking-process {
+  background-color: #1A1C3D;
+  width: 100%;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  margin: auto;
+}
+
+.booking-process .nav-tabs .nav-link {
+  color: #EBECF0;
+  font-family: "Product sans";
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 28px !important;
+  text-transform: uppercase;
+
+
+
+}
+
+.booking-process .nav-tabs {
+  border-bottom: 0px solid transparent;
+}
+
+.booking-process .nav-tabs .nav-link.active {
+  color: #DE5921;
+  background-color: transparent;
+  font-weight: bold;
+  border-color: transparent;
+
+}
+
+.booking-process .nav-tabs .nav-link:focus,
+.booking-process .nav-tabs .nav-link:hover {
+  /* color: #4c4d58; */
+  background-color: transparent;
+  /* border: none; */
+
+  border-color: transparent;
+}
+.counter 
+{
+  height: 40px;
+  width: 40px;
+  color: #1A1C3D;
+  border-radius: 100%;
+  background-color: #EBECF0;
+  display: inline-block;
+}
+.booking-process .nav-tabs .nav-link.active .counter{
+  background-color:#DE5921;
+   color: #EBECF0;
+}
+
+.contactdetail
+{
+  background-color: white;
+  box-shadow: 0 8px 10px 0 #ebecf0;
+  margin: 0;
+}
+.cd
+{
+  background-color: #1A1C3D;
+  color: white;
+  width: 19%;
+  padding-left: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  
+  font-family: "Product sans";
+}
+.namediv
+{
+  padding-left: 4rem;
+}
+.labelname
+{
+  font-family: "Product sans";
+  font-size: 14px;
+  color: #A1A1B4;
+  margin: auto;
+}
+.name
+{
+  font-family: "Product sans";
+  font-size: 18px;
+  color: #1A1C3D;
+  font-weight: bold;
+  
+}
+.mobilcolumn
+{
+  padding-left: 4.8rem !important;
 }
 
 
@@ -515,7 +717,9 @@ td {
 
 /* Media Queries */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+}
 
 @media (max-width: 1200px) {
   .navbar-brand {
@@ -542,9 +746,42 @@ td {
     text-align: start !important;
 
   }
+  .maincitymobile {
+    text-align: start;
+  }
+
+  .maincity {
+    font-size: 20px;
+  }
+
+  .summarycolumn {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .summaryplain {
+    width: 100%;
+  }
+
+  .airport {
+    font-size: 10px;
+  }
+  .summarybox {
+    background-color: white;
+    box-shadow: 0 8px 10px 0 #ebecf0;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border: 1px solid #EBECF0;
+    margin-left: 20px;
+    border-radius: 8px;
+    padding-bottom: 1rem;
+  }
 }
 
 @media(max-width: 767px) {
+
+
   .navbar-brand {
     text-align: right;
   }
@@ -612,6 +849,14 @@ td {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+  #farebtn2 {
+    background-color: #DE5921;
+    font-family: "Roboto";
+    font-size: 13px !important;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
   .cityname {
     font-family: "Product sans";
@@ -662,5 +907,75 @@ td {
     border-radius: 50%;
     padding: 14px;
     margin-right: 2rem !important;
+  }
+  .summarybox {
+    background-color: white;
+    box-shadow: 0 8px 10px 0 #ebecf0;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border: 1px solid #EBECF0;
+    margin-left: 20px;
+    border-radius: 8px;
+    padding-bottom: 1rem;
+  }
+  .maincitymobile
+  {
+    text-align: start;
+  }
+  .maincity
+  {
+    font-size: 20px;
+  }
+  .summarycolumn {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .summaryplain
+  {
+    width: 100%;
+  }
+  .airport
+  {
+    font-size: 10px;
+  }
+  .namediv {
+    padding-left: 1rem;
+  }
+
+  .labelname {
+    font-family: "Product sans";
+    font-size: 12px;
+    color: #A1A1B4;
+    margin: auto;
+  }
+
+  .name {
+    font-family: "Product sans";
+    font-size: 14px;
+    color: #1A1C3D;
+    font-weight: bold;
+
+  }
+
+  .mobilcolumn {
+    padding-left: 1.8rem !important;
+  }
+  .cd {
+    background-color: #1A1C3D;
+    color: white;
+    width: 30%;
+    padding-left: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+
+    font-family: "Product sans";
+  }
+  .summarycolumn2 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-top: 4rem;
   }
 }

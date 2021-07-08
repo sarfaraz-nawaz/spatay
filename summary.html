@@ -15,51 +15,49 @@
 
 <body>
  <!---------------------------------------------- start nav section -------------------------------------->
- <section class="nav-section">
-  <nav class="navbar navbar-expand-lg  bg-white pt-2 pb-2  ">
-   <div class="container">
-    <a class="navbar-brand" href="index.html"><img src="/assets/media/logo.png" class="w-75"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-     <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-     <ul class="navbar-nav ms-auto  mt-lg-0">
-      <li class="nav-item">
-       <a class="nav-link" aria-current="page" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="#">MY TRIPS</a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link" href="#">About us</a>
-      </li>
+ <nav class="navbar navbar-expand-lg  bg-white pt-2 pb-2 ">
+  <div class="container">
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <i class="fas fa-bars" aria-hidden="true"></i>
+   </button>
+   <a class="navbar-brand" href="index.html"><img src="assets/media/logo.png" class="w-75"></a>
+   <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ms-auto  mt-lg-0">
+     <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="#">Home</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">MY TRIPS</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">About us</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">My Profile</a>
+     </li>
 
-      <li class="nav-item">
-       <a class="nav-link" href="#">My Profile</a>
-      </li>
-
-     </ul>
-    </div>
+    </ul>
    </div>
-  </nav>
- </section>
+  </div>
+ </nav>
  <!---------------------------------------------- end nav section -------------------------------------->
 
  <!---------------------------------------------- start Flight search -------------------------------------->
  <section class="flight-search pt-4 pb-4 mt-2 ">
   <div class="container">
-   <div class="row justify-content-center align-items-center ps-5 pe-5">
-    <div class="col-md-4 text-end pe-5">
+   <div class="row justify-content-center align-items-center summarycolumn">
+    <div class="col-md-4  maincitymobile col-5">
      <h2 class="maincity">LAHORE (LHE)</h2>
      <h6 class="airport">ALLAMA IQBAL INTERNATIONAL AIRPORT</h6>
     </div>
 
-    <div class="col-md-4">
-     <img src="/assets/media/flightfilter/Plane icon.png" alt="plane">
+    <div class="col-md-4 col-2">
+     <img src="/assets/media/flightfilter/Plane icon.png" alt="plane" class="summaryplain">
     </div>
 
-    <div class="col-md-4 ps-4">
+    <div class="col-md-4 ps-4 col-5">
      <h2 class="maincity">KARACHI (KHI)</h2>
      <h6 class="airport">JINNAH INTERNATIONAL AIRPORT</h6>
     </div>
@@ -68,10 +66,10 @@
 
  </section>
 
- <section class="flight-detail">
-  <div class="container">
+ <section class="flight-detail mb-5">
+  <div class="container-fluid">
    <div class="row">
-    <div class="col-md-10">
+    <div class="col-lg-9 col-md-12 pe-5 mt-5">
      <section class="card-booking-section mt-5">
       <div class="container">
        <div class="card" style="width:full-wdth;">
@@ -104,52 +102,46 @@
 
           </div>
 
-          <div class="col-lg-1 col-4 mt-2">
+          <div class="col-lg-2 col-4 mt-2">
            <p class="durationstop">Duration</p>
            <h6 class="hoursandminute">18 hrs 10 min</h6>
           </div>
 
-          <div class="col-lg-1 col-4 mt-2">
+          <div class="col-lg-2 col-4 mt-2">
            <p class="durationstop">Stops</p>
            <h6 class="hoursandminute">NonStops</h6>
           </div>
 
-          <div class="col-lg-2 text-center mb-4 mt-2 col-4">
-
-           <h6 class="ticketprice">PKR 19,000</h6>
-           <button type="button" id="select-btn" class="btn">Select</button>
-
-          </div>
-
          </div>
-
-         <section class="tabs-section pt-1 pb-1  ">
-
-          <nav>
-           <div class="nav nav-tabs" id="nav-tab" role="tablist">
-            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
-             type="button" role="tab" aria-controls="nav-home" aria-selected="false">Flight Information
-            </button>
-
-            <button class="nav-link" id="nav-cancellation-tab" data-bs-toggle="tab" data-bs-target="#nav-cancellation"
-             type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Cancellation</button>
-
-            <button class="nav-link" id="nav-datechange-tab" data-bs-toggle="tab" data-bs-target="#nav-datechange"
-             type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Date
-             Change</button>
-
-            <button class="nav-link" id="nav-baggage-tab" data-bs-toggle="tab" data-bs-target="#nav-baggage"
-             type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Baggage</button>
-           </div>
-          </nav>
-         </section>
-
          <div class="accordion" id="accordionPanelsStayOpenExample">
           <div class="accordion-item">
 
            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
             aria-labelledby="panelsStayOpen-headingOne">
             <div class="accordion-body">
+
+               <section class="tabs-section pt-1 pb-1  ">
+
+                 <nav>
+                   <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                     <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                       type="button" role="tab" aria-controls="nav-home" aria-selected="false">Flight Information
+                     </button>
+
+                     <button class="nav-link" id="nav-cancellation-tab" data-bs-toggle="tab"
+                       data-bs-target="#nav-cancellation" type="button" role="tab" aria-controls="nav-profile"
+                       aria-selected="false">Cancellation</button>
+
+                     <button class="nav-link" id="nav-datechange-tab" data-bs-toggle="tab"
+                       data-bs-target="#nav-datechange" type="button" role="tab" aria-controls="nav-contact"
+                       aria-selected="false">Date
+                       Change</button>
+
+                     <button class="nav-link" id="nav-baggage-tab" data-bs-toggle="tab" data-bs-target="#nav-baggage"
+                       type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Baggage</button>
+                   </div>
+                 </nav>
+               </section>
 
 
              <div class="tab-content" id="nav-tabContent">
@@ -211,15 +203,14 @@
               <!-- Cancellation tab  start-->
               <div class="tab-pane fade" id="nav-cancellation" role="tabpanel" aria-labelledby="nav-cancellation-tab">
 
-               <div class="row justify-content-center align-items-center d-flex pe-4
-                                                pt-4 pb-4">
+               <div class="row justify-content-center align-items-center d-flex pe-4 pt-4 pb-4 pe-4 ps-4">
 
                 <div class="col-md-5 pe-5 ">
 
                  <div class="citydiv d-flex align-items-center">
                   <h6 class="cityname pe-4">LHE</h6>
                   <img src="assets/media/flightfilter/Plane icon.png" class=" w-50 secondplaneimage  ">
-                  <h6 class="cityname ps-5 ms-2">KHI</h6>
+                  <h6 class="cityname ps-2">KHI</h6>
                  </div>
 
                  <div class="refundbtndiv align-items-center pt-4 pe-4">
@@ -234,7 +225,7 @@
 
                 </div>
 
-                <div class="col-md-6 align-items-center pe-5 ps-5">
+                <div class="col-md-7 align-items-center pe-2 ps-2">
 
                  <table class="table table-bordered">
                   <thead>
@@ -272,10 +263,6 @@
 
                 </div>
 
-                <div class="col-md-1 align-items-center">
-
-                </div>
-
                </div>
 
               </div>
@@ -285,15 +272,14 @@
               <!-- Date change tab start-->
 
               <div class="tab-pane fade" id="nav-datechange" role="tabpanel" aria-labelledby="nav-datechange-tab">
-               <div class="row justify-content-center align-items-center d-flex pe-4
-                                                pt-4 pb-4">
+               <div class="row justify-content-center align-items-center d-flex pe-4 pt-4 pb-4 pe-4 ps-4">
 
                 <div class="col-md-5 pe-5 ">
 
                  <div class="citydiv d-flex align-items-center">
                   <h6 class="cityname pe-4">LHE</h6>
                   <img src="assets/media/flightfilter/Plane icon.png" class=" w-50 secondplaneimage  ">
-                  <h6 class="cityname ps-5 ms-2">KHI</h6>
+                  <h6 class="cityname ps-2">KHI</h6>
                  </div>
 
                  <div class="refundbtndiv align-items-center pt-4 pe-4">
@@ -308,7 +294,7 @@
 
                 </div>
 
-                <div class="col-md-6 align-items-center pe-5 ps-5">
+                <div class="col-md-7 align-items-center pe-2 ps-2">
 
                  <table class="table table-bordered">
                   <thead>
@@ -345,8 +331,6 @@
 
                 </div>
 
-                <div class="col-md-1 align-items-center">
-                </div>
                </div>
               </div>
 
@@ -354,7 +338,7 @@
               <!-- Baggage tab start-->
 
               <div class="tab-pane fade" id="nav-baggage" role="tabpanel" aria-labelledby="nav-baggage-tab">
-               <div class="row justify-content-center align-items-center d-flex pe-4 pt-4 pb-4">
+               <div class="row justify-content-center align-items-center d-flex pt-4 pb-4 pe-4 ps-4">
 
                 <div class="col-md-7 pe-5 ">
 
@@ -403,7 +387,7 @@
                     </h6>
 
                    </div>
-                   <button type="button" id="farebtn" class="btn  mt-3">Select this fare
+                   <button type="button" id="farebtn2" class="btn  mt-3">Select this fare
                    </button>
                   </div>
                   <div class="col-md-3 col-6">
@@ -422,7 +406,7 @@
                     </h6>
 
                    </div>
-                   <button type="button" id="farebtn" class="btn  mt-3">Select this fare
+                   <button type="button" id="farebtn2" class="btn  mt-3">Select this fare
                    </button>
                   </div>
 
@@ -461,14 +445,14 @@
        <!-- hide show section -->
        <section class="hideshow ">
         <div class="row pt-2 pb-2 justify-content-center align-items-center ">
-         <div class="col-md-10 col-sm-8 col-6 d-flex text-start  ">
-          <p class="durationstop ps-5">Cost Includes</p>
-          <i class="fas fa-briefcase briefcase"></i>
+         <div class="col-md-2 col-sm-8 col-6 d-flex text-start  ">
+          <p class="durationstop ps-3 pt-2">Cost Includes</p>
+          <i class="fas fa-briefcase briefcase pt-2"></i>
          </div>
-         <div class="col-md-2 col-sm-6 col-6 d-flex text-end  ">
-          <p class="durationstop ps-5 mb-0" id="show" style="display: none;">Show Details
+         <div class="col-md-3 col-sm-6 col-6 d-flex text-end  ">
+          <p class="durationstop ps-3 mb-0" id="show" style="display: none;">Check Details
           </p>
-          <p class="durationstop ps-5 mb-0" id="hide">Hide Details</p>
+          <p class="durationstop ps-3 mb-0" id="hide">Hide Details</p>
           <span class="accordion-button toggle-arrow" type="button" data-bs-toggle="collapse"
            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
 
@@ -476,6 +460,8 @@
           <!-- <span data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
                             aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" class="toggle-arrow"><i class=" fas
                             fa-chevron-down checkdetail"></i></span> -->
+         </div>
+         <div class="col-md-7 col-sm-8 col-6  ">
          </div>
         </div>
 
@@ -487,26 +473,100 @@
 
     </div>
 
+    <div class="col-lg-3 col-md-12 ps-1 mt-5 pt-5 pe-4 ">
+     <div class="summarybox">
+      <h3 class="summary-name">SUMMARY</h3>
+      <hr class="hr w-100">
+      <div class="flightdetailsummary d-flex align-items-center pt-4">
+         <p class="summarydetailscl ps-3">Sareen Air (Adult) X1</p>
+         <p class="summarydetailpkr">Pkr. 7,630</p>
+      </div>
+       <hr class="hr w-100">
+       <div class="flightdetailsummary d-flex align-items-center pt-4">
+         <p class="summarydetailscl ps-3">Tax (Adult) X1</p>
+         <p class="taxdetailpkr">Pkr. 2,000</p>
+       </div>
+
+       <hr class="hr w-100">
+       <div class="flightdetailsummary d-flex align-items-center pt-4">
+         <p class="summarydetailtext ps-3">Price You Pay</p>
+         <p class="taxdetailprice">Pkr. 9,630</p>
+       </div>
+
+     </div>
+
+     <!-- promo box -->
+      <div class="summarybox mt-3 p-4 pb-4">
+      <p class="summarydetailtext">Promo Code</p>
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control promo" id="exampleInputpromo" aria-describedby="promoHelp"
+            placeholder="Enter Your Promo Code To Get Discount">
+        </div>
+      </form>
+
+      </div>
+
+       <button type="button" id="cb-btn" class="btn w-100 mt-4">CONTINUE TO BOOKING</button>
+
+    </div>
+
    </div>
   </div>
 
  </section>
- </div>
- <div class="col-md-4">
 
- </div>
- </div>
- </div>
- </section>
 
 
  <!---------------------------------------------- end booking card section-------------------------------------->
+ <!-- THIRD -->
+
+ <section class="footer pt-5 mt-5">
+  <div class="container">
+   <div class="section-heading text-center">
+    <h2 class="main-heading">Contact Us Any Time</h2>
+    <h1 class="style-heading">We Love To Be Social</h1>
+   </div>
+   <div class="row footer-row">
+    <div class="col-12 text-center">
+     <ul class="list-inline menu-links">
+      <li class="list-inline-item"><a href="">Home</a></li>
+      <li class="list-inline-item"><a href="">My Trips</a></li>
+      <li class="list-inline-item"><a href="">About Us</a></li>
+     </ul>
+     <ul class="list-inline social-icons pt-3">
+      <li class="list-inline-item"><a href=""><img src="assets/media/Email.png"></a></li>
+      <li class="list-inline-item"><a href=""><img src="assets/media/comment.png"></a></li>
+      <li class="list-inline-item"><a href=""><img src="assets/media/Calendar.png"></a></li>
+      <li class="list-inline-item"><a href=""><img src="assets/media/Security.png"></a></li>
+      <li class="list-inline-item"><a href=""><img src="assets/media/time.png"></a></li>
+     </ul>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-12 text-center">
+     <p class="copyright">&copy; Spatay 2021. All right reserved</p>
+    </div>
+   </div>
+  </div>
+ </section>
+ <!-- End Footer -->
 
  <!-- Bootstrap core JavaScript -->
 
  <script src='assets/js/bootstrap.min.js'></script>
  <script src="assets/js/jquery.js"></script>
 
+ <script>
+   $('.toggle-arrow').click(function () {
+     $('#hide').toggle();
+     $('#show').toggle();
+   });
+
+   $('.toggle-arrow1').click(function () {
+     $('#hide1').toggle();
+     $('#show1').toggle();
+   });
  </script>
 </body>
 
