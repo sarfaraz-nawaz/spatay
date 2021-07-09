@@ -28,6 +28,68 @@ body{
     text-transform: capitalize;
     font-weight: 500;
 }
+.flights-details{
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
 .filter-section .dropdown-toggle::after{
 	font-weight: 600;
+}
+.flight-tabs{
+	background-color: #EBECF0;
+	border-radius: 50px;
+	/*padding: 10px;*/
+}
+.flight-tabs .nav-item{
+	padding-left: 0;
+	padding-right: 0;
+}
+.flight-tabs .nav-link{
+	display: flex;
+}
+.flight-tabs .nav-link.active{
+	background-color: #de5921 !important;
+	position: relative;
+	border : 0;
+	border-radius: 50px;
+}
+.plane-circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgb(49 52 129 / 35%);
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    background-color: #fff;
+    display: none;
+}
+.plane-circle img{
+	width: 100%;
+}
+.tab-text small{
+	font-size: 10px;
+	color: #A1A1B4;
+}
+.flight-tabs .nav-link.active .plane-circle{
+	top: 1px;
+    display: block;
+    position: absolute;
+    right: -5px;
+    padding-top: 11px;
+}
+.flight-tabs .nav-link.active .tab-text{
+	color: #fff !important;
+	margin-left: 25px;
+}
+.flight-tabs .nav-link.active .tab-text small{
+	color: #fff;
+}
+@media(max-width:767px){
+	.flight-tabs {
+	    background-color: #EBECF0;
+	    border-radius: 50px;
+	    /* padding: 10px; */
+	    display: block !important;
+	}
 }
