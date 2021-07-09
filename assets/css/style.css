@@ -646,15 +646,16 @@ hr
 .contactdetail
 {
   background-color: white;
-  box-shadow: 0 8px 10px 0 #ebecf0;
+  box-shadow: 0 8px 20px 0 #ebecf0;
   margin: 0;
 }
 .cd
 {
   background-color: #1A1C3D;
   color: white;
-  width: 19%;
+  /* width: 19%; */
   padding-left: 15px;
+  padding-right: 15px;;
   padding-top: 4px;
   padding-bottom: 4px;
   border-bottom-right-radius: 4px;
@@ -699,8 +700,8 @@ hr
   font-family: "Product sans";
   font-size: 22px !important;
   color: white;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
+  padding-left: 3.8rem;
+  padding-right: 3.8rem;
 }
 #paylater-btn {
   /* background-color: #DE5921; */
@@ -708,17 +709,245 @@ hr
   font-size: 22px !important;
   border:1px solid #A1A1B4;
   color: #A1A1B4;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
+  margin-left: 10px;
+  padding-left: 3.8rem;
+  padding-right: 3.8rem;
+}
+.paymentmethod
+{
+  width: 35px;
+  height: 35px;
+}
+.footerpayment
+{
+  margin-top: 12rem;
+  /* padding-bottom: 1rem; */
 }
 
 
 
+/*  -----------------------  Process page   --------------------------- */
 
+.refername
+{
+  font-family: "Roboto";
+  color: #555555;
+  font-size: 16px;
+  font-weight: 600;
+}
+.flightinfo
+{
+   font-family: "Roboto";
+   color: #A19D9C;
+   font-size: 14px;
+   
+}
+.refnumber
+{
+  font-family: "Roboto";
+  color: #555555;
+  font-size: 13px;
+  font-weight: 500;
+}
+#managebooking-btn {
+  /* background-color: #DE5921; */
+  font-family: "Roboto";
+  font-size: 18px;
+  border: 1px solid #A1A1B4;
+  color: #A1A1B4;
+   font-weight: 500;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+}
+#printpage-btn {
+  background-color: #1A1C3D;
+  font-family: "Roboto";
+  font-size: 18px;
+  border: 1px solid #A1A1B4;
+  color: white;
+  font-weight: 500;
+  margin-left: 10px;
+  padding-left: 2.8rem; 
+ padding-right: 2.8rem; 
+}
+.timersection {
+  background: #1A1C3D !important;
+  border-radius: 4px;
+}
+.timer
+{
+  color: white;
+  font-size: 100px;
+  font-family: "Product sans";
+  
+}
+.timertext {
+  color: white;
+  font-size: 14px;
+  font-family: "Product sans";
+  margin: auto;
+  padding-right: 4rem;
+  padding-bottom: 6px;
 
+}
+.confirm-detail
+{
+  color: #1A1C3D;
+  font-size: 14px;
+  margin-top: 1rem;
+  font-weight: bold;
+  padding: 0;
+  font-family: "Product sans";
+}
+.contactsection
+{
+    background-color: white;
+    box-shadow: 0 8px 20px 0 #ebecf0;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+   
+}
+/* .travllerinfo
+{
+  padding:0 !important;
+ 
+} */
+.emailfa
+{
+  color: #A1A1B4;
+}
+.resend
+{
+  color: #1A1C3D;
+  font-family: "Product sans";
+  text-decoration: none;
+}
+.contacticon
+{
+  width: 37px;
+  margin-top: 3px;
+  height: 30px;
+}
 
+.tablesection
+{
+  background-color: white;
+  box-shadow: 0 8px 20px 0 #ebecf0;
+  margin: auto;
+  border-radius: 8px !important;
+  padding:0 !important;
+}
+.travllerinfo td
+{
+ padding: 2rem !important;
+}
+.travllerinfo tr th{
+  padding-left: 2rem !important;
+}
+.phone
+{
+  padding: 1.2rem;
+  font-size: 14px;
+  color: #ced4da;
+  
+}
+.phone::placeholder {
+  font-size: 12px;
+  color: #ced4da;
+}
+.COUNTRYCODE
+{
+   color: #A1A1B4;
+}
 
+/* Booking tab */
 
+#loginregister-btn {
+  background-color: #DE5921;
+  font-family: "Roboto";
+  font-size: 13px !important;
+  color: white;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.example
+{
+  font-size: 10px;
+  margin-top: 8px;
+  color: #A1A1B4;
+
+}
+ .form-label2 {
+  color: #1A1C3D;
+  font-size: 14px;
+  font-family: "Product sans";
+  font-weight: bold;
+}
+.emailfield .input-group {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 7px;
+}
+.phonedetail .form-control-feedback
+
+{
+  color: #ced4da;
+}
+.loality-detail
+{
+   font-size: 11px;
+   font-family: "Product sans";
+   color: #A1A1B4;
+}
+.earn-points
+{
+  font-size: 81px;
+  font-family: "Product sans";
+  color: #DE5921;
+  font-weight: bold;
+  text-align: center;
+
+}
+.total-points
+{
+   font-size: 18px;
+   font-family: "Product sans";
+   color: #1A1C3D;
+   font-weight: bold;
+   
+}
+.earn-points2
+{
+   font-size: 40px;
+   font-family: "Product sans";
+   color: #DE5921;
+   font-weight: bold;
+   
+}
+.plane
+{
+  width:120px;
+  height: 50px;
+  padding: 8px;
+  margin-top: 2.5rem;
+}
+.phonedetail option
+{
+  background-color: white;
+  font-size: 14px;
+  color: #A1A1B4;
+}
+.title-select
+{
+  color: #A1A1B4 !important;
+}
+.condition
+{
+  font-size: 12px;
+  font-family: "Product sans";
+  color: #DE5921;
+}
 
 
 
@@ -803,6 +1032,62 @@ hr
     border-radius: 8px;
     padding-bottom: 1rem;
   }
+   .timer {
+     color: white;
+     font-size: 50px;
+     font-family: "Product sans";
+
+   }
+
+   .timertext {
+     color: white;
+     font-size: 12px;
+     font-family: "Product sans";
+     margin: auto;
+     padding-right: 4rem;
+     padding-bottom: 6px;
+
+   }
+   .booking-process .nav-tabs .nav-link {
+     color: #EBECF0;
+     font-family: "Product sans";
+     padding-left: 1rem;
+     padding-right: 1rem;
+     font-size: 15px !important;
+     text-transform: uppercase;
+   }
+
+   .counter {
+     height: 20px;
+     width: 20px;
+     color: rgb(26, 28, 61);
+     border-radius: 100%;
+     background-color: rgb(235, 236, 240);
+     display: inline-block;
+   }
+
+   #managebooking-btn {
+     /* background-color: #DE5921; */
+     font-family: "Roboto";
+     font-size: 14px;
+     border: 1px solid #A1A1B4;
+     color: #A1A1B4;
+     font-weight: 500;
+     padding-left: 1rem;
+     padding-right: 1rem;
+   }
+
+   #printpage-btn {
+     background-color: #1A1C3D;
+     font-family: "Roboto";
+     font-size: 14px;
+     border: 1px solid #A1A1B4;
+     color: white;
+     font-weight: 500;
+     margin-left: 10px;
+     padding-left: 1rem;
+     padding-right: 1rem;
+   }
 }
 
 @media(max-width: 767px) {
@@ -987,21 +1272,78 @@ hr
   .mobilcolumn {
     padding-left: 1.8rem !important;
   }
-  .cd {
-    background-color: #1A1C3D;
-    color: white;
-    width: 30%;
-    padding-left: 15px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-right-radius: 4px;
-
-    font-family: "Product sans";
-  }
+ 
   .summarycolumn2 {
     padding-right: 1rem;
     padding-left: 1rem;
     margin-top: 4rem;
+  }
+  /* process page */
+  .booking-process .nav-tabs .nav-link {
+    color: #EBECF0;
+    font-family: "Product sans";
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 15px !important;
+    text-transform: uppercase;
+  }
+  .counter {
+    height: 20px;
+    width: 20px;
+    color: rgb(26, 28, 61);
+    border-radius: 100%;
+    background-color: rgb(235, 236, 240);
+    display: inline-block;
+  }
+  #managebooking-btn {
+    /* background-color: #DE5921; */
+    font-family: "Roboto";
+    font-size: 14px;
+    border: 1px solid #A1A1B4;
+    color: #A1A1B4;
+    font-weight: 500;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #printpage-btn {
+    background-color: #1A1C3D;
+    font-family: "Roboto";
+    font-size: 14px;
+    border: 1px solid #A1A1B4;
+    color: white;
+    font-weight: 500;
+    margin-left: 10px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .timer {
+    color: white;
+    font-size: 50px;
+    font-family: "Product sans";
+
+  }
+
+  .timertext {
+    color: white;
+    font-size: 12px;
+    font-family: "Product sans";
+    margin: auto;
+    padding-right: 4rem;
+    padding-bottom: 6px;
+
+  }
+  .loality-detail {
+    font-size: 11px;
+    font-family: "Product sans";
+    color: #A1A1B4;
+    margin-top: 3rem;
+  }
+  .travllerinfo td {
+    padding: 1rem !important;
+  }
+
+  .travllerinfo tr th {
+    padding-left: 1rem !important;
   }
 }
