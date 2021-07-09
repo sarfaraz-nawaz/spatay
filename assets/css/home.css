@@ -620,6 +620,9 @@ input[type="number"] {
 	    background: #fff;
 	    padding: 0;
 	}
+	.search-dropdown .search-container {
+	    width: 300px;
+	}
 }
 @media(max-width: 700px){
 	#ui-datepicker-div {
@@ -662,7 +665,10 @@ input[type="number"] {
 	}
 }
 @media(max-width: 500px){
-	.input-group .quantity-field {
+	/*.input-group .quantity-field {
 	    width: 52px;
+	}*/
+	.search-dropdown .search-container {
+	    width: 300px;
 	}
 }
