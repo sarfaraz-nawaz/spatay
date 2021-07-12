@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spatay</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/home.css">
@@ -76,7 +78,7 @@
   <section class="banner-section">
     <div class="container">
       <div class="row">
-        <div class="col-sm-7">
+        <div class="col-sm-12 col-md-7 col-12">
 
           <div class="flight" id="flightbox">
              
@@ -98,27 +100,196 @@
                     <label for="inputEmail4" class="form-label text-uppercase">From</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
-                      <input type="email" class="form-control p-0 ms-2" placeholder="Enter Your First Name" id="inputEmail4">
+                      <!-- <input type="email" class="form-control p-0 ms-2" placeholder="Enter Your First Name" id="inputEmail4"> -->
+                        <input type="text" name="form" id="from-keyword" class="form-control" id="transcripts" placeholder="Karachi, Pakistan (KHR)" style="position: relative;">
+                        <div class="search-dropdown" style="position: absolute; top: 100%;    z-index: 99999;">
+                          <div class="search-container" id="search-from" style="display: none;">
+                            <ul id="search-container-from" style="display: block;">
+                              <li>
+                                <div class="row mx-0">
+                                  <div class="col-8">
+                                    <div class="flight-title">
+                                      <div class="d-flex justify-content-between">
+                                        <h5>Lahore</h5><h5>(LHE)</h5>
+                                      </div>
+                                      <small>Allama Iqbal International Airport</small>
+                                    </div>
+                                  </div>
+                                  <div class="col-4 pe-0">
+                                    <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="row mx-0">
+                                  <div class="col-8">
+                                    <div class="flight-title">
+                                      <div class="d-flex justify-content-between">
+                                        <h5>Lahr</h5><h5>(LHA)</h5>
+                                      </div>
+                                      <small>Allama Iqbal International Airport</small>
+                                    </div>
+                                  </div>
+                                  <div class="col-4 pe-0">
+                                    <span>Germany <img src="assets/media/home/germany.png" class="flag-img"></span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="row mx-0">
+                                  <div class="col-8">
+                                    <div class="flight-title">
+                                      <div class="d-flex justify-content-between">
+                                        <h5>Lahore</h5><h5>(LHE)</h5>
+                                      </div>
+                                      <small>Allama Iqbal International Airport</small>
+                                    </div>
+                                  </div>
+                                  <div class="col-4 pe-0">
+                                    <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="row mx-0">
+                                  <div class="col-8">
+                                    <div class="flight-title">
+                                      <div class="d-flex justify-content-between">
+                                        <h5>Lahore</h5><h5>(LHE)</h5>
+                                      </div>
+                                      <small>Allama Iqbal International Airport</small>
+                                    </div>
+                                  </div>
+                                  <div class="col-4 pe-0">
+                                    <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                  </div>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="row mx-0">
+                                  <div class="col-8">
+                                    <div class="flight-title">
+                                      <div class="d-flex justify-content-between">
+                                        <h5>Lahore</h5><h5>(LHE)</h5>
+                                      </div>
+                                      <small>Allama Iqbal International Airport</small>
+                                    </div>
+                                  </div>
+                                  <div class="col-4 pe-0">
+                                    <span>pakistan <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                  </div>
+                                </div>
+                              </li>
+                              
+                              
+                            </ul>
+                          </div>
+                        </div>
                     </div>
                   </div>
                   <div class="col-6">
                     <label for="inputEmail4" class="form-label text-uppercase">Where To</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
-                      <input type="email" class="form-control p-0 ms-2" placeholder="Enter Your Last Name" id="inputEmail4">
+                      <!-- <input type="email" class="form-control p-0 ms-2" placeholder="Enter Your Last Name" id="inputEmail4"> -->
+                      <input type="text" name="keyword" id="where-keyword" class="form-control" id="transcripts" placeholder="Karachi, Pakistan (KHR)" style="position: relative;">
+                      <div class="search-dropdown" style="position: absolute; top: 100%;    z-index: 99999;">
+                        <div class="search-container" id="search-where" style="display: none;">
+                          <ul id="search-container-where" style="display: block;">
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahr</h5><h5>(LHA)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>Germany <img src="assets/media/home/germany.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakistan <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            
+                            
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-12">
                     <label for="inputEmail4" class="form-label">Departure Date</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback far fa-calendar"></span>
-                      <input type="date" class="form-control p-0 ms-2" placeholder="Enter Your Email Address" id="inputEmail4">
+                      <!-- <input type="date" class="form-control p-0 ms-2" placeholder="Enter Your Email Address" id="inputEmail4"> -->
+                      <input type="text" id="datepicker-oneWay" class="form-control p-0 ms-2 datepicker">
                     </div>
                   </div>
                   <h4 class="site-font text-uppercase mt-4">Travellers</h4>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Adult</label>
-                    <div class="input-group align-items-center">
+                    <div class="input-group align-items-center justify-content-between">
                       <input type="button" value="-" class="button-minus" data-field="quantity">
                       <input type="number" step="1" max="" value="00" name="quantity" class="quantity-field">
                       <input type="button" value="+" class="button-plus" data-field="quantity">
@@ -126,7 +297,7 @@
                   </div>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Child</label>
-                    <div class="input-group align-items-center">
+                    <div class="input-group align-items-center justify-content-between">
                       <input type="button" value="-" class="button-minus" data-field="quantity">
                       <input type="number" step="1" max="" value="00" name="quantity" class="quantity-field">
                       <input type="button" value="+" class="button-plus" data-field="quantity">
@@ -134,38 +305,33 @@
                   </div>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Adult</label>
-                    <div class="input-group align-items-center">
+                    <div class="input-group align-items-center justify-content-between">
                       <input type="button" value="-" class="button-minus" data-field="quantity">
                       <input type="number" step="1" max="" value="00" name="quantity" class="quantity-field">
                       <input type="button" value="+" class="button-plus" data-field="quantity">
                     </div>
                   </div>
                   <h4 class="site-font text-uppercase mt-4">Select Class</h4>
-                  <div class="col-3">
+                  <div class="d-flex justify-content-between">
+                    
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="flight-class" id="economy" value="option1" checked>
                       <label class="form-check-label" for="economy">
                         Economy
                       </label>
                     </div>
-                  </div>
-                  <div class="col-3">
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="flight-class" id="premiumEconomy" value="option1">
                       <label class="form-check-label" for="premiumEconomy">
                         Premium Economy
                       </label>
                     </div>
-                  </div>
-                  <div class="col-3">
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="flight-class" id="business" value="option1" >
                       <label class="form-check-label" for="business">
                         Business Class
                       </label>
                     </div>
-                  </div>
-                  <div class="col-3">
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="flight-class" id="firstClass" value="First Class">
                       <label class="form-check-label" for="firstClass">
@@ -184,34 +350,202 @@
                     <label for="inputEmail4" class="form-label text-uppercase">From</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
-                      <input type="email" class="form-control p-0 ms-2" placeholder="Enter Your First Name" id="inputEmail4">
+                      <input type="text" class="form-control p-0 ms-2" placeholder="Karachi, Pakistan (KHR)" id="from-keyword-round">
+                      <div class="search-dropdown" style="position: absolute; top: 100%;    z-index: 99999;">
+                        <div class="search-container" id="search-from-round" style="display: none;">
+                          <ul id="search-container-where" style="display: block;">
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahr</h5><h5>(LHA)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>Germany <img src="assets/media/home/germany.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakistan <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            
+                            
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-6">
                     <label for="inputEmail4" class="form-label text-uppercase">Where To</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
-                      <input type="email" class="form-control p-0 ms-2" placeholder="Enter Your Last Name" id="inputEmail4">
+                      <input type="text" class="form-control p-0 ms-2" placeholder="Karachi, Pakistan (KHR)" id="where-keyword-round">
+                      <div class="search-dropdown" style="position: absolute; top: 100%;    z-index: 99999;">
+                        <div class="search-container" id="search-where-round" style="display: none;">
+                          <ul id="search-container-where" style="display: block;">
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahr</h5><h5>(LHA)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>Germany <img src="assets/media/home/germany.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakistan <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            
+                            
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-6">
                     <label for="inputEmail4" class="form-label">Departure Date</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback far fa-calendar"></span>
-                      <input type="date" class="form-control p-0 ms-2" placeholder="Enter Your Email Address" id="inputEmail4">
+                      <!-- <input type="date" class="form-control p-0 ms-2" placeholder="Enter Your Email Address" id="inputEmail4"> -->
+                      <input type="text" id="datepicker-round-depr" class="form-control p-0 ms-2 datepicker">
                     </div>
                   </div>
                   <div class="col-6">
                     <label for="inputEmail4" class="form-label">Return Date</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback far fa-calendar"></span>
-                      <input type="date" class="form-control p-0 ms-2" placeholder="Enter Your Email Address" id="inputEmail4">
+                      <!-- <input type="date" class="form-control p-0 ms-2" placeholder="Enter Your Email Address" id="inputEmail4"> -->
+                      <input type="text" id="datepicker-round-return" class="form-control p-0 ms-2 datepicker">
                     </div>
                   </div>
                   <h4 class="site-font text-uppercase mt-4">Travellers</h4>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Adult</label>
-                    <div class="input-group align-items-center">
+                    <div class="input-group align-items-center justify-content-between">
                       <input type="button" value="-" class="button-minus" data-field="quantity">
                       <input type="number" step="1" max="" value="00" name="quantity" class="quantity-field">
                       <input type="button" value="+" class="button-plus" data-field="quantity">
@@ -219,7 +553,7 @@
                   </div>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Child</label>
-                    <div class="input-group align-items-center">
+                    <div class="input-group align-items-center justify-content-between">
                       <input type="button" value="-" class="button-minus" data-field="quantity">
                       <input type="number" step="1" max="" value="00" name="quantity" class="quantity-field">
                       <input type="button" value="+" class="button-plus" data-field="quantity">
@@ -227,38 +561,32 @@
                   </div>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Adult</label>
-                    <div class="input-group align-items-center">
+                    <div class="input-group align-items-center justify-content-between">
                       <input type="button" value="-" class="button-minus" data-field="quantity">
                       <input type="number" step="1" max="" value="00" name="quantity" class="quantity-field">
                       <input type="button" value="+" class="button-plus" data-field="quantity">
                     </div>
                   </div>
                   <h4 class="site-font text-uppercase mt-4">Select Class</h4>
-                  <div class="col-3">
+                  <div class="d-flex justify-content-between">
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="flight-class" id="economy" value="option1" checked>
                       <label class="form-check-label" for="economy">
                         Economy
                       </label>
                     </div>
-                  </div>
-                  <div class="col-3">
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="flight-class" id="premiumEconomy" value="option1">
                       <label class="form-check-label" for="premiumEconomy">
                         Premium Economy
                       </label>
                     </div>
-                  </div>
-                  <div class="col-3">
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="flight-class" id="business" value="option1" >
                       <label class="form-check-label" for="business">
                         Business Class
                       </label>
                     </div>
-                  </div>
-                  <div class="col-3">
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="flight-class" id="firstClass" value="First Class">
                       <label class="form-check-label" for="firstClass">
@@ -277,48 +605,382 @@
                     <label for="inputEmail4" class="form-label text-uppercase">From</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
-                      <input type="email" class="form-control p-0 ms-2" placeholder="Enter Your First Name" id="inputEmail4">
+                      <input type="text" class="form-control p-0 ms-2" placeholder="Karachi, Pakistan (KHR)" id="from-keyword-multi1">
+                      <div class="search-dropdown" style="position: absolute; top: 100%;    z-index: 99999;">
+                        <div class="search-container" id="search-from-multi1" style="display: none;">
+                          <ul id="search-container-where" style="display: block;">
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahr</h5><h5>(LHA)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>Germany <img src="assets/media/home/germany.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakistan <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            
+                            
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-6">
                     <label for="inputEmail4" class="form-label text-uppercase">Where To</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
-                      <input type="email" class="form-control p-0 ms-2" placeholder="Enter Your Last Name" id="inputEmail4">
+                      <input type="text" class="form-control p-0 ms-2" placeholder="Karachi, Pakistan (KHR)" id="where-keyword-multi1">
+                      <div class="search-dropdown" style="position: absolute; top: 100%;    z-index: 99999;">
+                        <div class="search-container" id="search-where-multi1" style="display: none;">
+                          <ul id="search-container-where" style="display: block;">
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahr</h5><h5>(LHA)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>Germany <img src="assets/media/home/germany.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakistan <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            
+                            
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-12">
                     <label for="inputEmail4" class="form-label">Departure Date</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback far fa-calendar"></span>
-                      <input type="date" class="form-control p-0 ms-2" placeholder="Enter Your Email Address" id="inputEmail4">
+                      <!-- <input type="date" class="form-control p-0 ms-2" placeholder="Enter Your Email Address" id="inputEmail4"> -->
+                      <input type="text" id="datepicker-multi1" class="form-control p-0 ms-2 datepicker">
                     </div>
                   </div>
                   <div class="col-6">
                     <label for="inputEmail4" class="form-label text-uppercase">From</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
-                      <input type="email" class="form-control p-0 ms-2" placeholder="Enter Your First Name" id="inputEmail4">
+                      <input type="text" class="form-control p-0 ms-2" placeholder="Karachi, Pakistan (KHR)" id="from-keyword-multi2">
+                      <div class="search-dropdown" style="position: absolute; top: 100%;    z-index: 99999;">
+                        <div class="search-container" id="search-from-multi2" style="display: none;">
+                          <ul id="search-container-where" style="display: block;">
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahr</h5><h5>(LHA)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>Germany <img src="assets/media/home/germany.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakistan <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            
+                            
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-6">
                     <label for="inputEmail4" class="form-label text-uppercase">Where To</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
-                      <input type="email" class="form-control p-0 ms-2" placeholder="Enter Your Last Name" id="inputEmail4">
+                      <input type="text" class="form-control p-0 ms-2" placeholder="Karachi, Pakistan (KHR)" id="where-keyword-multi2">
+                      <div class="search-dropdown" style="position: absolute; top: 100%;    z-index: 99999;">
+                        <div class="search-container" id="search-where-multi2" style="display: none;">
+                          <ul id="search-container-where" style="display: block;">
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahr</h5><h5>(LHA)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>Germany <img src="assets/media/home/germany.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakisatn <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="row mx-0">
+                                <div class="col-8">
+                                  <div class="flight-title">
+                                    <div class="d-flex justify-content-between">
+                                      <h5>Lahore</h5><h5>(LHE)</h5>
+                                    </div>
+                                    <small>Allama Iqbal International Airport</small>
+                                  </div>
+                                </div>
+                                <div class="col-4 pe-0">
+                                  <span>pakistan <img src="assets/media/pak-flag.png" class="flag-img"></span>
+                                </div>
+                              </div>
+                            </li>
+                            
+                            
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="col-12">
                     <label for="inputEmail4" class="form-label">Departure Date</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback far fa-calendar"></span>
-                      <input type="date" class="form-control p-0 ms-2" placeholder="Enter Your Email Address" id="inputEmail4">
+                      <!-- <input type="date" class="form-control p-0 ms-2" placeholder="Enter Your Email Address" id="inputEmail4"> -->
+                      <input type="text" id="datepicker-multi2" class="form-control p-0 ms-2 datepicker">
                     </div>
                   </div>
                   <h4 class="site-font text-uppercase mt-4">Travellers</h4>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Adult</label>
-                    <div class="input-group align-items-center">
+                    <div class="input-group align-items-center justify-content-between">
                       <input type="button" value="-" class="button-minus" data-field="quantity">
                       <input type="number" step="1" max="" value="00" name="quantity" class="quantity-field">
                       <input type="button" value="+" class="button-plus" data-field="quantity">
@@ -326,7 +988,7 @@
                   </div>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Child</label>
-                    <div class="input-group align-items-center">
+                    <div class="input-group align-items-center justify-content-between">
                       <input type="button" value="-" class="button-minus" data-field="quantity">
                       <input type="number" step="1" max="" value="00" name="quantity" class="quantity-field">
                       <input type="button" value="+" class="button-plus" data-field="quantity">
@@ -334,38 +996,32 @@
                   </div>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Adult</label>
-                    <div class="input-group align-items-center">
+                    <div class="input-group align-items-center justify-content-between">
                       <input type="button" value="-" class="button-minus" data-field="quantity">
                       <input type="number" step="1" max="" value="00" name="quantity" class="quantity-field">
                       <input type="button" value="+" class="button-plus" data-field="quantity">
                     </div>
                   </div>
                   <h4 class="site-font text-uppercase mt-4">Select Class</h4>
-                  <div class="col-3">
+                  <div class="d-flex justify-content-between">
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="flight-class" id="economy" value="option1" checked>
                       <label class="form-check-label" for="economy">
                         Economy
                       </label>
                     </div>
-                  </div>
-                  <div class="col-3">
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="flight-class" id="premiumEconomy" value="option1">
                       <label class="form-check-label" for="premiumEconomy">
                         Premium Economy
                       </label>
                     </div>
-                  </div>
-                  <div class="col-3">
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="flight-class" id="business" value="option1" >
                       <label class="form-check-label" for="business">
                         Business Class
                       </label>
                     </div>
-                  </div>
-                  <div class="col-3">
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="flight-class" id="firstClass" value="First Class">
                       <label class="form-check-label" for="firstClass">
@@ -464,7 +1120,7 @@
           <img src="assets/media/home/plane-img.png" class="w-100">
         </div>
         <div class="col-sm-6">
-          <div class="offer-box">
+          <div class="offer-box h-100">
             <h1 class="offer-title">Karachi</h1>
             <h1 class="text-capitalize offer-subtitle">One way from Quetta</h1>
             <h5 class="offer-desc">Starting from USD 70*</h5>
@@ -676,6 +1332,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="assets/js/jquery.js"></script>
   <script src='assets/js/bootstrap.min.js'></script>
+  <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
   <script src='assets/js/all.min.js'></script>
   <script>
     function incrementValue(e) {
@@ -711,6 +1368,70 @@
     $('.input-group').on('click', '.button-minus', function(e) {
       decrementValue(e);
     });
+
+    $( ".datepicker" ).datepicker();
+
+    $('#from-keyword').keyup(function(){
+      if($(this).val() == "") {
+        $('#search-from').hide();
+      } else {
+        $('#search-from').show();
+      }
+    });
+
+    $('#where-keyword').keyup(function(){
+      if($(this).val() == "") {
+          $('#search-where').hide();
+        } else {
+          $('#search-where').show();
+        }
+    });
+    $('#from-keyword-round').keyup(function(){
+      if($(this).val() == "") {
+        $('#search-from-round').hide();
+      } else {
+        $('#search-from-round').show();
+      }
+    });
+
+    $('#where-keyword-round').keyup(function(){
+      if($(this).val() == "") {
+          $('#search-where-round').hide();
+        } else {
+          $('#search-where-round').show();
+        }
+    });
+    $('#from-keyword-multi1').keyup(function(){
+      if($(this).val() == "") {
+        $('#search-from-multi1').hide();
+      } else {
+        $('#search-from-multi1').show();
+      }
+    });
+
+    $('#where-keyword-multi1').keyup(function(){
+      if($(this).val() == "") {
+          $('#search-where-multi1').hide();
+        } else {
+          $('#search-where-multi1').show();
+        }
+    });
+    $('#from-keyword-multi2').keyup(function(){
+      if($(this).val() == "") {
+        $('#search-from-multi2').hide();
+      } else {
+        $('#search-from-multi2').show();
+      }
+    });
+
+    $('#where-keyword-multi2').keyup(function(){
+      if($(this).val() == "") {
+          $('#search-where-multi2').hide();
+        } else {
+          $('#search-where-multi2').show();
+        }
+    });
+
   </script>
 </body>
 </html>
