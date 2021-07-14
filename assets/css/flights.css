@@ -54,15 +54,15 @@ body{
 	border-radius: 50px;
 }
 .plane-circle{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    box-shadow: 0 8px 20px rgb(49 52 129 / 35%);
-    align-items: center;
-    justify-content: center;
-    padding: 7px;
-    background-color: #fff;
-    display: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgb(49 52 129 / 35%);
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  background-color: #fff;
+  display: none;
 }
 .plane-circle img{
 	width: 100%;
@@ -73,10 +73,10 @@ body{
 }
 .flight-tabs .nav-link.active .plane-circle{
 	top: 1px;
-    display: block;
-    position: absolute;
-    right: -5px;
-    padding-top: 11px;
+  display: block;
+  position: absolute;
+  right: -5px;
+  padding-top: 11px;
 }
 .flight-tabs .nav-link.active .tab-text{
 	color: #fff !important;
@@ -132,7 +132,7 @@ body{
   font-family: 'Product Sans';
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 1px;
+  /*letter-spacing: 1px;*/
   color: white;
   font-weight: 600;
 }

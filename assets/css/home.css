@@ -274,12 +274,18 @@ input[type="number"] {
 	padding: 8px 30px;
 	font-weight: 600;
 }
+.btn-style-one:hover{
+	background-color: #1A1C3D;
+}
 .btn-style-2{
 	background-color: #DE5921;
 	border-color: #DE5921;
 	padding: 8px 30px;
 	font-weight: 600;
 	letter-spacing: 1px;
+}
+.btn-style-2:hover{
+	background-color: #DE5921;
 }
 .offer-card .btn-style-one, .offer-card .btn-style-2{
 	width: 50%;

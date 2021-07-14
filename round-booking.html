@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/register.css">
+  <link rel="stylesheet" href="assets/css/flights.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
@@ -94,25 +95,23 @@
             </div>
 
             <div class="col-md-4 summarycolumn2   ">
-              <div class="summarybox ">
-                <h3 class="summary-name">SUMMARY</h3>
-                <hr class="hr w-100">
-                <div class="flightdetailsummary d-flex align-items-center pt-4">
-                  <p class="summarydetailscl ps-3">Sareen Air (Adult) X1</p>
-                  <p class="summarydetailpkr">Pkr. 7,630</p>
+              <div class="summarybox py-0">
+                <h3 class="summary-name mb-0 p-3">SUMMARY</h3>
+                
+                <div class="flightdetailsummary d-flex align-items-center justify-content-between py-4 px-3 border-top">
+                  <p class="summarydetailscl mb-0">Sareen Air (Adult) X1</p>
+                  <p class="summarydetailpkr ps-0 mb-0">Pkr. 7,630</p>
                 </div>
-                <hr class="hr w-100">
-                <div class="flightdetailsummary d-flex align-items-center pt-4">
-                  <p class="summarydetailscl ps-3">Tax (Adult) X1</p>
-                  <p class="taxdetailpkr">Pkr. 2,000</p>
+                
+                <div class="flightdetailsummary d-flex align-items-center justify-content-between py-4 px-3 border-top">
+                  <p class="summarydetailscl mb-0">Tax (Adult) X1</p>
+                  <p class="taxdetailpkr ps-0 mb-0">Pkr. 2,000</p>
                 </div>
-
-                <hr class="hr w-100">
-                <div class="flightdetailsummary d-flex align-items-center pt-4">
-                  <p class="summarydetailtext ps-3">Price You Pay</p>
-                  <p class="taxdetailprice">Pkr. 9,630</p>
+                
+                <div class="flightdetailsummary d-flex align-items-center justify-content-between py-4 px-3 border-top">
+                  <p class="summarydetailtext mb-0">Price You Pay</p>
+                  <p class="taxdetailprice ps-0 mb-0">Pkr. 9,630</p>
                 </div>
-
               </div>
             </div>
 
@@ -530,7 +529,7 @@
           </div>
           <div class="row">
             <div class="col-lg-8 text-end ">
-                   <button type="button" id="bookingconfirm-btn" class="btn text-end">CONFIRM</button>
+                <button type="button" class="btn bookingconfirm-btn">CONFIRM</button>
             </div>
           </div>
 
@@ -563,27 +562,27 @@
             </div>
 
             <div class="col-md-4 summarycolumn2 ps-5 mt-5 pt-5">
-              <div class="summarybox ">
-                <h3 class="summary-name">SUMMARY</h3>
-                <hr class="hr w-100">
-                <div class="flightdetailsummary d-flex align-items-center pt-4">
-                  <p class="summarydetailscl ps-3">Sareen Air (Adult) X1</p>
-                  <p class="summarydetailpkr">Pkr. 7,630</p>
+              <div class="summarybox py-0">
+                <h3 class="summary-name mb-0 p-3">SUMMARY</h3>
+                
+                <div class="flightdetailsummary d-flex align-items-center justify-content-between py-4 px-3 border-top">
+                  <p class="summarydetailscl mb-0">Sareen Air (Adult) X1</p>
+                  <p class="summarydetailpkr ps-0 mb-0">Pkr. 7,630</p>
                 </div>
-                <hr class="hr w-100">
-                <div class="flightdetailsummary d-flex align-items-center pt-4">
-                  <p class="summarydetailscl ps-3">Tax (Adult) X1</p>
-                  <p class="taxdetailpkr">Pkr. 2,000</p>
+                
+                <div class="flightdetailsummary d-flex align-items-center justify-content-between py-4 px-3 border-top">
+                  <p class="summarydetailscl mb-0">Tax (Adult) X1</p>
+                  <p class="taxdetailpkr ps-0 mb-0">Pkr. 2,000</p>
                 </div>
-
-                <hr class="hr w-100">
-                <div class="flightdetailsummary d-flex align-items-center pt-4">
-                  <p class="summarydetailtext ps-3">Price You Pay</p>
-                  <p class="taxdetailprice">Pkr. 9,630</p>
+                
+                <div class="flightdetailsummary d-flex align-items-center justify-content-between py-4 px-3 border-top">
+                  <p class="summarydetailtext mb-0">Price You Pay</p>
+                  <p class="taxdetailprice ps-0 mb-0">Pkr. 9,630</p>
                 </div>
-
               </div>
-              <button type="button" id="cb-btn" class="btn w-100 mt-4">CONTINUE TO BOOKING</button>
+              <div class="d-grid gap-2">
+                <button type="button" class="btn w-100 mt-4 booking-btn">CONTINUE TO BOOKING</button>
+              </div>
             </div>
 
           </div>
@@ -690,11 +689,11 @@
               <div class="col-md-6 col-12 d-flex mb-2 ">
                 <img src="assets/media/process/phone.png" alt="" class="contacticon">
                 <form class="phonenumber-form ms-3">
-                  <div class="input-group align-items-center p-1">
-                    <div class="input-group-text bg-transparent border-1 border-end countrycodediv">
-                      <span class="COUNTRYCODE">+92</span> </div>
-                    <input type="tel" placeholder="Enter Your PhoneNumber" class="form-control phone"
-                      id="inputPassword4">
+                  <div class="input-group align-items-center p-1 border border-1 rounded">
+                    <div class="input-group-text bg-transparent border-0 border-end p-2">
+                      <span class="COUNTRYCODE">+92</span> 
+                    </div>
+                    <input type="tel" placeholder="Enter Your PhoneNumber" class="form-control phone border-0 border-start" id="inputPassword4">
                   </div>
                 </form>
                 <a href="#" class="resend ms-1 mt-3">Resend</a>
@@ -703,32 +702,36 @@
             </div>
             <div class="row align-items-center justify-content-center  mt-3 ">
               <div class="tablesection mt-5 travllerinfo">
-                <table class="table table-bordered mb-0  ">
-                  <thead>
-                    <tr>
-                      <th>Name Of Traveller(S) </th>
-                      <th>Insurance No.</th>
-                      <th>Meals</th>
-                      <th>Baggage Allowance</th>
-                      <th>Seat Preference</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Mr. Ahmad Khan</td>
-                      <td>NA</td>
-                      <td>Meal Included</td>
-                      <td>1 Piece </td>
-                      <td>NA</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="table-responsive">
+                  <table class="table table-bordered mb-0  ">
+                    <thead>
+                      <tr>
+                        <th>Name Of Traveller(S) </th>
+                        <th>Insurance No.</th>
+                        <th>Meals</th>
+                        <th>Baggage Allowance</th>
+                        <th>Seat Preference</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Mr. Ahmad Khan</td>
+                        <td>NA</td>
+                        <td>Meal Included</td>
+                        <td>1 Piece </td>
+                        <td>NA</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
 
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="ticket" role="tabpanel" aria-labelledby="ticket-tab">jjjjj</div>
+        <div class="tab-pane fade" id="ticket" role="tabpanel" aria-labelledby="ticket-tab">
+          <h2 class="text-center">Design Not Available in Adobe XD</h2>
+        </div>
       </div>
 
   </section>
