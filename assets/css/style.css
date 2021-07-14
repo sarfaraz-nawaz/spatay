@@ -6,6 +6,11 @@ body {
   padding-bottom: auto;
 }
 
+.nav-item .nav-link:hover {
+  color: #de5921;
+  font-weight: bold;
+}
+
 .from {
   color: white;
   font-size: 11px;
@@ -280,10 +285,13 @@ border: 1px solid #ccc;
   color: #de5921 !important;
 }
 .airlinedropdown {
-  height: 150px;
+  height: 170px;
   overflow: auto;
   padding: 10px !important;
-  width: 14rem;
+  box-shadow: 0 8px 20px 0 #ebecf0;
+  left: -50px;
+  text-transform: capitalize;
+  width: 11rem;
 }
 
 
@@ -1127,7 +1135,7 @@ hr
 }
 .stopdropdown .airlineinput .filter
 {
-  font-size: 14px;
+  font-size: 12px;
   text-align: start;
   color: #A1A1B4;
   margin-right: 10px;
@@ -1140,9 +1148,220 @@ hr
   background-color: #de5921;
   border-color: #de5921;
 }
+.airlinedropdown::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
 
+ .airlinedropdown::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
 
+.airlinedropdown::-webkit-scrollbar-thumb {
+  background: #de5921;
+  border-radius: 10px;
+}
 
+/* / Handle on hover /  */
+.airlinedropdown::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.pricerangedropdown {
+
+  padding: 10px !important;
+  box-shadow: 0 8px 20px 0 #ebecf0;
+  left: -50px;
+  text-transform: capitalize;
+  width: 13rem;
+}
+.pricerangedropdown .pricetitle
+{
+  font-size: 12px;
+  color: #A1A1B4;
+}
+.pricerangedropdown .pricerange {
+  font-size: 12px;
+  color: #A1A1B4;
+  font-weight: bold;
+}
+.pricerangedropdown .slidecontainer {
+  width: 100%;
+}
+.pricerangedropdown .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5.5px;
+  /* border-radius: 5px; */
+  /* border-top-left-radius: 5px; */
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  background: #A1A1B4;
+  outline: none;
+  opacity:1 ;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.pricerangedropdown .slider:hover {
+  opacity: 1;
+}
+
+.pricerangedropdown .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FF5915;
+  box-shadow: 0 8px 20px 0 #ebecf0;
+  border: 4px solid white;
+  cursor: pointer;
+}
+
+.pricerangedropdown .slider::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+.slidecontainer
+{
+  border-left: 3px solid #A1A1B4;
+  border-radius: 2px;
+}
+.minmaxprice
+{
+  font-size: 8px;
+}
+
+ /* checkboxess css */
+ .refundcontainers {
+   display: block;
+   margin-top: 1rem;
+   position: relative;
+   margin-bottom: 12px;
+   cursor: pointer;
+   font-size: 12px;
+   text-align: start !important;
+   padding-left: 26px;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   color: #A1A1B4;
+   -ms-user-select: none;
+   user-select: none;
+ }
+
+ /* Hide the browser's default checkbox */
+ .refundcontainers input {
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+   height: 0;
+   width: 0;
+ }
+
+ /* Create a custom checkbox */
+ .checkmark2 {
+   position: absolute;
+   top: 0;
+   left: 0;
+   border: 1px solid #A1A1B4;
+   border-radius: 4px;
+   height: 16px;
+   width: 8px;
+   padding: 5px 8px;
+   background-color: #eeeeee00;
+ }
+
+ .checkmark2:hover {
+   /* position: absolute; */
+   /* top: 0; */
+   /* left: 0; */
+   height: 16px !important;
+   width: 16px !important;
+   background-color: #de5921 !important;
+   /* border-radius: 0; */
+   /* padding: 5px 10px; */
+   color: #ccc;
+   border: 1px solid #ccc;
+ }
+
+ /* On mouse-over, add a grey background color */
+ .refundcontainers:hover input~.checkmark2 {
+   background-color: #ccc;
+ }
+
+ /* When the checkbox is checked, add a blue background */
+ .refundcontainers input:checked~.checkmark2 {
+   background-color: #FF5915;
+ }
+
+ /* Create the checkmark/indicator (hidden when not checked) */
+ .checkmark2:after {
+   content: "";
+   position: absolute;
+   display: none;
+ }
+
+ /* Show the checkmark when checked */
+ .refundcontainers input:checked~.checkmark2:after {
+   display: block;
+ }
+
+ /* Style the checkmark/indicator */
+ .refundcontainers .checkmark2:after {
+   left: 6px;
+   top: 2.5px;
+   width: 4px;
+   height: 8px;
+   border: solid white;
+   border-width: 0 1.5px 2px 0;
+   -webkit-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   transform: rotate (45deg);
+ }
+
+ .Multitab-text
+ {
+   font-size: 25px;
+   line-height: 23px;
+   color: #1a1c3d;
+   padding-top: 10px;
+ }
+ .multiplane-circle {
+   width: 75px;
+   height: 75px;
+   border-radius: 50%;
+   box-shadow: 0 8px 20px rgb(49 52 129 / 35%);
+   align-items: center;
+   justify-content: center;
+   padding: 5px;
+   background-color: #fff;
+   display: none;
+ }
+.flight-tabs .nav-link.active .multiplane-circle {
+  top: 1px;
+  display: block;
+  position: absolute;
+  right: -5px;
+  padding-top: 14px;
+}
+.flight-tabs .nav-link.active {
+  background-color: #de5921 !important;
+  position: relative;
+  border: 0;
+  border-radius: 50px;
+}
+.flight-tabs .nav-link.active .Multitab-text {
+  color: #fff !important;
+  /* margin-left: 25px; */
+}
+.multiplane-circle img
+{
+  width:50px;
+  height: 50px;
+}
 
 
 
