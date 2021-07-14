@@ -514,8 +514,8 @@ td {
   font-family: "Roboto";
   font-size: 13px !important;
   color: white;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .accordion-button:not(.collapsed) {
@@ -554,6 +554,11 @@ td {
   font-family: "Product sans";
   font-weight: bold;
 
+}
+.countrycodediv
+{
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 .airport {
@@ -1364,8 +1369,56 @@ hr
 }
 
 
+/* Multiflight tab summary page css */
+.multicitytabsection .flight-tabs {
+  background-color: #de5921;
+  border-radius: 50px;
+  /* padding: 10px; */
+}
 
-
+.multicitytabsection .flight-tabs .nav-link.active .multiplane-circle {
+  top: 2px;
+  display: block;
+  z-index: 9;
+  position: absolute;
+  right: -5px;
+  padding-top: 14px;
+}
+.multicitytabsection .multiplane-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgb(49 52 129 / 35%);
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: #fff;
+  display: none;
+}
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 1rem !important;
+  height: 1rem !important;
+  margin-left: auto;
+  content: "";
+  /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e); */
+  background-repeat: no-repeat;
+  background-size: 1rem !important;
+  transition: transform .2s ease-in-out;
+}
+.deslect
+{
+  font-size: 10px;
+  color: #A1A1B4;
+  text-align: end;
+  text-transform: capitalize;
+  margin-top: 12px;
+  text-decoration: none;
+}
+.deslect:hover
+{
+  color: #de5921;
+}
 
 
 
