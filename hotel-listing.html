@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Spatay</title>
+ <link rel="stylesheet" href="assets/css/style.css">
+ <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+ <link rel="stylesheet" href="assets/css/flights.css">
+ <link rel="stylesheet" href="assets/css/hotel.css">
+ <!-- <link rel="stylesheet" href="assets/css/home.css"> -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+  integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ <!---------------------------------------------- start nav section -------------------------------------->
+ <nav class="navbar navbar-expand-lg  bg-white pt-2 pb-2 ">
+  <div class="container">
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <i class="fas fa-bars" aria-hidden="true"></i>
+   </button>
+   <a class="navbar-brand" href="hotel.html"><img src="assets/media/hotel/hotel_logo.png" class="w-75"></a>
+   <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ms-auto  mt-lg-0">
+     <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="#">Home</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">MY TRIPS</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">About us</a>
+     </li>
+
+    </ul>
+   </div>
+  </div>
+ </nav>
+ <!---------------------------------------------- end nav section -------------------------------------->
+
+ <!---------------------------------------------- start Flight search -------------------------------------->
+<section class="flight-search pt-4 pb-4 mt-2 ">
+  <div class="container">
+   <form action="" method="POST">
+    <div class="row justify-content-center align-items-center">
+     <div class="col-lg-1 mb-2 ">
+      <img src="assets/media/hotel/double-bedlist.png" alt="plane" class="planeimage">
+     </div>
+     <div class="col-lg-2 mb-2 ">
+      <label class="from">From</label>
+      <div class="input-container d-flex align-items-center">
+       <i class="fas fa-map-marker-alt locationicon"></i><input type="text" placeholder="Lahore (LHE)" name="From"
+        class="inputfield">
+
+      </div>
+      <div>
+      </div>
+      <!-- <h5><i class="fas fa-map-marker-alt"></i>Lahore (LHE) </h5> -->
+
+     </div>
+     <div class="col-lg-1 toway mb-2 ">
+      <img src="assets/media/flightfilter/twoway.png" alt="Twoway" class=" towayimage">
+     </div>
+
+     <div class="col-lg-2 mb-2  ">
+      <label class="from">To</label>
+      <div class="input-container d-flex align-items-center">
+       <i class="fas fa-map-marker-alt locationicon"></i><input type="text" placeholder="Karachi (KHI)" name="From"
+        class="inputfield">
+
+      </div>
+      <div>
+      </div>
+      <!-- <h5><i class="fas fa-map-marker-alt"></i>Lahore (LHE) </h5> -->
+
+     </div>
+
+     <div class="col-lg-2 mb-2 ">
+      <label class="from">Date</label>
+      <div class="input-container d-flex align-items-center">
+       <i class="far fa-calendar-alt locationicon"></i>
+       <input type="text" placeholder="12 May - Return" name="calander" class="inputfield">
+
+
+      </div>
+      <div>
+      </div>
+      <!-- <h5><i class="fas fa-map-marker-alt"></i>Lahore (LHE) </h5> -->
+
+     </div>
+
+     <div class="col-lg-2  mb-2">
+      <label class="from">Travellers</label>
+      <div class="input-container d-flex align-items-center">
+       <i class="fas fa-user-friends locationicon"></i>
+       <select id="items">
+        <option value="item-1">1 Travellers</option>
+        <option value="item-2">2 Travellers</option>
+        <option value="item-3">3 Travellers</option>
+       </select>
+
+      </div>
+      <div>
+      </div>
+
+     </div>
+
+     <div class="col-lg-2  mb-2 ">
+      <button type="button" id="search-btn" class="btn">Search Again</button>
+     </div>
+
+    </div>
+   </form>
+  </div>
+</section>
+
+ <!---------------------------------------------- end Flight search-------------------------------------->
+
+ <!---------------------------------------------- start Filter section-------------------------------------->
+
+ <section class="filter-section">
+  <div class="container">
+   <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+     <a class="navbar-brand" href="#"><img src="assets/media/flightfilter/filter.png"> &nbsp;&nbsp;
+      Filters</a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <span class="navbar-toggler-icon"></span> -->
+      <i class="fas fa-bars" aria-hidden="true"></i>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+       <li class="nav-item dropdown secondnavitem position-relative">
+        <a class="nav-link dropdown-toggle" href="#" id="stops" role="button">
+         Property Class
+         <!-- <i class="fa fa-heart"></i> -->
+        </a>
+        <div class="" id="stop-filter" style="display: none;">
+          <div class="arrow-up"></div>
+          <ul class="dropdown-menu show" aria-labelledby="">
+            <p class="text-capitalize mb-0 pb-2 dropdown-title">Property Class</p>
+            <div class="stopdropdown">
+              <label class="custom-box" for="0">
+                <input type="radio" id="0" name="radio">
+                <span class="checkmark">0</span>
+              </label>
+              <label class="custom-box" for="1">
+                <input type="radio" id="1" name="radio">
+                <span class="checkmark">1</span>
+              </label>
+              <label class="custom-box mb-4" for="2">
+                <input type="radio" id="2" name="radio">
+                <span class="checkmark">2</span>
+              </label>
+             <label class="custom-box" for="3">
+               <input type="radio" id="3" name="radio">
+               <span class="checkmark">3</span>
+             </label>
+             <label class="custom-box" for="4">
+               <input type="radio" id="4" name="radio">
+               <span class="checkmark">4</span>
+             </label>
+             <label class="custom-box mb-4" for="5">
+               <input type="radio" id="5" name="radio">
+               <span class="checkmark">5</span>
+             </label>
+              <label class="custom-box" for="6">
+                <input type="radio" id="6" name="radio">
+                <span class="checkmark">6</span>
+              </label>
+              <label class="custom-box" for="7">
+                <input type="radio" id="7" name="radio">
+                <span class="checkmark">7</span>
+              </label>
+              <label class="custom-box" for="8">
+                <input type="radio" id="8" name="radio">
+                <span class="checkmark">8</span>
+              </label>
+            </div>
+          </ul>
+        </div>
+       </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="timefilter" role="button">
+         Property Type
+        </a>
+           <div class="" id="time-filter" style="display: none;">
+             <div class="arrow-up"></div>
+             <ul class="dropdown-menu show timedropdown" aria-labelledby="">
+               <p class="text-capitalize mb-0 pb-2 dropdown-title">Depature Time</p>
+               <div class="stopdropdown text-center">
+                 <label class="custom-box" for="time0">
+                   <input type="radio" id="time0" name="departureTime">
+                   <span class="checkmark">00:00 - 06:00</span>
+                 </label>
+                 <label class="custom-box mb-3" for="time1">
+                   <input type="radio" id="time1" name="departureTime">
+                   <span class="checkmark">06:00 - 12:00</span>
+                 </label>
+                 <label class="custom-box" for="time2">
+                   <input type="radio" id="time2" name="departureTime">
+                   <span class="checkmark">00:00 - 06:00</span>
+                 </label>
+                 <label class="custom-box mb-3" for="time3">
+                   <input type="radio" id="time3" name="departureTime">
+                   <span class="checkmark">06:00 - 12:00</span>
+                 </label>
+                 <p class="text-capitalize mb-0 pb-2 text-start dropdown-title">Arrival Time</p>
+                  <label class="custom-box mb-3" for="time4">
+                    <input type="radio" id="time4" name="arrivalTime">
+                    <span class="checkmark">00:00 - 06:00</span>
+                  </label>
+                  <label class="custom-box mb-3" for="time5">
+                    <input type="radio" id="time5" name="arrivalTime">
+                    <span class="checkmark">06:00 - 12:00</span>
+                  </label>
+                  <label class="custom-box mb-3" for="time6">
+                    <input type="radio" id="time6" name="arrivalTime">
+                    <span class="checkmark">06:00 - 12:00</span>
+                  </label>
+                  <label class="custom-box mb-3" for="time7">
+                    <input type="radio" id="time8" name="arrivalTime">
+                    <span class="checkmark">00:00 - 06:00</span>
+                  </label>
+               </div>
+             </ul>
+           </div>
+       </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="airlinefilter" role="button" >
+         Amenities
+        </a>
+         <div class="" id="airline-filter" style="display: none;">
+           <div class="arrow-up"></div>
+           <ul class="dropdown-menu show airlinedropdown" aria-labelledby="">
+             <p class="text-capitalize mb-0 pb-2 dropdown-title">Airelines</p>
+             <div class="stopdropdown text-center">
+               <div class="d-flex">
+                 <i class="fas fa-search fa-1x  fasearch"></i>
+                 <input type="text" id="myInput" onkeyup="myFunction()"placeholder="Search Airline" title="Type in a name">
+               </div>
+               <hr style="height: 2px;">
+                <div class="text-start mt-2 airlineinput">
+                  <li>
+                    <label class="filter" for="filter1">
+                    <input id="filter1" type="checkbox" name=Organization value="this is located in hyd" /> &nbsp; Pakistan Air Line</label>
+                  </li>
+                  <li>
+                    <label class="filter" for="filter2">
+                    <input id="filter2" type="checkbox" name=Organization value="This is located in banglore" /> &nbsp; Serene Air Line</label>
+                  </li>
+                  <li>
+                    <label class="filter" for="filter3">
+                    <input id="filter3" type="checkbox" name=Organization value="Wipro" /> &nbsp;  British Airways</label>
+                  </li>
+                  <li>
+                    <label class="filter" for="filter4">
+                    <input id="filter4" type="checkbox" name=Organization value="Infosys" /> &nbsp;  Emirates Air Line</label>
+                  </li>
+                  <li>
+                    <label class="filter" for="filter5">
+                    <input id="filter5" type="checkbox" name=Organization value="Infosys" /> &nbsp;  Virgin Atlantic</label>
+                  </li>
+                </div>
+             </div>
+           </ul>
+         </div>
+       </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="pricerangefilter" role="button" data-bs-toggle="dropdown"
+         aria-expanded="false">
+         Price Range
+        </a>
+        <div class="pricerangeee" id="pricerange-filter" style="display: none;">
+          <div class="arrow-up"></div>
+          <ul class="dropdown-menu show pricerangedropdown" aria-labelledby="">
+            <p class="text-capitalize mb-0 pb-2 mt-3 dropdown-title">Price Range</p>
+            <div class="stopdropdown text-center pb-4">
+              <div class="d-flex">
+                <p class="pricetitle">price:</p> &nbsp;&nbsp;&nbsp;
+                <p class="pricerange" id="demo">RS 750000/-</p>
+              </div>
+                <div class="slidecontainer pb-1 align-items-center justify-content-center">
+                  <input type="range" min="15000" max="1000000" value="nn" class="slider" id="myRange">
+                  <!-- <p>Value: <span id="demo"></span></p> -->
+                </div>
+                <div class="d-flex justify-content-between">
+                  <small class="minmaxprice"> RS 15000/-</small>
+                  <small class="minmaxprice">RS 100,000/-</small>
+
+                </div>
+                <div>
+                  <label class="refundcontainers">Refundable
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark2"></span>
+                  </label>
+                </div>
+          </ul>
+        </div>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </nav>
+  </div>
+ </section>
+
+
+  <!-- Hotels Listing -->
+  <div class="container">
+    <div class="listings">
+      <div class="row shadow listing-row mt-5">
+        <div class="col-12 col-md-3 col-sm-3 ps-0">
+          <div class="listing-img h-100">
+            <img src="assets/media/hotel/listing/listing1.png" class="w-100">
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-sm-6">
+          <div class="listing-content h-100 pt-3">
+            <h3 class="listing-title fw-bold text-uppercase">Hanging Garden</h3>
+            <h6 class="hotel-cat fw-bold text-uppercase">5-Star Hotel</h6>
+            <p class="listing-info">Buahan, Payangan, Gianyar, Bali 80571, Indonesia +62 361 982700</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 col-sm-3">
+          <div class="action-content d-grid gap-5 h-100 pt-3 p-4">
+            <div class="price-content">
+              <h3 class="hotel-price mb-0 ps-2">PKR 93,298</h3>
+              <p class="stay-time ps-3">For 3 Days & 2 Nights</p>
+            </div>
+            <div class="btn-content">
+              <a  href="hotel-rooms.html" class="btn listing-btn">Select</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row shadow listing-row mt-5">
+        <div class="col-12 col-md-3 col-sm-3 ps-0">
+          <div class="listing-img h-100">
+            <img src="assets/media/hotel/listing/listing2.png" class="w-100">
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-sm-6">
+          <div class="listing-content h-100 pt-3">
+            <h3 class="listing-title fw-bold text-uppercase">Hanging Garden</h3>
+            <h6 class="hotel-cat fw-bold text-uppercase">5-Star Hotel</h6>
+            <p class="listing-info">Buahan, Payangan, Gianyar, Bali 80571, Indonesia +62 361 982700</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 col-sm-3">
+          <div class="action-content d-grid gap-5 h-100 pt-3 p-4">
+            <div class="price-content">
+              <h3 class="hotel-price mb-0 ps-2">PKR 93,298</h3>
+              <p class="stay-time ps-3">For 3 Days & 2 Nights</p>
+            </div>
+            <div class="btn-content">
+              <a href="hotel-rooms.html" class="btn listing-btn">Select</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row shadow listing-row mt-5">
+        <div class="col-12 col-md-3 col-sm-3 ps-0">
+          <div class="listing-img h-100">
+            <img src="assets/media/hotel/listing/listing3.png" class="w-100">
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-sm-6">
+          <div class="listing-content h-100 pt-3">
+            <h3 class="listing-title fw-bold text-uppercase">Hanging Garden</h3>
+            <h6 class="hotel-cat fw-bold text-uppercase">5-Star Hotel</h6>
+            <p class="listing-info">Buahan, Payangan, Gianyar, Bali 80571, Indonesia +62 361 982700</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 col-sm-3">
+          <div class="action-content d-grid gap-5 h-100 pt-3 p-4">
+            <div class="price-content">
+              <h3 class="hotel-price mb-0 ps-2">PKR 93,298</h3>
+              <p class="stay-time ps-3">For 3 Days & 2 Nights</p>
+            </div>
+            <div class="btn-content">
+              <a  href="hotel-rooms.html" class="btn listing-btn">Select</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row shadow listing-row mt-5">
+        <div class="col-12 col-md-3 col-sm-3 ps-0">
+          <div class="listing-img h-100">
+            <img src="assets/media/hotel/listing/listing4.png" class="w-100">
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-sm-6">
+          <div class="listing-content h-100 pt-3">
+            <h3 class="listing-title fw-bold text-uppercase">Hanging Garden</h3>
+            <h6 class="hotel-cat fw-bold text-uppercase">5-Star Hotel</h6>
+            <p class="listing-info">Buahan, Payangan, Gianyar, Bali 80571, Indonesia +62 361 982700</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 col-sm-3">
+          <div class="action-content d-grid gap-5 h-100 pt-3 p-4">
+            <div class="price-content">
+              <h3 class="hotel-price mb-0 ps-2">PKR 93,298</h3>
+              <p class="stay-time ps-3">For 3 Days & 2 Nights</p>
+            </div>
+            <div class="btn-content">
+              <a  href="hotel-rooms.html" class="btn listing-btn">Select</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row shadow listing-row mt-5">
+        <div class="col-12 col-md-3 col-sm-3 ps-0">
+          <div class="listing-img h-100">
+            <img src="assets/media/hotel/listing/listing5.png" class="w-100">
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-sm-6">
+          <div class="listing-content h-100 pt-3">
+            <h3 class="listing-title fw-bold text-uppercase">Hanging Garden</h3>
+            <h6 class="hotel-cat fw-bold text-uppercase">5-Star Hotel</h6>
+            <p class="listing-info">Buahan, Payangan, Gianyar, Bali 80571, Indonesia +62 361 982700</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 col-sm-3">
+          <div class="action-content d-grid gap-5 h-100 pt-3 p-4">
+            <div class="price-content">
+              <h3 class="hotel-price mb-0 ps-2">PKR 93,298</h3>
+              <p class="stay-time ps-3">For 3 Days & 2 Nights</p>
+            </div>
+            <div class="btn-content">
+              <a  href="hotel-rooms.html" class="btn listing-btn">Select</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Hotel Listing -->
+
+ <!-- THIRD -->
+
+<section class="footer">
+ <div class="container">
+  <div class="section-heading text-center">
+   <h2 class="main-heading">Contact Us Any Time</h2>
+   <h1 class="style-heading">We Love To Be Social</h1>
+  </div>
+  <div class="row footer-row">
+   <div class="col-12 text-center">
+    <ul class="list-inline menu-links">
+     <li class="list-inline-item"><a href="">Home</a></li>
+     <li class="list-inline-item"><a href="">My Trips</a></li>
+     <li class="list-inline-item"><a href="">About Us</a></li>
+    </ul>
+    <ul class="list-inline social-icons pt-3">
+     <li class="list-inline-item"><a href=""><img src="assets/media/Email.png"></a></li>
+     <li class="list-inline-item"><a href=""><img src="assets/media/comment.png"></a></li>
+     <li class="list-inline-item"><a href=""><img src="assets/media/Calendar.png"></a></li>
+     <li class="list-inline-item"><a href=""><img src="assets/media/Security.png"></a></li>
+     <li class="list-inline-item"><a href=""><img src="assets/media/time.png"></a></li>
+    </ul>
+   </div>
+  </div>
+  <div class="row">
+   <div class="col-12 text-center">
+    <p class="copyright">&copy; Spatay 2021. All right reserved</p>
+   </div>
+  </div>
+ </div>
+</section>
+<!-- End Footer -->
+
+   
+ <!-- Bootstrap core JavaScript -->
+
+ <script src='assets/js/bootstrap.min.js'></script>
+ <script src="assets/js/jquery.js"></script>
+
+ <script>
+  $('#toggle-arrowOne').click(function () {
+   $('#hide').toggle();
+   $('#show').toggle();
+  });
+  // $('.toggle-arrow1').click(function () {
+  //  $('#hide1').toggle();
+  //  $('#show1').toggle();
+  // });
+  $('#toggle-arrowTwo').click(function () {
+   $('#hideTwo').toggle();
+   $('#showTwo').toggle();
+  });
+
+  $('#stops').click(function(){
+    $('#stop-filter').toggle();
+    $(this).toggleClass('active-filter');
+  });
+   $('#timefilter').click(function(){
+   $('#time-filter').toggle();
+   $(this).toggleClass('active-filter');
+  });
+  $('#airlinefilter').click(function(){
+    $('#airline-filter').toggle();
+    $(this).toggleClass('active-filter');
+  });
+  $('#pricerangefilter').click(function () {
+    $('#pricerange-filter').toggle();
+    $(this).toggleClass('active-filter');
+  });
+
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  output.innerHTML = slider.value;
+
+  slider.oninput = function() {
+    output.innerHTML = 'RS '+this.value+'/-';
+  }
+
+  $('#flightOne-tab').click(function(){
+    $('#main-plane').hide();
+    $('#all_flights').hide();
+  });
+
+  // $('#flightFive-tab').click(function(){
+  //   $('#main-plane').hide();
+  //   $('#all_flights').hide();
+  // });
+ </script>
+</body>
+
+</html>

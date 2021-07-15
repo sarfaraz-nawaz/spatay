@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Spatay</title>
+ <link rel="stylesheet" href="assets/css/style.css">
+ <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+ <link rel="stylesheet" href="assets/css/flights.css">
+ <link rel="stylesheet" href="assets/css/slick.css">
+ <link rel="stylesheet" href="assets/css/hotel.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+  integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+</head>
+
+<body>
+ <!---------------------------------------------- start nav section -------------------------------------->
+ <nav class="navbar navbar-expand-lg  bg-white pt-2 pb-2 ">
+  <div class="container">
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <span class="navbar-toggler-icon"></span> -->
+    <i class="fas fa-bars" aria-hidden="true"></i>
+   </button>
+   <a class="navbar-brand" href="index.html"><img src="assets/media/hotel/hotel_logo.png" class="w-75"></a>
+   <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ms-auto  mt-lg-0">
+     <li class="nav-item">
+      <a class="nav-link" aria-current="page" href="#">Home</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">MY TRIPS</a>
+     </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">About us</a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </nav>
+ <!---------------------------------------------- end nav section -------------------------------------->
+
+  <!---------------------------------------------- start Flight search -------------------------------------->
+  <section class="flight-search pt-4 pb-4 mt-2 room-header">
+    <div class="container">
+     <div class="row justify-content-between align-items-center">
+      <div class="col-md-5 col-6 text-start">
+       <h2 class="maincity text-uppercase">Bulgari Resort</h2>
+       <h5 class="maincity text-uppercase">5-Star Hotel</h5>
+       <h6 class="airport">Jl. Goa Lempeh, Banjar Dinas Kangin, Uluwatu, Kabupaten Badung, Bali 80361, Indonesia•+62 361 8471000</h6>
+      </div>
+
+      <div class="col-md-4 col-6 text-end">
+       <h2 class="maincity">PKR 158,110</h2>
+       <h5 class="stay-room">For 3 Days &  2 Nights</h5>
+       <a href="hotel-summary.html" class="btn listing-btn">Select Room</a>
+      </div>
+     </div>
+    </div>
+  </section>
+
+  <!-- Room Detail Section -->
+  <div class="container">
+    <div class="row room-detail shadow mt-5 p-3">
+      <div class="col-12 col-md-6">
+        <div class="room-slider h-100">
+          <div class="slider h-100">
+            <img src="assets/media/hotel/listing/room.png">
+            <img src="assets/media/hotel/listing/room1.png">
+            <img src="assets/media/hotel/listing/room2.png">
+            <img src="assets/media/hotel/listing/room3.png">
+            <img src="assets/media/hotel/listing/room4.png">
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="room-content">
+          <div class="rating-data d-flex justify-content-between border-bottom border-3">
+            <h5 class="rating-caption">4/5 Excellent</h5>
+            <h6>815 Reviews ></h6>
+          </div>
+          <div class="room-desc border-bottom border-3">
+            <h3>About This Hotel</h3>
+            <p class="mb-0">Overlooking the Indian Ocean, this posh cliff-top resort is 6 km from the Pura Luhur Uluwatu temple and 9 km from the Garuda Wisnu Kencana Cultural Park.
+            <br>
+            Refined 1- and 2-bedroom villas feature ocean views, free Wi-Fi, flat-screen TVs and minibars, plus coffeemakers, private gardens and plunge pools. An upgraded villa adds a screening room and an infinity pool. Luxe mansions have 3 to 5 bedrooms. Butler service is available 24/7.
+            <br>
+            Breakfast is included. Other amenities consist of a bar with ocean views, and 3 chic restaurants, including an open-air Italian option. There's an outdoor pool, a spa and a gym, as well as a private beach.</p>
+          </div>
+          <div class="room-desc border-bottom border-3">
+            <h3>Amenities</h3>
+            <div class="amenities-img d-flex flex-wrap">
+              <div class="amenity-img">
+                <img src="assets/media/hotel/listing/spa.png">
+                <span>Spa</span>
+              </div>
+              <div class="amenity-img">
+                <img src="assets/media/hotel/listing/pool.png">
+                <span>Pools</span>
+              </div>
+              <div class="amenity-img">
+                <img src="assets/media/hotel/listing/gym.png">
+                <span>Gym</span>
+              </div>
+              <div class="amenity-img">
+                <img src="assets/media/hotel/listing/wifi.png">
+                <span>Wifi</span>
+              </div>
+              <div class="amenity-img">
+                <img src="assets/media/hotel/listing/food.png">
+                <span>Food</span>
+              </div>
+            </div>
+          </div>
+          <div class="room-desc pb-0">
+            <h3 class="mb-3">What's Nearby </h3>
+            <div class="nearby">
+              <div class="location-distance d-flex justify-content-between">
+                <h4><i class="fas fa-map-marker-alt"></i> Uluwatu Temple</h4>
+                <h5><i class="fas fa-car"></i> 11 min</h5>
+              </div>
+              <p>Perched on a cliff, this ancient Hindu temple features ocean views & hosts traditional dance shows.
+              </p>
+            </div>
+            <div class="nearby">
+              <div class="location-distance d-flex justify-content-between">
+                <h4><i class="fas fa-map-marker-alt"></i> Garuda Wisnu Kencana</h4>
+                <h5><i class="fas fa-car"></i> 19 min</h5>
+              </div>
+              <p>Expansive park featuring monumental Hindu sculptures plus frequent dance performances & concerts.
+              </p>
+            </div>
+            <div class="nearby">
+              <div class="location-distance d-flex justify-content-between">
+                <h4><i class="fas fa-map-marker-alt"></i> Dreamland Beach</h4>
+                <h5><i class="fas fa-car"></i> 17 min</h5>
+              </div>
+              <p>Small, white sand beach & surf break backed by cliffs, featuring sun bed rentals & restaurants.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Rooms Data -->
+    <div class="room-data mt-5">
+      <h3 class="text-capitalize">Choose your Room</h3>
+      <div class="row room-row mb-5 shadow mt-3">
+        <div class="col-md-3 ps-0">
+          <div class="room-img h-100">
+            <img src="assets/media/hotel/listing/room1.png" class="w-100">
+          </div>
+        </div>
+        <div class="col-md-9 p-3">
+          <div class="row">
+            <div class="col-md-3 border-end d-flex flex-column-reverse">
+              <div class="standrd-content mb-3">
+                <h4 class="fw-bold">Twin Standard</h4>
+                <span>
+                  <img src="assets/media/hotel/listing/car.png">
+                </span>
+                <span>
+                  <img src="assets/media/hotel/listing/gym.png">
+                </span>
+                <span>
+                  <img src="assets/media/hotel/listing/wifi.png">
+                </span>
+                <span>
+                  <img src="assets/media/hotel/listing/food.png">
+                </span>
+              </div>
+            </div>
+            <div class="col-md-3 border-end text-center ">
+              <div class="prices d-grid gap-4">
+                <div class="price-text">
+                  <h4>PKR 32,110</h4>
+                </div>
+                <div class="price-text">
+                  <h4>PKR 48,250</h4>
+                </div>
+                <div class="price-text">
+                  <h4>PKR 60,222</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 border-end">
+              <div class="room-select">
+                <div class="select-room d-grid gap-4">
+                  <form id="room1-form">
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>0 Room</option>
+                        <option>1 Room</option>
+                        <option>2 Room</option>
+                        <option>3 Room</option>
+                      </select>
+                    </div>
+                  </form>
+                  <form id="room2-form">
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>0 Room</option>
+                        <option>1 Room</option>
+                        <option>2 Room</option>
+                        <option>3 Room</option>
+                      </select>
+                    </div>
+                  </form>
+                  <form id="room3-form">
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>0 Room</option>
+                        <option>1 Room</option>
+                        <option>2 Room</option>
+                        <option>3 Room</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="room-btns d-grid gap-4">
+                <div class="reserve-btn">
+                  <button class="btn listing-btn" form="room1-form">Reserve Room</button>
+                </div>
+                <div class="reserve-btn">
+                  <button class="btn listing-btn" form="room2-form">Reserve Room</button>
+                </div>
+                <div class="reserve-btn">
+                  <button class="btn listing-btn" form="room3-form">Reserve Room</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row room-row mb-5 shadow mt-3">
+        <div class="col-md-3 ps-0">
+          <div class="room-img h-100">
+            <img src="assets/media/hotel/listing/room2.png" class="w-100">
+          </div>
+        </div>
+        <div class="col-md-9 p-3">
+          <div class="row">
+            <div class="col-md-3 border-end d-flex flex-column-reverse">
+              <div class="standrd-content mb-3">
+                <h4 class="fw-bold">Twin Standard</h4>
+                <span>
+                  <img src="assets/media/hotel/listing/car.png">
+                </span>
+                <span>
+                  <img src="assets/media/hotel/listing/gym.png">
+                </span>
+                <span>
+                  <img src="assets/media/hotel/listing/wifi.png">
+                </span>
+                <span>
+                  <img src="assets/media/hotel/listing/food.png">
+                </span>
+              </div>
+            </div>
+            <div class="col-md-3 border-end text-center ">
+              <div class="prices d-grid gap-4">
+                <div class="price-text">
+                  <h4>PKR 32,110</h4>
+                </div>
+                <div class="price-text">
+                  <h4>PKR 48,250</h4>
+                </div>
+                <div class="price-text">
+                  <h4>PKR 60,222</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 border-end">
+              <div class="room-select">
+                <div class="select-room d-grid gap-4">
+                  <form id="room1-form">
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>0 Room</option>
+                        <option>1 Room</option>
+                        <option>2 Room</option>
+                        <option>3 Room</option>
+                      </select>
+                    </div>
+                  </form>
+                  <form id="room2-form">
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>0 Room</option>
+                        <option>1 Room</option>
+                        <option>2 Room</option>
+                        <option>3 Room</option>
+                      </select>
+                    </div>
+                  </form>
+                  <form id="room3-form">
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>0 Room</option>
+                        <option>1 Room</option>
+                        <option>2 Room</option>
+                        <option>3 Room</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="room-btns d-grid gap-4">
+                <div class="reserve-btn">
+                  <button class="btn listing-btn" form="room1-form">Reserve Room</button>
+                </div>
+                <div class="reserve-btn">
+                  <button class="btn listing-btn" form="room2-form">Reserve Room</button>
+                </div>
+                <div class="reserve-btn">
+                  <button class="btn listing-btn" form="room3-form">Reserve Room</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row room-row mb-5 shadow mt-3">
+        <div class="col-md-3 ps-0">
+          <div class="room-img h-100">
+            <img src="assets/media/hotel/listing/room3.png" class="w-100">
+          </div>
+        </div>
+        <div class="col-md-9 p-3">
+          <div class="row">
+            <div class="col-md-3 border-end d-flex flex-column-reverse">
+              <div class="standrd-content mb-3">
+                <h4 class="fw-bold">Twin Standard</h4>
+                <span>
+                  <img src="assets/media/hotel/listing/car.png">
+                </span>
+                <span>
+                  <img src="assets/media/hotel/listing/gym.png">
+                </span>
+                <span>
+                  <img src="assets/media/hotel/listing/wifi.png">
+                </span>
+                <span>
+                  <img src="assets/media/hotel/listing/food.png">
+                </span>
+              </div>
+            </div>
+            <div class="col-md-3 border-end text-center ">
+              <div class="prices d-grid gap-4">
+                <div class="price-text">
+                  <h4>PKR 32,110</h4>
+                </div>
+                <div class="price-text">
+                  <h4>PKR 48,250</h4>
+                </div>
+                <div class="price-text">
+                  <h4>PKR 60,222</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 border-end">
+              <div class="room-select">
+                <div class="select-room d-grid gap-4">
+                  <form id="room1-form">
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>0 Room</option>
+                        <option>1 Room</option>
+                        <option>2 Room</option>
+                        <option>3 Room</option>
+                      </select>
+                    </div>
+                  </form>
+                  <form id="room2-form">
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>0 Room</option>
+                        <option>1 Room</option>
+                        <option>2 Room</option>
+                        <option>3 Room</option>
+                      </select>
+                    </div>
+                  </form>
+                  <form id="room3-form">
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>0 Room</option>
+                        <option>1 Room</option>
+                        <option>2 Room</option>
+                        <option>3 Room</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="room-btns d-grid gap-4">
+                <div class="reserve-btn">
+                  <button class="btn listing-btn" form="room1-form">Reserve Room</button>
+                </div>
+                <div class="reserve-btn">
+                  <button class="btn listing-btn" form="room2-form">Reserve Room</button>
+                </div>
+                <div class="reserve-btn">
+                  <button class="btn listing-btn" form="room3-form">Reserve Room</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row room-row mb-5 shadow mt-3">
+        <div class="col-md-3 ps-0">
+          <div class="room-img h-100">
+            <img src="assets/media/hotel/listing/room4.png" class="w-100">
+          </div>
+        </div>
+        <div class="col-md-9 p-3">
+          <div class="row">
+            <div class="col-md-3 border-end d-flex flex-column-reverse">
+              <div class="standrd-content mb-3">
+                <h4 class="fw-bold">Twin Standard</h4>
+                <span>
+                  <img src="assets/media/hotel/listing/car.png">
+                </span>
+                <span>
+                  <img src="assets/media/hotel/listing/gym.png">
+                </span>
+                <span>
+                  <img src="assets/media/hotel/listing/wifi.png">
+                </span>
+                <span>
+                  <img src="assets/media/hotel/listing/food.png">
+                </span>
+              </div>
+            </div>
+            <div class="col-md-3 border-end text-center ">
+              <div class="prices d-grid gap-4">
+                <div class="price-text">
+                  <h4>PKR 32,110</h4>
+                </div>
+                <div class="price-text">
+                  <h4>PKR 48,250</h4>
+                </div>
+                <div class="price-text">
+                  <h4>PKR 60,222</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 border-end">
+              <div class="room-select">
+                <div class="select-room d-grid gap-4">
+                  <form id="room1-form">
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>0 Room</option>
+                        <option>1 Room</option>
+                        <option>2 Room</option>
+                        <option>3 Room</option>
+                      </select>
+                    </div>
+                  </form>
+                  <form id="room2-form">
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>0 Room</option>
+                        <option>1 Room</option>
+                        <option>2 Room</option>
+                        <option>3 Room</option>
+                      </select>
+                    </div>
+                  </form>
+                  <form id="room3-form">
+                    <div class="form-group">
+                      <select class="form-control">
+                        <option>0 Room</option>
+                        <option>1 Room</option>
+                        <option>2 Room</option>
+                        <option>3 Room</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="room-btns d-grid gap-4">
+                <div class="reserve-btn">
+                  <button class="btn listing-btn" form="room1-form">Reserve Room</button>
+                </div>
+                <div class="reserve-btn">
+                  <button class="btn listing-btn" form="room2-form">Reserve Room</button>
+                </div>
+                <div class="reserve-btn">
+                  <button class="btn listing-btn" form="room3-form">Reserve Room</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Room Data -->
+  </div>
+  <!-- End Room Detail section -->
+
+
+ <!---------------------------------------------- end booking card section-------------------------------------->
+ <!-- THIRD -->
+
+ <section class="footer pt-5 mt-5">
+  <div class="container">
+   <div class="section-heading text-center">
+    <h2 class="main-heading">Contact Us Any Time</h2>
+    <h1 class="style-heading">We Love To Be Social</h1>
+   </div>
+   <div class="row footer-row">
+    <div class="col-12 text-center">
+     <ul class="list-inline menu-links">
+      <li class="list-inline-item"><a href="">Home</a></li>
+      <li class="list-inline-item"><a href="">My Trips</a></li>
+      <li class="list-inline-item"><a href="">About Us</a></li>
+     </ul>
+     <ul class="list-inline social-icons pt-3">
+      <li class="list-inline-item"><a href=""><img src="assets/media/Email.png"></a></li>
+      <li class="list-inline-item"><a href=""><img src="assets/media/comment.png"></a></li>
+      <li class="list-inline-item"><a href=""><img src="assets/media/Calendar.png"></a></li>
+      <li class="list-inline-item"><a href=""><img src="assets/media/Security.png"></a></li>
+      <li class="list-inline-item"><a href=""><img src="assets/media/time.png"></a></li>
+     </ul>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-12 text-center">
+     <p class="copyright">&copy; Spatay 2021. All right reserved</p>
+    </div>
+   </div>
+  </div>
+ </section>
+ <!-- End Footer -->
+
+ <!-- Bootstrap core JavaScript -->
+
+ <script src='assets/js/bootstrap.min.js'></script>
+ <script src="assets/js/jquery.js"></script>
+ <script src="assets/js/slick.js"></script>
+
+ <script>
+   
+  jQuery(document).ready(function($) {
+
+    $('.toggle-arrow').click(function () {
+      $('#hide').toggle();
+      $('#show').toggle();
+    });
+
+    $('.toggle-arrow1').click(function () {
+      $('#hide1').toggle();
+      $('#show1').toggle();
+    });
+
+    $( "#contact-tab" ).click(function() {
+      $(this).addClass('active');
+      $('#home-tab').addClass('active');
+      $("#contact-tab .multiplane-circle").hide();
+      $('#myTab').css('background-color', '#de5921');
+      $("#home-tab .multiplane-circle").addClass('rotate-plane');
+    });
+
+    $('.slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: true,
+      responsive: [{
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+         breakpoint: 400,
+         settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1
+         }
+      }]
+    });
+});
+ </script>
+</body>
+
+</html>
+
+
