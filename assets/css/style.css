@@ -6,10 +6,8 @@ body {
   padding-bottom: auto;
 }
 
-.nav-item .nav-link:hover {
-  color: #de5921;
-  font-weight: bold;
-}
+
+
 
 .from {
   color: white;
@@ -53,6 +51,10 @@ body {
 
 .nav-item .nav-link {
   color: #1A1C3D;
+  font-weight: bold ;
+}
+.nav-item .nav-link:hover {
+  color: #de5921 !important;
   font-weight: bold;
 }
 
@@ -140,6 +142,7 @@ option {
 .filter-section .nav-link {
   color: #A1A1B4 ;
   font-weight: 600;
+  text-transform: capitalize;
 
 }
 
@@ -239,7 +242,7 @@ border: 1px solid #ccc;
   width: 125px;
   min-width: 5rem;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -20px;
+  left: -32px;
 }
 
 .timedropdown
@@ -322,9 +325,9 @@ border: 1px solid #ccc;
   overflow: auto;
   padding: 10px !important;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -50px;
+  left: -43px;
   text-transform: capitalize;
-  width: 11rem;
+  width: 10rem;
 }
 
 
@@ -1221,9 +1224,9 @@ hr
 
   padding: 10px !important;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -50px;
+  left: -20px;
   text-transform: capitalize;
-  width: 13rem;
+  width: 10rem;
 }
 .pricerangedropdown .pricetitle
 {
@@ -1664,6 +1667,39 @@ hr
 }
 
 
+/* round flights dropsown setting */
+.filter-section .round-flights-dropdown #stop-filter .show {
+  padding: 10px;
+  width: 125px;
+  min-width: 5rem;
+  box-shadow: 0 8px 20px 0 #ebecf0;
+  left: -33px;
+}
+.filter-section .round-flights-dropdown .timedropdown {
+  padding: 10px !important;
+  width: 14rem;
+  text-align: center;
+  font-size: 12px !important;
+  min-width: 6rem;
+  box-shadow: 0 8px 20px 0 #ebecf0;
+  left: -137px;
+}
+.filter-section .round-flights-dropdown .airlinedropdown {
+  height: 170px;
+  overflow: auto;
+  padding: 10px !important;
+  box-shadow: 0 8px 20px 0 #ebecf0;
+  left: -63px;
+  text-transform: capitalize;
+  width: 11rem;
+}
+.filter-section .round-flights-dropdown .pricerangedropdown {
+  padding: 10px !important;
+  box-shadow: 0 8px 20px 0 #ebecf0;
+  left: -41px;
+  text-transform: capitalize;
+  width: 11rem;
+}
 
 
 
