@@ -1,0 +1,936 @@
+@font-face {
+    font-family: "Cream Candy";
+    src: url("CustomFont.eot");
+    src: url("CustomFont.woff") format("woff"),
+    url("../fonts/Cream Candy.otf") format("opentype"),
+    url("CustomFont.svg#filename") format("svg");
+    }
+    @font-face {
+    font-family: "Product Sans";
+    src: url("CustomFont.eot");
+    src: url("CustomFont.woff") format("woff"),
+    url("../fonts/Product Sans Regular.ttf") format('truetype'),
+    url("CustomFont.svg#filename") format("svg");
+    }
+body {
+    font-family: "Product sans";
+     font-weight: 400;
+     padding-bottom: auto;
+ }
+
+
+.aboutus{
+    background-color: #1A1C3D;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: .5rem;
+    margin-top: .5rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding-bottom: .5rem;
+    font-size: 66px;
+}
+
+
+
+.ceo-name{
+    color:#de5921;
+    font-size: 36px;
+    text-transform: capitalize;
+    font-weight: bold;
+   
+}
+
+.ceo-designation{
+    font-family: "Product Sans";
+    color: #77808B;
+    font-size: 11px;
+}
+
+
+
+
+.about-ustext {
+    font-family: "Product sans",
+    Sans-serif;
+    margin-top: 5rem;
+}
+
+.dark-box{
+    font-family: "Product sans",   Sans-serif;
+    background-color: #1A1C3D;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 550px;
+}
+
+.dark-box-prof{
+    font-family: "Product sans",    Sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #1A1C3D;
+    color: #FFFFFF;
+    position:absolute;
+    text-align: center;
+}
+.mp {
+  background-color: #1A1C3D;
+  color: white;
+  font-size: 14px;
+  /* width: 19%; */
+  padding-left: 25px;
+  padding-right: 25px;
+  top: 24px;
+  left:0;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  font-family: "Product sans";
+}
+
+.dark-box-hotel{
+    font-family: "Product sans",    Sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #1A1C3D;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+    margin-left: -12px;
+    text-align: center;
+    padding-top: 5px;
+    width: 150px;
+    height: 30px;
+}
+/* Loyalty program */
+.point-box{
+  font-family: "Product sans",    Sans-serif;
+  height: auto;
+  padding-left: 5rem;
+  padding-top: 4rem;
+  height: 550px;
+  padding-bottom: 6rem;
+  
+}
+
+.dark-box-loyalty{
+  font-family: "Product sans",    Sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #1A1C3D;
+  color: #FFFFFF;
+ margin: 0;
+  text-align: center;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  margin-left: -12px;
+  position: absolute;
+}
+.profilebox .card
+{
+  box-shadow: none;
+}
+
+.prof-loyal{
+  font-family: "Product sans",   Sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    padding-left: 1rem;
+    padding-top: 8px;
+    margin-top: 7px;
+  color: #DE5921;
+}
+
+.points{
+  font-family: "Product sans",    Sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  padding-left: 574px;
+  color: #a1a1b4;
+  
+}
+
+.points-rs{
+  color: #de5921;
+  font-size: 74px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.total-points{
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 1rem; 
+}
+
+.earn-rs{
+  color: #de5921;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: right;
+  padding-top: 3rem;
+}
+
+.earn-points{
+  font-size: 13px;
+  padding-left: 5rem;
+  font-weight: bold;
+}
+
+.pia-point-icon{
+  width: 100px; 
+  margin-top: 7rem;
+}
+
+.zero-point{
+  color: #de5921;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 3rem;
+}
+
+.use-point{
+  font-size: 13px;
+  padding-left: 0rem;
+  font-weight: bold;
+}
+
+.points-table{
+  height: 250px;
+  overflow: auto;
+  
+}
+/* .table-color{
+  background-color: #1A1C3D;
+  color: #FFFFFF;
+} */
+
+table {
+  text-align: left;
+  position: relative;
+  border-collapse: collapse; 
+}
+th, td {
+  padding: 0.25rem;
+}
+tr.table-color th {
+  background-color: #1A1C3D;
+  color: white;
+}
+
+.table-text{
+  color: #a1a1b4;
+}
+
+.form-lable{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Product sans",
+    Sans-serif;
+}
+.profilebox input::placeholder
+{
+  font-size: 12px;
+
+}
+
+.talk-box{
+    font-family: "Product sans",    Sans-serif;
+    height: 550px;
+    padding-left: 4rem;
+    padding-top: 4rem;
+    margin-right: 4rem;
+}
+
+.dropdown-menu{
+    color: black;
+}
+
+.prof-box{
+    font-family: "Product sans",    Sans-serif;
+    height: auto;
+    padding-left: 5rem;
+    padding-top: 4rem;
+    height: 550px;
+    padding-bottom: 6rem;
+    
+}
+
+.hotel-box{
+    font-family: "Product sans",    Sans-serif;
+    height: auto;
+    padding-left: 5rem;
+    padding-top: 4rem;
+    height: 550px;
+    padding-bottom: 6rem;
+    
+}
+
+.flight-box{
+  font-family: "Product sans",    Sans-serif;
+  height: auto;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  height: 450px;
+  padding-bottom: 6rem;
+  overflow: auto;
+}
+
+.room{
+  height: 400px;
+  overflow: auto;
+}
+.prof-field{
+    width: 20%;
+    padding-left: 2rem;
+}
+
+.page-item.active .page-link{
+  background-color: #de5921 !important;
+  border-color: #de5921 !important;
+  color: #e7f1ff !important;
+  
+}
+
+.page-link{
+  color: #232323 !important;
+}
+.heading-talk{
+    font-family: "Product sans",   Sans-serif;
+    font-size: 29px;
+    color: #FFFFFF;
+    padding-left: 4rem;
+    padding-top: 4rem;
+}
+
+
+.cont-info{
+    font-family: "Product sans",   Sans-serif;
+    font-size: 22px;
+    color: #FFFFFF;
+    padding-left: 4rem;
+    padding-top: 1rem;
+}
+
+.phone{
+    font-family: "Product sans",   Sans-serif;
+    font-size: 11px;
+    color: #FFFFFF;
+    padding-left: 4rem;
+    padding-top: 0rem;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 3px;
+    margin-right: 10px;
+    
+  }
+
+.field{
+    font-family: "Product sans",   Sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.smpara{
+    font-family: "Product sans",
+    Sans-serif;
+    color: #A1A1B4;
+    font-size: 14px;
+}
+.iconimage
+{
+  width: 30px;
+  height: 30px;
+}
+.short-section-heading
+{
+  font-size: 22px;
+  font-weight: bold;
+  color: #1A1C3D;
+  font-family: "Product sans",
+  Sans-serif;
+}
+
+.sm-line{
+    font-family: "Product sans",
+    Sans-serif;
+    font-weight: 200;
+    font-size: 11px;
+    color: #FFFFFF;
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 5rem;
+}
+
+.dummy img{
+    width: 100px;
+    height: 90px;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+.box{
+    padding-left: 5%;
+}
+.smpara-right{
+    font-family: "Product sans",   Sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+     
+}
+.sendBtn{
+    background-color: #de5921;
+    color: #FFFFFF;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border-radius: 8px;
+    border: none;
+}
+
+.btnBtn{
+    padding-top: 3rem;
+    text-align: right;
+    padding-right: 3rem;
+}
+
+
+
+.prof-name{
+    font-family: "Product sans",   Sans-serif;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.prof-email{
+    font-family: "Product sans",   Sans-serif;
+    font-size: 10.5px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 6px;
+}
+
+.boxed {
+    border: none;
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    height: 30px;
+    
+    
+  }
+  .prof-text {
+    font-family: "Product sans",   Sans-serif;
+    font-weight: bold;
+    color: #de5921;
+    font-size: 12px;
+    padding-left: 1rem;
+    padding-top: 8px;
+  }
+
+  .prof-text-hotel {
+    font-family: "Product sans",   Sans-serif;
+    font-weight: bold;
+    color: #1A1C3D;
+    font-size: 12px;
+    padding-left: 1rem;
+    padding-top: 8px;
+  }
+
+  .dropdown-toggle {
+    font-family: "Product sans",   Sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    background-color: #FFFFFF;
+    color: #1A1C3D;
+    border-radius: 3px;
+    height: 30px;
+    width: 100%;
+    margin-top: 9px;
+    text-align: start;
+    padding-left: 1rem;
+  }
+
+  .flight {
+    font-family: "Product sans",   Sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    background-color: #FFFFFF;
+    color: #de5921;
+    border-radius: 3px;
+    height: 30px;
+    width: 177px;
+    margin-top: 9px;
+    text-align: start;
+    padding-left: 1rem;
+  }
+
+  .star{
+    color: #45b9e2;
+    font-weight: bold;
+  }
+
+  .paybtn{
+    background-color: #45b9e2;
+    color: #FFFFFF;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 38px;
+    padding-right: 38px;
+    border-radius: 6px;
+    border: none;
+  }
+
+  .rupees{
+      font-weight: bold;
+      font-size: 20px;
+  }
+
+  .card-img{
+      width: 2611px;
+      height: 120px;
+      
+  }
+
+  .shadow card{
+    border-top-left-radius: 25px !important;
+  }
+
+  .garden{
+      font-weight: bold;
+  }
+
+  .prof-hotel {
+    font-family: "Product sans",   Sans-serif;
+    font-weight: bold;
+    color: #1A1C3D;
+    text-align: left;
+    background: white;
+    width: 100%;
+    margin-top: .5rem;
+    font-size: 11px;
+    padding-left: 1rem;
+   
+   
+  }
+
+ .prof-hotel-bok {
+    font-family: "Product sans",   Sans-serif;
+    font-weight: bold;
+    color: #de5921;
+    font-size: 12px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 8px;
+    margin-top: 7px;
+  }
+
+  .prof-hotel-flight {
+    font-family: "Product sans",   Sans-serif;
+    font-weight: bold;
+    color: #1A1C3D;
+    font-size: 12px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 8px;
+    margin-top: 7px;
+  }
+
+  .prof-hotel-prog {
+    font-family: "Product sans",   Sans-serif;
+    font-weight: bold;
+    color: #1A1C3D;
+    font-size: 11px;
+    padding-left: 1rem;
+    padding-top: 8px;
+    margin-top: 7px;
+  }
+
+  .saveBtn{
+    background-color: #de5921;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 75px;
+    padding-right: 75px;
+    border-radius: 4px;
+    border: none;
+}
+
+.card {
+    font-size: 11px;
+    }
+.depart{
+    font-size: 10px;
+    padding-left: 1rem;
+    padding-top: 10px;
+}
+
+.depart-flight{
+    font-size: 10px;
+    padding-left: 1rem;
+    padding-top: 10px;
+    color: #de5921;
+}
+
+.arrival{
+    font-size: 10px;
+    padding-left: 1rem;
+    padding-top: 3px;
+}
+
+.card-body {
+        flex: 1 1 auto;
+        padding: 0rem 0rem !important;
+    }
+
+
+    /* booking card section */
+.card {
+    box-shadow: 0 8px 20px 0 #ebecf0;
+    border: none;
+  
+  
+  }
+  
+  .card-booking-section .card-body {
+    flex: 1 1 auto;
+    padding: 0rem 0rem;
+  }
+  
+  .pia {
+    font-family: "Product sans";
+    font-size: 13px !important;
+    color: #A1A1B4;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .piaimage {
+    width: 50%;
+    
+  }
+  
+  .cityname {
+    font-family: "Product sans";
+    font-size: 21px !important;
+    color: #1A1C3D;
+    font-weight: bold;
+  }
+  
+  .timeandcity {
+    font-family: "Product sans";
+    font-size: 16px !important;
+    color: #1A1C3D;
+    font-weight: bold;
+  
+  }
+  
+  .secondplaneimage {
+    width: 100%;
+  }
+  
+  .durationstop {
+    font-family: "Product sans";
+    font-size: 10px !important;
+    color: #A1A1B4;
+  
+  }
+  
+  .hoursandminute {
+    font-family: "Product sans";
+    font-size: 8px !important;
+    color: #1A1C3D;
+    font-weight: bold;
+  }
+  
+  .ticketprice {
+    font-family: "Roboto";
+    font-size: 18px !important;
+    color: #1A1C3D;
+    font-weight: bold;
+  }
+
+  .oldprice{
+    font-family: "Roboto";
+    font-size: 9px !important;
+    color: #A1A1B4;
+    font-weight: bold;
+    text-decoration: line-through;
+  }
+  
+  #select-btn {
+    background-color: #a1a1b4;
+    font-family: "Roboto";
+    font-size: 13px !important;
+    color: white;
+  
+    padding-left: 30px;
+    padding-right: 30px;
+  
+  }
+  
+  #refund-btn {
+    background-color: #00D060;
+    font-family: "Roboto";
+    font-size: 13px !important;
+    color: white;
+  
+    padding-left: 3rem;
+    padding-right: 3rem; 
+  
+  }
+  
+  .tabs-section {
+    background-color: #F5F5F8;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .tabs-section .nav-tabs .nav-link {
+    color: #A1A1B4;
+    font-family: "Product sans";
+    font-size: 17px !important;
+  
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: #25272a !important;
+    margin-top: -2px !important;
+    background-color: #e7f1ff;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+  }
+  
+  .accordion-item {
+    background-color: #fff;
+    border: 0px solid transparent !important;
+  }
+  
+  .accordion-body {
+    padding: 0rem 0rem !important;
+  }
+  
+  .accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: 10px !important;
+    content: "";
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .1s ease-in-out !important;
+  }
+
+  .flight-details {
+    font-family: "Product sans";
+    font-size: 14px !important;
+    color: #A1A1B4;
+  }
+  
+  .flight-details-heading {
+    font-family: "Product sans";
+    font-size: 20px !important;
+    color: #1A1C3D;
+    font-weight: bold;
+  }
+
+  /* //hide show section */
+.hideshow {
+  background-color: white;
+  box-shadow: 0 0px 10px 0 #ebecf0;
+
+}
+
+.briefcase {
+  color: #1A1C3D;
+  padding-left: 1rem;
+
+}
+
+.toggle-arrow:not(.collapsed) {
+  color: #A1A1B4 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.toggle-arrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 50px !important;
+  padding: 0 !important;
+  font-size: 1rem;
+  padding-left: .1rem;
+  color: #A1A1B4 !important;
+  text-align: left;
+  background-color: transparent !important;
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+}
+.profilebox .dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 9.755em !important;
+  vertical-align: .255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+}
+.profileimg
+{
+  width: 150px;
+  height: 150px;
+}
+
+.checkdetail {
+  color: #A1A1B4;
+  padding-left: .7rem;
+}
+.flag img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+/* .btnBtn-save{
+    padding-top: 1rem;
+    text-align: right;
+    padding-right: 3rem;
+} */
+
+.form-group{
+    font-family: "Product sans",   Sans-serif;
+}
+.profilebox .fas
+{
+  color:#A1A1B4;
+}
+.profilebox .changeemailaddress
+{
+   color: #de5921;
+   font-size: 12px;
+   text-decoration: none;
+}
+
+.page-forward-link{
+    margin-top: 6rem;
+    color: #de5921;  
+}
+
+/* footer */
+.m-heading
+{
+   font-family: "Product sans";
+   font-size: 28px;
+   color: #283646;
+   font-weight: bold;
+}
+
+.footer {
+  padding-top: 6rem;
+  padding-bottom: 1rem;
+}
+.footer-row
+{
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+.social-icons li:first-child {
+  background-color: #DE5921;
+}
+
+.social-icons li {
+  width: 55px;
+  height: 55px;
+  background-color: #ECEEF0;
+  border-radius: 50%;
+  padding: 14px;
+  margin-right: 2.5rem !important;
+}
+
+.menu-links li {
+  margin-right: 2rem !important;
+}
+
+.menu-links li a {
+  color: #1A1C3D;
+  text-decoration: none;
+  font-family: "Product sans";
+  font-size: 1.3rem;
+}
+
+
+.copyright {
+  font-size: 15px;
+  color: #92989F;
+  font-family: "Product sans";
+  margin-top: 2rem;
+}
+#farebtn2 {
+  background-color: #DE5921;
+  font-family: "Roboto";
+  font-size: 13px !important;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
+@media (max-width: 1200px)
+{
+   
+}
+
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+@media (max-width: 767px){
+    .dark-box{
+        margin-left: 0;
+    }
+.dark-box-prof{
+    margin-left: 0;
+}
+
+.ticketprice {
+    font-family: Roboto;
+    color: rgb(26, 28, 61);
+    font-weight: bold;
+    font-size: 16px !important;
+  }
+  .about-ustext
+  {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
