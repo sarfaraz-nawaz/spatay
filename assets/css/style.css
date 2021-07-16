@@ -198,6 +198,8 @@ border: 1px solid #ccc;
 }
 
 
+
+
 /* On mouse-over, add a grey background color */
 .stopdropdown .custom-box:hover input~.checkmark {
   background-color: #ccc;
@@ -206,6 +208,9 @@ border: 1px solid #ccc;
 /* When the radio button is checked, add a blue background */
 .stopdropdown .custom-box input:checked~.checkmark {
   background-color:#de5921;
+}
+.filter-section .hotel-filter .stopdropdown .custom-box input:checked~.checkmark {
+  background-color:#4cbee5;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -236,6 +241,7 @@ border: 1px solid #ccc;
   box-shadow: 0 8px 20px 0 #ebecf0;
   left: -20px;
 }
+
 .timedropdown
 {
   padding: 10px !important;
@@ -246,6 +252,17 @@ border: 1px solid #ccc;
   box-shadow: 0 8px 20px 0 #ebecf0;
   left: -130px;
 }
+.filter-section .hotel-filter .timedropdown
+{
+ height: 170px;
+ overflow: auto;
+ padding: 10px !important;
+ box-shadow: 0 8px 20px 0 #ebecf0;
+ left: -11px;
+ text-transform: capitalize;
+ width: 9rem;
+}
+
 
 /* #time-filter { 
     width: 14rem;
@@ -265,12 +282,28 @@ border: 1px solid #ccc;
 {
   color: #1A1C3D;
   font-family: "Product sans";
-  font-size: 16px !important;
+  font-size: 13px !important;
   font-weight: bold;
 }
 #time-filter .stopdropdown .custom-box input:checked~.checkmark {
   background-color: #de5921;
 }
+#time-filter .stopdropdown .custom-box input:checked~.checkmark {
+  background-color: #de5921;
+}
+/* hotel listing filter */
+
+.filter-section .hotel-filter .arrow-up
+{
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid #4cbee5;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
 
 .arrow-up {
   width: 0;
@@ -1251,6 +1284,7 @@ hr
 .minmaxprice
 {
   font-size: 8px;
+  color: #A1A1B4;
 }
 
  /* checkboxess css */
@@ -1432,6 +1466,203 @@ hr
 {
   color: #de5921;
 }
+.filter-section .hotel-filter .deslect
+{
+  font-size: 10px;
+  color: #A1A1B4;
+  text-align: end;
+  text-transform: capitalize;
+  margin-top: 12px;
+  text-decoration: none;
+}
+.filter-section .hotel-filter .deslect:hover
+{
+  color: #21b8de;
+}
+
+/* hotel listing dropdown css */
+.filter-section .hotel-filter .timedropdown .airlinedropdown::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+.filter-section .hotel-filter .timedropdown::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+.airlinedropdown::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.filter-section .hotel-filter .timedropdown::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.filter-section .hotel-filter .airlinedropdown::-webkit-scrollbar-thumb {
+  background: #21b8de;
+  border-radius: 10px;
+}
+.filter-section .hotel-filter .timedropdown::-webkit-scrollbar-thumb {
+  background: #21b8de;
+  border-radius: 10px;
+}
+
+/* / Handle on hover /  */
+.airlinedropdown::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.filter-section .hotel-filter .timedropdown::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.propety-class-dropdown-star
+{
+  font-size: 10px;
+}
+.filter-section .hotel-filter #stop-filter .show {
+  padding: 10px;
+  width: 156px;
+  min-width: 5rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 8px 20px 0 #ebecf0;
+  left: -3px;
+}
+.filter-section .hotel-filter .checkmark:hover {
+  /* position: absolute;  */
+  /* top: 0; */
+  /* left: 0; */
+  height: 30px;
+  width: 30px;
+  background-color: #4cbee5 !important;
+  /* border-radius: 0; */
+  padding: 5px 10px;
+  color: #ccc;
+  border: 1px solid #ccc;
+}
+.filter-section .hotel-filter .checkmark {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  /* border-radius: 0; */
+  padding: 5px 10px;
+ 
+  color: #ccc;
+  border: 1px solid #ccc;
+}
+.refundcontainers {
+  display: block;
+  margin-top: 1rem;
+  position: relative;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: start !important;
+  padding-left: 26px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  color: #A1A1B4;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.refundcontainers input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.filter-section .hotel-filter .checkmark2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #A1A1B4;
+  border-radius: 4px;
+  height: 16px;
+  width: 8px;
+  padding: 5px 8px;
+  background-color: #eeeeee00;
+}
+
+.filter-section .hotel-filter .checkmark2:hover {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  height: 16px !important;
+  width: 16px !important;
+  background-color: #45B9E2 !important;
+  /* border-radius: 0; */
+  /* padding: 5px 10px; */
+  color: #ccc;
+  border: 1px solid #ccc;
+}
+
+/* On mouse-over, add a grey background color */
+.filter-section .hotel-filter .refundcontainers:hover input~.checkmark2 {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.filter-section .hotel-filter .refundcontainers input:checked~.checkmark2 {
+  background-color: #45B9E2;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.filter-section .hotel-filter .checkmark2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.filter-section .hotel-filter .refundcontainers input:checked~.checkmark2:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.filter-section .hotel-filter .refundcontainers .checkmark2:after {
+  left: 6px;
+  top: 2.5px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 1.5px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate (45deg);
+}
+.filter-section .hotel-filter  .airlinedropdown {
+  height: 170px;
+  overflow: auto;
+  padding: 10px !important;
+  box-shadow: 0 8px 20px 0 #ebecf0;
+  left: -39px;
+  text-transform: capitalize;
+  width: 9rem;
+}
+.filter-section .hotel-filter .pricerangedropdown .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #45B9E2;
+  box-shadow: 0 8px 20px 0 #ebecf0;
+  border: 4px solid white;
+  cursor: pointer;
+}
+.filter-section .hotel-filter .pricerangedropdown {
+  padding: 10px !important;
+  box-shadow: 0 8px 20px 0 #ebecf0;
+  left: -26px;
+  text-transform: capitalize;
+  width: 10rem;
+}
+
 
 
 

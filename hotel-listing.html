@@ -127,7 +127,7 @@
  <!---------------------------------------------- start Filter section-------------------------------------->
 
  <section class="filter-section">
-  <div class="container">
+  <div class="container hotel-filter">
    <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
      <a class="navbar-brand" href="#"><img src="assets/media/flightfilter/filter.png"> &nbsp;&nbsp;
@@ -144,48 +144,49 @@
          Property Class
          <!-- <i class="fa fa-heart"></i> -->
         </a>
-        <div class="" id="stop-filter" style="display: none;">
+        <div class="hotel-filter-class" id="stop-filter" style="display: none;">
           <div class="arrow-up"></div>
           <ul class="dropdown-menu show" aria-labelledby="">
             <p class="text-capitalize mb-0 pb-2 dropdown-title">Property Class</p>
-            <div class="stopdropdown">
+            <div class="stopdropdown text-start">
               <label class="custom-box" for="0">
                 <input type="radio" id="0" name="radio">
-                <span class="checkmark">0</span>
+                <span class="checkmark">0<i class="fas fa-star propety-class-dropdown-star"></i></span>
               </label>
-              <label class="custom-box" for="1">
+              <label class="custom-box " for="1">
                 <input type="radio" id="1" name="radio">
-                <span class="checkmark">1</span>
+                <span class="checkmark">1<i class="fas fa-star propety-class-dropdown-star"></i></span>
               </label>
               <label class="custom-box mb-4" for="2">
                 <input type="radio" id="2" name="radio">
-                <span class="checkmark">2</span>
+                <span class="checkmark">2<i class="fas fa-star propety-class-dropdown-star"></i></span>
               </label>
              <label class="custom-box" for="3">
                <input type="radio" id="3" name="radio">
-               <span class="checkmark">3</span>
+               <span class="checkmark">3<i class="fas fa-star propety-class-dropdown-star"></i></span>
              </label>
-             <label class="custom-box" for="4">
+             <label class="custom-box mb-4" for="4">
                <input type="radio" id="4" name="radio">
-               <span class="checkmark">4</span>
+               <span class="checkmark">4<i class="fas fa-star propety-class-dropdown-star"></i></span>
              </label>
              <label class="custom-box mb-4" for="5">
                <input type="radio" id="5" name="radio">
-               <span class="checkmark">5</span>
+               <span class="checkmark">5<i class="fas fa-star propety-class-dropdown-star"></i></span>
              </label>
               <label class="custom-box" for="6">
                 <input type="radio" id="6" name="radio">
-                <span class="checkmark">6</span>
+                <span class="checkmark">6<i class="fas fa-star propety-class-dropdown-star"></i></span>
               </label>
               <label class="custom-box" for="7">
                 <input type="radio" id="7" name="radio">
-                <span class="checkmark">7</span>
+                <span class="checkmark">7<i class="fas fa-star propety-class-dropdown-star"></i></span>
               </label>
               <label class="custom-box" for="8">
                 <input type="radio" id="8" name="radio">
-                <span class="checkmark">8</span>
+                <span class="checkmark">8<i class="fas fa-star propety-class-dropdown-star"></i></span>
               </label>
             </div>
+             <a href="" class="deslect justify-content-end align-items-end d-flex">Deselectall</a>
           </ul>
         </div>
        </li>
@@ -196,41 +197,40 @@
            <div class="" id="time-filter" style="display: none;">
              <div class="arrow-up"></div>
              <ul class="dropdown-menu show timedropdown" aria-labelledby="">
-               <p class="text-capitalize mb-0 pb-2 dropdown-title">Depature Time</p>
+               <p class="text-capitalize mb-0 pb-2 dropdown-title pt-2">Property Type</p>
                <div class="stopdropdown text-center">
-                 <label class="custom-box" for="time0">
-                   <input type="radio" id="time0" name="departureTime">
-                   <span class="checkmark">00:00 - 06:00</span>
-                 </label>
-                 <label class="custom-box mb-3" for="time1">
-                   <input type="radio" id="time1" name="departureTime">
-                   <span class="checkmark">06:00 - 12:00</span>
-                 </label>
-                 <label class="custom-box" for="time2">
-                   <input type="radio" id="time2" name="departureTime">
-                   <span class="checkmark">00:00 - 06:00</span>
-                 </label>
-                 <label class="custom-box mb-3" for="time3">
-                   <input type="radio" id="time3" name="departureTime">
-                   <span class="checkmark">06:00 - 12:00</span>
-                 </label>
-                 <p class="text-capitalize mb-0 pb-2 text-start dropdown-title">Arrival Time</p>
-                  <label class="custom-box mb-3" for="time4">
-                    <input type="radio" id="time4" name="arrivalTime">
-                    <span class="checkmark">00:00 - 06:00</span>
-                  </label>
-                  <label class="custom-box mb-3" for="time5">
-                    <input type="radio" id="time5" name="arrivalTime">
-                    <span class="checkmark">06:00 - 12:00</span>
-                  </label>
-                  <label class="custom-box mb-3" for="time6">
-                    <input type="radio" id="time6" name="arrivalTime">
-                    <span class="checkmark">06:00 - 12:00</span>
-                  </label>
-                  <label class="custom-box mb-3" for="time7">
-                    <input type="radio" id="time8" name="arrivalTime">
-                    <span class="checkmark">00:00 - 06:00</span>
-                  </label>
+                 <div class="text-start mt-2 airlineinput">
+                   <div>
+                     <label class="refundcontainers">Apartment
+                       <input type="checkbox" checked="checked">
+                       <span class="checkmark2"></span>
+                     </label>
+                     <label class="refundcontainers">Hotel
+                       <input type="checkbox">
+                       <span class="checkmark2"></span>
+                     </label>
+                     <label class="refundcontainers">Apart Hotel
+                       <input type="checkbox">
+                       <span class="checkmark2"></span>
+                     </label>
+                     <label class="refundcontainers">Guest House
+                       <input type="checkbox">
+                       <span class="checkmark2"></span>
+                     </label>
+                     <label class="refundcontainers">Resort
+                       <input type="checkbox">
+                       <span class="checkmark2"></span>
+                     </label>
+                   </div>
+
+                 </div>
+
+               </div>
+               <div class="d-flex justify-content-end align-items-end">
+                 <a href="" class="deslect">Selectall</a>
+                 <a class="deslect ps-1 pe-1"> / </a>
+                 <a href="" class="deslect">Deselectall</a>
+
                </div>
              </ul>
            </div>
@@ -242,35 +242,40 @@
          <div class="" id="airline-filter" style="display: none;">
            <div class="arrow-up"></div>
            <ul class="dropdown-menu show airlinedropdown" aria-labelledby="">
-             <p class="text-capitalize mb-0 pb-2 dropdown-title">Airelines</p>
+             <p class="text-capitalize mb-0 pb-2 pt-2 dropdown-title">Amenities</p>
              <div class="stopdropdown text-center">
-               <div class="d-flex">
-                 <i class="fas fa-search fa-1x  fasearch"></i>
-                 <input type="text" id="myInput" onkeyup="myFunction()"placeholder="Search Airline" title="Type in a name">
+               <div class="text-start mt-2 airlineinput">
+                 <div>
+                   <label class="refundcontainers">TV with Cable
+                     <input type="checkbox" checked="checked">
+                     <span class="checkmark2"></span>
+                   </label>
+                   <label class="refundcontainers">Airport Transfers
+                     <input type="checkbox">
+                     <span class="checkmark2"></span>
+                   </label>
+                   <label class="refundcontainers">Coffee Shop
+                     <input type="checkbox">
+                     <span class="checkmark2"></span>
+                   </label>
+                   <label class="refundcontainers">Internet Access
+                     <input type="checkbox">
+                     <span class="checkmark2"></span>
+                   </label>
+                   <label class="refundcontainers">WiFi Hotspot
+                     <input type="checkbox">
+                     <span class="checkmark2"></span>
+                   </label>
+                 </div>
+
                </div>
-               <hr style="height: 2px;">
-                <div class="text-start mt-2 airlineinput">
-                  <li>
-                    <label class="filter" for="filter1">
-                    <input id="filter1" type="checkbox" name=Organization value="this is located in hyd" /> &nbsp; Pakistan Air Line</label>
-                  </li>
-                  <li>
-                    <label class="filter" for="filter2">
-                    <input id="filter2" type="checkbox" name=Organization value="This is located in banglore" /> &nbsp; Serene Air Line</label>
-                  </li>
-                  <li>
-                    <label class="filter" for="filter3">
-                    <input id="filter3" type="checkbox" name=Organization value="Wipro" /> &nbsp;  British Airways</label>
-                  </li>
-                  <li>
-                    <label class="filter" for="filter4">
-                    <input id="filter4" type="checkbox" name=Organization value="Infosys" /> &nbsp;  Emirates Air Line</label>
-                  </li>
-                  <li>
-                    <label class="filter" for="filter5">
-                    <input id="filter5" type="checkbox" name=Organization value="Infosys" /> &nbsp;  Virgin Atlantic</label>
-                  </li>
-                </div>
+
+             </div>
+             <div class="d-flex justify-content-end align-items-end">
+               <a href="" class="deslect">Selectall</a>
+               <a class="deslect ps-1 pe-1"> / </a>
+               <a href="" class="deslect">Deselectall</a>
+
              </div>
            </ul>
          </div>
