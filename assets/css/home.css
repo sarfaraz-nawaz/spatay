@@ -26,9 +26,9 @@ body{
 	margin-bottom: 0; 
 	padding: 10px 0;
 }
-.main-menu li{
+/*.main-menu li{
 	margin-right: 4rem !important;
-}
+}*/
 .main-menu li a{
 	color: #1A1C3D;
 	text-decoration: none;
@@ -61,6 +61,7 @@ body{
 }
 #flightbox .nav-pills .nav-item{
 	padding-left: 0;
+	padding-right: 8px;
 }
 #flightbox .nav-pills .nav-item:last-Child{
 	padding-right: 0;
@@ -186,8 +187,11 @@ input::-webkit-inner-spin-button {
 	padding-right: 0;
 }
 #flightbox .form-check .form-check-label{
-	font-size: 13px;
-	padding-left: 12px;
+	font-size: 12px;
+    padding-left: 12px;
+    color: #1A1C3D;
+    font-family: 'Product Sans';
+    letter-spacing: 0.5px;
 }
 #flightbox .form-check .form-check-input:checked {
     background-color: #de5921;
@@ -205,8 +209,8 @@ input::-webkit-inner-spin-button {
 }
 .input-group .button-minus,
 .input-group .button-plus {
-  font-weight: bold;
-  height: 20px;
+  font-weight: 400;
+  height: 22px;
   padding: 0;
   width: 20px;
   border-radius: 50% !important;
@@ -214,21 +218,27 @@ input::-webkit-inner-spin-button {
   align-content: center;
   justify-content: center;
   color: #fff !important;
-  font-size: 14px !important;
+  font-size: 20px !important;
+  /*line-height: 1;*/
 }
 .input-group .button-minus{
 	background-color: #A1A1B4;
+	line-height: 12px;
 }
 .input-group .button-plus{
 	background-color: #DE5921;
+	line-height: 8px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .input-group .quantity-field {
   position: relative;
   /*height: 30px;*/
-  left: 3px;
+  /*left: 3px;*/
   /*left: -6px;*/
   text-align: center;
-  width: 98px;
+  width: 87px;
   display: inline-block;
   font-size: 13px;
   margin: 0 0px;
@@ -267,6 +277,9 @@ input[type="number"] {
     font-size: 14px;
     line-height: 23px;
 }
+.offer-card .card-body{
+	padding: 1rem 2rem;
+}
 .btn-style-one{
 	background-color: #1A1C3D;
 	border-color: #1A1C3D;
@@ -296,15 +309,15 @@ input[type="number"] {
 }
 .main-heading{
 	font-family: "Product Sans";
-	color: #1A1C3D;
-	font-weight: 900;
-	font-size: 3.5rem;
+	color: #232323;
+	font-weight: bold;
+	font-size: 4.5rem;
 }
 .style-heading{
 	font-family: "Cream Candy";
 	color: #DE5921;
-	margin-top: -3.4rem;
-    font-size: 4.5rem;
+	margin-top: -4.3rem;
+    font-size: 5.5rem;
 }
 /*Offer*/
 .offer-banner{
@@ -322,12 +335,12 @@ input[type="number"] {
 	color: #fff;
 }
 .offer-box .offer-title{
-	font-size: 3rem;
+	font-size: calc(4.4rem - 10px);
 	font-weight: 900;
 }
 .offer-box .offer-subtitle{
-	font-size: 2.4rem;
-	font-weight: 500;
+	font-size: calc(3.4rem - 8px);
+    font-weight: 500;
 }
 .offer-box .btn{
 	width: 47%;

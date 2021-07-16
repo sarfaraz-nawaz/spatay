@@ -24,7 +24,7 @@
       </button>
       <a class="navbar-brand" href="index.html"><img src="assets/media/logo.png" class="w-75"></a>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto  mt-lg-0">
+        <ul class="navbar-nav main-nav ms-auto  mt-lg-0">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">Home</a>
           </li>
@@ -48,10 +48,10 @@
   <section class="top-menu">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col col-sm-12 text-center menu-col">
-          <ul class="list-inline main-menu">
+        <div class="col col-sm-8 text-center menu-col">
+          <ul class="list-inline main-menu d-flex justify-content-between">
             <li class="list-inline-item">
-              <a href=""><img src="assets/media/home/plane.png"><br>Flight</a>
+              <a href="" class="fw-bold"><img src="assets/media/home/plane.png"><br>Flight</a>
             </li>
             <li class="list-inline-item">
               <a href="hotel.html"><img src="assets/media/home/double-bed.png"><br>Hotels</a>
@@ -97,11 +97,11 @@
               <div class="tab-pane fade show active" id="pills-oneWay" role="tabpanel" aria-labelledby="pills-oneWay-tab">
                 <form class="row g-3 py-4">
                   <div class="col-6">
-                    <label for="inputEmail4" class="form-label text-uppercase">From</label>
+                    <label for="inputEmail4" class="form-label">From</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
                       <!-- <input type="email" class="form-control p-0 ms-2" placeholder="Enter Your First Name" id="inputEmail4"> -->
-                        <input type="text" name="form" id="from-keyword" class="form-control" id="transcripts" placeholder="Karachi, Pakistan (KHR)" style="position: relative;">
+                        <input type="text" name="form" id="from-keyword" class="form-control" id="transcripts" placeholder="Lahore, Pakistan (LHE)" style="position: relative;">
                         <div class="search-dropdown" style="position: absolute; top: 100%;    z-index: 99999;">
                           <div class="search-container" id="search-from" style="display: none;">
                             <ul id="search-container-from" style="display: block;">
@@ -188,7 +188,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <label for="inputEmail4" class="form-label text-uppercase">Where To</label>
+                    <label for="inputEmail4" class="form-label">Where To</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
                       <!-- <input type="email" class="form-control p-0 ms-2" placeholder="Enter Your Last Name" id="inputEmail4"> -->
@@ -286,7 +286,7 @@
                       <input type="text" id="datepicker-oneWay" class="form-control p-0 ms-2 datepicker">
                     </div>
                   </div>
-                  <h4 class="site-font text-uppercase mt-4">Travellers</h4>
+                  <h4 class="site-font mt-4">Travellers</h4>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Adult</label>
                     <div class="input-group align-items-center justify-content-between">
@@ -311,7 +311,7 @@
                       <input type="button" value="+" class="button-plus" data-field="quantity">
                     </div>
                   </div>
-                  <h4 class="site-font text-uppercase mt-4">Select Class</h4>
+                  <h4 class="site-font mt-4">Select Class</h4>
                   <div class="d-flex justify-content-between">
                     
                     <div class="form-check">
@@ -347,10 +347,10 @@
               <div class="tab-pane fade" id="pills-round" role="tabpanel" aria-labelledby="pills-round-tab">
                 <form class="row g-3 py-4">
                   <div class="col-6">
-                    <label for="inputEmail4" class="form-label text-uppercase">From</label>
+                    <label for="inputEmail4" class="form-label">From</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
-                      <input type="text" class="form-control p-0 ms-2" placeholder="Karachi, Pakistan (KHR)" id="from-keyword-round">
+                      <input type="text" class="form-control p-0 ms-2" placeholder="Lahore, Pakistan (LHE)" id="from-keyword-round">
                       <div class="search-dropdown" style="position: absolute; top: 100%;    z-index: 99999;">
                         <div class="search-container" id="search-from-round" style="display: none;">
                           <ul id="search-container-where" style="display: block;">
@@ -437,7 +437,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <label for="inputEmail4" class="form-label text-uppercase">Where To</label>
+                    <label for="inputEmail4" class="form-label">Where To</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
                       <input type="text" class="form-control p-0 ms-2" placeholder="Karachi, Pakistan (KHR)" id="where-keyword-round">
@@ -542,7 +542,7 @@
                       <input type="text" id="datepicker-round-return" class="form-control p-0 ms-2 datepicker">
                     </div>
                   </div>
-                  <h4 class="site-font text-uppercase mt-4">Travellers</h4>
+                  <h4 class="site-font mt-4">Travellers</h4>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Adult</label>
                     <div class="input-group align-items-center justify-content-between">
@@ -567,7 +567,7 @@
                       <input type="button" value="+" class="button-plus" data-field="quantity">
                     </div>
                   </div>
-                  <h4 class="site-font text-uppercase mt-4">Select Class</h4>
+                  <h4 class="site-font mt-4">Select Class</h4>
                   <div class="d-flex justify-content-between">
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="flight-class" id="economy" value="option1" checked>
@@ -602,10 +602,10 @@
               <div class="tab-pane fade" id="pills-multi" role="tabpanel" aria-labelledby="pills-multi-tab">
                 <form class="row g-3 py-4">
                   <div class="col-6">
-                    <label for="inputEmail4" class="form-label text-uppercase">From</label>
+                    <label for="inputEmail4" class="form-label">From</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
-                      <input type="text" class="form-control p-0 ms-2" placeholder="Karachi, Pakistan (KHR)" id="from-keyword-multi1">
+                      <input type="text" class="form-control p-0 ms-2" placeholder="Lahore, Pakistan (LHE)" id="from-keyword-multi1">
                       <div class="search-dropdown" style="position: absolute; top: 100%;    z-index: 99999;">
                         <div class="search-container" id="search-from-multi1" style="display: none;">
                           <ul id="search-container-where" style="display: block;">
@@ -692,7 +692,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <label for="inputEmail4" class="form-label text-uppercase">Where To</label>
+                    <label for="inputEmail4" class="form-label">Where To</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
                       <input type="text" class="form-control p-0 ms-2" placeholder="Karachi, Pakistan (KHR)" id="where-keyword-multi1">
@@ -790,10 +790,10 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <label for="inputEmail4" class="form-label text-uppercase">From</label>
+                    <label for="inputEmail4" class="form-label">From</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
-                      <input type="text" class="form-control p-0 ms-2" placeholder="Karachi, Pakistan (KHR)" id="from-keyword-multi2">
+                      <input type="text" class="form-control p-0 ms-2" placeholder="Lahore, Pakistan (LHE)" id="from-keyword-multi2">
                       <div class="search-dropdown" style="position: absolute; top: 100%;    z-index: 99999;">
                         <div class="search-container" id="search-from-multi2" style="display: none;">
                           <ul id="search-container-where" style="display: block;">
@@ -880,7 +880,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <label for="inputEmail4" class="form-label text-uppercase">Where To</label>
+                    <label for="inputEmail4" class="form-label">Where To</label>
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
                       <input type="text" class="form-control p-0 ms-2" placeholder="Karachi, Pakistan (KHR)" id="where-keyword-multi2">
@@ -977,7 +977,7 @@
                       <input type="text" id="datepicker-multi2" class="form-control p-0 ms-2 datepicker">
                     </div>
                   </div>
-                  <h4 class="site-font text-uppercase mt-4">Travellers</h4>
+                  <h4 class="site-font mt-4">Travellers</h4>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Adult</label>
                     <div class="input-group align-items-center justify-content-between">
@@ -1002,7 +1002,7 @@
                       <input type="button" value="+" class="button-plus" data-field="quantity">
                     </div>
                   </div>
-                  <h4 class="site-font text-uppercase mt-4">Select Class</h4>
+                  <h4 class="site-font mt-4">Select Class</h4>
                   <div class="d-flex justify-content-between">
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="flight-class" id="economy" value="option1" checked>
@@ -1051,7 +1051,7 @@
       <div class="row">
         <div class="col-12 col-sm-4">
           <div class="card offer-card first border-0" style="width: 22rem;">
-            <img src="assets/media/home/Bg-Content.png" class="card-img-top" alt="...">
+            <img src="assets/media/home/1.png" class="card-img-top" alt="...">
             <div class="card-body text-center">
               <h5 class="card-title">Save Upto 20%</h5>
               <div class="code d-flex">
@@ -1064,14 +1064,14 @@
                   <p class="code-text pe-1"><strong>14</strong></p>
                 </div>
               </div>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text text-start">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="btn btn-primary btn-style-one">One Way</a>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-4">
           <div class="card offer-card border-0" style="width: 22rem;">
-            <img src="assets/media/home/Bg-Content.png" class="card-img-top" alt="...">
+            <img src="assets/media/home/2.png" class="card-img-top" alt="...">
             <div class="card-body text-center">
               <h5 class="card-title">Save Upto 40%</h5>
               <div class="code d-flex">
@@ -1084,14 +1084,14 @@
                   <p class="code-text pe-1"><strong>14</strong></p>
                 </div>
               </div>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text text-start">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="btn btn-primary btn-style-2">One Way</a>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-4">
           <div class="card offer-card border-0" style="width: 22rem;">
-            <img src="assets/media/home/Bg-Content.png" class="card-img-top" alt="...">
+            <img src="assets/media/home/3.png" class="card-img-top" alt="...">
             <div class="card-body text-center">
               <h5 class="card-title">Save Upto 10%</h5>
               <div class="code d-flex">
@@ -1104,7 +1104,7 @@
                   <p class="code-text pe-1"><strong>14</strong></p>
                 </div>
               </div>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text text-start">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="btn btn-primary btn-style-one">One Way</a>
             </div>
           </div>
@@ -1117,7 +1117,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
-          <img src="assets/media/home/plane-img.png" class="w-100">
+          <img src="assets/media/home/plane-img.png" class="w-100 h-100">
         </div>
         <div class="col-sm-6">
           <div class="offer-box h-100">
@@ -1287,7 +1287,7 @@
             <h2 class="text-uppercase">Let's Stay in touch</h2>
             <p class="text-white">Sign up for exclusive deals and new Offers</p>
             <div class="input-group">
-              <input type="email" class="form-control" placeholder="Enter your email">
+              <input type="email" class="form-control" placeholder="Enter email address...">
               <span class="input-group-btn">
                 <button class="btn btn-theme" type="submit"><i class="fas fa-paper-plane"></i></button>
               </span>
@@ -1322,7 +1322,7 @@
       </div>
       <div class="row">
         <div class="col-12 text-center">
-          <p class="copyright">&copy; Spatay 2021. All right reserved</p>
+          <p class="copyright  d-flex justify-content-center"><span>&copy;</span>  Spatay 2021. All right reserved</p>
         </div>
       </div>
     </div>

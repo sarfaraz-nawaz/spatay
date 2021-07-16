@@ -47,15 +47,24 @@ body {
 .nav-item {
   font-family: "Product sans";
   text-transform: uppercase;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-left: 8px; 
 }
-
+.main-nav .nav-item:not(:last-child) {
+  padding-right: 8px;
+  
+}
+.main-nav .nav-item:last-child .nav-link{
+  padding-right: 0;
+}
 .nav-item .nav-link {
   color: #1A1C3D;
   font-weight: bold;
 }
-
+.main-nav .nav-item .nav-link {
+  color: #1A1C3D;
+  font-weight: bold;
+  font-size: 16px;
+}
 .navbar-toggler-icon {
   color: brown;
   background-color: burlywood;
@@ -651,10 +660,14 @@ td {
 
 
 .copyright {
-  font-size: 15px;
+  font-size: 20px;
   color: #92989F;
   font-family: "Product sans";
   margin-top: 2rem;
+}
+.copyright span{
+  font-size: 28px;
+  padding-right: 1px;
 }
 #farebtn2 {
   background-color: #DE5921;
