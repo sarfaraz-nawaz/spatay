@@ -71,8 +71,8 @@ body{
 	color: #fff;
 }
 #ui-datepicker-div{
-	width: 616px !important;
-	left: 107px !important; 
+	width: 514px !important;
+	left: 133px !important; 
 	top: 466px !important;
 	border-radius: 15px;
 	box-shadow: 0 8px 20px rgb(49 52 129 / 24%);
@@ -286,6 +286,7 @@ input[type="number"] {
 }
 .btn-style-2:hover{
 	background-color: #DE5921;
+	border-color: #DE5921;
 }
 .offer-card .btn-style-one, .offer-card .btn-style-2{
 	width: 50%;
@@ -377,9 +378,6 @@ input[type="number"] {
     color: #1A1C3D;
 }
 /*******Stay Touch******/
-.stayTouch-section{
-	
-}
 .home-newsletter {
 	padding: 10rem 0;
 	background-image: url('../media/home/stayTouch.jpg');
