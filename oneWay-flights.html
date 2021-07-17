@@ -17,7 +17,7 @@
 
 <body>
   <!---------------------------------------------- start nav section -------------------------------------->
-  <nav class="navbar navbar-expand-lg  bg-white pt-2 pb-2 ">
+  <nav class="navbar navbar-expand-lg  bg-white pt-3 pb-3 ">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
       </button>
       <a class="navbar-brand" href="index.html"><img src="assets/media/logo.png" class="w-75"></a>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto  mt-lg-0">
+        <ul class="navbar-nav main-nav ms-auto  mt-lg-0">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">Home</a>
           </li>
@@ -120,7 +120,7 @@
 
           </div>
 
-          <div class="col-lg-2  mb-2 ">
+          <div class="col-lg-2  mb-2 text-end">
             <button type="button" id="search-btn" class="btn">Search Again</button>
           </div>
 
@@ -139,7 +139,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="assets/media/flightfilter/filter.png"> &nbsp&nbsp
+          <a class="navbar-brand" href="#"><img src="assets/media/flightfilter/filter.png"> &nbsp;&nbsp;
             Filters</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -362,115 +362,84 @@
 
   <section class="card-booking-section mt-5">
     <div class="container">
-      <div class="card" style="width:full-wdth;">
-        <div class="card-body">
+
+      <!-- Flight Data -->
+      <div class="flight-data mt-5 border-bottom-0">
+
+        <div class="card mt-5">
           <div class="row justify-content-center align-items-center d-flex pe-4 ps-4 pt-2">
             <div class="col-lg-2 col-sm-12">
               <img src="assets/media/flightfilter/pia.png" class="piaimage">
               <p class="pia">Pakistan Airelines</p>
-
             </div>
-
             <div class="col-lg-2 col-4">
               <p class="pia">24 JAN' 21</p>
               <h6 class="cityname">LAHORE</h6>
-              <h6 class="timeandcity">15:15 &nbsp LHE</h6>
-
-
+              <h6 class="timeandcity">15:15 &nbsp; LHE</h6>
             </div>
-
             <div class="col-lg-2 col-4">
               <img src="assets/media/flightfilter/Plane icon.png" class="secondplaneimage">
-
-
             </div>
             <div class="col-lg-2 col-4">
               <p class="pia">25 JAN' 21</p>
               <h6 class="cityname">KARACHI</h6>
-              <h6 class="timeandcity">22:15 &nbsp LHE</h6>
-
-
+              <h6 class="timeandcity">22:15 &nbsp; LHE</h6>
             </div>
-
             <div class="col-lg-1 col-4 mt-2">
               <p class="durationstop">Duration</p>
               <h6 class="hoursandminute">18 hrs 10 min</h6>
             </div>
-
             <div class="col-lg-1 col-4 mt-2">
               <p class="durationstop">Stops</p>
               <h6 class="hoursandminute">NonStops</h6>
             </div>
-
             <div class="col-lg-2 text-center mb-4 mt-2 col-4">
-
               <h6 class="ticketprice">PKR 19,000</h6>
-              <a type="button" href="oneWay-summary.html" id="select-btn" class="btn">Select</a>
-
+              <a type="button" href="multiCity-summary.html" id="select-btn" class="btn">Select</a>
             </div>
-
           </div>
-
-
 
           <div class="accordion" id="accordionPanelsStayOpenExample2">
             <div class="accordion-item">
 
               <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
-                aria-labelledby="panelsStayOpen-headingOne">
+             aria-labelledby="panelsStayOpen-headingOne">
                 <div class="accordion-body">
-
                   <section class="tabs-section pt-1 pb-1  ">
-
                     <nav>
                       <div class="nav nav-tabs " id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
-                          data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                          aria-selected="false">Flight Information
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="false">Flight Information
                         </button>
 
-                        <button class="nav-link" id="nav-cancellation-tab" data-bs-toggle="tab"
-                          data-bs-target="#nav-cancellation" type="button" role="tab" aria-controls="nav-profile"
-                          aria-selected="false">Cancellation</button>
+                        <button class="nav-link" id="nav-cancellation-tab" data-bs-toggle="tab" data-bs-target="#nav-cancellation"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Cancellation</button>
 
-                        <button class="nav-link" id="nav-datechange-tab" data-bs-toggle="tab"
-                          data-bs-target="#nav-datechange" type="button" role="tab" aria-controls="nav-contact"
-                          aria-selected="false">Date Change</button>
+                        <button class="nav-link" id="nav-datechange-tab" data-bs-toggle="tab" data-bs-target="#nav-datechange"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Date Change</button>
 
                         <button class="nav-link" id="nav-baggage-tab" data-bs-toggle="tab" data-bs-target="#nav-baggage"
-                          type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Baggage</button>
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Baggage</button>
                       </div>
                     </nav>
                   </section>
-
-
                   <div class="tab-content" id="nav-tabContent">
                     <!-- Flight Information tab start -->
                     <div class="tab-pane  active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-
                       <div class="row justify-content-center align-items-center  d-flex pe-4 ps-4 pt-4 pb-4">
-
                         <div class="col-lg-2 col-4">
                           <p class="pia">24 JAN' 21</p>
                           <h6 class="cityname">LAHORE</h6>
                           <h6 class="timeandcity">15:15 &nbsp LHE</h6>
-
-
                         </div>
-
                         <div class="col-lg-2 col-4">
                           <img src="assets/media/flightfilter/Plane icon.png" class="secondplaneimage">
-
-
                         </div>
                         <div class="col-lg-2  col-4">
                           <p class="pia">25 JAN' 21</p>
                           <h6 class="cityname">KARACHI</h6>
                           <h6 class="timeandcity">22:15 &nbsp LHE</h6>
-
-
                         </div>
-
                         <div class="col-lg-2  dh col-4 mt-2">
                           <p class="flight-details">Flight No</p>
                           <h6 class="flight-details-heading">PA-401</h6>
@@ -478,7 +447,6 @@
                           <p class="flight-details">Baggage Weight</p>
                           <h6 class="flight-details-heading">15 KGS</h6>
                         </div>
-
                         <div class="col-lg-2  dh col-4  mt-2">
                           <p class="flight-details">Persons</p>
                           <h6 class="flight-details-heading">1 pc(s)</h6>
@@ -486,7 +454,6 @@
                           <p class="flight-details">Airline</p>
                           <h6 class="flight-details-heading">PIA</h6>
                         </div>
-
                         <div class="col-lg-2  dh col-4  mt-2">
                           <p class="flight-details">Flight Class</p>
                           <h6 class="flight-details-heading">Economy</h6>
@@ -494,384 +461,262 @@
                           <p class="flight-details">Stops</p>
                           <h6 class="flight-details-heading">Nonstop</h6>
                         </div>
-
-                      </div>
-
-                    </div>
-                    <!-- Flight Information tab end -->
-
-                    <!-- Cancellation tab  start-->
-                    <div class="tab-pane fade" id="nav-cancellation" role="tabpanel"
-                      aria-labelledby="nav-cancellation-tab">
-
-                      <div class="row justify-content-center align-items-center d-flex pe-4 pt-4 pb-4 pe-4 ps-4">
-
-                        <div class="col-md-5 pe-5 ">
-
-                          <div class="citydiv d-flex align-items-center">
-                            <h6 class="cityname pe-4">LHE</h6>
-                            <img src="assets/media/flightfilter/Plane icon.png" class=" w-50 secondplaneimage  ">
-                            <h6 class="cityname ps-5 ms-2">KHI</h6>
-                          </div>
-
-                          <div class="refundbtndiv align-items-center pt-4 pe-4">
-
-                            <button type="button" id="refund-btn" class="btn w-100 ps-5 pe-5">Refundable</button>
-                            <p class="durationstop pt-2">* From The Date Of Depature</p>
-
-                          </div>
-
-
-
-                        </div>
-
-                        <div class="col-md-6 align-items-center pe-5 ps-5">
-
-                          <table class="table table-bordered">
-                            <thead>
-                              <tr>
-                                <th>Time</th>
-                                <th class="cf text-center">Cancellation Fee</th>
-
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>After Depature / No Show.</td>
-                                <td class="price text-center">Pkr 5000</td>
-
-                              </tr>
-                              <tr>
-                                <td>Within 48 Hours Before Flight Depature.</td>
-                                <td class="price text-center">Pkr 3500</td>
-
-                              </tr>
-                              <tr>
-                                <td>More Than 48 Hours Before Flight Depature</td>
-                                <td class="price text-center">Pkr 2500</td>
-
-                              </tr>
-                            </tbody>
-                          </table>
-
-
-                        </div>
-
-                        <div class="col-md-1 align-items-center">
-
-                        </div>
-
-                      </div>
-
-                    </div>
-                    <!-- Cancellation tab end-->
-
-
-                    <!-- Date change tab start-->
-
-                    <div class="tab-pane fade" id="nav-datechange" role="tabpanel" aria-labelledby="nav-datechange-tab">
-                      <div class="row justify-content-center align-items-center d-flex pe-4 pt-4 pb-4 pe-4 ps-4">
-
-                        <div class="col-md-5 pe-5 ">
-
-                          <div class="citydiv d-flex align-items-center">
-                            <h6 class="cityname pe-4">LHE</h6>
-                            <img src="assets/media/flightfilter/Plane icon.png" class=" w-50 secondplaneimage  ">
-                            <h6 class="cityname ps-5 ms-2">KHI</h6>
-                          </div>
-
-                          <div class="refundbtndiv align-items-center pt-4 pe-4">
-
-                            <button type="button" id="refund-btn" class="btn w-100 ps-5 pe-5">Refundable</button>
-                            <p class="durationstop pt-2">* From The Date Of Depature</p>
-
-                          </div>
-
-
-
-                        </div>
-
-                        <div class="col-md-6 align-items-center pe-5 ps-5">
-
-                          <table class="table table-bordered">
-                            <thead>
-                              <tr>
-                                <th>Time</th>
-                                <th class="changefee text-center">Change Fee</th>
-
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>After Depature / No Show.</td>
-                                <td class="price text-center">Pkr 5000</td>
-
-                              </tr>
-                              <tr>
-                                <td>Within 48 Hours Before Flight Depature.</td>
-                                <td class="price text-center">Pkr 3500</td>
-
-                              </tr>
-                              <tr>
-                                <td>More Than 48 Hours Before Flight Depature</td>
-                                <td class="price text-center">Pkr 2500</td>
-
-                              </tr>
-                            </tbody>
-                          </table>
-
-                        </div>
-
-                        <div class="col-md-1 align-items-center">
-                        </div>
                       </div>
                     </div>
+                   <!-- Flight Information tab end -->
 
-                    <!-- Date change tab end-->
-                    <!-- Baggage tab start-->
-
-                    <div class="tab-pane fade" id="nav-baggage" role="tabpanel" aria-labelledby="nav-baggage-tab">
-                      <div class="row justify-content-center align-items-center d-flex pe-4 pt-4 pb-4 pe-4 ps-4">
-
-                        <div class="col-md-7 pe-5 ">
-
-                          <div class="citydiv d-flex align-items-center">
-                            <h6 class="cityname pe-4">LHE</h6>
-                            <img src="assets/media/flightfilter/Plane icon.png" class=" w-50 secondplaneimage  ">
-                            <h6 class="cityname ps-5 ms-2">KHI</h6>
-                          </div>
-
-                          <div class="tablediv pt-5">
-                            <table class="table table-bordered">
-                              <thead>
-                                <tr>
-                                  <th>Baggage</th>
-                                  <th class="changefee">Fee</th>
-
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>Economy Standard Check-In Baggage</td>
-                                  <td class="price">1 Pieces Of 15 Kg Each Of Size L+W+H=54</td>
-
-                                </tr>
-
-                              </tbody>
-                            </table>
-                          </div>
-
+                   <!-- Cancellation tab  start-->
+                   <div class="tab-pane fade" id="nav-cancellation" role="tabpanel" aria-labelledby="nav-cancellation-tab">
+                    <div class="row justify-content-center align-items-center d-flex pe-4 pt-4 pb-4 pe-4 ps-4">
+                      <div class="col-md-5 pe-5 ">
+                        <div class="citydiv d-flex align-items-center">
+                          <h6 class="cityname pe-4">LHE</h6>
+                          <img src="assets/media/flightfilter/Plane icon.png" class=" w-50 secondplaneimage  ">
+                          <h6 class="cityname ps-5 ms-2">KHI</h6>
                         </div>
-
-                        <div class="col-md-5 align-items-center pe-5 ps-5">
-
+                        <div class="refundbtndiv align-items-center pt-4 pe-4">
+                          <button type="button" id="refund-btn" class="btn w-100 ps-5 pe-5">Refundable</button>
+                          <p class="durationstop pt-2">* From The Date Of Depature</p>
                         </div>
-
-                        <section class="econmy-section mt-2 pt-4 pb-4 ps-3 pe-3">
-                          <div class="row justify-content-center align-items-center">
-                            <div class="col-md-3 col-6 mb-3">
-                              <h6 class="cityname pb-2">Economy</h6>
-                              <div class="baggagesecond d-flex align-items-center">
-                                <i class="fas fa-briefcase brie-fcase fa-2x "></i>
-                                <h6 class="baggage-include pt-2">Baggage Included
-                                </h6>
-
-                              </div>
-                              <button type="button" id="farebtn" class="btn  mt-3">Select this fare
-                              </button>
-                            </div>
-                            <div class="col-md-3 col-6">
-                              <h6 class="cityname pb-2 text-center">Rs. 5,070</h6>
-                              <h6 class="baggage-include pt-2 text-center">1 Pc - 15 Kg </h6>
-                            </div>
-
-                            <div class="col-md-3  col-6 mb-3">
-                              <h6 class="cityname pb-2">Economy</h6>
-                              <div class="baggagesecond d-flex align-items-center">
-                                <i class="fas fa-briefcase brie-fcase fa-2x "></i>
-                                <h6 class="baggage-include pt-2 ">Baggage Included
-                                </h6>
-
-                              </div>
-                              <button type="button" id="farebtn" class="btn  mt-3">Select this fare
-                              </button>
-                            </div>
-
-                            <div class="col-md-3 col-6">
-                              <h6 class="cityname pb-2 text-center">Rs. 5,070</h6>
-                              <h6 class="baggage-include pt-2 text-center">1 Pc - 15 Kg </h6>
-                            </div>
-
-                          </div>
-                        </section>
-
                       </div>
+                      <div class="col-md-6 align-items-center pe-5 ps-5">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>Time</th>
+                              <th class="cf text-center">Cancellation Fee</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>After Depature / No Show.</td>
+                              <td class="price text-center">Pkr 5000</td>
+                            </tr>
+                            <tr>
+                              <td>Within 48 Hours Before Flight Depature.</td>
+                              <td class="price text-center">Pkr 3500</td>
+                            </tr>
+                            <tr>
+                              <td>More Than 48 Hours Before Flight Depature</td>
+                              <td class="price text-center">Pkr 2500</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-md-1 align-items-center"></div>
                     </div>
+                   </div>
+                   <!-- Cancellation tab end-->
+                   <!-- Date change tab start-->
+                   <div class="tab-pane fade" id="nav-datechange" role="tabpanel" aria-labelledby="nav-datechange-tab">
+                    <div class="row justify-content-center align-items-center d-flex pe-4 pt-4 pb-4 pe-4 ps-4">
+                      <div class="col-md-5 pe-5 ">
+                        <div class="citydiv d-flex align-items-center">
+                          <h6 class="cityname pe-4">LHE</h6>
+                          <img src="assets/media/flightfilter/Plane icon.png" class=" w-50 secondplaneimage  ">
+                          <h6 class="cityname ps-5 ms-2">KHI</h6>
+                        </div>
+                        <div class="refundbtndiv align-items-center pt-4 pe-4">
+                          <button type="button" id="refund-btn" class="btn w-100 ps-5 pe-5">Refundable</button>
+                          <p class="durationstop pt-2">* From The Date Of Depature</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6 align-items-center pe-5 ps-5">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>Time</th>
+                              <th class="changefee text-center">Change Fee</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>After Depature / No Show.</td>
+                              <td class="price text-center">Pkr 5000</td>
+                            </tr>
+                            <tr>
+                              <td>Within 48 Hours Before Flight Depature.</td>
+                              <td class="price text-center">Pkr 3500</td>
+                            </tr>
+                            <tr>
+                              <td>More Than 48 Hours Before Flight Depature</td>
+                              <td class="price text-center">Pkr 2500</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-md-1 align-items-center"></div>
+                    </div>
+                   </div>
+                   <!-- Date change tab end-->
+                   <!-- Baggage tab start-->
 
-                    <!-- Baggage tab end-->
+                   <div class="tab-pane fade" id="nav-baggage" role="tabpanel" aria-labelledby="nav-baggage-tab">
+                    <div class="row justify-content-center align-items-center d-flex pe-4 pt-4 pb-4 pe-4 ps-4">
+                     <div class="col-md-7 pe-5 ">
+                      <div class="citydiv d-flex align-items-center">
+                       <h6 class="cityname pe-4">LHE</h6>
+                       <img src="assets/media/flightfilter/Plane icon.png" class=" w-50 secondplaneimage  ">
+                       <h6 class="cityname ps-5 ms-2">KHI</h6>
+                      </div>
+                      <div class="tablediv pt-5">
+                       <table class="table table-bordered">
+                        <thead>
+                         <tr>
+                          <th>Baggage</th>
+                          <th class="changefee">Fee</th>
+                         </tr>
+                        </thead>
+                        <tbody>
+                         <tr>
+                          <td>Economy Standard Check-In Baggage</td>
+                          <td class="price">1 Pieces Of 15 Kg Each Of Size L+W+H=54</td>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </div>
+                     </div>
 
+                     <div class="col-md-5 align-items-center pe-5 ps-5">
+
+                     </div>
+                     <section class="econmy-section mt-2 pt-4 pb-4 ps-3 pe-3">
+                      <div class="row justify-content-center align-items-center">
+                       <div class="col-md-3 col-6 mb-3">
+                        <h6 class="cityname pb-2">Economy</h6>
+                        <div class="baggagesecond d-flex align-items-center">
+                         <i class="fas fa-briefcase brie-fcase fa-2x "></i>
+                         <h6 class="baggage-include pt-2">Baggage Included
+                         </h6>
+                        </div>
+                        <button type="button" id="farebtn" class="btn  mt-3">Select this fare
+                        </button>
+                       </div>
+                       <div class="col-md-3 col-6">
+                        <h6 class="cityname pb-2 text-center">Rs. 5,070</h6>
+                        <h6 class="baggage-include pt-2 text-center">1 Pc - 15 Kg </h6>
+                       </div>
+                       <div class="col-md-3  col-6 mb-3">
+                        <h6 class="cityname pb-2">Economy</h6>
+                        <div class="baggagesecond d-flex align-items-center">
+                         <i class="fas fa-briefcase brie-fcase fa-2x "></i>
+                         <h6 class="baggage-include pt-2 ">Baggage Included
+                         </h6>
+                        </div>
+                        <button type="button" id="farebtn" class="btn  mt-3">Select this fare
+                        </button>
+                       </div>
+                       <div class="col-md-3 col-6">
+                        <h6 class="cityname pb-2 text-center">Rs. 5,070</h6>
+                        <h6 class="baggage-include pt-2 text-center">1 Pc - 15 Kg </h6>
+                       </div>
+                      </div>
+                     </section>
+                    </div>
+                   </div>
+                   <!-- Baggage tab end-->
                   </div>
-
                 </div>
-
               </div>
-
             </div>
           </div>
         </div>
-
-
-      </div>
-
-
-      <!-- Flight Information tab start -->
-
-
-      <!-- hide show section -->
-      <section class="hideshow ">
-        <div class="row pt-1 pb-1 justify-content-center align-items-center d-flex ">
+        <section class="hideshow ">
+         <div class="row pt-1 pb-1 justify-content-center align-items-center d-flex ">
           <div class="col-md-10 col-sm-8 col-6 d-flex pt-2  ">
-            <p class="durationstop ps-5">Cost Includes</p>
-            <i class="fas fa-briefcase briefcase"></i>
+           <p class="durationstop ps-5">Cost Includes</p>
+           <i class="fas fa-briefcase briefcase"></i>
           </div>
           <div class="col-md-2 col-sm-6 col-6 d-flex text-end  ">
-            <p class="durationstop ps-5 mb-0" id="show" style="display: none;">Check Details</p>
-            <p class="durationstop ps-5 mb-0" id="hide">Hide Details</p>
-            <span class="accordion-button toggle-arrow" type="button" data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-              aria-controls="panelsStayOpen-collapseOne">
+           <p class="durationstop ps-5 mb-0" id="show" style="display: none;">Show Details</p>
+           <p class="durationstop ps-5 mb-0" id="hide">Hide Details</p>
+           <span class="accordion-button toggle-arrow" id="toggle-arrowOne" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
 
-            </span>
+           </span>
           </div>
-        </div>
+         </div>
 
-      </section>
+        </section>
+      </div>
 
-    </div>
+      <!-- Flight List -->
+      <div class="flight-data mt-5 border-bottom-0">
 
-
-
-    </div>
-
-    </div>
-    </div>
-
-  </section>
-
-  <!---------------------------------------------- end booking card section-------------------------------------->
-
-  <section class="card-booking-section mt-5 pt-2">
-    <div class="container">
-      <div class="card" style="width:full-wdth;">
-        <div class="card-body">
+        <div class="card mt-5">
           <div class="row justify-content-center align-items-center d-flex pe-4 ps-4 pt-2">
             <div class="col-lg-2 col-sm-12">
               <img src="assets/media/flightfilter/pia.png" class="piaimage">
               <p class="pia">Pakistan Airelines</p>
-
             </div>
-
             <div class="col-lg-2 col-4">
               <p class="pia">24 JAN' 21</p>
               <h6 class="cityname">LAHORE</h6>
-              <h6 class="timeandcity">15:15 &nbsp LHE</h6>
-
-
+              <h6 class="timeandcity">15:15 &nbsp; LHE</h6>
             </div>
-
             <div class="col-lg-2 col-4">
               <img src="assets/media/flightfilter/Plane icon.png" class="secondplaneimage">
-
-
             </div>
             <div class="col-lg-2 col-4">
               <p class="pia">25 JAN' 21</p>
               <h6 class="cityname">KARACHI</h6>
-              <h6 class="timeandcity">22:15 &nbsp LHE</h6>
-
-
+              <h6 class="timeandcity">22:15 &nbsp; LHE</h6>
             </div>
-
             <div class="col-lg-1 col-4 mt-2">
               <p class="durationstop">Duration</p>
               <h6 class="hoursandminute">18 hrs 10 min</h6>
             </div>
-
             <div class="col-lg-1 col-4 mt-2">
               <p class="durationstop">Stops</p>
               <h6 class="hoursandminute">NonStops</h6>
             </div>
-
             <div class="col-lg-2 text-center mb-4 mt-2 col-4">
-
               <h6 class="ticketprice">PKR 19,000</h6>
-              <a type="button" href="oneWay-summary.html" id="select-btn" class="btn">Select</a>
-
+              <a type="button" href="multiCity-summary.html" id="select-btn" class="btn">Select</a>
             </div>
-
           </div>
 
-
-
-          <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion" id="accordionPanelsStayOpenExample2">
             <div class="accordion-item">
 
-              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
-                aria-labelledby="panelsStayOpen-headingOne">
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+             aria-labelledby="panelsStayOpen-headingtwo">
                 <div class="accordion-body">
-
                   <section class="tabs-section pt-1 pb-1  ">
-
                     <nav>
-                      <div class="nav nav-tabs" id="nav-tabs" role="tablist">
-                        <button class="nav-link active" id="nav-home1-tab" data-bs-toggle="tab"
-                          data-bs-target="#nav-home1" type="button" role="tab" aria-controls="nav-home1"
-                          aria-selected="false">Flight Information
+                      <div class="nav nav-tabs " id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="false">Flight Information
                         </button>
 
-                        <button class="nav-link" id="nav-cancellation1-tab" data-bs-toggle="tab"
-                          data-bs-target="#nav-cancellation1" type="button" role="tab" aria-controls="nav-profile"
-                          aria-selected="false">Cancellation</button>
+                        <button class="nav-link" id="nav-cancellation-tab" data-bs-toggle="tab" data-bs-target="#nav-cancellation"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Cancellation</button>
 
-                        <button class="nav-link" id="nav-datechange1-tab" data-bs-toggle="tab"
-                          data-bs-target="#nav-datechange1" type="button" role="tab" aria-controls="nav-contact"
-                          aria-selected="false">Date Change</button>
+                        <button class="nav-link" id="nav-datechange-tab" data-bs-toggle="tab" data-bs-target="#nav-datechange"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Date Change</button>
 
-                        <button class="nav-link" id="nav-baggage1-tab" data-bs-toggle="tab"
-                          data-bs-target="#nav-baggage1" type="button" role="tab" aria-controls="nav-contact"
-                          aria-selected="false">Baggage</button>
+                        <button class="nav-link" id="nav-baggage-tab" data-bs-toggle="tab" data-bs-target="#nav-baggage"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Baggage</button>
                       </div>
                     </nav>
                   </section>
-
-
                   <div class="tab-content" id="nav-tabContent">
                     <!-- Flight Information tab start -->
-                    <div class="tab-pane active" id="nav-home1" role="tabpanel" aria-labelledby="nav-home1-tab">
-
+                    <div class="tab-pane  active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                       <div class="row justify-content-center align-items-center  d-flex pe-4 ps-4 pt-4 pb-4">
-
                         <div class="col-lg-2 col-4">
                           <p class="pia">24 JAN' 21</p>
                           <h6 class="cityname">LAHORE</h6>
                           <h6 class="timeandcity">15:15 &nbsp LHE</h6>
-
-
                         </div>
-
                         <div class="col-lg-2 col-4">
                           <img src="assets/media/flightfilter/Plane icon.png" class="secondplaneimage">
-
-
                         </div>
                         <div class="col-lg-2  col-4">
                           <p class="pia">25 JAN' 21</p>
                           <h6 class="cityname">KARACHI</h6>
                           <h6 class="timeandcity">22:15 &nbsp LHE</h6>
-
-
                         </div>
-
                         <div class="col-lg-2  dh col-4 mt-2">
                           <p class="flight-details">Flight No</p>
                           <h6 class="flight-details-heading">PA-401</h6>
@@ -879,7 +724,6 @@
                           <p class="flight-details">Baggage Weight</p>
                           <h6 class="flight-details-heading">15 KGS</h6>
                         </div>
-
                         <div class="col-lg-2  dh col-4  mt-2">
                           <p class="flight-details">Persons</p>
                           <h6 class="flight-details-heading">1 pc(s)</h6>
@@ -887,7 +731,6 @@
                           <p class="flight-details">Airline</p>
                           <h6 class="flight-details-heading">PIA</h6>
                         </div>
-
                         <div class="col-lg-2  dh col-4  mt-2">
                           <p class="flight-details">Flight Class</p>
                           <h6 class="flight-details-heading">Economy</h6>
@@ -895,271 +738,190 @@
                           <p class="flight-details">Stops</p>
                           <h6 class="flight-details-heading">Nonstop</h6>
                         </div>
-
-                      </div>
-
-                    </div>
-                    <!-- Flight Information tab end -->
-
-                    <!-- Cancellation tab  start-->
-                    <div class="tab-pane fade" id="nav-cancellation1" role="tabpanel"
-                      aria-labelledby="nav-cancellation1-tab">
-
-                      <div class="row justify-content-center align-items-center d-flex pe-4 pt-4 pb-4 pe-4 ps-4">
-
-                        <div class="col-md-5 pe-5 ">
-
-                          <div class="citydiv d-flex align-items-center">
-                            <h6 class="cityname pe-4">LHE</h6>
-                            <img src="assets/media/flightfilter/Plane icon.png" class=" w-50 secondplaneimage  ">
-                            <h6 class="cityname ps-5 ms-2">KHI</h6>
-                          </div>
-
-                          <div class="refundbtndiv align-items-center pt-4 pe-4">
-
-                            <button type="button" id="refund-btn" class="btn w-100 ps-5 pe-5">Refundable</button>
-                            <p class="durationstop pt-2">* From The Date Of Depature</p>
-
-                          </div>
-
-
-
-                        </div>
-
-                        <div class="col-md-6 align-items-center pe-5 ps-5">
-
-                          <table class="table table-bordered">
-                            <thead>
-                              <tr>
-                                <th>Time</th>
-                                <th class="cf text-center">Cancellation Fee</th>
-
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>After Depature / No Show.</td>
-                                <td class="price text-center">Pkr 5000</td>
-
-                              </tr>
-                              <tr>
-                                <td>Within 48 Hours Before Flight Depature.</td>
-                                <td class="price text-center">Pkr 3500</td>
-
-                              </tr>
-                              <tr>
-                                <td>More Than 48 Hours Before Flight Depature</td>
-                                <td class="price text-center">Pkr 2500</td>
-
-                              </tr>
-                            </tbody>
-                          </table>
-
-
-                        </div>
-
-                        <div class="col-md-1 align-items-center">
-
-                        </div>
-
-                      </div>
-
-                    </div>
-                    <!-- Cancellation tab end-->
-
-
-                    <!-- Date change tab start-->
-
-                    <div class="tab-pane fade" id="nav-datechange1" role="tabpanel"
-                      aria-labelledby="nav-datechange1-tab">
-                      <div class="row justify-content-center align-items-center d-flex pe-4 pt-4 pb-4 pe-4 ps-4">
-
-                        <div class="col-md-5 pe-5 ">
-
-                          <div class="citydiv d-flex align-items-center">
-                            <h6 class="cityname pe-4">LHE</h6>
-                            <img src="assets/media/flightfilter/Plane icon.png" class=" w-50 secondplaneimage  ">
-                            <h6 class="cityname ps-5 ms-2">KHI</h6>
-                          </div>
-
-                          <div class="refundbtndiv align-items-center pt-4 pe-4">
-
-                            <button type="button" id="refund-btn" class="btn w-100 ps-5 pe-5">Refundable</button>
-                            <p class="durationstop pt-2">* From The Date Of Depature</p>
-
-                          </div>
-
-
-
-                        </div>
-
-                        <div class="col-md-6 align-items-center pe-5 ps-5">
-
-                          <table class="table table-bordered">
-                            <thead>
-                              <tr>
-                                <th>Time</th>
-                                <th class="changefee text-center">Change Fee</th>
-
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>After Depature / No Show.</td>
-                                <td class="price text-center">Pkr 5000</td>
-
-                              </tr>
-                              <tr>
-                                <td>Within 48 Hours Before Flight Depature.</td>
-                                <td class="price text-center">Pkr 3500</td>
-
-                              </tr>
-                              <tr>
-                                <td>More Than 48 Hours Before Flight Depature</td>
-                                <td class="price text-center">Pkr 2500</td>
-
-                              </tr>
-                            </tbody>
-                          </table>
-
-                        </div>
-
-                        <div class="col-md-1 align-items-center">
-                        </div>
                       </div>
                     </div>
+                   <!-- Flight Information tab end -->
 
-                    <!-- Date change tab end-->
-                    <!-- Baggage tab start-->
-
-                    <div class="tab-pane fade" id="nav-baggage1" role="tabpanel" aria-labelledby="nav-baggage1-tab">
-                      <div class="row justify-content-center align-items-center d-flex pe-4 pt-4 pb-4 pe-4 ps-4">
-
-                        <div class="col-md-7 pe-5 ">
-
-                          <div class="citydiv d-flex align-items-center">
-                            <h6 class="cityname pe-4">LHE</h6>
-                            <img src="assets/media/flightfilter/Plane icon.png" class=" w-50 secondplaneimage  ">
-                            <h6 class="cityname ps-5 ms-2">KHI</h6>
-                          </div>
-
-                          <div class="tablediv pt-5">
-                            <table class="table table-bordered">
-                              <thead>
-                                <tr>
-                                  <th>Baggage</th>
-                                  <th class="changefee">Fee</th>
-
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>Economy Standard Check-In Baggage</td>
-                                  <td class="price">1 Pieces Of 15 Kg Each Of Size L+W+H=54</td>
-
-                                </tr>
-
-                              </tbody>
-                            </table>
-                          </div>
-
+                   <!-- Cancellation tab  start-->
+                   <div class="tab-pane fade" id="nav-cancellation" role="tabpanel" aria-labelledby="nav-cancellation-tab">
+                    <div class="row justify-content-center align-items-center d-flex pe-4 pt-4 pb-4 pe-4 ps-4">
+                      <div class="col-md-5 pe-5 ">
+                        <div class="citydiv d-flex align-items-center">
+                          <h6 class="cityname pe-4">LHE</h6>
+                          <img src="assets/media/flightfilter/Plane icon.png" class=" w-50 secondplaneimage  ">
+                          <h6 class="cityname ps-5 ms-2">KHI</h6>
                         </div>
-
-                        <div class="col-md-5 align-items-center pe-5 ps-5">
-
+                        <div class="refundbtndiv align-items-center pt-4 pe-4">
+                          <button type="button" id="refund-btn" class="btn w-100 ps-5 pe-5">Refundable</button>
+                          <p class="durationstop pt-2">* From The Date Of Depature</p>
                         </div>
-
-                        <section class="econmy-section mt-2 pt-4 pb-4 ps-3 pe-3">
-                          <div class="row justify-content-center align-items-center">
-                            <div class="col-md-3 col-6 mb-3">
-                              <h6 class="cityname pb-2">Economy</h6>
-                              <div class="baggagesecond d-flex align-items-center">
-                                <i class="fas fa-briefcase brie-fcase fa-2x "></i>
-                                <h6 class="baggage-include pt-2">Baggage Included
-                                </h6>
-
-                              </div>
-                              <button type="button" id="farebtn" class="btn  mt-3">Select this fare
-                              </button>
-                            </div>
-                            <div class="col-md-3 col-6">
-                              <h6 class="cityname pb-2 text-center">Rs. 5,070</h6>
-                              <h6 class="baggage-include pt-2 text-center">1 Pc - 15 Kg </h6>
-                            </div>
-
-                            <div class="col-md-3  col-6 mb-3">
-                              <h6 class="cityname pb-2">Economy</h6>
-                              <div class="baggagesecond d-flex align-items-center">
-                                <i class="fas fa-briefcase brie-fcase fa-2x "></i>
-                                <h6 class="baggage-include pt-2 ">Baggage Included
-                                </h6>
-
-                              </div>
-                              <button type="button" id="farebtn" class="btn  mt-3">Select this fare
-                              </button>
-                            </div>
-
-                            <div class="col-md-3 col-6">
-                              <h6 class="cityname pb-2 text-center">Rs. 5,070</h6>
-                              <h6 class="baggage-include pt-2 text-center">1 Pc - 15 Kg </h6>
-                            </div>
-
-                          </div>
-                        </section>
-
                       </div>
+                      <div class="col-md-6 align-items-center pe-5 ps-5">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>Time</th>
+                              <th class="cf text-center">Cancellation Fee</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>After Depature / No Show.</td>
+                              <td class="price text-center">Pkr 5000</td>
+                            </tr>
+                            <tr>
+                              <td>Within 48 Hours Before Flight Depature.</td>
+                              <td class="price text-center">Pkr 3500</td>
+                            </tr>
+                            <tr>
+                              <td>More Than 48 Hours Before Flight Depature</td>
+                              <td class="price text-center">Pkr 2500</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-md-1 align-items-center"></div>
                     </div>
+                   </div>
+                   <!-- Cancellation tab end-->
+                   <!-- Date change tab start-->
+                   <div class="tab-pane fade" id="nav-datechange" role="tabpanel" aria-labelledby="nav-datechange-tab">
+                    <div class="row justify-content-center align-items-center d-flex pe-4 pt-4 pb-4 pe-4 ps-4">
+                      <div class="col-md-5 pe-5 ">
+                        <div class="citydiv d-flex align-items-center">
+                          <h6 class="cityname pe-4">LHE</h6>
+                          <img src="assets/media/flightfilter/Plane icon.png" class=" w-50 secondplaneimage  ">
+                          <h6 class="cityname ps-5 ms-2">KHI</h6>
+                        </div>
+                        <div class="refundbtndiv align-items-center pt-4 pe-4">
+                          <button type="button" id="refund-btn" class="btn w-100 ps-5 pe-5">Refundable</button>
+                          <p class="durationstop pt-2">* From The Date Of Depature</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6 align-items-center pe-5 ps-5">
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>Time</th>
+                              <th class="changefee text-center">Change Fee</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>After Depature / No Show.</td>
+                              <td class="price text-center">Pkr 5000</td>
+                            </tr>
+                            <tr>
+                              <td>Within 48 Hours Before Flight Depature.</td>
+                              <td class="price text-center">Pkr 3500</td>
+                            </tr>
+                            <tr>
+                              <td>More Than 48 Hours Before Flight Depature</td>
+                              <td class="price text-center">Pkr 2500</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-md-1 align-items-center"></div>
+                    </div>
+                   </div>
+                   <!-- Date change tab end-->
+                   <!-- Baggage tab start-->
 
-                    <!-- Baggage tab end-->
+                   <div class="tab-pane fade" id="nav-baggage" role="tabpanel" aria-labelledby="nav-baggage-tab">
+                    <div class="row justify-content-center align-items-center d-flex pe-4 pt-4 pb-4 pe-4 ps-4">
+                     <div class="col-md-7 pe-5 ">
+                      <div class="citydiv d-flex align-items-center">
+                       <h6 class="cityname pe-4">LHE</h6>
+                       <img src="assets/media/flightfilter/Plane icon.png" class=" w-50 secondplaneimage  ">
+                       <h6 class="cityname ps-5 ms-2">KHI</h6>
+                      </div>
+                      <div class="tablediv pt-5">
+                       <table class="table table-bordered">
+                        <thead>
+                         <tr>
+                          <th>Baggage</th>
+                          <th class="changefee">Fee</th>
+                         </tr>
+                        </thead>
+                        <tbody>
+                         <tr>
+                          <td>Economy Standard Check-In Baggage</td>
+                          <td class="price">1 Pieces Of 15 Kg Each Of Size L+W+H=54</td>
+                         </tr>
+                        </tbody>
+                       </table>
+                      </div>
+                     </div>
 
+                     <div class="col-md-5 align-items-center pe-5 ps-5">
+
+                     </div>
+                     <section class="econmy-section mt-2 pt-4 pb-4 ps-3 pe-3">
+                      <div class="row justify-content-center align-items-center">
+                       <div class="col-md-3 col-6 mb-3">
+                        <h6 class="cityname pb-2">Economy</h6>
+                        <div class="baggagesecond d-flex align-items-center">
+                         <i class="fas fa-briefcase brie-fcase fa-2x "></i>
+                         <h6 class="baggage-include pt-2">Baggage Included
+                         </h6>
+                        </div>
+                        <button type="button" id="farebtn" class="btn  mt-3">Select this fare
+                        </button>
+                       </div>
+                       <div class="col-md-3 col-6">
+                        <h6 class="cityname pb-2 text-center">Rs. 5,070</h6>
+                        <h6 class="baggage-include pt-2 text-center">1 Pc - 15 Kg </h6>
+                       </div>
+                       <div class="col-md-3  col-6 mb-3">
+                        <h6 class="cityname pb-2">Economy</h6>
+                        <div class="baggagesecond d-flex align-items-center">
+                         <i class="fas fa-briefcase brie-fcase fa-2x "></i>
+                         <h6 class="baggage-include pt-2 ">Baggage Included
+                         </h6>
+                        </div>
+                        <button type="button" id="farebtn" class="btn  mt-3">Select this fare
+                        </button>
+                       </div>
+                       <div class="col-md-3 col-6">
+                        <h6 class="cityname pb-2 text-center">Rs. 5,070</h6>
+                        <h6 class="baggage-include pt-2 text-center">1 Pc - 15 Kg </h6>
+                       </div>
+                      </div>
+                     </section>
+                    </div>
+                   </div>
+                   <!-- Baggage tab end-->
                   </div>
-
                 </div>
-
               </div>
-
             </div>
           </div>
         </div>
-
-
-      </div>
-
-
-      <!-- Flight Information tab start -->
-
-
-      <!-- hide show section -->
-      <section class="hideshow ">
-        <div class="row pt-1 pb-1 justify-content-center align-items-center d-flex ">
+        <section class="hideshow ">
+         <div class="row pt-1 pb-1 justify-content-center align-items-center d-flex ">
           <div class="col-md-10 col-sm-8 col-6 d-flex pt-2  ">
-            <p class="durationstop ps-5">Cost Includes</p>
-            <i class="fas fa-briefcase briefcase"></i>
+           <p class="durationstop ps-5">Cost Includes</p>
+           <i class="fas fa-briefcase briefcase"></i>
           </div>
           <div class="col-md-2 col-sm-6 col-6 d-flex text-end  ">
-            <p class="durationstop ps-5 mb-0" id="show1" style="display: none;">Check Details</p>
-            <p class="durationstop ps-5 mb-0" id="hide1">Hide Details</p>
-            <span class="accordion-button toggle-arrow toggle-arrow1" type="button" data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
-              aria-controls="panelsStayOpen-collapseTwo">
+           <p class="durationstop ps-5 mb-0" id="showTwo">Show Details</p>
+           <p class="durationstop ps-5 mb-0" id="hideTwo" style="display: none;">Hide Details</p>
+           <span class="accordion-button toggle-arrow" id="toggle-arrowTwo" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
 
-            </span>
-
+           </span>
           </div>
-        </div>
+         </div>
 
-      </section>
-
-    </div>
-
-
+        </section>
+      </div>
+      <!-- End Flight List -->
 
     </div>
-
-    </div>
-    </div>
-
   </section>
+
+  <!---------------------------------------------- end booking card section-------------------------------------->
 
   <!-- THIRD -->
 
@@ -1204,14 +966,14 @@
 
   </script>
   <script>
-    $('.toggle-arrow').click(function () {
+    $('#toggle-arrowOne').click(function () {
       $('#hide').toggle();
       $('#show').toggle();
     });
 
-    $('.toggle-arrow1').click(function () {
-      $('#hide1').toggle();
-      $('#show1').toggle();
+    $('#toggle-arrowTwo').click(function () {
+      $('#hideTwo').toggle();
+      $('#showTwo').toggle();
     });
 
     $('#stops').click(function () {
