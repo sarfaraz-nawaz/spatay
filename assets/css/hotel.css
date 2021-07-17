@@ -18,8 +18,11 @@ body{
 .banner-section{
 	background-image: url('../media/hotel/hotelBg.png');
 }
+.top-menu {
+    background: rgb(255, 255, 255, 0.9);
+}
 #ui-datepicker-div {
-    width: 515px !important;
+    width: 341px !important;
     left: 134px !important;
 }
 #flightbox{
