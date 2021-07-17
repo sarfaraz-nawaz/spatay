@@ -1,14 +1,23 @@
-body {
-  font-family: "Product sans",
-    Sans-serif;
+@font-face {
+font-family: "Cream Candy";
+src: url("CustomFont.eot");
+src: url("CustomFont.woff") format("woff"),
+url("../fonts/Cream Candy.otf") format("opentype"),
+url("CustomFont.svg#filename") format("svg");
+}
+@font-face {
+font-family: "Product Sans";
+src: url("CustomFont.eot");
+src: url("CustomFont.woff") format("woff"),
+url("../fonts/Product Sans Regular.ttf") format('truetype'),
+url("CustomFont.svg#filename") format("svg");
+}
+body{
+  font-family: "Product Sans";
   font-weight: 400;
   font-size: 14px;
   padding-bottom: auto;
 }
-
-
-
-
 .from {
   color: white;
   font-size: 11px;
@@ -45,10 +54,15 @@ body {
 .nav-item {
   font-family: "Product sans";
   text-transform: uppercase;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-left: 8px; 
 }
-
+.main-nav .nav-item:not(:last-child) {
+  padding-right: 8px;
+  
+}
+.main-nav .nav-item:last-child .nav-link{
+  padding-right: 0;
+}
 .nav-item .nav-link {
   color: #1A1C3D;
   font-weight: bold ;
@@ -57,7 +71,11 @@ body {
   color: #de5921 !important;
   font-weight: bold;
 }
-
+.main-nav .nav-item .nav-link {
+  color: #1A1C3D;
+  font-weight: bold;
+  font-size: 16px;
+}
 .navbar-toggler-icon {
   color: brown;
   background-color: burlywood;
@@ -141,7 +159,7 @@ option {
 
 .filter-section .nav-link {
   color: #A1A1B4 ;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: capitalize;
 
 }
@@ -166,6 +184,7 @@ option {
   border-bottom: 0;
   border-left: .3em solid transparent;
   display: contents;
+  font-weight: 600;
 }
 .stopdropdown .custom-box input {
   position: absolute;
@@ -654,10 +673,14 @@ td {
 
 
 .copyright {
-  font-size: 15px;
+  font-size: 20px;
   color: #92989F;
   font-family: "Product sans";
   margin-top: 2rem;
+}
+.copyright span{
+  font-size: 28px;
+  padding-right: 1px;
 }
 #farebtn2 {
   background-color: #DE5921;

@@ -14,7 +14,8 @@ body{
 .register-box input{
   border:none;
   background-color: transparent;
-  font-size: 12px;
+  font-size: 13px;
+  color: #A1A1B4;
 }
 .register-box input:focus,
 .register-box select:focus,
@@ -28,7 +29,7 @@ body{
 	border-radius: 4px;
 }
 .register-box .input-group{
-  border: 1px gray solid;
+  border: 1px solid #A1A1B4;
   padding: 10px;
 }
 .form-check-input:checked {
@@ -39,6 +40,13 @@ body{
 	color: #1A1C3D;
 	font-size: 14px;
 	font-weight: bold;
+}
+.phone-code{
+	color: #A1A1B4;
+	font-size: 	11px;
+}
+.form-control-feedback{
+	display: flex;
 }
 .google-circle{
 	background-color: #EBECF0;

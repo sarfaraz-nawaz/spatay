@@ -26,9 +26,9 @@ body{
 	margin-bottom: 0; 
 	padding: 10px 0;
 }
-.main-menu li{
+/*.main-menu li{
 	margin-right: 4rem !important;
-}
+}*/
 .main-menu li a{
 	color: #1A1C3D;
 	text-decoration: none;
@@ -42,14 +42,14 @@ body{
 /************Home CSS*************/
 .banner-section{
 	background-image: url('../media/home/banner.png');
-	background-size: cover;
+	background-size: 100% 100%;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 #flightbox{
 	background: white;
     padding: 2rem;
-    margin: 2rem;
+    margin: 2rem 1rem 2rem 2rem;
     border-radius: 8px;
     box-shadow: 0 8px 20px rgb(49 52 129 / 24%);
 }
@@ -61,6 +61,7 @@ body{
 }
 #flightbox .nav-pills .nav-item{
 	padding-left: 0;
+	padding-right: 8px;
 }
 #flightbox .nav-pills .nav-item:last-Child{
 	padding-right: 0;
@@ -71,7 +72,7 @@ body{
 	color: #fff;
 }
 #ui-datepicker-div{
-	width: 616px !important;
+	width: 400px !important;
 	left: 107px !important; 
 	top: 466px !important;
 	border-radius: 15px;
@@ -168,6 +169,8 @@ input::-webkit-inner-spin-button {
 	border: 0;
 	font-size: 12px;
 	color: #A1A1B4;
+	margin-left: 3px;
+    padding-left: 5px;
 }
 #flightbox .input-group .form-control-feedback{
 	color: #A1A1B4;
@@ -186,8 +189,11 @@ input::-webkit-inner-spin-button {
 	padding-right: 0;
 }
 #flightbox .form-check .form-check-label{
-	font-size: 13px;
-	padding-left: 12px;
+	font-size: 12px;
+    padding-left: 10px;
+    color: #1A1C3D;
+    font-family: 'Product Sans';
+    letter-spacing: 0.5px;
 }
 #flightbox .form-check .form-check-input:checked {
     background-color: #de5921;
@@ -205,8 +211,8 @@ input::-webkit-inner-spin-button {
 }
 .input-group .button-minus,
 .input-group .button-plus {
-  font-weight: bold;
-  height: 20px;
+  font-weight: 400;
+  height: 22px;
   padding: 0;
   width: 20px;
   border-radius: 50% !important;
@@ -214,24 +220,34 @@ input::-webkit-inner-spin-button {
   align-content: center;
   justify-content: center;
   color: #fff !important;
-  font-size: 14px !important;
+  font-size: 20px !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  /*line-height: 1;*/
 }
 .input-group .button-minus{
 	background-color: #A1A1B4;
+	line-height: 11px;
 }
 .input-group .button-plus{
 	background-color: #DE5921;
+	line-height: 5px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .input-group .quantity-field {
   position: relative;
-  /*height: 30px;*/
-  left: 3px;
+  height: 30px;
+  /*left: 3px;*/
   /*left: -6px;*/
   text-align: center;
-  width: 98px;
+  width: 54px;
   display: inline-block;
   font-size: 13px;
   margin: 0 0px;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
   resize: vertical;
 }
 .input-group .quantity-field:focus{
@@ -256,8 +272,11 @@ input[type="number"] {
     font-weight: 900;
     line-height: 60px;
 }
+.code-caption{
+	font-size: 18px;
+}
 .code-text{
-	font-size: 22px;
+	font-size: 30px;
 	font-weight: 900;
 	color: #1A1C3D;
 }
@@ -266,6 +285,9 @@ input[type="number"] {
     font-weight: 100;
     font-size: 14px;
     line-height: 23px;
+}
+.offer-card .card-body{
+	padding: 1rem 2rem;
 }
 .btn-style-one{
 	background-color: #1A1C3D;
@@ -286,24 +308,28 @@ input[type="number"] {
 }
 .btn-style-2:hover{
 	background-color: #DE5921;
+	border-color: #DE5921;
 }
 .offer-card .btn-style-one, .offer-card .btn-style-2{
-	width: 50%;
+	width: 60%;
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 10px;
 }
 .section-heading{
 	margin-bottom: 3rem;
 }
 .main-heading{
 	font-family: "Product Sans";
-	color: #1A1C3D;
-	font-weight: 900;
-	font-size: 3.5rem;
+	color: #232323;
+	font-weight: bold;
+	font-size: 4.5rem;
 }
 .style-heading{
 	font-family: "Cream Candy";
 	color: #DE5921;
-	margin-top: -3.4rem;
-    font-size: 4.5rem;
+	margin-top: -4.3rem;
+    font-size: 5.5rem;
 }
 /*Offer*/
 .offer-banner{
@@ -321,12 +347,12 @@ input[type="number"] {
 	color: #fff;
 }
 .offer-box .offer-title{
-	font-size: 3rem;
+	font-size: calc(4.4rem - 10px);
 	font-weight: 900;
 }
 .offer-box .offer-subtitle{
-	font-size: 2.4rem;
-	font-weight: 500;
+	font-size: calc(3.4rem - 8px);
+    font-weight: 500;
 }
 .offer-box .btn{
 	width: 47%;
@@ -371,15 +397,21 @@ input[type="number"] {
 .dest-footer{
 	margin-top: 2rem;
 }
+.dest-footer p{
+	font-size: 18px;
+	color: #A1A1B4;
+}
 .dest-footer h2{
 	font-size: 2rem;
     font-weight: 900;
     color: #1A1C3D;
 }
-/*******Stay Touch******/
-.stayTouch-section{
-	
+.flight-date{
+	font-size: 15px;
+	font-family: 'Product Sans';
+	color: #A1A1B4;
 }
+/*******Stay Touch******/
 .home-newsletter {
 	padding: 10rem 0;
 	background-image: url('../media/home/stayTouch.jpg');
