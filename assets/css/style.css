@@ -22,7 +22,7 @@ body{
   color: white;
   font-size: 11px;
   padding: 0;
-  font-family: "Product sans";
+  font-family: "Product Sans";
 }
 
 .inputfield {
@@ -30,7 +30,7 @@ body{
   background-color: transparent;
   border: 0;
   /* border-bottom: 2px solid white; */
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 14px;
   font-weight: bold;
   color: white;
@@ -52,7 +52,7 @@ body{
 }
 
 .nav-item {
-  font-family: "Product sans";
+  font-family: "Product Sans";
   text-transform: uppercase;
   padding-left: 8px; 
 }
@@ -74,7 +74,7 @@ body{
 .main-nav .nav-item .nav-link {
   color: #1A1C3D;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
 }
 .navbar-toggler-icon {
   color: brown;
@@ -94,7 +94,7 @@ body{
   outline: 0;
   color: white;
   font-size: 16px;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-weight: bold;
   padding-left: 14px;
 }
@@ -108,7 +108,7 @@ option {
 
   font-size: 16px;
   background: white;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-weight: bold;
   margin-top: 15px;
   color: #1A1C3D;
@@ -151,7 +151,7 @@ option {
 
 .navbar-brand {
   color: #1A1C3D;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 20px !important;
   font-weight: bold;
 
@@ -303,7 +303,7 @@ border: 1px solid #ccc;
 .filter-section .dropdown-title
 {
   color: #1A1C3D;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 13px !important;
   font-weight: bold;
 }
@@ -364,7 +364,7 @@ border: 1px solid #ccc;
 }
 
 .pia {
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 13px !important;
   color: #A1A1B4;
   font-weight: bold;
@@ -375,14 +375,14 @@ border: 1px solid #ccc;
 }
 
 .cityname {
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 25px !important;
   color: #1A1C3D;
   font-weight: bold;
 }
 
 .timeandcity {
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 16px !important;
   color: #1A1C3D;
   font-weight: bold;
@@ -390,21 +390,21 @@ border: 1px solid #ccc;
 }
 
 .durationstop {
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 11px !important;
   color: #A1A1B4;
 
 }
 
 .hoursandminute {
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 11px !important;
   color: #1A1C3D;
   font-weight: bold;
 }
 
 .ticketprice {
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   font-size: 20px !important;
   color: #1A1C3D;
 
@@ -413,7 +413,7 @@ border: 1px solid #ccc;
 
 #select-btn {
   background-color: #DE5921;
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   font-size: 13px !important;
   color: white;
 
@@ -425,13 +425,10 @@ border: 1px solid #ccc;
 
 #refund-btn {
   background-color: #00D060;
-  font-family: "Roboto";
-  font-size: 13px !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px !important;
   color: white;
-
-  padding-left: 3rem;
-  padding-right: 3rem;
-
+  height: 45px;
 
 }
 
@@ -443,8 +440,8 @@ border: 1px solid #ccc;
 
 .tabs-section .nav-tabs .nav-link {
   color: #A1A1B4;
-  font-family: "Product sans";
-  font-size: 17px !important;
+  font-family: "Product Sans";
+  font-size: 21px !important;
 
 
 
@@ -475,13 +472,13 @@ border: 1px solid #ccc;
 }
 
 .flight-details {
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 14px !important;
   color: #A1A1B4;
 }
 
 .flight-details-heading {
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 20px !important;
   color: #1A1C3D;
   font-weight: bold;
@@ -534,16 +531,18 @@ border: 1px solid #ccc;
 
 /* table css */
 th {
-  font-family: "Product sans";
-  font-size: 16px !important;
+  font-family: "Product Sans";
+  font-size: 22px !important;
   color: #1A1C3D;
   font-weight: bold;
 }
 
 td {
-  font-family: "Product sans";
-  font-size: 12px !important;
+  font-family: "Product Sans";
+  font-size: 18px !important;
   color: #A1A1B4;
+  padding: .7rem .5rem !important;
+  border-color: #A1A1B4;
 
 }
 
@@ -554,7 +553,7 @@ td {
 }
 
 .baggage-include {
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 15px !important;
   color: #A1A1B4;
   padding-left: 1rem;
@@ -566,7 +565,7 @@ td {
 
 #farebtn {
   background-color: #DE5921;
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   font-size: 13px !important;
   color: white;
   padding-left: 2rem;
@@ -606,7 +605,7 @@ td {
 /* summary page */
 .maincity {
   color: white;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-weight: bold;
 
 }
@@ -618,14 +617,14 @@ td {
 
 .airport {
   color: white;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 12px !important;
 
 }
 /* footer */
 .main-heading
 {
-   font-family: "Product sans";
+   font-family: "Product Sans";
    font-size: 70px;
    color: #232323;
    font-weight: bold;
@@ -667,7 +666,7 @@ td {
 .menu-links li a {
   color: #1A1C3D;
   text-decoration: none;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 1.3rem;
 }
 
@@ -675,7 +674,7 @@ td {
 .copyright {
   font-size: 20px;
   color: #92989F;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   margin-top: 2rem;
 }
 .copyright span{
@@ -684,7 +683,7 @@ td {
 }
 #farebtn2 {
   background-color: #DE5921;
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   font-size: 13px !important;
   color: white;
   padding-left: 2rem;
@@ -715,7 +714,7 @@ td {
 }
 .summary-name
 {
-   font-family: "Product sans";
+   font-family: "Product Sans";
     color: #1A1C3D;
     font-size: 35px;
     padding-top: 9px;
@@ -724,20 +723,20 @@ td {
 }
 .summarydetailscl
 {
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 13px;
   color: #92989F;
 }
 .summarydetailpkr
 {
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 13px;
   padding-left: 5.4rem;
   color: #92989F;
 }
 .taxdetailpkr
 {
- font-family: "Product sans";
+ font-family: "Product Sans";
  font-size: 13px;
  padding-left: 7.8rem;
  color: #92989F;
@@ -749,14 +748,14 @@ hr
 }
 .summarydetailtext
 {
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 14px;
   color: #1A1C3D;
   font-weight: bold;
 }
 .taxdetailprice
 {
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 14px;
   padding-left: 6.9rem;
   color: #1A1C3D;
@@ -765,11 +764,11 @@ hr
 .promo
 {
   font-size: 14px;
-  font-family: "Product sans";
+  font-family: "Product Sans";
 }
 .promo::placeholder {
   font-size: 11px;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   
 }
 .promo:focus {
@@ -781,7 +780,7 @@ hr
 }
 #cb-btn {
   background-color: #DE5921;
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   font-size: 13px !important;
   color: white;
   padding-left: 3rem;
@@ -811,7 +810,7 @@ hr
 
 .booking-process .nav-tabs .nav-link {
   color: #EBECF0;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   padding-left: 1rem;
   padding-right: 1rem;
   font-size: 28px !important;
@@ -873,7 +872,7 @@ hr
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
   
-  font-family: "Product sans";
+  font-family: "Product Sans";
 }
 .namediv
 {
@@ -881,14 +880,14 @@ hr
 }
 .labelname
 {
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 14px;
   color: #A1A1B4;
   margin: auto;
 }
 .name
 {
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 18px;
   color: #1A1C3D;
   font-weight: bold;
@@ -902,14 +901,14 @@ hr
 {
   font-size: 38px;
   color: #DE5921;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-weight: bold;
 
 }
 
 #paynow-btn {
   background-color: #DE5921;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 22px !important;
   color: white;
   padding-left: 3.8rem;
@@ -917,7 +916,7 @@ hr
 }
 #paylater-btn {
   /* background-color: #DE5921; */
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-size: 22px !important;
   border:1px solid #A1A1B4;
   color: #A1A1B4;
@@ -942,28 +941,28 @@ hr
 
 .refername
 {
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   color: #555555;
   font-size: 16px;
   font-weight: 600;
 }
 .flightinfo
 {
-   font-family: "Roboto";
+   font-family: 'Roboto', sans-serif;
    color: #A19D9C;
    font-size: 14px;
    
 }
 .refnumber
 {
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   color: #555555;
   font-size: 13px;
   font-weight: 500;
 }
 #managebooking-btn {
   /* background-color: #DE5921; */
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   border: 1px solid #A1A1B4;
   color: #A1A1B4;
@@ -973,7 +972,7 @@ hr
 }
 #printpage-btn {
   background-color: #1A1C3D;
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   border: 1px solid #A1A1B4;
   color: white;
@@ -990,13 +989,13 @@ hr
 {
   color: white;
   font-size: 100px;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   
 }
 .timertext {
   color: white;
   font-size: 14px;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   margin: auto;
   padding-right: 4rem;
   padding-bottom: 6px;
@@ -1009,7 +1008,7 @@ hr
   margin-top: 1rem;
   font-weight: bold;
   padding: 0;
-  font-family: "Product sans";
+  font-family: "Product Sans";
 }
 .contactsection
 {
@@ -1032,7 +1031,7 @@ hr
 .resend
 {
   color: #1A1C3D;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   text-decoration: none;
 }
 .contacticon
@@ -1078,7 +1077,7 @@ hr
 
 #loginregister-btn {
   background-color: #DE5921;
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   font-size: 13px !important;
   color: white;
   padding-left: 2.5rem;
@@ -1094,7 +1093,7 @@ hr
  .form-label2 {
   color: #1A1C3D;
   font-size: 14px;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   font-weight: bold;
 }
 .emailfield .input-group {
@@ -1110,13 +1109,13 @@ hr
 .loality-detail
 {
    font-size: 11px;
-   font-family: "Product sans";
+   font-family: "Product Sans";
    color: #A1A1B4;
 }
 .earn-points
 {
   font-size: 81px;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   color: #DE5921;
   font-weight: bold;
   text-align: center;
@@ -1125,7 +1124,7 @@ hr
 .total-points
 {
    font-size: 18px;
-   font-family: "Product sans";
+   font-family: "Product Sans";
    color: #1A1C3D;
    font-weight: bold;
    
@@ -1133,7 +1132,7 @@ hr
 .earn-points2
 {
    font-size: 40px;
-   font-family: "Product sans";
+   font-family: "Product Sans";
    color: #DE5921;
    font-weight: bold;
    
@@ -1159,7 +1158,7 @@ hr
 .condition
 {
   font-size: 12px;
-  font-family: "Product sans";
+  font-family: "Product Sans";
   color: #DE5921;
 }
 .phonedetail option
@@ -1185,7 +1184,7 @@ hr
 }
 #bookingconfirm-btn {
   background-color: #DE5921;
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   font-size: 18px !important;
   color: white;
   box-shadow: 0 8px 20px 0 #ebecf0;
@@ -1802,14 +1801,14 @@ hr
    .timer {
      color: white;
      font-size: 50px;
-     font-family: "Product sans";
+     font-family: "Product Sans";
 
    }
 
    .timertext {
      color: white;
      font-size: 12px;
-     font-family: "Product sans";
+     font-family: "Product Sans";
      margin: auto;
      padding-right: 4rem;
      padding-bottom: 6px;
@@ -1817,7 +1816,7 @@ hr
    }
    .booking-process .nav-tabs .nav-link {
      color: #EBECF0;
-     font-family: "Product sans";
+     font-family: "Product Sans";
      padding-left: 1rem;
      padding-right: 1rem;
      font-size: 15px !important;
@@ -1835,7 +1834,7 @@ hr
 
    #managebooking-btn {
      /* background-color: #DE5921; */
-     font-family: "Roboto";
+     font-family: 'Roboto', sans-serif;
      font-size: 14px;
      border: 1px solid #A1A1B4;
      color: #A1A1B4;
@@ -1846,7 +1845,7 @@ hr
 
    #printpage-btn {
      background-color: #1A1C3D;
-     font-family: "Roboto";
+     font-family: 'Roboto', sans-serif;
      font-size: 14px;
      border: 1px solid #A1A1B4;
      color: white;
@@ -1862,7 +1861,7 @@ hr
    }
    .earn-points {
      font-size: 56px;
-     font-family: "Product sans";
+     font-family: "Product Sans";
      color: #DE5921;
      font-weight: bold;
      text-align: center;
@@ -1870,7 +1869,7 @@ hr
    }
    #bookingconfirm-btn {
   background-color: #DE5921;
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   font-size: 14px !important;
   color: white;
  box-shadow: 0 8px 20px 0 #ebecf0;
@@ -1911,7 +1910,7 @@ hr
 
   .tabs-section .nav-tabs .nav-link {
     color: #A1A1B4;
-    font-family: "Product sans";
+    font-family: "Product Sans";
     font-size: 13px !important;
   }
 
@@ -1929,14 +1928,14 @@ hr
   }
 
   th {
-    font-family: "Product sans";
+    font-family: "Product Sans";
     font-size: 14px !important;
     color: #1A1C3D;
     font-weight: bold;
   }
 
   td {
-    font-family: "Product sans";
+    font-family: "Product Sans";
     font-size: 12px !important;
     color: #A1A1B4;
 
@@ -1944,7 +1943,7 @@ hr
 
   #farebtn {
     background-color: #DE5921;
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     font-size: 11px !important;
     color: white;
     padding-left: 1rem;
@@ -1952,7 +1951,7 @@ hr
   }
   #farebtn2 {
     background-color: #DE5921;
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     font-size: 13px !important;
     color: white;
     padding-left: 1rem;
@@ -1960,21 +1959,21 @@ hr
   }
 
   .cityname {
-    font-family: "Product sans";
+    font-family: "Product Sans";
     font-size: 18px !important;
     color: #1A1C3D;
     font-weight: bold;
   }
 
   .flight-details-heading {
-    font-family: "Product sans";
+    font-family: "Product Sans";
     font-size: 16px !important;
     color: #1A1C3D;
     font-weight: bold;
   }
 
   .ticketprice {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     color: rgb(26, 28, 61);
     font-weight: bold;
     font-size: 16px !important;
@@ -1982,14 +1981,14 @@ hr
 
   #select-btn {
     background-color: #DE5921;
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     font-size: 13px !important;
     color: white;
     padding-left: 2rem;
     padding-right: 2rem;
   }
   .main-heading {
-    font-family: "Product sans";
+    font-family: "Product Sans";
     font-size: 45px;
     color: #232323;
     font-weight: bold;
@@ -2045,14 +2044,14 @@ hr
   }
 
   .labelname {
-    font-family: "Product sans";
+    font-family: "Product Sans";
     font-size: 12px;
     color: #A1A1B4;
     margin: auto;
   }
 
   .name {
-    font-family: "Product sans";
+    font-family: "Product Sans";
     font-size: 14px;
     color: #1A1C3D;
     font-weight: bold;
@@ -2071,7 +2070,7 @@ hr
   /* process page */
   .booking-process .nav-tabs .nav-link {
     color: #EBECF0;
-    font-family: "Product sans";
+    font-family: "Product Sans";
     padding-left: 1rem;
     padding-right: 1rem;
     font-size: 15px !important;
@@ -2087,7 +2086,7 @@ hr
   }
   #managebooking-btn {
     /* background-color: #DE5921; */
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     border: 1px solid #A1A1B4;
     color: #A1A1B4;
@@ -2098,7 +2097,7 @@ hr
 
   #printpage-btn {
     background-color: #1A1C3D;
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     border: 1px solid #A1A1B4;
     color: white;
@@ -2110,14 +2109,14 @@ hr
   .timer {
     color: white;
     font-size: 50px;
-    font-family: "Product sans";
+    font-family: "Product Sans";
 
   }
 
   .timertext {
     color: white;
     font-size: 12px;
-    font-family: "Product sans";
+    font-family: "Product Sans";
     margin: auto;
     padding-right: 4rem;
     padding-bottom: 6px;
@@ -2125,7 +2124,7 @@ hr
   }
   .loality-detail {
     font-size: 11px;
-    font-family: "Product sans";
+    font-family: "Product Sans";
     color: #A1A1B4;
     margin-top: 3rem;
   }
@@ -2138,7 +2137,7 @@ hr
   }
   #bookingconfirm-btn {
     background-color: #DE5921;
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     font-size: 12px !important;
     color: white;
     box-shadow: 0 8px 20px 0 #ebecf0;

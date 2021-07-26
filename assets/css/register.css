@@ -16,6 +16,7 @@ body{
   background-color: transparent;
   font-size: 13px;
   color: #A1A1B4;
+  letter-spacing: 1px;
 }
 .register-box input:focus,
 .register-box select:focus,
