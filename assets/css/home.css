@@ -32,6 +32,7 @@ body{
 .main-menu li a{
 	color: #1A1C3D;
 	text-decoration: none;
+	letter-spacing: 1px;
 }
 .main-menu li a img{
 	width: 50px;
@@ -274,6 +275,7 @@ input[type="number"] {
 }
 .code-caption{
 	font-size: 18px;
+	color: #A1A1B4;
 }
 .code-text{
 	font-size: 30px;
@@ -311,10 +313,10 @@ input[type="number"] {
 	border-color: #DE5921;
 }
 .offer-card .btn-style-one, .offer-card .btn-style-2{
-	width: 60%;
-    border-radius: 3px;
+	width: 70%;
+    border-radius: 2px;
     font-weight: 600;
-    padding: 10px;
+    padding: 8px 10px;
 }
 .section-heading{
 	margin-bottom: 3rem;
@@ -355,7 +357,7 @@ input[type="number"] {
     font-weight: 500;
 }
 .offer-box .btn{
-	width: 47%;
+	width: 59%;
     font-weight: 800;
     font-size: 17px;
 }
@@ -407,7 +409,7 @@ input[type="number"] {
     color: #1A1C3D;
 }
 .flight-date{
-	font-size: 15px;
+	font-size: 20px;
 	font-family: 'Product Sans';
 	color: #A1A1B4;
 }
