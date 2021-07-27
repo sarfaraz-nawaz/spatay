@@ -354,8 +354,8 @@ td {
 .prof-box {
   font-family: "Product sans", Sans-serif;
   height: auto;
-  padding-left: 5rem;
-  padding-top: 4rem;
+  /* padding-left: 5rem; */
+  /* padding-top: 4rem; */
 }
 .profilebox .input-group {
   position: relative;
@@ -446,7 +446,8 @@ td {
 }
 
 .room {
-  height: 400px;
+
+  height: 340px;
   overflow: auto;
 }
 
@@ -661,6 +662,11 @@ td {
 .star {
   color: #45b9e2;
   font-weight: bold;
+  font-size: 14px;
+}
+.hotel-disc-info
+{
+  font-size: 8px;
 }
 
 .paybtn {
@@ -676,11 +682,12 @@ td {
 
 .rupees {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .card-img {
-  width: 2611px;
+  width: 100%;
+  object-fit: cover;
   height: 120px;
 
 }
@@ -691,6 +698,7 @@ td {
 
 .garden {
   font-weight: bold;
+  font-size: 20px;
 }
 
 .prof-hotel {
@@ -1018,8 +1026,9 @@ td {
 }
 
 .page-forward-link {
-  margin-top: 6rem;
+  margin-top: 3rem;
   color: #de5921;
+  padding-bottom: 1rem;
 }
 
 /* footer */
