@@ -202,8 +202,9 @@ option {
   background-color: transparent;
   /* border-radius: 0; */
   padding: 5px 10px;
-  color: #ccc;
-  border: 1px solid #ccc;
+  color: #A1A1B4;
+  border: 1px solid #A1A1B4;
+  border-radius: 2px;
 }
 
 .checkmark:hover {
@@ -215,8 +216,8 @@ width: 25px;
 background-color: #de5921 !important;
 /* border-radius: 0; */
 padding: 5px 10px;
-color: #ccc;
-border: 1px solid #ccc;
+color: #A1A1B4;
+border: 1px solid #A1A1B4;
 }
 
 
@@ -230,9 +231,12 @@ border: 1px solid #ccc;
 /* When the radio button is checked, add a blue background */
 .stopdropdown .custom-box input:checked~.checkmark {
   background-color:#de5921;
+  color: #fff;
+  border: 1px solid #de5921;
 }
 .filter-section .hotel-filter .stopdropdown .custom-box input:checked~.checkmark {
   background-color:#4cbee5;
+  color: #fff;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -258,10 +262,10 @@ border: 1px solid #ccc;
 }
 #stop-filter .show{
   padding: 10px;
-  width: 125px;
+  width: 140px;
   min-width: 5rem;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -32px;
+  left: -50px;
 }
 
 .timedropdown
@@ -296,15 +300,20 @@ border: 1px solid #ccc;
   /* display: flex; */
   justify-content: space-between;
 }
+/*#stop-filter .stopdropdown .custom-box{
+  width: 30px;
+  height: 30px;
+}*/
 #time-filter .stopdropdown {
   /* display: flex; */
   justify-content: space-between;
 }
+
 .filter-section .dropdown-title
 {
   color: #1A1C3D;
   font-family: "Product Sans";
-  font-size: 13px !important;
+  font-size: 18px !important;
   font-weight: bold;
 }
 #time-filter .stopdropdown .custom-box input:checked~.checkmark {
@@ -340,15 +349,18 @@ border: 1px solid #ccc;
   color: #de5921 !important;
 }
 .airlinedropdown {
-  height: 170px;
-  overflow: auto;
+  /*height: 170px;
+  overflow: auto;*/
   padding: 10px !important;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -43px;
+  left: -66px;
   text-transform: capitalize;
-  width: 10rem;
+  width: 11rem;
 }
-
+.airlineSearch{
+  height: 170px;
+  overflow: auto;
+}
 
 /* booking card section */
 .card {
@@ -391,7 +403,7 @@ border: 1px solid #ccc;
 
 .durationstop {
   font-family: "Product Sans";
-  font-size: 11px !important;
+  font-size: 13px !important;
   color: #A1A1B4;
 
 }
@@ -532,14 +544,14 @@ border: 1px solid #ccc;
 /* table css */
 th {
   font-family: "Product Sans";
-  font-size: 22px !important;
+  font-size: 19px !important;
   color: #1A1C3D;
   font-weight: bold;
 }
 
 td {
   font-family: "Product Sans";
-  font-size: 18px !important;
+  font-size: 16px !important;
   color: #A1A1B4;
   padding: .7rem .5rem !important;
   border-color: #A1A1B4;
@@ -693,13 +705,23 @@ td {
 
 .maincitymobile
 {
-  text-align: end;
-  padding-right: 4rem;
+  text-align: start;
+  /* padding-right: 7rem; */
 }
 .summarycolumn
 {
   padding-right: 5rem;
   padding-left: 5rem;
+}
+.secondcity
+{
+  padding-left: 6rem !important;
+}
+.hideshow .durationstop
+{
+  font-family: "Product Sans";
+  font-size: 12px !important;
+  color: #A1A1B4;
 }
 
 
@@ -726,6 +748,7 @@ td {
   font-family: "Product Sans";
   font-size: 13px;
   color: #92989F;
+  text-transform: uppercase;
 }
 .summarydetailpkr
 {
@@ -749,8 +772,9 @@ hr
 .summarydetailtext
 {
   font-family: "Product Sans";
-  font-size: 14px;
+  font-size: 13px;
   color: #1A1C3D;
+  text-transform: uppercase;
   font-weight: bold;
 }
 .taxdetailprice
@@ -763,12 +787,14 @@ hr
 }
 .promo
 {
-  font-size: 14px;
+  font-size: 14px !important;
   font-family: "Product Sans";
+  color: #A1A1B4 !important;
 }
 .promo::placeholder {
-  font-size: 11px;
+  font-size: 14px;
   font-family: "Product Sans";
+  color: #A1A1B4 !important;
   
 }
 .promo:focus {
@@ -778,6 +804,7 @@ hr
   outline: 0;
   box-shadow: none !important;
 }
+
 #cb-btn {
   background-color: #DE5921;
   font-family: 'Roboto', sans-serif;
@@ -865,10 +892,12 @@ hr
   background-color: #1A1C3D;
   color: white;
   /* width: 19%; */
-  padding-left: 15px;
-  padding-right: 15px;;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-left: 45px;
+  padding-right: 45px;;
+  font-size: 12px;
+  padding-top: 10px;
+  font-weight: bold;
+  padding-bottom: 10px;
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
   
@@ -877,11 +906,12 @@ hr
 .namediv
 {
   padding-left: 4rem;
+  margin-top: 4rem;
 }
 .labelname
 {
   font-family: "Product Sans";
-  font-size: 14px;
+  font-size: 16px;
   color: #A1A1B4;
   margin: auto;
 }
@@ -926,8 +956,8 @@ hr
 }
 .paymentmethod
 {
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
 }
 .footerpayment
 {
@@ -943,14 +973,13 @@ hr
 {
   font-family: 'Roboto', sans-serif;
   color: #555555;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
 }
 .flightinfo
 {
    font-family: 'Roboto', sans-serif;
    color: #A19D9C;
-   font-size: 14px;
+   font-size: 16px;
    
 }
 .refnumber
@@ -963,7 +992,7 @@ hr
 #managebooking-btn {
   /* background-color: #DE5921; */
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   border: 1px solid #A1A1B4;
   color: #A1A1B4;
    font-weight: 500;
@@ -973,7 +1002,7 @@ hr
 #printpage-btn {
   background-color: #1A1C3D;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   border: 1px solid #A1A1B4;
   color: white;
   font-weight: 500;
@@ -1018,6 +1047,11 @@ hr
     padding-top: 2rem;
     padding-bottom: 2rem;
    
+}
+.promo::placeholder {
+  font-size: 13px !important;
+  font-family: "Product Sans";
+  color: #A1A1B4;
 }
 /* .travllerinfo
 {
@@ -1078,14 +1112,15 @@ hr
 #loginregister-btn {
   background-color: #DE5921;
   font-family: 'Roboto', sans-serif;
-  font-size: 13px !important;
+  font-size: 18px !important;
   color: white;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 3rem;
+  font-weight: bold;
+  padding-right: 3rem;
 }
 .example
 {
-  font-size: 10px;
+  font-size: 11px;
   margin-top: 8px;
   color: #A1A1B4;
 
@@ -1093,6 +1128,7 @@ hr
  .form-label2 {
   color: #1A1C3D;
   font-size: 14px;
+  margin-bottom: 5px;
   font-family: "Product Sans";
   font-weight: bold;
 }
@@ -1108,9 +1144,27 @@ hr
 }
 .loality-detail
 {
-   font-size: 11px;
+   font-size: 12px;
    font-family: "Product Sans";
    color: #A1A1B4;
+}
+.phonenumber-form .input-group-text {
+  display: flex;
+  align-items: center;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2.5;
+  color: #212529;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+.phonedetail input::placeholder {
+  color: #A1A1B4 !important;
+  font-size: 12px;
 }
 .earn-points
 {
@@ -1157,7 +1211,8 @@ hr
 }
 .condition
 {
-  font-size: 12px;
+  font-size: 11px;
+  margin-top: 4px;
   font-family: "Product Sans";
   color: #DE5921;
 }
@@ -1168,11 +1223,15 @@ hr
 .phonedetail input
 {
   color:#A1A1B4;
-  font-size: 12px;
+  font-size: 14px;
 }
 .phonedetail .input-group-text
 {
   padding: 5px;
+}
+.phonedetail input::placeholder
+{
+  font-size: 14px;
 }
 .booking-section .summarycolumn2 {
   padding-right: 0rem;
@@ -1180,16 +1239,34 @@ hr
   margin-top: 3rem;
 }
 .form-select {
-  font-size: 12px !important;
+  font-size: 14px !important;
+  line-height: 2 !important;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2 !important;
+  color: rgb(33, 37, 41);
+  background-color: rgb(255, 255, 255);
+  background-clip: padding-box;
+  border: 1px solid rgb(206, 212, 218);
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
 }
 #bookingconfirm-btn {
   background-color: #DE5921;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px !important;
+  font-size: 22px !important;
   color: white;
+  font-weight: bold;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
   
 }
 #myInput
@@ -1242,13 +1319,32 @@ hr
 .airlinedropdown::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.airlineSearch::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+ .airlineSearch::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.airlineSearch::-webkit-scrollbar-thumb {
+  background: #de5921;
+  border-radius: 10px;
+}
+
+/* / Handle on hover /  */
+.airlineSearch::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 .pricerangedropdown {
 
   padding: 10px !important;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -20px;
+  left: -60px;
   text-transform: capitalize;
-  width: 10rem;
+  width: 12rem;
 }
 .pricerangedropdown .pricetitle
 {
@@ -1372,6 +1468,7 @@ hr
  /* When the checkbox is checked, add a blue background */
  .refundcontainers input:checked~.checkmark2 {
    background-color: #FF5915;
+   border: 1px solid #ff5915;
  }
 
  /* Create the checkmark/indicator (hidden when not checked) */
@@ -1480,10 +1577,10 @@ hr
 }
 .deslect
 {
-  font-size: 10px;
+  font-size: 13px;
   color: #A1A1B4;
   text-align: end;
-  text-transform: capitalize;
+  text-transform: initial;
   margin-top: 12px;
   text-decoration: none;
 }
@@ -1692,10 +1789,10 @@ hr
 /* round flights dropsown setting */
 .filter-section .round-flights-dropdown #stop-filter .show {
   padding: 10px;
-  width: 125px;
+  width: 140px;
   min-width: 5rem;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -33px;
+  left: -50px;
 }
 .filter-section .round-flights-dropdown .timedropdown {
   padding: 10px !important;
@@ -1707,8 +1804,8 @@ hr
   left: -137px;
 }
 .filter-section .round-flights-dropdown .airlinedropdown {
-  height: 170px;
-  overflow: auto;
+  /*height: 170px;*/
+  /*overflow: auto;*/
   padding: 10px !important;
   box-shadow: 0 8px 20px 0 #ebecf0;
   left: -63px;

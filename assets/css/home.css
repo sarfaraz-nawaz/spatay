@@ -215,7 +215,8 @@ input::-webkit-inner-spin-button {
   font-weight: 400;
   height: 22px;
   padding: 0;
-  width: 20px;
+  width: 22px;
+  padding-bottom: 2px;
   border-radius: 50% !important;
   position: relative;
   align-content: center;
@@ -228,11 +229,11 @@ input::-webkit-inner-spin-button {
 }
 .input-group .button-minus{
 	background-color: #A1A1B4;
-	line-height: 11px;
+	line-height: 10px;
 }
 .input-group .button-plus{
 	background-color: #DE5921;
-	line-height: 5px;
+	line-height: 4px;
 	display: flex;
     justify-content: center;
     align-items: center;
