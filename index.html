@@ -1369,7 +1369,9 @@
       decrementValue(e);
     });
 
-    $( ".datepicker" ).datepicker();
+    $( ".datepicker" ).datepicker({
+      dateFormat: 'd M `y - DD'
+    });
 
     $('#from-keyword').keyup(function(){
       if($(this).val() == "") {
