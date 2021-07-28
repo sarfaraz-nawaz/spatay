@@ -32,6 +32,7 @@ body{
 .main-menu li a{
 	color: #1A1C3D;
 	text-decoration: none;
+	font-size: 15px;
 	letter-spacing: 1px;
 }
 .main-menu li a img{
@@ -373,8 +374,7 @@ input[type="number"] {
 	padding-bottom: 5rem;
 }
 .destination-box{
-	/*box-shadow: 0 8px 20px 0 #303380;*/
-	box-shadow: 0 8px 20px 0 rgb(48 51 128 / 40%);
+	box-shadow: 0 8px 20px 0 #e5e5eb;
 	/*filter: drop-shadow(0 8px 20px #303380);*/
 	border-color: #EBECF0;
 	border-radius: 8px;
@@ -552,6 +552,24 @@ input[type="number"] {
 .search-container::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.add-other-flight
+{
+	color: #de5921;
+	text-decoration: none;
+	margin-top: 1rem !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*******Responsive*******/
 @media(min-width: 767px){
 	.flight-row .col-sm-4{

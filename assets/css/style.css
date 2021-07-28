@@ -106,7 +106,7 @@ option {
 
 #search-btn {
 
-  font-size: 16px;
+  font-size: 15px;
   background: white;
   font-family: "Product Sans";
   font-weight: bold;
@@ -333,6 +333,11 @@ border: 1px solid #A1A1B4;
   border-bottom: 10px solid #4cbee5;
   margin-left: auto;
   margin-right: 10px;
+}
+.onewayflightsearch
+{
+  flex: 0 0 auto;
+  width: 15.2% !important;
 }
 
 
@@ -746,21 +751,21 @@ td {
 .summarydetailscl
 {
   font-family: "Product Sans";
-  font-size: 13px;
+  font-size: 15px;
   color: #92989F;
   text-transform: uppercase;
 }
 .summarydetailpkr
 {
   font-family: "Product Sans";
-  font-size: 13px;
+  font-size: 15px;
   padding-left: 5.4rem;
   color: #92989F;
 }
 .taxdetailpkr
 {
  font-family: "Product Sans";
- font-size: 13px;
+ font-size: 15px;
  padding-left: 7.8rem;
  color: #92989F;
 }
@@ -772,7 +777,7 @@ hr
 .summarydetailtext
 {
   font-family: "Product Sans";
-  font-size: 13px;
+  font-size: 15px;
   color: #1A1C3D;
   text-transform: uppercase;
   font-weight: bold;
@@ -780,7 +785,7 @@ hr
 .taxdetailprice
 {
   font-family: "Product Sans";
-  font-size: 14px;
+  font-size: 15px;
   padding-left: 6.9rem;
   color: #1A1C3D;
    font-weight: bold;
@@ -894,7 +899,7 @@ hr
   /* width: 19%; */
   padding-left: 45px;
   padding-right: 45px;;
-  font-size: 12px;
+  font-size: 16px;
   padding-top: 10px;
   font-weight: bold;
   padding-bottom: 10px;
@@ -956,8 +961,12 @@ hr
 }
 .paymentmethod
 {
-  width: 45px;
-  height: 45px;
+  width: 41px;
+  height: 38px;
+}
+.email-field
+{
+  color: #A1A1B4 !important;
 }
 .footerpayment
 {
@@ -973,7 +982,7 @@ hr
 {
   font-family: 'Roboto', sans-serif;
   color: #555555;
-  font-size: 18px;
+  font-size: 21px;
 }
 .flightinfo
 {
@@ -986,13 +995,13 @@ hr
 {
   font-family: 'Roboto', sans-serif;
   color: #555555;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
 }
 #managebooking-btn {
   /* background-color: #DE5921; */
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   border: 1px solid #A1A1B4;
   color: #A1A1B4;
    font-weight: 500;
@@ -1002,7 +1011,7 @@ hr
 #printpage-btn {
   background-color: #1A1C3D;
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   border: 1px solid #A1A1B4;
   color: white;
   font-weight: 500;
@@ -1067,12 +1076,20 @@ hr
   color: #1A1C3D;
   font-family: "Product Sans";
   text-decoration: none;
+  margin-top: 1.3rem;
+  margin-left: 1.5rem;
 }
 .contacticon
 {
-  width: 37px;
-  margin-top: 3px;
-  height: 30px;
+  width: 39px;
+  margin-top: 7px;
+  height: 31px;
+}
+.contact-phone-icon
+{
+   width: 36px;
+   margin-top: 9px;
+   height: 35px;
 }
 
 .tablesection
@@ -1120,7 +1137,7 @@ hr
 }
 .example
 {
-  font-size: 11px;
+  font-size: 12px;
   margin-top: 8px;
   color: #A1A1B4;
 
@@ -1260,8 +1277,8 @@ hr
 }
 #bookingconfirm-btn {
   background-color: #DE5921;
-  font-family: 'Roboto', sans-serif;
-  font-size: 22px !important;
+  font-family: 'Product Sans', sans-serif;
+  font-size: 20px !important;
   color: white;
   font-weight: bold;
   box-shadow: 0 8px 20px 0 #ebecf0;

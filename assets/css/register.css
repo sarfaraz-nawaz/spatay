@@ -14,9 +14,9 @@ body{
 .register-box input{
   border:none;
   background-color: transparent;
-  font-size: 13px;
+  font-size: 14px;
   color: #A1A1B4;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
 }
 .register-box input:focus,
 .register-box select:focus,
@@ -31,7 +31,7 @@ body{
 }
 .register-box .input-group{
   border: 1px solid #A1A1B4;
-  padding: 10px;
+  padding: 7px;
 }
 .form-check-input:checked {
     background-color: #de5921;

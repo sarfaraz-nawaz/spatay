@@ -52,7 +52,7 @@
         <div class="col col-sm-8 text-center menu-col">
           <ul class="list-inline main-menu d-flex justify-content-between">
             <li class="list-inline-item">
-              <a href="index.html"><img src="assets/media/hotel/plane.png"><br>Flight</a>
+              <a href="index.html"><img src="assets/media/hotel/plane.png"><br>Flights</a>
             </li>
             <li class="list-inline-item">
               <a href="hotel.html" class="fw-bold"><img src="assets/media/hotel/double-bed.png"><br>Hotels</a>
@@ -96,7 +96,7 @@
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-map-marker-alt"></span>
                       <!-- <input type="email" class="form-control p-0 ms-2" placeholder="Enter Your First Name" id="inputEmail4"> -->
-                        <input type="text" name="form" id="from-keyword" class="form-control" id="transcripts" placeholder="Lahore, Pakistan (LHE)" style="position: relative;">
+                        <input type="text" name="form" id="from-keyword" class="form-control bg-transparent" id="transcripts" placeholder="Lahore, Pakistan (LHE)" style="position: relative;">
                         <div class="search-dropdown" style="position: absolute; top: 100%;    z-index: 99999;">
                           <div class="search-container" id="search-from" style="display: none;">
                             <ul id="search-container-from" style="display: block;">
@@ -187,7 +187,7 @@
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback far fa-calendar-alt"></span>
                       <!-- <input type="date" class="form-control p-0 ms-2" placeholder="Enter Your Email Address" id="inputEmail4"> -->
-                      <input type="text" id="datepicker-round-depr" class="form-control p-0 ms-2 datepicker" placeholder="24 Jan'20 - Friday">
+                      <input type="text" id="datepicker-round-depr" class="form-control p-0 ms-2 datepicker" placeholder="24 Jan' 20 - Friday">
                     </div>
                   </div>
                   <div class="col-6">
@@ -195,7 +195,7 @@
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback far fa-calendar-alt"></span>
                       <!-- <input type="date" class="form-control p-0 ms-2" placeholder="Enter Your Email Address" id="inputEmail4"> -->
-                      <input type="text" id="datepicker-round-return" class="form-control p-0 ms-2 datepicker" placeholder="30 Jan'20 - Thursday">
+                      <input type="text" id="datepicker-round-return" class="form-control p-0 ms-2 datepicker" placeholder="30 Jan' 20 - Thursday">
                     </div>
                   </div>
                   <h4 class="site-font mt-4">Travellers</h4>
@@ -252,7 +252,7 @@
                     <div class="input-group align-items-center">
                       <span class="form-control-feedback fas fa-search"></span>
                       <!-- <input type="email" class="form-control p-0 ms-2" placeholder="Enter Your First Name" id="inputEmail4"> -->
-                      <input type="text" name="form" id="from-keyword" class="form-control" id="transcripts" placeholder="Search your Favorite Property" style="position: relative;">
+                      <input type="text" name="form" id="from-keyword" class="form-control bg-transparent" id="transcripts" placeholder="Search your Favorite Property" style="position: relative;">
                       </div>
                   </div>
                   <div class="col-12 d-grid mt-5">
@@ -595,7 +595,9 @@
       decrementValue(e);
     });
 
-    $( ".datepicker" ).datepicker();
+    $( ".datepicker" ).datepicker({
+    dateFormat: 'd M `y - DD'
+    });
 
     $('#from-keyword').keyup(function(){
       if($(this).val() == "") {
