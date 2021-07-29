@@ -39,7 +39,8 @@ body{
 	width: 50px;
     padding-bottom: 12px;
     height: 50px;
-    object-fit: fill;
+    object-fit: contain;
+    padding: 8px;
 }
 /************Home CSS*************/
 .banner-section{
@@ -47,6 +48,7 @@ body{
 	background-size: 100% 100%;
 	background-position: center;
 	background-repeat: no-repeat;
+	height: 850px;
 }
 #flightbox{
 	background: white;
@@ -577,6 +579,7 @@ input[type="number"] {
 	}
 	.banner-section{
 		margin-top: -6rem;
+		height: 850px;
 	}
 	#flightbox{
 	    margin-top: 8rem;
