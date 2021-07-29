@@ -158,12 +158,30 @@ option {
 }
 
 .filter-section .nav-link {
-  color: #A1A1B4 ;
+  color: #A1A1B4 !important;
   font-weight: 400;
   text-transform: capitalize;
 
 }
+.filter-section .nav-link:hover {
+  color: #A1A1B4 !important;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.filter-section .nav-link:active {
+  color: #DE5921 !important;
+  font-weight: 400;
+  text-transform: capitalize;
+}
 
+.filter-section .nav-link:focus,
+.nav-link:hover {
+  /* color: #A1A1B4 !important; */
+}
+.active-filter:hover,
+.active-filter:focus {
+  color: #DE5921 !important;
+}
 .filter-section .nav-link:active {
   color: #1A1C3D;
 }
@@ -264,7 +282,7 @@ border: 1px solid #A1A1B4;
   padding: 10px;
   width: 140px;
   min-width: 5rem;
-  box-shadow: 0 8px 20px 0 #ebecf0;
+  /* box-shadow: 0 8px 20px 0 #ebecf0; */
   left: -50px;
 }
 
@@ -276,7 +294,7 @@ border: 1px solid #A1A1B4;
   font-size: 12px !important;
   min-width: 6rem;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -130px;
+  left: -141px;
 }
 .filter-section .hotel-filter .timedropdown
 {
@@ -348,9 +366,15 @@ border: 1px solid #A1A1B4;
   border-right: 8px solid transparent;
   border-bottom: 10px solid #de5921;
   margin-left: auto;
+  position: absolute;
+  bottom: 0;
+  right: 27px;
   margin-right: 10px;
 }
 .active-filter{
+  color: #de5921 !important;
+}
+.filter-section .active-filter {
   color: #de5921 !important;
 }
 .airlinedropdown {
@@ -363,8 +387,16 @@ border: 1px solid #A1A1B4;
   width: 11rem;
 }
 .airlineSearch{
-  height: 170px;
+  height: 132px;
   overflow: auto;
+}
+.search-icon
+{
+  width: 14px;
+  height: 14px;
+  margin-top: 3px;
+  padding: 0;
+  margin-right: .2rem;
 }
 
 /* booking card section */
@@ -527,7 +559,7 @@ border: 1px solid #A1A1B4;
 .toggle-arrow {
   position: relative;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   width: 50px !important;
   padding: 0 !important;
   font-size: 1rem;
@@ -591,7 +623,7 @@ td {
 
 .accordion-button:not(.collapsed) {
   color: #25272a !important;
-  margin-top: -2px !important;
+  margin-top: -15px !important;
   background-color: #e7f1ff;
   box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
 }
@@ -727,6 +759,7 @@ td {
   font-family: "Product Sans";
   font-size: 12px !important;
   color: #A1A1B4;
+  margin-bottom: .5rem;
 }
 
 
@@ -753,7 +786,7 @@ td {
   font-family: "Product Sans";
   font-size: 15px;
   color: #92989F;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .summarydetailpkr
 {
@@ -982,6 +1015,7 @@ hr
 {
   font-family: 'Roboto', sans-serif;
   color: #555555;
+  font-weight: bold;
   font-size: 21px;
 }
 .flightinfo
@@ -996,12 +1030,13 @@ hr
   font-family: 'Roboto', sans-serif;
   color: #555555;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: bold;
+  
 }
 #managebooking-btn {
   /* background-color: #DE5921; */
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   border: 1px solid #A1A1B4;
   color: #A1A1B4;
    font-weight: 500;
@@ -1011,7 +1046,7 @@ hr
 #printpage-btn {
   background-color: #1A1C3D;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   border: 1px solid #A1A1B4;
   color: white;
   font-weight: 500;
@@ -1081,15 +1116,17 @@ hr
 }
 .contacticon
 {
-  width: 39px;
-  margin-top: 7px;
-  height: 31px;
+ width: 39px;
+ margin-top: 7px;
+ height: 31px;
+ object-fit: cover;
+ padding: 3px;
 }
 .contact-phone-icon
 {
-   width: 36px;
-   margin-top: 9px;
-   height: 35px;
+       width: 31px;
+       margin-top: 11px;
+       height: 31px;
 }
 
 .tablesection
@@ -1587,10 +1624,13 @@ hr
   height: 1rem !important;
   margin-left: auto;
   content: "";
+  margin-top: 5px;
   /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e); */
   background-repeat: no-repeat;
   background-size: 1rem !important;
   transition: transform .2s ease-in-out;
+  background-image: url('../media/toogle-arrow.png') !important;
+  /* transform: rotate(-180deg); */
 }
 .deslect
 {
@@ -1598,7 +1638,7 @@ hr
   color: #A1A1B4;
   text-align: end;
   text-transform: initial;
-  margin-top: 12px;
+  margin-top: 2px;
   text-decoration: none;
 }
 .deslect:hover
@@ -1691,10 +1731,12 @@ hr
 }
 .refundcontainers {
   display: block;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   position: relative;
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
   cursor: pointer;
+  padding-bottom: 10px;
+  margin: 0;
   font-size: 12px;
   text-align: start !important;
   padding-left: 26px;

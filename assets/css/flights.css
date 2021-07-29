@@ -32,6 +32,9 @@ body{
 	padding-top: 3rem;
 	padding-bottom: 3rem;
 }
+.filter-section .active-filter {
+	color: #de5921 !important;
+}
 .filter-section .dropdown-toggle::after{
 	font-weight: 600;
 }
