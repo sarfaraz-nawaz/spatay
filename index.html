@@ -1380,64 +1380,114 @@
       }
     });
 
-    $('#where-keyword').keyup(function(){
-      if($(this).val() == "") {
-          $('#search-where').hide();
-        } else {
-          $('#search-where').show();
-          $('#search-from').hide();
-        }
+    $("#from-keyword").focusin(function() {
+      $("#search-from").show();
+    }).focusout(function () {
+        $("#search-from").hide();
     });
-    $('#from-keyword-round').keyup(function(){
-      if($(this).val() == "") {
-        $('#search-from-round').hide();
-      } else {
-        $('#search-from-round').show();
-      }
+    // $('#where-keyword').keyup(function(){
+    //   if($(this).val() == "") {
+    //       $('#search-where').hide();
+    //     } else {
+    //       $('#search-where').show();
+    //       $('#search-from').hide();
+    //     }
+    // });
+
+    $("#where-keyword").focusin(function() {
+      $("#search-where").show();
+    }).focusout(function () {
+        $("#search-where").hide();
     });
 
-    $('#where-keyword-round').keyup(function(){
-      if($(this).val() == "") {
-          $('#search-where-round').hide();
-        } else {
-          $('#search-where-round').show();
-          $('#search-from-round').hide();
-        }
-    });
-    $('#from-keyword-multi1').keyup(function(){
-      if($(this).val() == "") {
-        $('#search-from-multi1').hide();
-      } else {
-        $('#search-from-multi1').show();
-      }
+    // $('#from-keyword-round').keyup(function(){
+    //   if($(this).val() == "") {
+    //     $('#search-from-round').hide();
+    //   } else {
+    //     $('#search-from-round').show();
+    //   }
+    // });
+
+    $("#from-keyword-round").focusin(function() {
+      $("#search-from-round").show();
+    }).focusout(function () {
+        $("#search-from-round").hide();
     });
 
-    $('#where-keyword-multi1').keyup(function(){
-      if($(this).val() == "") {
-          $('#search-where-multi1').hide();
-        } else {
-          $('#search-where-multi1').show();
-          $('#search-from-multi1').hide();
-        }
-    });
-    $('#from-keyword-multi2').keyup(function(){
-      if($(this).val() == "") {
-        $('#search-from-multi2').hide();
-      } else {
-        $('#search-from-multi2').show();
-        $('#search-from-multi1').hide();
-        $('#search-where-multi1').hide();
-      }
+    // $('#where-keyword-round').keyup(function(){
+    //   if($(this).val() == "") {
+    //       $('#search-where-round').hide();
+    //     } else {
+    //       $('#search-where-round').show();
+    //       $('#search-from-round').hide();
+    //     }
+    // });
+
+    $("#where-keyword-round").focusin(function() {
+      $("#search-where-round").show();
+    }).focusout(function () {
+        $("#search-where-round").hide();
     });
 
-    $('#where-keyword-multi2').keyup(function(){
-      if($(this).val() == "") {
-          $('#search-where-multi2').hide();
-        } else {
-          $('#search-where-multi2').show();
-          $('#search-from-multi2').hide();
-          $('#search-from-multi1').hide();
-        }
+    // $('#from-keyword-multi1').keyup(function(){
+    //   if($(this).val() == "") {
+    //     $('#search-from-multi1').hide();
+    //   } else {
+    //     $('#search-from-multi1').show();
+    //   }
+    // });
+
+    $("#from-keyword-multi1").focusin(function() {
+      $("#search-from-multi1").show();
+    }).focusout(function () {
+        $("#search-from-multi1").hide();
+    });
+
+    // $('#where-keyword-multi1').keyup(function(){
+    //   if($(this).val() == "") {
+    //       $('#search-where-multi1').hide();
+    //     } else {
+    //       $('#search-where-multi1').show();
+    //       $('#search-from-multi1').hide();
+    //     }
+    // });
+
+    $("#where-keyword-multi1").focusin(function() {
+      $("#search-where-multi1").show();
+    }).focusout(function () {
+        $("#search-where-multi1").hide();
+    });
+
+    // $('#from-keyword-multi2').keyup(function(){
+    //   if($(this).val() == "") {
+    //     $('#search-from-multi2').hide();
+    //   } else {
+    //     $('#search-from-multi2').show();
+    //     $('#search-from-multi1').hide();
+    //     $('#search-where-multi1').hide();
+    //   }
+    // });
+
+    $("#from-keyword-multi2").focusin(function() {
+      $("#search-from-multi2").show();
+    }).focusout(function () {
+        $("#search-from-multi2").hide();
+    });
+
+    // $('#where-keyword-multi2').keyup(function(){
+    //   if($(this).val() == "") {
+    //       $('#search-where-multi2').hide();
+    //     } else {
+    //       $('#search-where-multi2').show();
+    //       $('#search-from-multi2').hide();
+    //       $('#search-from-multi1').hide();
+    //     }
+    // });
+
+    $("#where-keyword-multi2").focusin(function() {
+      $("#search-where-multi2").show();
+    }).focusout(function () {
+        $("#search-where-multi2").hide();
     });
 
   </script>
