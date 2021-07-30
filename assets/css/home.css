@@ -32,7 +32,7 @@ body{
 .main-menu li a{
 	color: #1A1C3D;
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 18px;
 	letter-spacing: 1px;
 }
 .main-menu li a img{
@@ -61,6 +61,7 @@ body{
 	border: 1px solid #A1A1B4;
 	color: #A1A1B4;
 	font-weight: 800;
+	letter-spacing: .5px;
 	font-size: 16px;
 }
 #flightbox .nav-pills .nav-item{
@@ -76,13 +77,21 @@ body{
 	color: #fff;
 }
 #ui-datepicker-div{
-	width: 400px !important;
-	left: 107px !important; 
-	top: 466px !important;
+	width: 441px !important;
+	left: 178px !important;
+	top: 468px !important;
 	border-radius: 15px;
 	box-shadow: 0 8px 20px rgb(49 52 129 / 24%);
-    background: #fff;
-    padding: 0;
+	background: #fff;
+	padding: 0;
+}
+.ui-datepicker-calendar td
+{
+	font-family: "Product Sans";
+	color: rgb(161, 161, 180);
+	border-color: rgb(161, 161, 180);
+	font-size: 16px !important;
+	padding: 0rem 0.53em !important;
 }
 #ui-datepicker-div .ui-widget-header{
 	background: #fff !important;
@@ -171,7 +180,7 @@ input::-webkit-inner-spin-button {
 }
 #flightbox .input-group input{
 	border: 0;
-	font-size: 12px;
+	font-size: 13px;
 	color: #A1A1B4;
 	margin-left: 3px;
     padding-left: 5px;
@@ -230,6 +239,7 @@ input::-webkit-inner-spin-button {
   margin-left: 0 !important;
   /*line-height: 1;*/
 }
+
 .input-group .button-minus{
 	background-color: #A1A1B4;
 	line-height: 10px;
@@ -522,21 +532,28 @@ input[type="number"] {
 .search-dropdown ul .row .col-4 .flag-img{
 	width: 15px;
 	margin-left: 3px;
+	margin-top: 7px;
 }
 .flight-title h5{
 	color: #1A1C3D;
 	font-size: 14px;
     font-weight: 800;
     margin-bottom: 0;
+	margin-right: 1rem;
 }
 .flight-title small{
 	color: #A1A1B4;
-	font-size: 11px;
+	font-size: 8px;
 }
 /* width */
 .search-container::-webkit-scrollbar {
   	width: 5px;
     border-radius: 10px;
+}
+.country-name-search
+{
+	color: #A1A1B4;
+	font-size: 12px;
 }
 
 /* Track */

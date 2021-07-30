@@ -82,11 +82,15 @@
               <p class="cd position-absolute">Contact Details</p>
               <div class="row mt-5 ">
                 <div class="col-md-6 col-6  ">
-                  <img src="assets/media/bookingprocess/globe.png" alt="Globe" class="w-75">
+                  <img src="assets/media/bookingprocess/globe.png" alt="Globe" class="w-100 p-4">
                 </div>
                 <div class="col-md-6 col-6 mb-5">
                   <p class="name pe-5">Log In or Register to enjoy this member
                     only benefit</p>
+                    <p class="loality-detail p-0 m-0">Only Signed In Members Are Eligible To Apply. Please Login Or
+                      Register To Unlock Member Only Bene Ts.<br>
+                      * Book Faster And Easier With Passenger Quick Pick<br>
+                      * Use Vouchers And Get Amazing Discounts</p>
                   <button type="button" id="loginregister-btn" class="btn  mt-5">Log In or Register</button>
                 </div>
               </div>
@@ -123,12 +127,12 @@
                   <form action="">
                     <div class="row ">
                       <div class="col-md-6 col-6">
-                        <div class="phonenumber-form ms-3 mt-4">
-                          <label for="inputPassword4" class="form-label2 ms-2">Mobile Number</label>
-                          <div class="input-group align-items-center p-1">
+                        <div class="phonenumber-form  mt-4">
+                          <label for="inputPassword4" class="form-label2 ">Mobile Number</label>
+                          <div class="input-group align-items-center">
                             <div class="input-group-text bg-transparent border-1 border-end">
                               <img src="assets/media/pak-flag.png"><span class="COUNTRYCODE ms-2">+92</span> </div>
-                            <input type="tel" placeholder="Enter Your PhoneNumber" class="form-control phone"
+                            <input type="tel" placeholder="Enter Your Mobile Number" class="form-control phone"
                               id="inputPassword4">
                             <p class="example">E.G. +923001234567 For Country Code (+92) And Mobile No.
                               3001234567</p>
@@ -138,8 +142,8 @@
                       <div class="col-md-6 col-6 emailfield mt-4">
                         <label for="inputEmail4" class="form-label2 mb-0">Email Address</label>
                         <div class="input-group align-items-center mt-1">
-                          <span class="form-control-feedback far fa-envelope"></span>
-                          <input type="email" class="form-control p-0 border-0 ms-2  phone"
+                          <span class="form-control-feedback far fa-envelope email-field"></span>
+                          <input type="email" class="form-control p-0 border-0 ms-3  phone"
                             placeholder="Enter Your Email Address" id="inputEmail4">
                         </div>
                         <p class="example">E.G Email@Example.Com</p>
@@ -154,8 +158,8 @@
 
 
           <div class="phonedetail pb-5  pt-5 ">
-            <div class="col-md-8 contactdetail travel-detail ps-3 pe-3 mt-5 pt-4 pb-4 ">
-              <p class="cd position-absolute pe-4">Traveler Details</p>
+            <div class="col-md-8 contactdetail travel-detail ps-3 pe-3 mt-5 pt-4 pb-4 position-relative ">
+              <p class="td position-absolute pe-4">Traveler Details</p>
               <div class="row align-items-center justify-content-center mt-5">
                 <div class="col-lg-10 col-12 mt-3">
                   <form action="">
@@ -173,13 +177,15 @@
                      <div class="row mt-5">
                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
                         <label for="title" class="form-label2">First Name</label>
-                         <input class="form-control phone" name="firstname" placeholder="Firstname" type="text" required
+                         <input class="form-control phone" name="firstname" placeholder="Enter Your First Name"
+                           type="text" required
                            autofocus />
                            <p class="condition">As on ID Card/passport/driving liscense (without degree or special character</p>
                        </div>
                        <div class="col-lg-6 col-md-6 col-sm-6" style="padding-bottom: 10px;">
                          <label for="title" class="form-label2">Last Name</label>
-                         <input class="form-control phone" name="lastname" placeholder="Lastname" type="text"
+                         <input class="form-control phone" name="lastname" placeholder="Enter Your Last Name"
+                           type="text"
                            required />
                        </div>
                      </div>
@@ -509,8 +515,8 @@
           <div class="row contact-section-row  align-items-center">
             <div class="col-md-8 contactdetail ps-0 pt-4 ">
               <p class="cd position-absolute">Contact Details</p>
-              <div class="namediv mt-5">
-                <p class="labelname">Full Name</p>
+              <div class="namediv ">
+                <p class="labelname mt-4">Full Name</p>
                 <p class="name">Ahmad Khan</p>
               </div>
 
@@ -577,7 +583,7 @@
 
           <div class="row contact-section-row  align-items-center mt-5 pb-4">
             <div class="col-md-8 contactdetail ps-0 pt-4 pb-4">
-              <p class="cd position-absolute">Travel Details</p>
+              <p class="cd position-absolute">Payment</p>
 
               <div class="row  mt-5">
                 <div class="col-md-12 col-6 mobilcolumn ">
@@ -644,23 +650,23 @@
             </div>
             <h5 class="confirm-detail">CONFIRMATION DETAILS HAVE BEEN SENT TO CONTACT DETAILS GIVEN BELOW</h5>
             <div class="row align-items-center justify-content-center  mt-3 contactsection">
-              <div class="col-md-6 col-12 d-flex ">
+              <div class="col-md-6 col-12 d-flex mb-2 ">
                 <img src="assets/media/process/mail.png" alt="" class="contacticon">
-                <form>
+                <form class="w-50">
                   <div class="form-group">
                     <input type="email" class="form-control promo ms-3" id="exampleInputemail"
                       aria-describedby="emailHelp" placeholder="Mr. Ahmad Khan@yahoo.com">
                   </div>
                 </form>
-                <a href="#" class="resend ">Resend</a>
+                <a href="#" class="resend">Resend</a>
               </div>
-              <div class="col-md-6 col-12 d-flex  ">
+              <div class="col-md-6 col-12 d-flex mb-2 ">
                 <img src="assets/media/process/phone.png" alt="" class="contact-phone-icon">
-                <form class="phonenumber-form ms-3">
+                <form class="phonenumber-form ms-3 w-50">
                   <div class="input-group align-items-center p-1">
                     <div class="input-group-text bg-transparent border-1 border-end countrycodediv pt-1">
                       <span class="COUNTRYCODE">+92</span> </div>
-                    <input type="tel" placeholder="3218878832" class="form-control promo phone" id="inputPassword4">
+                    <input type="tel" placeholder=" 3218878832" class="form-control promo phone" id="inputPassword4">
                   </div>
                 </form>
                 <a href="#" class="resend ms-1 mt-4">Resend</a>
