@@ -78,8 +78,8 @@
     <div class="container  pe-3 mt-5">
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="booking" role="tabpanel" aria-labelledby="booking-tab">
-          <div class="row contact-section-row  align-items-center">
-            <div class="col-md-8 contactdetail ps-0 mt-5 pt-4 ">
+          <div class="row contact-section-row  ">
+            <div class="col-md-8 contactdetail ps-0  pt-4 ">
               <p class="cd position-absolute">Contact Details</p>
               <div class="row mt-5 ">
                 <div class="col-md-6 col-6  ">
@@ -550,27 +550,67 @@
         </div>
 
         <div class="tab-pane fade" id="Payment" role="tabpanel" aria-labelledby="Payment-tab">
-          <div class="row contact-section-row  align-items-center">
-            <div class="col-md-8 contactdetail ps-0 pt-4 ">
-              <p class="cd position-absolute">Contact Details</p>
-              <div class="namediv ">
-                <p class="labelname">Full Name</p>
-                <p class="name">Ahmad Khan</p>
+          <div class="row contact-section-row ">
+            <div class="col-md-8 ps-0 pt-4 ">
+              <div class="contactdetail pt-3">
+                <p class="cd position-absolute">Contact Details</p>
+                <div class="namediv ">
+                  <p class="labelname">Full Name</p>
+                  <p class="name">Ahmad Khan</p>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 col-6 mobilcolumn ">
+                    <p class="labelname">Mobile Number</p>
+                    <p class="name">+9230012345678</p>
+                  </div>
+                  <div class="col-md-6 col-6">
+                    <p class="labelname">Email</p>
+                    <p class="name">mamoonsaleem@gmail.com</p>
+                  </div>
+                </div>
               </div>
 
-              <div class="row">
-                <div class="col-md-6 col-6 mobilcolumn ">
-                  <p class="labelname">Mobile Number</p>
-                  <p class="name">+9230012345678</p>
+              <div class="contactdetail ps-0 pt-4 mt-5">
+                <p class="cd position-absolute">Traveler Details</p>
+                <div class="namediv">
+                  <p class="labelfullname">Mr. Ahmad Khan</p>
+
                 </div>
-                <div class="col-md-6 col-6">
-                  <p class="labelname">Email</p>
-                  <p class="name">mamoonsaleem@gmail.com</p>
+
+                <div class="row">
+                  <div class="col-md-6 col-6 mobilcolumn ">
+                    <p class="labelname">Nationality</p>
+                    <p class="name">Pakistan</p>
+                  </div>
+                  <div class="col-md-6 col-6">
+                    <p class="labelname">Passport Number</p>
+                    <p class="name">2929-h912u8</p>
+                  </div>
                 </div>
               </div>
+
+               <div class="contactdetail ps-0 pt-4 pb-4 mt-5">
+                 <p class="cd position-absolute">Payment</p>
+
+                 <div class="row  mt-5">
+                   <div class="col-md-4 col-6 mobilcolumn ">
+                     <button type="button" id="paynow-btn" class="btn  mt-4 mb-2">Paynow</button>
+                     <div class="payment d-flex">
+                       <img src="assets/media/bookingprocess/mastercard.png" alt="" class="mc  paymentmethod">
+                       <img src="assets/media/bookingprocess/visaCard.png" alt="" class="mc  paymentmethod ">
+                     </div>
+
+                   </div>
+                   <div class="col-md-4 col-6 ps-4">
+                     <button type="button" id="paylater-btn" class="btn mt-4">Paylater</button>
+                   </div>
+                 </div>
+               </div>
+
             </div>
 
-            <div class="col-md-4 summarycolumn2 ps-5 mt-5 pt-5">
+            <div class="col-md-4 summarycolumn3 ps-5  pt-1">
               <div class="summarybox py-0">
                 <h3 class="summary-name mb-0 p-3">SUMMARY</h3>
 
@@ -592,57 +632,6 @@
               <div class="d-grid gap-2">
                 <button type="button" class="btn w-100 mt-4 booking-btn">CONTINUE TO BOOKING</button>
               </div>
-            </div>
-
-          </div>
-
-
-          <div class="row contact-section-row  align-items-center">
-            <div class="col-md-8 contactdetail ps-0 pt-4 ">
-              <p class="cd position-absolute">Traveler Details</p>
-              <div class="namediv">
-                <p class="labelfullname">Mr. Ahmad Khan</p>
-
-              </div>
-
-              <div class="row">
-                <div class="col-md-6 col-6 mobilcolumn ">
-                  <p class="labelname">Nationality</p>
-                  <p class="name">Pakistan</p>
-                </div>
-                <div class="col-md-6 col-6">
-                  <p class="labelname">Passport Number</p>
-                  <p class="name">2929-h912u8</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 summarycolumn3 ps-5">
-            </div>
-
-          </div>
-
-
-          <div class="row contact-section-row  align-items-center mt-5 pb-4">
-            <div class="col-md-8 contactdetail ps-0 pt-4 pb-4">
-              <p class="cd position-absolute">Payment</p>
-
-              <div class="row  mt-5">
-                <div class="col-md-4 col-6 mobilcolumn ">
-                  <button type="button" id="paynow-btn" class="btn  mt-4 mb-2">Paynow</button>
-                  <div class="payment d-flex">
-                    <img src="assets/media/bookingprocess/mastercard.png" alt="" class="mc  paymentmethod">
-                    <img src="assets/media/bookingprocess/visaCard.png" alt="" class="mc  paymentmethod ">
-                  </div>
-
-                </div>
-                <div class="col-md-4 col-6 ps-4">
-                  <button type="button" id="paylater-btn" class="btn mt-4">Paylater</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 summarycolumn3 ps-5">
             </div>
 
           </div>

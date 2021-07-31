@@ -174,13 +174,13 @@ input::-webkit-inner-spin-button {
   border-color: #A1A1B4;
   position: relative;
   border: 1px solid #A1A1B4;
-  height: 35px;
+  height: 40px;
   border-radius: 4px;
   padding: 0 10px;
 }
 #flightbox .input-group input{
 	border: 0;
-	font-size: 13px;
+	font-size: 14px;
 	color: #A1A1B4;
 	margin-left: 3px;
     padding-left: 5px;

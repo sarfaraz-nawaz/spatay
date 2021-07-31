@@ -128,14 +128,38 @@ option {
 }
 
 .secondplaneimage {
-  width: 100%;
+  width: 90%;
+}
+.planeimage-infotab
+{
+  width: 90%;
 }
 
 .towayimage {
   text-align: end;
   margin-top: 2.8rem;
 }
-
+.secondcityname-canceltab
+{
+  font-family: "Product Sans";
+  font-size: 25px !important;
+  color: #1A1C3D;
+  font-weight: bold;
+  margin-left: .4rem !important;
+  padding-left: 2rem;
+}
+.secondplaneimage-canceltab
+{
+  width: 63%;
+}
+.flightinfo-name
+{
+ font-family: "Product Sans";
+    font-size: 12px !important;
+    color: #A1A1B4;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
 
 
 /* end Flight search */
@@ -415,13 +439,13 @@ border: 1px solid #A1A1B4;
 
 .pia {
   font-family: "Product Sans";
-  font-size: 13px !important;
+  font-size: 17px !important;
   color: #A1A1B4;
-  font-weight: bold;
+ 
 }
 
 .piaimage {
-  width: 50%;
+  width: 90%;
 }
 
 .cityname {
@@ -550,11 +574,26 @@ border: 1px solid #A1A1B4;
   padding-left: 1rem;
 
 }
-
+.show-details-setting
+{
+  margin-top: .5rem !important;
+}
+.summaryplane-set
+{
+  margin-right: 2rem;
+}
 .toggle-arrow:not(.collapsed) {
   color: #A1A1B4 !important;
   background-color: transparent !important;
   box-shadow: none !important;
+}
+.summary-tab-cityname
+{
+  font-family: "Product Sans";
+  font-size: 25px !important;
+  color: #1A1C3D;
+  font-weight: bold;
+  padding-left: 1.8rem !important;
 }
 
 .toggle-arrow {
@@ -1325,11 +1364,20 @@ hr
 .booking-section .summarycolumn2 {
   padding-right: 0rem;
   padding-left: 4rem;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 .form-select {
   font-size: 14px !important;
   line-height: 2 !important;
+}
+.booking-section .summarycolumn3 {
+  padding-right: 0rem;
+  padding-left: 4rem;
+  margin-top: 1rem;
+}
+.contact-section-row
+{
+  margin-top: 6rem !important;
 }
 
 .form-control {
@@ -1952,7 +2000,7 @@ hr
   }
 
   .secondplaneimage {
-    width: 50%;
+    width: 90%;
   }
 
   .dh {
@@ -2111,7 +2159,7 @@ hr
   }
 
   .secondplaneimage {
-    width: 50%;
+    width: 90%;
   }
 
   .dh {

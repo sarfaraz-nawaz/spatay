@@ -70,6 +70,9 @@ body{
 .plane-circle img{
 	width: 100%;
 }
+#main-plane{
+	width: 90px;
+}
 .tab-text small{
 	font-size: 10px;
 	color: #A1A1B4;
