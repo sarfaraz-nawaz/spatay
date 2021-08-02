@@ -23,10 +23,54 @@ body{
 }
 #ui-datepicker-div {
     width: 341px !important;
-    left: 134px !important;
+    left: 179px !important;
+	top: 457px !important;
 }
 #flightbox{
 	opacity: 0.9;
+}
+#flightbox input {
+	font-size: 12px !important;
+}
+#flightbox .input-group {
+	height: 36px !important;
+}
+
+.search-dropdown ul .row .col-4 .flag-img {
+	/* width: 15px;
+	margin-left: 3px; */
+	margin-top: 0 !important;
+}
+.refundcontainers input:checked~.checkmark2,
+.stopdropdown .custom-box input:checked~.checkmark {
+	border-color: #45B9E2;
+}
+
+.filter-section .active-filter,
+.filter-section .nav-link:active,
+.filter-section .nav-link:hover {
+	color: #45B9E2 !important;
+}
+.filter-section .hotel-filter .arrow-up{
+	border: 1px solid transparent;
+	border-top-color: #EBECF0;
+	border-left-color:#EBECF0;
+	width: 18px;
+	height: 18px;
+	transform: rotate(45deg);
+	margin-bottom: -9px;
+	background-color: #fff;
+	border-top-left-radius: .25rem;
+	z-index: 1050;
+}
+.filter-section .hotel-filter #stop-filter .show {
+	box-shadow: 0 8px 25px 2px #ebecf0;
+}
+.filter-section .hotel-filter .checkmark {
+	width: 41px;
+}
+.filter-section .hotel-filter .checkmark i{
+	margin-left: 3px;
 }
 .btn-style-2 {
     background-color: #45B9E2;
@@ -65,6 +109,14 @@ body{
 .style-heading {
     color: #45B9E2;
 }
+.style-heading-orange
+{
+	color: #DE5921;
+}
+.btn-orange {
+	background-color: #DE5921;
+	border-color: #DE5921;
+}
 .social-icons li:first-child {
     background-color: #45B9E2;
 }
@@ -89,7 +141,7 @@ body{
 }
 .listing-info{
 	color: #A1A1B4;
-	font-size: 15px;
+	font-size: 16px;
 }
 .hotel-price{
 	color: #1B1B23;

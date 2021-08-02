@@ -19,7 +19,7 @@ body{
 	color: #1A1C3D;
 }
 .top-menu{
-	background: rgb(255, 255, 255, 0.5);
+	background: rgb(255, 255, 255, 0.9);
     position: relative;
 }
 .main-menu{
@@ -163,6 +163,20 @@ input[type="button"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
+.rounded-4
+{
+	border-radius: .5rem;
+}
+
+/* check radio box sstart */
+
+
+
+
+
+
+
+/* check radio box end */
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

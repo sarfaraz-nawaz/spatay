@@ -199,10 +199,7 @@ option {
   text-transform: capitalize;
 }
 
-.filter-section .nav-link:focus,
-.nav-link:hover {
-  /* color: #A1A1B4 !important; */
-}
+
 .active-filter:hover,
 .active-filter:focus {
   color: #DE5921 !important;
@@ -282,6 +279,7 @@ border: 1px solid #A1A1B4;
   color: #fff;
 }
 
+
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
   content: "";
@@ -319,18 +317,23 @@ border: 1px solid #A1A1B4;
   font-size: 12px !important;
   min-width: 6rem;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -141px;
+  left: -139px;
 }
-.filter-section .hotel-filter .timedropdown
+.filter-section .hotel-filter .timedropdown 
 {
- height: 170px;
- overflow: auto;
  padding: 10px !important;
  box-shadow: 0 8px 20px 0 #ebecf0;
- left: -11px;
+ left: 4px;
  text-transform: capitalize;
  width: 9rem;
 }
+
+.filter-section .hotel-filter .timedropdown .property-scroll{
+  height: 110px;
+  overflow: auto;
+}
+
+
 
 
 /* #time-filter { 
@@ -396,6 +399,23 @@ border: 1px solid #A1A1B4;
   right: 27px;
   margin-right: 10px;
 }
+
+.arrow-up {
+  border: 1px solid transparent;
+  border-top-color: rgba(0, 0, 0, .15);
+  border-left-color: rgba(0, 0, 0, .15);
+  width: 18px;
+  height: 18px;
+  transform: rotate(45deg);
+  margin-bottom: -9px;
+  background-color: #fff;
+  border-top-left-radius: .25rem;
+  z-index: 1050;
+}
+
+.filter-section .hotel-filter #stop-filter .show {
+  box-shadow: 0 8px 25px 2px #ebecf0;
+}
 .active-filter{
   color: #de5921 !important;
 }
@@ -412,8 +432,11 @@ border: 1px solid #A1A1B4;
   width: 11rem;
 }
 .airlineSearch{
-  height: 132px;
+  height: 118px;
   overflow: auto;
+}
+.dropdown-menu {
+  border-color: #EBECF0 !important;
 }
 .search-icon
 {
@@ -1439,7 +1462,7 @@ hr
   background-color: #de5921;
   border-color: #de5921;
 }
-.airlinedropdown::-webkit-scrollbar {
+/* .airlinedropdown::-webkit-scrollbar {
   width: 5px;
   border-radius: 10px;
 }
@@ -1456,7 +1479,7 @@ hr
 /* / Handle on hover /  */
 .airlinedropdown::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
+} */
 
 .airlineSearch::-webkit-scrollbar {
   width: 5px;
@@ -1480,7 +1503,7 @@ hr
 
   padding: 10px !important;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -60px;
+  left: -59px;
   text-transform: capitalize;
   width: 12rem;
 }
@@ -1744,29 +1767,24 @@ hr
 }
 
 /* hotel listing dropdown css */
-.filter-section .hotel-filter .timedropdown .airlinedropdown::-webkit-scrollbar {
-  width: 5px;
-  border-radius: 10px;
-}
-.filter-section .hotel-filter .timedropdown::-webkit-scrollbar {
-  width: 5px;
-  border-radius: 10px;
-}
 
-.airlinedropdown::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-.filter-section .hotel-filter .timedropdown::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
 
-.filter-section .hotel-filter .airlinedropdown::-webkit-scrollbar-thumb {
-  background: #21b8de;
-  border-radius: 10px;
+.property-scroll{
+  height: 100px;
+  overflow: auto;
 }
-.filter-section .hotel-filter .timedropdown::-webkit-scrollbar-thumb {
-  background: #21b8de;
-  border-radius: 10px;
+.property-scroll::-webkit-scrollbar {
+  width: 8px !important;
+}
+.property-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+}
+.property-scroll::-webkit-scrollbar-thumb {
+  background: #21b8de !important;
+  border-radius: 10px !important;
+}
+.orange-scroll::-webkit-scrollbar-thumb {
+  background: #de5921 !important;
 }
 
 /* / Handle on hover /  */
@@ -1782,34 +1800,25 @@ hr
 }
 .filter-section .hotel-filter #stop-filter .show {
   padding: 10px;
-  width: 156px;
+  width: 157px;
   min-width: 5rem;
   padding-bottom: 1rem;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -3px;
+  left: 9px;
 }
 .filter-section .hotel-filter .checkmark:hover {
-  /* position: absolute;  */
-  /* top: 0; */
-  /* left: 0; */
-  height: 30px;
-  width: 30px;
   background-color: #4cbee5 !important;
-  /* border-radius: 0; */
   padding: 5px 10px;
   color: #ccc;
   border: 1px solid #ccc;
 }
 .filter-section .hotel-filter .checkmark {
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 0; */
   height: 30px;
   width: 30px;
   background-color: transparent;
-  /* border-radius: 0; */
   padding: 5px 10px;
- 
+ display: flex;
+ align-items: center;
   color: #ccc;
   border: 1px solid #ccc;
 }
@@ -1901,11 +1910,10 @@ hr
   transform: rotate (45deg);
 }
 .filter-section .hotel-filter  .airlinedropdown {
-  height: 170px;
-  overflow: auto;
+  
   padding: 10px !important;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -39px;
+  left: -28px;
   text-transform: capitalize;
   width: 9rem;
 }
@@ -1923,7 +1931,7 @@ hr
 .filter-section .hotel-filter .pricerangedropdown {
   padding: 10px !important;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -26px;
+  left: -14px;
   text-transform: capitalize;
   width: 10rem;
 }

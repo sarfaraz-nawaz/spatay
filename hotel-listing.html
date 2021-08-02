@@ -2,322 +2,294 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Spatay</title>
- <link rel="stylesheet" href="assets/css/style.css">
- <link rel="stylesheet" href="assets/css/bootstrap.min.css">
- <link rel="stylesheet" href="assets/css/flights.css">
- <link rel="stylesheet" href="assets/css/hotel.css">
- <!-- <link rel="stylesheet" href="assets/css/home.css"> -->
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-  integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spatay</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/flights.css">
+  <link rel="stylesheet" href="assets/css/hotel.css">
+  <!-- <link rel="stylesheet" href="assets/css/home.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
- <!---------------------------------------------- start nav section -------------------------------------->
- <nav class="navbar navbar-expand-lg  bg-white pt-2 pb-2 ">
-  <div class="container">
-   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <!-- <span class="navbar-toggler-icon"></span> -->
-    <i class="fas fa-bars" aria-hidden="true"></i>
-   </button>
-   <a class="navbar-brand" href="hotel.html"><img src="assets/media/hotel/hotel_logo.png" class="w-75"></a>
-   <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav main-nav ms-auto  mt-lg-0">
-     <li class="nav-item">
-      <a class="nav-link" aria-current="page" href="#">Home</a>
-     </li>
-     <li class="nav-item">
-      <a class="nav-link" href="#">MY TRIPS</a>
-     </li>
-     <li class="nav-item">
-      <a class="nav-link" href="#">About us</a>
-     </li>
+  <!---------------------------------------------- start nav section -------------------------------------->
+  <nav class="navbar navbar-expand-lg  bg-white pt-2 pb-2 ">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+      <a class="navbar-brand" href="hotel.html"><img src="assets/media/hotel/hotel_logo.png" class="w-75"></a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav main-nav ms-auto  mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MY TRIPS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
 
-    </ul>
-   </div>
-  </div>
- </nav>
- <!---------------------------------------------- end nav section -------------------------------------->
-
- <!---------------------------------------------- start Flight search -------------------------------------->
-<section class="flight-search pt-4 pb-4 mt-2 ">
-  <div class="container">
-   <form action="" method="POST">
-    <div class="row justify-content-center align-items-center">
-     <div class="col-lg-1 mb-2 ">
-      <img src="assets/media/hotel/double-bedlist.png" alt="plane" class="planeimage">
-     </div>
-     <div class="col-lg-2 mb-2 ">
-      <label class="from">From</label>
-      <div class="input-container d-flex align-items-center">
-       <i class="fas fa-map-marker-alt locationicon"></i><input type="text" placeholder="Lahore (LHE)" name="From"
-        class="inputfield">
-
+        </ul>
       </div>
-      <div>
-      </div>
-      <!-- <h5><i class="fas fa-map-marker-alt"></i>Lahore (LHE) </h5> -->
-
-     </div>
-     <div class="col-lg-1 toway mb-2 ">
-      <img src="assets/media/flightfilter/twoway.png" alt="Twoway" class=" towayimage">
-     </div>
-
-     <div class="col-lg-2 mb-2  ">
-      <label class="from">To</label>
-      <div class="input-container d-flex align-items-center">
-       <i class="fas fa-map-marker-alt locationicon"></i><input type="text" placeholder="Karachi (KHI)" name="From"
-        class="inputfield">
-
-      </div>
-      <div>
-      </div>
-      <!-- <h5><i class="fas fa-map-marker-alt"></i>Lahore (LHE) </h5> -->
-
-     </div>
-
-     <div class="col-lg-2 mb-2 ">
-      <label class="from">Date</label>
-      <div class="input-container d-flex align-items-center">
-       <i class="far fa-calendar-alt locationicon"></i>
-       <input type="text" placeholder="12 May - Return" name="calander" class="inputfield">
-
-
-      </div>
-      <div>
-      </div>
-      <!-- <h5><i class="fas fa-map-marker-alt"></i>Lahore (LHE) </h5> -->
-
-     </div>
-
-     <div class="col-lg-2  mb-2">
-      <label class="from">Travellers</label>
-      <div class="input-container d-flex align-items-center">
-       <i class="fas fa-user-friends locationicon"></i>
-       <select id="items">
-        <option value="item-1">1 Travellers</option>
-        <option value="item-2">2 Travellers</option>
-        <option value="item-3">3 Travellers</option>
-       </select>
-
-      </div>
-      <div>
-      </div>
-
-     </div>
-
-     <div class="col-lg-2  mb-2 ">
-      <button type="button" id="search-btn" class="btn">Search Again</button>
-     </div>
-
     </div>
-   </form>
-  </div>
-</section>
+  </nav>
+  <!---------------------------------------------- end nav section -------------------------------------->
 
- <!---------------------------------------------- end Flight search-------------------------------------->
+  <!---------------------------------------------- start Flight search -------------------------------------->
+  <section class="flight-search pt-4 pb-4  ">
+    <div class="container pt-2">
+      <form action="" method="POST">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-1 mb-2 ">
+            <img src="assets/media/hotel/double-bedlist.png" alt="plane" class="planeimage">
+          </div>
+          <div class="col-lg-2 mb-2 px-3">
+            <label class="from">City</label>
+            <div class="input-container d-flex align-items-center">
+              <i class="fas fa-map-marker-alt locationicon"></i><input type="text" placeholder="Karachi (KHI)"
+                name="From" class="inputfield">
 
- <!---------------------------------------------- start Filter section-------------------------------------->
-
- <section class="filter-section">
-  <div class="container hotel-filter">
-   <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-     <a class="navbar-brand" href="#"><img src="assets/media/flightfilter/filter.png"> &nbsp;&nbsp;
-      Filters</a>
-     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <!-- <span class="navbar-toggler-icon"></span> -->
-      <i class="fas fa-bars" aria-hidden="true"></i>
-     </button>
-     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-       <li class="nav-item dropdown secondnavitem position-relative">
-        <a class="nav-link dropdown-toggle" href="#" id="stops" role="button">
-         Property Class
-         <!-- <i class="fa fa-heart"></i> -->
-        </a>
-        <div class="hotel-filter-class" id="stop-filter" style="display: none;">
-          <div class="arrow-up"></div>
-          <ul class="dropdown-menu show" aria-labelledby="">
-            <p class="text-capitalize mb-0 pb-2 dropdown-title">Property Class</p>
-            <div class="stopdropdown text-start">
-              <label class="custom-box" for="0">
-                <input type="radio" id="0" name="radio">
-                <span class="checkmark">0<i class="fas fa-star propety-class-dropdown-star"></i></span>
-              </label>
-              <label class="custom-box " for="1">
-                <input type="radio" id="1" name="radio">
-                <span class="checkmark">1<i class="fas fa-star propety-class-dropdown-star"></i></span>
-              </label>
-              <label class="custom-box mb-4" for="2">
-                <input type="radio" id="2" name="radio">
-                <span class="checkmark">2<i class="fas fa-star propety-class-dropdown-star"></i></span>
-              </label>
-             <label class="custom-box" for="3">
-               <input type="radio" id="3" name="radio">
-               <span class="checkmark">3<i class="fas fa-star propety-class-dropdown-star"></i></span>
-             </label>
-             <label class="custom-box mb-4" for="4">
-               <input type="radio" id="4" name="radio">
-               <span class="checkmark">4<i class="fas fa-star propety-class-dropdown-star"></i></span>
-             </label>
-             <label class="custom-box mb-4" for="5">
-               <input type="radio" id="5" name="radio">
-               <span class="checkmark">5<i class="fas fa-star propety-class-dropdown-star"></i></span>
-             </label>
-              <label class="custom-box" for="6">
-                <input type="radio" id="6" name="radio">
-                <span class="checkmark">6<i class="fas fa-star propety-class-dropdown-star"></i></span>
-              </label>
-              <label class="custom-box" for="7">
-                <input type="radio" id="7" name="radio">
-                <span class="checkmark">7<i class="fas fa-star propety-class-dropdown-star"></i></span>
-              </label>
-              <label class="custom-box" for="8">
-                <input type="radio" id="8" name="radio">
-                <span class="checkmark">8<i class="fas fa-star propety-class-dropdown-star"></i></span>
-              </label>
             </div>
-             <a href="" class="deslect justify-content-end align-items-end d-flex">Deselectall</a>
-          </ul>
+
+          </div>
+
+          <div class="col-lg-2 mb-2 px-3 ">
+            <label class="from text-uppercase">Check in</label>
+            <div class="input-container d-flex align-items-center">
+              <i class="far fa-calendar-alt locationicon"></i>
+              <input type="text" placeholder="24 Jan’ 20 - Friday" name="calander" class="inputfield">
+
+
+            </div>
+          </div>
+          <div class="col-lg-2 mb-2 px-3 ">
+            <label class="from text-uppercase">Check out</label>
+            <div class="input-container d-flex align-items-center">
+              <i class="far fa-calendar-alt locationicon"></i>
+              <input type="text" placeholder="30 Jan’ 20 - Thursday" name="calander" class="inputfield">
+
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-2  mb-2 px-3">
+            <label class="from text-uppercase">Travellers</label>
+            <div class="input-container d-flex align-items-center">
+              <i class="fas fa-user-friends locationicon"></i>
+              <select id="items">
+                <option value="item-1">1 Travellers</option>
+                <option value="item-2">2 Travellers</option>
+                <option value="item-3">3 Travellers</option>
+              </select>
+
+            </div>
+            <div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-2  mb-2 ">
+            <button type="button" id="search-btn" class="btn">Search Again</button>
+          </div>
+
         </div>
-       </li>
-       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="timefilter" role="button">
-         Property Type
-        </a>
-           <div class="" id="time-filter" style="display: none;">
-             <div class="arrow-up"></div>
-             <ul class="dropdown-menu show timedropdown" aria-labelledby="">
-               <p class="text-capitalize mb-0 pb-2 dropdown-title pt-2">Property Type</p>
-               <div class="stopdropdown text-center">
-                 <div class="text-start mt-2 airlineinput">
-                   <div>
-                     <label class="refundcontainers">Apartment
-                       <input type="checkbox" checked="checked">
-                       <span class="checkmark2"></span>
-                     </label>
-                     <label class="refundcontainers">Hotel
-                       <input type="checkbox">
-                       <span class="checkmark2"></span>
-                     </label>
-                     <label class="refundcontainers">Apart Hotel
-                       <input type="checkbox">
-                       <span class="checkmark2"></span>
-                     </label>
-                     <label class="refundcontainers">Guest House
-                       <input type="checkbox">
-                       <span class="checkmark2"></span>
-                     </label>
-                     <label class="refundcontainers">Resort
-                       <input type="checkbox">
-                       <span class="checkmark2"></span>
-                     </label>
-                   </div>
-
-                 </div>
-
-               </div>
-               <div class="d-flex justify-content-end align-items-end">
-                 <a href="" class="deslect">Selectall</a>
-                 <a class="deslect ps-1 pe-1"> / </a>
-                 <a href="" class="deslect">Deselectall</a>
-
-               </div>
-             </ul>
-           </div>
-       </li>
-       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="airlinefilter" role="button" >
-         Amenities
-        </a>
-         <div class="" id="airline-filter" style="display: none;">
-           <div class="arrow-up"></div>
-           <ul class="dropdown-menu show airlinedropdown" aria-labelledby="">
-             <p class="text-capitalize mb-0 pb-2 pt-2 dropdown-title">Amenities</p>
-             <div class="stopdropdown text-center">
-               <div class="text-start mt-2 airlineinput">
-                 <div>
-                   <label class="refundcontainers">TV with Cable
-                     <input type="checkbox" checked="checked">
-                     <span class="checkmark2"></span>
-                   </label>
-                   <label class="refundcontainers">Airport Transfers
-                     <input type="checkbox">
-                     <span class="checkmark2"></span>
-                   </label>
-                   <label class="refundcontainers">Coffee Shop
-                     <input type="checkbox">
-                     <span class="checkmark2"></span>
-                   </label>
-                   <label class="refundcontainers">Internet Access
-                     <input type="checkbox">
-                     <span class="checkmark2"></span>
-                   </label>
-                   <label class="refundcontainers">WiFi Hotspot
-                     <input type="checkbox">
-                     <span class="checkmark2"></span>
-                   </label>
-                 </div>
-
-               </div>
-
-             </div>
-             <div class="d-flex justify-content-end align-items-end">
-               <a href="" class="deslect">Selectall</a>
-               <a class="deslect ps-1 pe-1"> / </a>
-               <a href="" class="deslect">Deselectall</a>
-
-             </div>
-           </ul>
-         </div>
-       </li>
-       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="pricerangefilter" role="button" data-bs-toggle="dropdown"
-         aria-expanded="false">
-         Price Range
-        </a>
-        <div class="pricerangeee" id="pricerange-filter" style="display: none;">
-          <div class="arrow-up"></div>
-          <ul class="dropdown-menu show pricerangedropdown" aria-labelledby="">
-            <p class="text-capitalize mb-0 pb-2 mt-3 dropdown-title">Price Range</p>
-            <div class="stopdropdown text-center pb-4">
-              <div class="d-flex">
-                <p class="pricetitle">price:</p> &nbsp;&nbsp;&nbsp;
-                <p class="pricerange" id="demo">RS 750000/-</p>
-              </div>
-                <div class="slidecontainer pb-1 align-items-center justify-content-center">
-                  <input type="range" min="15000" max="1000000" value="nn" class="slider" id="myRange">
-                  <!-- <p>Value: <span id="demo"></span></p> -->
-                </div>
-                <div class="d-flex justify-content-between">
-                  <small class="minmaxprice"> RS 15000/-</small>
-                  <small class="minmaxprice">RS 100,000/-</small>
-
-                </div>
-                <div>
-                  <label class="refundcontainers">Refundable
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark2"></span>
-                  </label>
-                </div>
-          </ul>
-        </div>
-       </li>
-      </ul>
-     </div>
+      </form>
     </div>
-   </nav>
-  </div>
- </section>
+  </section>
+
+  <!---------------------------------------------- end Flight search-------------------------------------->
+
+  <!---------------------------------------------- start Filter section-------------------------------------->
+
+  <section class="filter-section">
+    <div class="container hotel-filter">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/media/flightfilter/filter.png"> &nbsp;&nbsp;
+            Filters</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fas fa-bars" aria-hidden="true"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown secondnavitem position-relative">
+                <a class="nav-link dropdown-toggle" href="#" id="stops" role="button">
+                  Property Class
+                  <!-- <i class="fa fa-heart"></i> -->
+                </a>
+                <div class="hotel-filter-class" id="stop-filter" style="display: none;">
+                  <div class="arrow-up stop-arrow"></div>
+                  <ul class="dropdown-menu show stopdownbox" aria-labelledby="">
+                    <p class="text-capitalize mb-0 pb-2 dropdown-title">Property Class</p>
+                    <div class="stopdropdown text-start d-inline-flex justify-content-center flex-wrap">
+                      <label class="custom-box me-1 mb-2 " for="1">
+                        <input type="radio" id="1" name="radio">
+                        <span class="checkmark">1<i class="fas fa-star propety-class-dropdown-star"></i></span>
+                      </label>
+                      <label class="custom-box me-1 mb-2" for="2">
+                        <input type="radio" id="2" name="radio">
+                        <span class="checkmark">2<i class="fas fa-star propety-class-dropdown-star"></i></span>
+                      </label>
+                      <label class="custom-box mb-2" for="3">
+                        <input type="radio" id="3" name="radio">
+                        <span class="checkmark">3<i class="fas fa-star propety-class-dropdown-star"></i></span>
+                      </label>
+                      <label class="custom-box me-1 mb-2" for="4">
+                        <input type="radio" id="4" name="radio">
+                        <span class="checkmark">4<i class="fas fa-star propety-class-dropdown-star"></i></span>
+                      </label>
+                      <label class="custom-box me-1 mb-2" for="5">
+                        <input type="radio" id="5" name="radio">
+                        <span class="checkmark">5<i class="fas fa-star propety-class-dropdown-star"></i></span>
+                      </label>
+                    </div>
+                    <a href="" class="deslect justify-content-end align-items-end d-flex">Deselect all</a>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="timefilter" role="button">
+                  Property Type
+                </a>
+                <div class="" id="time-filter" style="display: none;">
+                  <div class="arrow-up time-arrow"></div>
+                  <ul class="dropdown-menu show timedropdown" aria-labelledby="">
+                    <p class="text-capitalize mb-0 pb-2 dropdown-title pt-2">Property Type</p>
+                    <div class="stopdropdown text-center">
+                      <div class="text-start mt-2 airlineinput">
+
+                          <div class="property-scroll">
+                            <label class="refundcontainers">Apartment
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark2"></span>
+                            </label>
+                            <label class="refundcontainers">Hotel
+                              <input type="checkbox">
+                              <span class="checkmark2"></span>
+                            </label>
+                            <label class="refundcontainers">Apart Hotel
+                              <input type="checkbox">
+                              <span class="checkmark2"></span>
+                            </label>
+                            <label class="refundcontainers">Guest House
+                              <input type="checkbox">
+                              <span class="checkmark2"></span>
+                            </label>
+                            <label class="refundcontainers">Resort
+                              <input type="checkbox">
+                              <span class="checkmark2"></span>
+                            </label>
+                          </div>
+
+                      </div>
+
+                    </div>
+                    <div class="d-flex justify-content-end align-items-end">
+                      <a href="" class="deslect">Select all</a>
+                      <a class="deslect ps-1 pe-1">/</a>
+                      <a href="" class="deslect">Deselect all</a>
+
+                    </div>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="airlinefilter" role="button">
+                  Amenities
+                </a>
+                <div class="" id="airline-filter" style="display: none;">
+                  <div class="arrow-up airline-arrow"></div>
+                  <ul class="dropdown-menu show airlinedropdown" aria-labelledby="">
+                    <p class="text-capitalize mb-0 pb-2 pt-2 dropdown-title">Amenities</p>
+                    <div class="stopdropdown text-center">
+                      <div class="text-start mt-2 airlineinput">
+                        <div class="property-scroll">
+                            <label class="refundcontainers">TV with Cable
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark2"></span>
+                            </label>
+                            <label class="refundcontainers">Airport Transfers
+                              <input type="checkbox">
+                              <span class="checkmark2"></span>
+                            </label>
+                            <label class="refundcontainers">Coffee Shop
+                              <input type="checkbox">
+                              <span class="checkmark2"></span>
+                            </label>
+                            <label class="refundcontainers">Internet Access
+                              <input type="checkbox">
+                              <span class="checkmark2"></span>
+                            </label>
+                            <label class="refundcontainers">WiFi Hotspot
+                              <input type="checkbox">
+                              <span class="checkmark2"></span>
+                            </label>
+                        </div>
+
+                      </div>
+
+                    </div>
+                    <div class="d-flex justify-content-end align-items-end">
+                      <a href="" class="deslect">Select all</a>
+                      <a class="deslect ps-1 pe-1"> / </a>
+                      <a href="" class="deslect">Deselect all</a>
+
+                    </div>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="pricerangefilter" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Price Range
+                </a>
+                <div class="pricerangeee" id="pricerange-filter" style="display: none;">
+                  <div class="arrow-up pricerange-arrow"></div>
+                  <ul class="dropdown-menu show pricerangedropdown" aria-labelledby="">
+                    <p class="text-capitalize mb-0 pb-2 mt-3 dropdown-title">Price Range</p>
+                    <div class="stopdropdown text-center pb-4">
+                      <div class="d-flex">
+                        <p class="pricetitle">price:</p> &nbsp;&nbsp;&nbsp;
+                        <p class="pricerange" id="demo">RS 750000/-</p>
+                      </div>
+                      <div class="slidecontainer pb-1 align-items-center justify-content-center">
+                        <input type="range" min="15000" max="1000000" value="nn" class="slider" id="myRange">
+                        <!-- <p>Value: <span id="demo"></span></p> -->
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <small class="minmaxprice"> RS 15000/-</small>
+                        <small class="minmaxprice">RS 100,000/-</small>
+
+                      </div>
+                      <div>
+                        <label class="refundcontainers">Refundable
+                          <input type="checkbox" checked="checked">
+                          <span class="checkmark2"></span>
+                        </label>
+                      </div>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </section>
 
 
   <!-- Hotels Listing -->
@@ -343,7 +315,7 @@
               <p class="stay-time ps-3">For 3 Days & 2 Nights</p>
             </div>
             <div class="btn-content">
-              <a  href="hotel-rooms.html" class="btn listing-btn">Select</a>
+              <a href="hotel-rooms.html" class="btn listing-btn">Select</a>
             </div>
           </div>
         </div>
@@ -393,7 +365,7 @@
               <p class="stay-time ps-3">For 3 Days & 2 Nights</p>
             </div>
             <div class="btn-content">
-              <a  href="hotel-rooms.html" class="btn listing-btn">Select</a>
+              <a href="hotel-rooms.html" class="btn listing-btn">Select</a>
             </div>
           </div>
         </div>
@@ -418,7 +390,7 @@
               <p class="stay-time ps-3">For 3 Days & 2 Nights</p>
             </div>
             <div class="btn-content">
-              <a  href="hotel-rooms.html" class="btn listing-btn">Select</a>
+              <a href="hotel-rooms.html" class="btn listing-btn">Select</a>
             </div>
           </div>
         </div>
@@ -443,7 +415,7 @@
               <p class="stay-time ps-3">For 3 Days & 2 Nights</p>
             </div>
             <div class="btn-content">
-              <a  href="hotel-rooms.html" class="btn listing-btn">Select</a>
+              <a href="hotel-rooms.html" class="btn listing-btn">Select</a>
             </div>
           </div>
         </div>
@@ -452,94 +424,157 @@
   </div>
   <!-- End Hotel Listing -->
 
- <!-- THIRD -->
+  <!-- THIRD -->
 
-<section class="footer">
- <div class="container">
-  <div class="section-heading text-center">
-   <h2 class="main-heading">Contact Us Any Time</h2>
-   <h1 class="style-heading">We Love To Be Social</h1>
-  </div>
-  <div class="row footer-row">
-   <div class="col-12 text-center">
-    <ul class="list-inline menu-links">
-     <li class="list-inline-item"><a href="">Home</a></li>
-     <li class="list-inline-item"><a href="">My Trips</a></li>
-     <li class="list-inline-item"><a href="">About Us</a></li>
-    </ul>
-    <ul class="list-inline social-icons pt-3">
-     <li class="list-inline-item"><a href=""><img src="assets/media/Email.png"></a></li>
-     <li class="list-inline-item"><a href=""><img src="assets/media/comment.png"></a></li>
-     <li class="list-inline-item"><a href=""><img src="assets/media/Calendar.png"></a></li>
-     <li class="list-inline-item"><a href=""><img src="assets/media/Security.png"></a></li>
-     <li class="list-inline-item"><a href=""><img src="assets/media/time.png"></a></li>
-    </ul>
-   </div>
-  </div>
-  <div class="row">
-   <div class="col-12 text-center">
-    <p class="copyright  d-flex justify-content-center"><span>&copy;</span> Spatay 2021. All right reserved</p>
-   </div>
-  </div>
- </div>
-</section>
-<!-- End Footer -->
+  <section class="footer">
+    <div class="container">
+      <div class="section-heading text-center">
+        <h2 class="main-heading">Contact Us Any Time</h2>
+        <h1 class="style-heading">We Love To Be Social</h1>
+      </div>
+      <div class="row footer-row">
+        <div class="col-12 text-center">
+          <ul class="list-inline menu-links">
+            <li class="list-inline-item"><a href="">Home</a></li>
+            <li class="list-inline-item"><a href="">My Trips</a></li>
+            <li class="list-inline-item"><a href="">About Us</a></li>
+          </ul>
+          <ul class="list-inline social-icons pt-3">
+            <li class="list-inline-item"><a href=""><img src="assets/media/Email.png"></a></li>
+            <li class="list-inline-item"><a href=""><img src="assets/media/comment.png"></a></li>
+            <li class="list-inline-item"><a href=""><img src="assets/media/Calendar.png"></a></li>
+            <li class="list-inline-item"><a href=""><img src="assets/media/Security.png"></a></li>
+            <li class="list-inline-item"><a href=""><img src="assets/media/time.png"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="copyright  d-flex justify-content-center"><span>&copy;</span> Spatay 2021. All right reserved</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Footer -->
 
-   
- <!-- Bootstrap core JavaScript -->
 
- <script src='assets/js/bootstrap.min.js'></script>
- <script src="assets/js/jquery.js"></script>
+  <!-- Bootstrap core JavaScript -->
 
- <script>
-  $('#toggle-arrowOne').click(function () {
-   $('#hide').toggle();
-   $('#show').toggle();
-  });
-  // $('.toggle-arrow1').click(function () {
-  //  $('#hide1').toggle();
-  //  $('#show1').toggle();
-  // });
-  $('#toggle-arrowTwo').click(function () {
-   $('#hideTwo').toggle();
-   $('#showTwo').toggle();
-  });
+  <script src='assets/js/bootstrap.min.js'></script>
+  <script src="assets/js/jquery.js"></script>
 
-  $('#stops').click(function(){
-    $('#stop-filter').toggle();
-    $(this).toggleClass('active-filter');
-  });
-   $('#timefilter').click(function(){
-   $('#time-filter').toggle();
-   $(this).toggleClass('active-filter');
-  });
-  $('#airlinefilter').click(function(){
-    $('#airline-filter').toggle();
-    $(this).toggleClass('active-filter');
-  });
-  $('#pricerangefilter').click(function () {
-    $('#pricerange-filter').toggle();
-    $(this).toggleClass('active-filter');
-  });
+  <script>
+    $('#toggle-arrowOne').click(function () {
+      $('#hide').toggle();
+      $('#show').toggle();
+    });
+    // $('.toggle-arrow1').click(function () {
+    //  $('#hide1').toggle();
+    //  $('#show1').toggle();
+    // });
+    $('#toggle-arrowTwo').click(function () {
+      $('#hideTwo').toggle();
+      $('#showTwo').toggle();
+    });
 
-  var slider = document.getElementById("myRange");
-  var output = document.getElementById("demo");
-  output.innerHTML = slider.value;
+    $('#stops').click(function () {
+      $('#stop-filter').toggle();
+      $('#time-filter').hide();
+      $('#airline-filter').hide();
+      $('#pricerange-filter').hide();
+      $(this).toggleClass('active-filter');
+      $('.stopdropdownbox').addClass('show');
+      $('#timefilter').removeClass('active-filter');
+      $('.timedropdown').removeClass('show');
+      $('.airlinedropdown').removeClass('show');
+      $('.time-arrow').hide();
+      $('.airline-arrow').hide();
+      $('.stop-arrow').show();
+      $('.pricerange-arrow').hide();
+      $('.pricerangedropdown').removeClass('show');
 
-  slider.oninput = function() {
-    output.innerHTML = 'RS '+this.value+'/-';
-  }
+      $('#timefilter').removeClass('active-filter');
+      $('#airlinefilter').removeClass('active-filter');
+      $('#pricerangefilter').removeClass('active-filter');
+    });
+    $('#timefilter').click(function () {
+      $('#time-filter').toggle();
+      $('#stop-filter').hide();
+      $('#airline-filter').hide();
+      $('#pricerange-filter').hide();
+      $(this).toggleClass('active-filter');
+      $('.timedropdown').addClass('show');
+      $(' #stops').removeClass('active-filter');
+      $('.stopdropdownbox').removeClass('show');
+      $('.airlinedropdown').removeClass('show');
+      $('.stop-arrow').hide();
+      $('.time-arrow').show();
+      $('.airline-arrow').hide();
+      $('.pricerange-arrow').hide();
+      $('.pricerangedropdown').removeClass('show');
 
-  $('#flightOne-tab').click(function(){
-    $('#main-plane').hide();
-    $('#all_flights').hide();
-  });
+      $('#stops').removeClass('active-filter');
+      $('#airlinefilter').removeClass('active-filter');
+      $('#pricerangefilter').removeClass('active-filter');
+    });
+    $('#airlinefilter').click(function () {
+      $('#airline-filter').toggle();
+      $('#time-filter').hide();
+      $('#stop-filter').hide();
+      $('#pricerange-filter').hide();
+      $(this).toggleClass('active-filter');
+      $('.stopdropdownbox').removeClass('show');
+      $('.airlinedropdown').addClass('show');
+      $('.timedropdown').removeClass('show');
+      $('.stop-arrow').hide();
+      $('.airline-arrow').show();
 
-  // $('#flightFive-tab').click(function(){
-  //   $('#main-plane').hide();
-  //   $('#all_flights').hide();
-  // });
- </script>
+      $('.time-arrow').hide();
+      $('.pricerange-arrow').hide();
+      $('.pricerangedropdown').removeClass('show');
+
+      $('#stops').removeClass('active-filter');
+      $('#timefilter').removeClass('active-filter');
+      $('#pricerangefilter').removeClass('active-filter');
+    });
+
+    $('#pricerangefilter').click(function () {
+      $('#pricerange-filter').toggle();
+      $('#airline-filter').hide();
+      $('#time-filter').hide();
+      $('#stop-filter').hide();
+      $(this).toggleClass('active-filter');
+      $('.stopdropdownbox').removeClass('show');
+      $('.pricerangedropdown').addClass('show');
+      $('.timedropdown').removeClass('show');
+      $('.pricerange-arrow').show();
+      $('.stop-arrow').hide();
+      $('.time-arrow').hide();
+      $('.airline-arrow').hide();
+      $('.airlinedropdown').removeClass('show');
+
+      $('#stops').removeClass('active-filter');
+      $('#airlinefilter').removeClass('active-filter');
+      $('#timefilter').removeClass('active-filter');
+    });
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = 'RS ' + slider.value + '/-';
+
+    slider.oninput = function () {
+      output.innerHTML = 'RS ' + this.value + '/-';
+    }
+
+    $('#flightOne-tab').click(function () {
+      $('#main-plane').hide();
+      $('#all_flights').hide();
+    });
+
+    // $('#flightFive-tab').click(function(){
+    //   $('#main-plane').hide();
+    //   $('#all_flights').hide();
+    // });
+  </script>
 </body>
 
 </html>

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/radiocounter.css">
+    
 
 </head>
 <body>
@@ -308,25 +310,37 @@
                       <!-- <button id="minus" class="btn button-minus">−</button>
                       <input type="number" value="0" id="input" class="form-control p-0 text-center" />
                       <button id="plus" class="btn button-plus">+</button> -->
-                      <input type="button" value="-" class="button-minus" data-field="quantity">
-                      <input type="number" step="1" max="" value="01" name="quantity" class="quantity-field">
-                      <input type="button" value="+" class="button-plus" data-field="quantity">
+                      <!-- <input type="button" value="-" class="button-minus" data-field="quantity"> -->
+                      <span id="minusAdult" class=" circles minus minus-btn"></span>
+                      <input type="number" step="1" max="" min="0" value="01" name="quantity" id="input-numberAdult" class="quantity-field">
+                      <!-- <input type="button" value="+" class="button-plus" data-field="quantity"> -->
+                      <span id="plusAdult" class=" circles plus plus-btn"></span>
                     </div>
                   </div>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Child</label>
                     <div class="input-group align-items-center justify-content-between">
-                      <input type="button" value="-" class="button-minus" data-field="quantity">
+                      <!-- <input type="button" value="-" class="button-minus" data-field="quantity">
                       <input type="number" step="1" max="" value="00" name="quantity" class="quantity-field">
-                      <input type="button" value="+" class="button-plus" data-field="quantity">
+                      <input type="button" value="+" class="button-plus" data-field="quantity"> -->
+                      <span id="minus" class=" circles minus minus-btn"></span>
+                      <input type="number" step="1" max="" min="0" value="01" name="quantity" id="input-number"
+                        class="quantity-field">
+                      <!-- <input type="button" value="+" class="button-plus" data-field="quantity"> -->
+                      <span id="plus" class=" circles plus plus-btn"></span>
                     </div>
                   </div>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Infant</label>
                     <div class="input-group align-items-center justify-content-between">
-                      <input type="button" value="-" class="button-minus" data-field="quantity">
+                      <!-- <input type="button" value="-" class="button-minus" data-field="quantity">
                       <input type="number" step="1" max="" value="00" name="quantity" class="quantity-field">
-                      <input type="button" value="+" class="button-plus" data-field="quantity">
+                      <input type="button" value="+" class="button-plus" data-field="quantity"> -->
+                      <span id="minusInfant" class=" circles minus minus-btn"></span>
+                      <input type="number" step="1" max="" min="0" value="01" name="quantity" id="input-numberInfant"
+                        class="quantity-field">
+                      <!-- <input type="button" value="+" class="button-plus" data-field="quantity"> -->
+                      <span id="plusInfant" class=" circles plus plus-btn"></span>
                     </div>
                   </div>
                   <h4 class="site-font mt-4">Select Class</h4>
@@ -584,25 +598,34 @@
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Adult</label>
                     <div class="input-group align-items-center justify-content-between">
-                      <input type="button" value="-" class="button-minus" data-field="quantity">
+                      <!-- <input type="button" value="-" class="button-minus" data-field="quantity">
                       <input type="number" step="1" max="" value="01" name="quantity" class="quantity-field">
-                      <input type="button" value="+" class="button-plus" data-field="quantity">
+                      <input type="button" value="+" class="button-plus" data-field="quantity"> -->
+                      <span id="minusAdultround" class=" circles minus minus-btn"></span>
+                      <input type="number" step="1" max="" min="0" value="01" name="quantity" id="input-numberAdultround"
+                        class="quantity-field">
+                      <!-- <input type="button" value="+" class="button-plus" data-field="quantity"> -->
+                      <span id="plusAdultround" class=" circles plus plus-btn"></span>
                     </div>
                   </div>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Child</label>
                     <div class="input-group align-items-center justify-content-between">
-                      <input type="button" value="-" class="button-minus" data-field="quantity">
-                      <input type="number" step="1" max="" value="00" name="quantity" class="quantity-field">
-                      <input type="button" value="+" class="button-plus" data-field="quantity">
+                       <span id="minusChildround" class=" circles minus minus-btn"></span>
+                       <input type="number" step="1" max="" min="0" value="01" name="quantity"
+                         id="input-numberChildround" class="quantity-field">
+                       <!-- <input type="button" value="+" class="button-plus" data-field="quantity"> -->
+                       <span id="plusChildround" class=" circles plus plus-btn"></span>
                     </div>
                   </div>
                   <div class="col-4">
                     <label for="inputPassword4" class="form-label">Infant</label>
                     <div class="input-group align-items-center justify-content-between">
-                      <input type="button" value="-" class="button-minus" data-field="quantity">
-                      <input type="number" step="1" max="" value="00" name="quantity" class="quantity-field">
-                      <input type="button" value="+" class="button-plus" data-field="quantity">
+                      <span id="minusInfantround" class=" circles minus minus-btn"></span>
+                      <input type="number" step="1" max="" min="0" value="01" name="quantity"
+                        id="input-numberInfantround" class="quantity-field">
+                      <!-- <input type="button" value="+" class="button-plus" data-field="quantity"> -->
+                      <span id="plusInfantround" class=" circles plus plus-btn"></span>
                     </div>
                   </div>
                   <h4 class="site-font mt-4">Select Class</h4>
@@ -1060,25 +1083,31 @@
                   <div class="col-4 mt-0">
                     <label for="inputPassword4" class="form-label">Adult</label>
                     <div class="input-group align-items-center justify-content-between">
-                      <input type="button" value="-" class="button-minus" data-field="quantity">
-                      <input type="number" step="1" max="" value="01" name="quantity" class="quantity-field">
-                      <input type="button" value="+" class="button-plus" data-field="quantity">
+                      <span id="minusAdultMulticity" class=" circles minus minus-btn"></span>
+                      <input type="number" step="1" max="" min="0" value="01" name="quantity"
+                        id="input-numberAdultMulticity" class="quantity-field">
+                      <!-- <input type="button" value="+" class="button-plus" data-field="quantity"> -->
+                      <span id="plusAdultMulticity" class=" circles plus plus-btn"></span>
                     </div>
                   </div>
                   <div class="col-4 mt-0">
                     <label for="inputPassword4" class="form-label">Child</label>
                     <div class="input-group align-items-center justify-content-between">
-                      <input type="button" value="-" class="button-minus" data-field="quantity">
-                      <input type="number" step="1" max="" value="00" name="quantity" class="quantity-field">
-                      <input type="button" value="+" class="button-plus" data-field="quantity">
+                     <span id="minusChildMulticity" class=" circles minus minus-btn"></span>
+                     <input type="number" step="1" max="" min="0" value="01" name="quantity"
+                       id="input-numberChildMulticity" class="quantity-field">
+                     <!-- <input type="button" value="+" class="button-plus" data-field="quantity"> -->
+                     <span id="plusChildMulticity" class=" circles plus plus-btn"></span>
                     </div>
                   </div>
                   <div class="col-4 mt-0">
                     <label for="inputPassword4" class="form-label">Infant</label>
                     <div class="input-group align-items-center justify-content-between">
-                      <input type="button" value="-" class="button-minus" data-field="quantity">
-                      <input type="number" step="1" max="" value="00" name="quantity" class="quantity-field">
-                      <input type="button" value="+" class="button-plus" data-field="quantity">
+                      <span id="minusInfantMulticity" class=" circles minus minus-btn"></span>
+                      <input type="number" step="1" max="" min="0" value="01" name="quantity"
+                        id="input-numberInfantMulticity" class="quantity-field">
+                      <!-- <input type="button" value="+" class="button-plus" data-field="quantity"> -->
+                      <span id="plusInfantMulticity" class=" circles plus plus-btn"></span>
                     </div>
                   </div>
                   <h4 class="site-font mt-2">Select Class</h4>
@@ -1129,7 +1158,7 @@
       </div>
       <div class="row">
         <div class="col-12 col-sm-4">
-          <div class="card offer-card first border-0" style="width: 22rem;">
+          <div class="card offer-card first border-0 rounded-4 overflow-hidden" style="width: 22rem;">
             <img src="assets/media/home/1.png" class="card-img-top" alt="...">
             <div class="card-body text-center">
               <h5 class="card-title">Save Upto 20%</h5>
@@ -1149,7 +1178,7 @@
           </div>
         </div>
         <div class="col-12 col-sm-4">
-          <div class="card offer-card border-0" style="width: 22rem;">
+          <div class="card offer-card border-0 rounded-4 overflow-hidden" style="width: 22rem;">
             <img src="assets/media/home/2.png" class="card-img-top" alt="...">
             <div class="card-body text-center">
               <h5 class="card-title">Save Upto 40%</h5>
@@ -1169,7 +1198,7 @@
           </div>
         </div>
         <div class="col-12 col-sm-4">
-          <div class="card offer-card border-0" style="width: 22rem;">
+          <div class="card offer-card border-0 rounded-4 overflow-hidden " style="width: 22rem;">
             <img src="assets/media/home/3.png" class="card-img-top" alt="...">
             <div class="card-body text-center">
               <h5 class="card-title">Save Upto 10%</h5>
@@ -1571,18 +1600,188 @@
     });
     const minusButton = document.getElementById('minus');
     const plusButton = document.getElementById('plus');
-    const inputField = document.getElementById('input');
+    const inputField = document.getElementById('input-number');
 
     minusButton.addEventListener('click', event => {
     event.preventDefault();
     const currentValue = Number(inputField.value) || 0;
+    if (currentValue > 0) {
     inputField.value = currentValue - 1;
+    }
+
     });
 
     plusButton.addEventListener('click', event => {
     event.preventDefault();
     const currentValue = Number(inputField.value) || 0;
     inputField.value = currentValue + 1;
+    });
+
+    const minusButtonAdult = document.getElementById('minusAdult');
+    const plusButtonAdult = document.getElementById('plusAdult');
+    const inputFieldAdult= document.getElementById('input-numberAdult');
+
+    minusButtonAdult.addEventListener('click', event => {
+    event.preventDefault();
+    const currentValue = Number(inputFieldAdult.value) || 0;
+     if (currentValue > 0) {
+     inputFieldAdult.value = currentValue - 1;
+     }
+    
+    
+    });
+
+    plusButtonAdult.addEventListener('click', event => {
+    event.preventDefault();
+    const currentValue = Number(inputFieldAdult.value) || 0;
+    inputFieldAdult.value = currentValue + 1;
+    });
+
+    const minusButtonInfant = document.getElementById('minusInfant');
+    const plusButtonInfant = document.getElementById('plusInfant');
+    const inputFieldInfant= document.getElementById('input-numberInfant');
+
+    minusButtonInfant.addEventListener('click', event => {
+    event.preventDefault();
+    const currentValue = Number(inputFieldInfant.value) || 0;
+    if (currentValue > 0) {
+    inputFieldInfant.value = currentValue - 1;
+    }
+    
+    });
+
+    plusButtonInfant.addEventListener('click', event => {
+    event.preventDefault();
+    const currentValue = Number(inputFieldInfant.value) || 0;
+    inputFieldInfant.value = currentValue + 1;
+    });
+
+    // round tabs
+
+    const minusButtonAdultround = document.getElementById('minusAdultround');
+    const plusButtonAdultround = document.getElementById('plusAdultround');
+    const inputFieldAdultround = document.getElementById('input-numberAdultround');
+
+    minusButtonAdultround.addEventListener('click', event => {
+    event.preventDefault();
+    const currentValue = Number(inputFieldAdultround.value) || 0;
+    if (currentValue > 0) {
+      
+      inputFieldAdultround.value = currentValue - 1;
+    }
+    });
+
+    plusButtonAdultround.addEventListener('click', event => {
+    event.preventDefault();
+    const currentValue = Number(inputFieldAdultround.value) || 0;
+    inputFieldAdultround.value = currentValue + 1;
+    });
+
+    // child buttons
+
+    const minusButtonChildround = document.getElementById('minusChildround');
+    const plusButtonChildround = document.getElementById('plusChildround');
+    const inputFieldChildround = document.getElementById('input-numberChildround');
+
+    minusButtonChildround.addEventListener('click', event => {
+    event.preventDefault();
+    const currentValue = Number(inputFieldChildround.value) || 0;
+    if (currentValue > 0) {
+
+    inputFieldChildround.value = currentValue - 1;
+    }
+    });
+
+    plusButtonChildround.addEventListener('click', event => {
+    event.preventDefault();
+    const currentValue = Number(inputFieldChildround.value) || 0;
+    inputFieldChildround.value = currentValue + 1;
+    });
+
+    // infant buttons
+
+     const minusButtonInfantround = document.getElementById('minusInfantround');
+     const plusButtonInfantround = document.getElementById('plusInfantround');
+     const inputFieldInfantround = document.getElementById('input-numberInfantround');
+
+     minusButtonInfantround.addEventListener('click', event => {
+     event.preventDefault();
+     const currentValue = Number(inputFieldInfantround.value) || 0;
+     if (currentValue > 0) {
+
+     inputFieldInfantround.value = currentValue - 1;
+     }
+     });
+
+     plusButtonInfantround.addEventListener('click', event => {
+     event.preventDefault();
+     const currentValue = Number(inputFieldInfantround.value) || 0;
+     inputFieldInfantround.value = currentValue + 1;
+     });
+
+
+
+    //  Multicity buttons
+
+    const minusButtonAdultMulticity = document.getElementById('minusAdultMulticity');
+    const plusButtonAdultMulticity = document.getElementById('plusAdultMulticity');
+    const inputFieldAdultMulticity = document.getElementById('input-numberAdultMulticity');
+
+    minusButtonAdultMulticity.addEventListener('click', event => {
+    event.preventDefault();
+    const currentValue = Number(inputFieldAdultMulticity.value) || 0;
+    if (currentValue > 0) {
+
+    inputFieldAdultMulticity.value = currentValue - 1;
+    }
+    });
+
+    plusButtonAdultMulticity.addEventListener('click', event => {
+    event.preventDefault();
+    const currentValue = Number(inputFieldAdultMulticity.value) || 0;
+    inputFieldAdultMulticity.value = currentValue + 1;
+    });
+
+    //child  buttons
+
+    const minusButtonChildMulticity = document.getElementById('minusChildMulticity');
+    const plusButtonChildMulticity = document.getElementById('plusChildMulticity');
+    const inputFieldChildMulticity = document.getElementById('input-numberChildMulticity');
+
+    minusButtonChildMulticity.addEventListener('click', event => {
+    event.preventDefault();
+    const currentValue = Number(inputFieldChildMulticity.value) || 0;
+    if (currentValue > 0) {
+
+    inputFieldChildMulticity.value = currentValue - 1;
+    }
+    });
+
+    plusButtonChildMulticity.addEventListener('click', event => {
+    event.preventDefault();
+    const currentValue = Number(inputFieldChildMulticity.value) || 0;
+    inputFieldChildMulticity.value = currentValue + 1;
+    });
+
+    //infant button
+
+    const minusButtonInfantMulticity = document.getElementById('minusInfantMulticity');
+    const plusButtonInfantMulticity = document.getElementById('plusInfantMulticity');
+    const inputFieldInfantMulticity = document.getElementById('input-numberInfantMulticity');
+
+    minusButtonInfantMulticity.addEventListener('click', event => {
+    event.preventDefault();
+    const currentValue = Number(inputFieldInfantMulticity.value) || 0;
+    if (currentValue > 0) {
+
+    inputFieldInfantMulticity.value = currentValue - 1;
+    }
+    });
+
+    plusButtonInfantMulticity.addEventListener('click', event => {
+    event.preventDefault();
+    const currentValue = Number(inputFieldInfantMulticity.value) || 0;
+    inputFieldInfantMulticity.value = currentValue + 1;
     });
 
   </script>
