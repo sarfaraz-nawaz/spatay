@@ -383,6 +383,11 @@ border: 1px solid #A1A1B4;
 .onewayflightsearch
 {
   flex: 0 0 auto;
+  width: 14% !important;
+}
+.flightsearchway
+{
+  flex: 0 0 auto;
   width: 15.2% !important;
 }
 
@@ -972,9 +977,12 @@ hr
   padding-right: 1rem;
   font-size: 28px !important;
   text-transform: uppercase;
-
-
-
+  display: flex;
+}
+.booking-process .nav-tabs .nav-link .counter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .booking-process .nav-tabs {
@@ -1263,6 +1271,17 @@ hr
   font-family: 'Roboto', sans-serif;
   font-size: 18px !important;
   color: white;
+  margin-top: 3.7rem;
+  padding-left: 3rem;
+  font-weight: bold;
+  padding-right: 3rem;
+}
+#multibookinglogin-btn {
+  background-color: #DE5921;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px !important;
+  color: white;
+  margin-top: 1rem;
   padding-left: 3rem;
   font-weight: bold;
   padding-right: 3rem;
@@ -1935,7 +1954,10 @@ hr
   text-transform: capitalize;
   width: 10rem;
 }
-
+  .promo::placeholder
+{
+  font-size: 12px !important;
+}
 
 /* round flights dropsown setting */
 .filter-section .round-flights-dropdown #stop-filter .show {
