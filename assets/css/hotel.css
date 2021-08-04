@@ -24,11 +24,11 @@ body{
 #ui-datepicker-div {
     width: 341px !important;
     left: 179px !important;
-	top: 457px !important;
+	top: 462px !important;
 }
 #flightbox{
 	opacity: 0.9;
-	padding: 2.3rem;
+	padding: 2.5rem;
 }
 #flightbox input {
 	font-size: 12px !important;
@@ -68,7 +68,7 @@ body{
 	box-shadow: 0 8px 25px 2px #ebecf0;
 }
 .filter-section .hotel-filter .checkmark {
-	width: 41px;
+	width: 47px;
 }
 .filter-section .hotel-filter .checkmark i{
 	margin-left: 3px;
@@ -128,7 +128,6 @@ body{
 }
 .listing-img img{
 	height: 100%;
-	object-fit: cover;
 	border-bottom-left-radius: 8px !important;
     border-top-left-radius: 8px !important;
 }

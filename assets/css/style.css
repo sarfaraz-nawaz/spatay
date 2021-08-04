@@ -270,12 +270,12 @@ border: 1px solid #A1A1B4;
 
 /* When the radio button is checked, add a blue background */
 .stopdropdown .custom-box input:checked~.checkmark {
-  background-color:#de5921;
+  background-color:#FF5915;
   color: #fff;
-  border: 1px solid #de5921;
+  border: 1px solid #FF5915;
 }
 .filter-section .hotel-filter .stopdropdown .custom-box input:checked~.checkmark {
-  background-color:#4cbee5;
+  background-color:#45B9E2;
   color: #fff;
 }
 
@@ -306,7 +306,7 @@ border: 1px solid #A1A1B4;
   width: 140px;
   min-width: 5rem;
   /* box-shadow: 0 8px 20px 0 #ebecf0; */
-  left: -50px;
+ left: -43px;
 }
 
 .timedropdown
@@ -317,7 +317,7 @@ border: 1px solid #A1A1B4;
   font-size: 12px !important;
   min-width: 6rem;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -139px;
+  left: -132px;
 }
 .filter-section .hotel-filter .timedropdown 
 {
@@ -360,13 +360,15 @@ border: 1px solid #A1A1B4;
   color: #1A1C3D;
   font-family: "Product Sans";
   font-size: 18px !important;
+  letter-spacing: 1px;
+  padding-top: 9px;
   font-weight: bold;
 }
 #time-filter .stopdropdown .custom-box input:checked~.checkmark {
-  background-color: #de5921;
+  background-color: #FF5915;
 }
 #time-filter .stopdropdown .custom-box input:checked~.checkmark {
-  background-color: #de5921;
+  background-color: #FF5915;
 }
 /* hotel listing filter */
 
@@ -432,7 +434,7 @@ border: 1px solid #A1A1B4;
   overflow: auto;*/
   padding: 10px !important;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -66px;
+  left: -54px;
   text-transform: capitalize;
   width: 11rem;
 }
@@ -518,7 +520,7 @@ border: 1px solid #A1A1B4;
   font-family: 'Roboto', sans-serif;
   font-size: 13px !important;
   color: white;
-
+  box-shadow: 0 34px 64px 0 rgb(175 175 175 / 21%);
   padding-left: 3rem;
   padding-right: 3rem;
 
@@ -628,7 +630,7 @@ border: 1px solid #A1A1B4;
   position: relative;
   display: flex;
   /* align-items: center; */
-  width: 50px !important;
+  /* width: 50px !important; */
   padding: 0 !important;
   font-size: 1rem;
   padding-left: .1rem;
@@ -649,18 +651,27 @@ border: 1px solid #A1A1B4;
 /* table css */
 th {
   font-family: "Product Sans";
-  font-size: 19px !important;
+  font-size: 16px !important;
   color: #1A1C3D;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
-td {
+/* td {
   font-family: "Product Sans";
-  font-size: 16px !important;
+  font-size: 13px !important;
   color: #A1A1B4;
-  padding: .7rem .5rem !important;
-  border-color: #A1A1B4;
+  letter-spacing: 1px;
+  font-weight: bold;
 
+} */
+td{
+  
+    font-family: "Product Sans";
+    font-size: 16px !important;
+    color: #A1A1B4;
+    padding: .7rem .5rem !important;
+    border-color: #A1A1B4;
+  
 }
 
 .econmy-section {
@@ -843,6 +854,7 @@ td {
   /* width: 19%; */
   padding-left: 45px;
   padding-right: 45px;
+  box-shadow: 0 34px 64px 0 rgba(175, 175, 175, .21);
   font-size: 16px;
   letter-spacing: 2px;
   left: 0;
@@ -945,6 +957,7 @@ hr
   font-family: 'Roboto', sans-serif;
   font-size: 13px !important;
   color: white;
+  box-shadow: 0 34px 64px 0 rgb(175 175 175 / 21%);
   padding-left: 3rem;
   padding-right: 3rem;
 }
@@ -953,6 +966,7 @@ hr
   font-family: 'Product Sans';
   font-size: 14px !important;
   line-height: 24px !important;
+  box-shadow: 0 34px 64px 0 rgb(175 175 175 / 21%);
   /*letter-spacing: 1px;*/
   color: white !important;
   font-weight: 600 !important;
@@ -1034,6 +1048,7 @@ hr
   padding-left: 45px;
   padding-right: 45px;;
   font-size: 16px;
+  box-shadow: 0 34px 64px 0 rgba(175, 175, 175,.21) ;
   letter-spacing: 2px;
   padding-top: 10px;
   font-weight: bold;
@@ -1273,6 +1288,7 @@ hr
   color: white;
   margin-top: 3.7rem;
   padding-left: 3rem;
+  box-shadow: 0 34px 64px 0 rgb(175 175 175 / 21%);
   font-weight: bold;
   padding-right: 3rem;
 }
@@ -1288,10 +1304,10 @@ hr
 }
 .example
 {
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 8px;
   color: #A1A1B4;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
 
 }
  .form-label2 {
@@ -1522,7 +1538,7 @@ hr
 
   padding: 10px !important;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: -59px;
+  left: -45px;
   text-transform: capitalize;
   width: 12rem;
 }
@@ -1744,27 +1760,44 @@ hr
   background-color: #fff;
   display: none;
 }
+.accordio-button {
+  width: auto !important;
+}
+.accordio-button-custom {
+  /* display: flex;
+  align-items: center;
+  position: relative; */
+}
+.accordion-button-custom:not(.collapsed) {
+  margin-top: 0 !important;
+}
 .accordion-button::after {
   flex-shrink: 0;
-  /* width: 1rem !important;
-  height: 1rem !important; */
   margin-left: auto;
   content: "";
-  margin-top: 5px;
-  /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e); */
   background-repeat: no-repeat;
   background-size: 1rem !important;
   transition: transform .2s ease-in-out;
   background-image: url('../media/toogle-arrow.png') !important;
+  transform-origin: center center;
+  background-position: center center;
   /* transform: rotate(-180deg); */
 }
+.accordion-text {
+  font-family: "Product Sans";
+  font-size: 12px !important;
+  color: #A1A1B4;
+  margin-bottom: .5rem;
+  line-height: 24px;
+}
+
 .deslect
 {
   font-size: 13px;
   color: #A1A1B4;
   text-align: end;
   text-transform: initial;
-  margin-top: 2px;
+  margin-top: 5px;
   text-decoration: none;
 }
 .deslect:hover
@@ -1776,13 +1809,12 @@ hr
   font-size: 10px;
   color: #A1A1B4;
   text-align: end;
-  text-transform: capitalize;
   margin-top: 12px;
   text-decoration: none;
 }
 .filter-section .hotel-filter .deslect:hover
 {
-  color: #21b8de;
+  color: #45B9E2;
 }
 
 /* hotel listing dropdown css */
@@ -1803,7 +1835,7 @@ hr
   border-radius: 10px !important;
 }
 .orange-scroll::-webkit-scrollbar-thumb {
-  background: #de5921 !important;
+  background: #FF5915 !important;
 }
 
 /* / Handle on hover /  */
@@ -1819,11 +1851,11 @@ hr
 }
 .filter-section .hotel-filter #stop-filter .show {
   padding: 10px;
-  width: 157px;
+  width: 179px;
   min-width: 5rem;
   padding-bottom: 1rem;
   box-shadow: 0 8px 20px 0 #ebecf0;
-  left: 9px;
+  left: -11px;
 }
 .filter-section .hotel-filter .checkmark:hover {
   background-color: #4cbee5 !important;
@@ -1832,7 +1864,7 @@ hr
   border: 1px solid #ccc;
 }
 .filter-section .hotel-filter .checkmark {
-  height: 30px;
+  height: 38px;
   width: 30px;
   background-color: transparent;
   padding: 5px 10px;

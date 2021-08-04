@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spatay</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/flights.css">
   <link rel="stylesheet" href="assets/css/hotel.css">
@@ -20,7 +21,7 @@
 
 <body>
   <!---------------------------------------------- start nav section -------------------------------------->
-  <nav class="navbar navbar-expand-lg  bg-white pt-2 pb-2 ">
+  <nav class="navbar navbar-expand-lg  bg-white py-3 ">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,7 +69,8 @@
             <label class="from text-uppercase">Check in</label>
             <div class="input-container d-flex align-items-center">
               <i class="far fa-calendar-alt locationicon"></i>
-              <input type="text" placeholder="24 Jan’ 20 - Friday" name="calander" class="inputfield">
+               <input type="text" placeholder="24 Jan’ 20 - Friday" name="calander" id="datepicker-multi1"
+                 class="inputfield datepicker ">
 
 
             </div>
@@ -77,7 +79,8 @@
             <label class="from text-uppercase">Check out</label>
             <div class="input-container d-flex align-items-center">
               <i class="far fa-calendar-alt locationicon"></i>
-              <input type="text" placeholder="30 Jan’ 20 - Thursday" name="calander" class="inputfield">
+              <input type="text" placeholder="30 Jan’ 20 - Thursday" name="calander" id="datepicker-multi2"
+                class="inputfield datepicker ">
 
 
             </div>
@@ -270,13 +273,13 @@
                         <input type="range" min="15000" max="1000000" value="nn" class="slider" id="myRange">
                         <!-- <p>Value: <span id="demo"></span></p> -->
                       </div>
-                      <div class="d-flex justify-content-between">
+                      <div class="d-flex justify-content-between mt-2">
                         <small class="minmaxprice"> RS 15000/-</small>
                         <small class="minmaxprice">RS 100,000/-</small>
 
                       </div>
                       <div>
-                        <label class="refundcontainers">Refundable
+                        <label class="refundcontainers mt-3">Refundable
                           <input type="checkbox" checked="checked">
                           <span class="checkmark2"></span>
                         </label>
@@ -295,22 +298,22 @@
   <!-- Hotels Listing -->
   <div class="container">
     <div class="listings">
-      <div class="row shadow listing-row mt-5">
+      <div class="row g-0 shadow listing-row mt-5">
         <div class="col-12 col-md-4 col-sm-4 ps-0">
           <div class="listing-img h-100">
             <img src="assets/media/hotel/listing/listing1.png" class="w-100">
           </div>
         </div>
-        <div class="col-12 col-md-5 col-sm-5">
-          <div class="listing-content h-100 pt-3">
+        <div class="col-12 col-md-5 col-sm-5 ps-4">
+          <div class="listing-content h-100 pt-4">
             <h3 class="listing-title fw-bold text-uppercase">Hanging Garden</h3>
             <h6 class="hotel-cat fw-bold text-uppercase">5-Star Hotel</h6>
             <p class="listing-info">Buahan, Payangan, Gianyar, Bali 80571, Indonesia +62 361 982700</p>
           </div>
         </div>
         <div class="col-12 col-md-3 col-sm-3">
-          <div class="action-content d-grid gap-5 h-100 pt-3 p-4">
-            <div class="price-content">
+          <div class="action-content d-grid gap-5 h-100 pt-4 p-4">
+            <div class="price-content mb-4">
               <h3 class="hotel-price mb-0 ps-2">PKR 93,298</h3>
               <p class="stay-time ps-3">For 3 Days & 2 Nights</p>
             </div>
@@ -320,14 +323,14 @@
           </div>
         </div>
       </div>
-      <div class="row shadow listing-row mt-5">
+      <div class="row g-0 shadow listing-row mt-5">
         <div class="col-12 col-md-4 col-sm-4 ps-0">
           <div class="listing-img h-100">
             <img src="assets/media/hotel/listing/listing2.png" class="w-100">
           </div>
         </div>
-        <div class="col-12 col-md-5 col-sm-5">
-          <div class="listing-content h-100 pt-3">
+        <div class="col-12 col-md-5 col-sm-5 ps-4">
+          <div class="listing-content h-100 pt-4">
             <h3 class="listing-title fw-bold text-uppercase">Hanging Garden</h3>
             <h6 class="hotel-cat fw-bold text-uppercase">5-Star Hotel</h6>
             <p class="listing-info">Buahan, Payangan, Gianyar, Bali 80571, Indonesia +62 361 982700</p>
@@ -335,7 +338,7 @@
         </div>
         <div class="col-12 col-md-3 col-sm-3">
           <div class="action-content d-grid gap-5 h-100 pt-3 p-4">
-            <div class="price-content">
+            <div class="price-content mb-4">
               <h3 class="hotel-price mb-0 ps-2">PKR 93,298</h3>
               <p class="stay-time ps-3">For 3 Days & 2 Nights</p>
             </div>
@@ -345,14 +348,14 @@
           </div>
         </div>
       </div>
-      <div class="row shadow listing-row mt-5">
+      <div class="row g-0 shadow listing-row mt-5">
         <div class="col-12 col-md-4 col-sm-4 ps-0">
           <div class="listing-img h-100">
             <img src="assets/media/hotel/listing/listing3.png" class="w-100">
           </div>
         </div>
-        <div class="col-12 col-md-5 col-sm-5">
-          <div class="listing-content h-100 pt-3">
+        <div class="col-12 col-md-5 col-sm-5 ps-4">
+          <div class="listing-content h-100 pt-4">
             <h3 class="listing-title fw-bold text-uppercase">Hanging Garden</h3>
             <h6 class="hotel-cat fw-bold text-uppercase">5-Star Hotel</h6>
             <p class="listing-info">Buahan, Payangan, Gianyar, Bali 80571, Indonesia +62 361 982700</p>
@@ -360,7 +363,7 @@
         </div>
         <div class="col-12 col-md-3 col-sm-3">
           <div class="action-content d-grid gap-5 h-100 pt-3 p-4">
-            <div class="price-content">
+            <div class="price-content mb-4">
               <h3 class="hotel-price mb-0 ps-2">PKR 93,298</h3>
               <p class="stay-time ps-3">For 3 Days & 2 Nights</p>
             </div>
@@ -370,39 +373,39 @@
           </div>
         </div>
       </div>
-      <div class="row shadow listing-row mt-5">
-        <div class="col-12 col-md-4 col-sm-4 ps-0">
-          <div class="listing-img h-100">
-            <img src="assets/media/hotel/listing/listing4.png" class="w-100">
-          </div>
-        </div>
-        <div class="col-12 col-md-5 col-sm-5">
-          <div class="listing-content h-100 pt-3">
-            <h3 class="listing-title fw-bold text-uppercase">Hanging Garden</h3>
-            <h6 class="hotel-cat fw-bold text-uppercase">5-Star Hotel</h6>
-            <p class="listing-info">Buahan, Payangan, Gianyar, Bali 80571, Indonesia +62 361 982700</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-3 col-sm-3">
-          <div class="action-content d-grid gap-5 h-100 pt-3 p-4">
-            <div class="price-content">
-              <h3 class="hotel-price mb-0 ps-2">PKR 93,298</h3>
-              <p class="stay-time ps-3">For 3 Days & 2 Nights</p>
-            </div>
-            <div class="btn-content">
-              <a href="hotel-rooms.html" class="btn listing-btn">Select</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row shadow listing-row mt-5">
+     <div class="row g-0 shadow listing-row mt-5">
+       <div class="col-12 col-md-4 col-sm-4 ps-0">
+         <div class="listing-img h-100">
+           <img src="assets/media/hotel/listing/listing4.png" class="w-100">
+         </div>
+       </div>
+       <div class="col-12 col-md-5 col-sm-5 ps-4">
+         <div class="listing-content h-100 pt-4">
+           <h3 class="listing-title fw-bold text-uppercase">Hanging Garden</h3>
+           <h6 class="hotel-cat fw-bold text-uppercase">5-Star Hotel</h6>
+           <p class="listing-info">Buahan, Payangan, Gianyar, Bali 80571, Indonesia +62 361 982700</p>
+         </div>
+       </div>
+       <div class="col-12 col-md-3 col-sm-3">
+         <div class="action-content d-grid gap-5 h-100 pt-3 p-4">
+           <div class="price-content mb-4">
+             <h3 class="hotel-price mb-0 ps-2">PKR 93,298</h3>
+             <p class="stay-time ps-3">For 3 Days & 2 Nights</p>
+           </div>
+           <div class="btn-content">
+             <a href="hotel-rooms.html" class="btn listing-btn">Select</a>
+           </div>
+         </div>
+       </div>
+     </div>
+      <div class="row g-0 shadow listing-row mt-5">
         <div class="col-12 col-md-4 col-sm-4 ps-0">
           <div class="listing-img h-100">
             <img src="assets/media/hotel/listing/listing5.png" class="w-100">
           </div>
         </div>
-        <div class="col-12 col-md-5 col-sm-5">
-          <div class="listing-content h-100 pt-3">
+        <div class="col-12 col-md-5 col-sm-5 ps-4">
+          <div class="listing-content h-100 pt-4">
             <h3 class="listing-title fw-bold text-uppercase">Hanging Garden</h3>
             <h6 class="hotel-cat fw-bold text-uppercase">5-Star Hotel</h6>
             <p class="listing-info">Buahan, Payangan, Gianyar, Bali 80571, Indonesia +62 361 982700</p>
@@ -410,7 +413,7 @@
         </div>
         <div class="col-12 col-md-3 col-sm-3">
           <div class="action-content d-grid gap-5 h-100 pt-3 p-4">
-            <div class="price-content">
+            <div class="price-content mb-4">
               <h3 class="hotel-price mb-0 ps-2">PKR 93,298</h3>
               <p class="stay-time ps-3">For 3 Days & 2 Nights</p>
             </div>
@@ -462,6 +465,7 @@
 
   <script src='assets/js/bootstrap.min.js'></script>
   <script src="assets/js/jquery.js"></script>
+  <!-- <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
 
   <script>
     $('#toggle-arrowOne').click(function () {
@@ -476,6 +480,9 @@
       $('#hideTwo').toggle();
       $('#showTwo').toggle();
     });
+     $( ".datepicker" ).datepicker({
+     dateFormat: 'd M `y - DD'
+     });
 
     $('#stops').click(function () {
       $('#stop-filter').toggle();

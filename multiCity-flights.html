@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/flights.css">
+	<link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
 	<!-- <link rel="stylesheet" href="assets/css/home.css"> -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
 		integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -19,7 +20,7 @@
 
 <body>
 	<!---------------------------------------------- start nav section -------------------------------------->
-	<nav class="navbar navbar-expand-lg  bg-white pt-2 pb-2 ">
+	<nav class="navbar navbar-expand-lg  bg-white pt-3 pb-3 ">
 		<div class="container">
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
 				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,14 +83,16 @@
 						<label class="from">Depature Date</label>
 						<div class="input-container d-flex align-items-center">
 							<i class="far fa-calendar-alt locationicon"></i>
-							<input type="text" placeholder="12 May - Return" name="calander" class="inputfield">
+							<input type="text" placeholder="12 May - Return" name="calander" id="datepicker-multi1"
+								class="inputfield datepicker ">
 						</div>
 					</div>
 					<div class="col-lg-2 mb-2 onewayflightsearch">
 						<label class="from">Arrival Date</label>
 						<div class="input-container d-flex align-items-center">
 							<i class="far fa-calendar-alt locationicon"></i>
-							<input type="text" placeholder="12 May - Return" name="calander" class="inputfield">
+							<input type="text" placeholder="12 May - Return" name="calander" id="datepicker-multi2"
+								class="inputfield datepicker ">
 						</div>
 					</div>
 
@@ -243,8 +246,8 @@
 								</a>
 								<div class="" id="airline-filter" style="display: none;">
 									<div class="arrow-up airlinearrow"></div>
-									<ul class="dropdown-menu show airlinedropdown pb-4" aria-labelledby="">
-										<p class="text-capitalize mb-0 pb-3 dropdown-title">Airelines</p>
+									<ul class="dropdown-menu show airlinedropdown pb-3" aria-labelledby="">
+										<p class="text-capitalize mb-0 pb-2 dropdown-title">Airelines</p>
 										<div class="d-flex">
 											<img src="assets/media/search.png" alt="" class="search-icon">
 											<input type="text" id="myInput" onkeyup="myFunction()"
@@ -253,7 +256,7 @@
 										<div class="stopdropdown text-center">
 											<hr style="height: 2px;" class="mb-3">
 											<div class="text-start mt-2 airlineSearch">
-												<div>
+												<div class="property-scroll orange-scroll">
 													<label class="refundcontainers">Pakistan Air Line
 														<input type="checkbox" checked="checked">
 														<span class="checkmark2"></span>
@@ -310,13 +313,13 @@
 													id="myRange">
 												<!-- <p>Value: <span id="demo"></span></p> -->
 											</div>
-											<div class="d-flex justify-content-between">
+											<div class="d-flex justify-content-between mt-2">
 												<small class="minmaxprice"> RS 15000/-</small>
 												<small class="minmaxprice">RS 100,000/-</small>
 
 											</div>
 											<div>
-												<label class="refundcontainers">Refundable
+												<label class="refundcontainers mt-3">Refundable
 													<input type="checkbox" checked="checked">
 													<span class="checkmark2"></span>
 												</label>
@@ -667,20 +670,23 @@
 						</div>
 					</div>
 					<section class="hideshow ">
-						<div class="row pt-1 pb-1 justify-content-center align-items-center d-flex ">
-							<div class="col-md-10 col-sm-8 col-6 d-flex pt-2 align-items-center pb-2  ">
-								<p class="durationstop ps-5 me-2 mb-0">Cost Includes</p>
-                <!-- <img src="assets/media/briefcase.png" alt="" class="briefcase"> -->
-								<img src="assets/media/briefcase2.png" alt="" width="16px">
+						<div class="row pt-2 pb-2 justify-content-center align-items-center ">
+							<div class="col-md-10 col-sm-6 col-6 d-flex text-start align-items-center ">
+								<p class="durationstop ps-3 pt-2 me-2">Cost Includes</p>
+								<img src="assets/media/briefcase.png" alt="" width="16px">
 							</div>
-							<div class="col-md-2 col-sm-6 col-6 d-flex text-end  ">
-								<p class="durationstop ps-3 mb-0" id="show" style="display: none;">Check Details</p>
-								<p class="durationstop ps-3 mb-0" id="hide">Hide Details</p>
-								<span class="accordion-button toggle-arrow" id="toggle-arrowOne" type="button"
-									data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
-									aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-
+							<div class="col-md-2 col-sm-6 col-6 text-end">
+								<span class="accordion-button accordion-button-custom toggle-arrow" type="button"
+									data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+									aria-controls="panelsStayOpen-collapseOne">
+									<span class="accordion-text ps-3 mb-0" id="show" style="display: none;">Check Details</span>
+									<span class="accordion-text ps-3 mb-0" id="hide">Hide Details</span>
 								</span>
+								<!-- <span data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                            aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" class="toggle-arrow"><i class=" fas
+                            fa-chevron-down checkdetail"></i></span> -->
+							</div>
+							<div class="col-md-7 col-sm-8 col-6  ">
 							</div>
 						</div>
 
@@ -1001,22 +1007,25 @@
 						  </div>
 						</div>
 						<section class="hideshow ">
-						  <div class="row pt-1 pb-1 justify-content-center align-items-center d-flex ">
-						    <div class="col-md-10 col-sm-8 col-6 d-flex pt-2  ">
-						      <p class="durationstop ps-5">Cost Includes</p>
-						      <!-- <img src="assets/media/briefcase.png" alt="" class="briefcase"> -->
-						      <i class="fas fa-briefcase briefcase"></i>
-						    </div>
-						    <div class="col-md-2 col-sm-6 col-6 d-flex text-end  ">
-						      <p class="durationstop ps-3 mb-0" id="show" style="display: none;">Check Details</p>
-						      <p class="durationstop ps-3 mb-0" id="hide">Hide Details</p>
-						      <span class="accordion-button toggle-arrow" id="toggle-arrowOne" type="button" data-bs-toggle="collapse"
-						        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-						        aria-controls="panelsStayOpen-collapseOne">
-
-						      </span>
-						    </div>
-						  </div>
+							<div class="row pt-2 pb-2 justify-content-center align-items-center ">
+								<div class="col-md-10 col-sm-6 col-6 d-flex text-start align-items-center ">
+									<p class="durationstop ps-3 pt-2 me-2">Cost Includes</p>
+									<img src="assets/media/briefcase.png" alt="" width="16px">
+								</div>
+								<div class="col-md-2 col-sm-6 col-6 text-end">
+									<span class="accordion-button accordion-button-custom toggle-arrow" id="toggle-arrow2" type="button"
+										data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+										aria-controls="panelsStayOpen-collapseOne">
+										<span class="accordion-text ps-3 mb-0" id="showTwo" style="display: none;">Check Details</span>
+										<span class="accordion-text ps-3 mb-0" id="hideTwo">Hide Details</span>
+									</span>
+									<!-- <span data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                            aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" class="toggle-arrow"><i class=" fas
+                            fa-chevron-down checkdetail"></i></span> -->
+								</div>
+								<div class="col-md-7 col-sm-8 col-6  ">
+								</div>
+							</div>
 
 						</section>
 					</div>
@@ -1301,23 +1310,22 @@
 						  </div>
 						</div>
 						<section class="hideshow ">
-						  <div class="row pt-1 pb-1 justify-content-center align-items-center d-flex ">
-						    <div class="col-md-10 col-sm-8 col-6 d-flex pt-2  ">
-						      <p class="durationstop ps-5">Cost Includes</p>
-						      <!-- <img src="assets/media/briefcase.png" alt="" class="briefcase"> -->
-						      <i class="fas fa-briefcase briefcase"></i>
-						    </div>
-						    <div class="col-md-2 col-sm-6 col-6 d-flex text-end  ">
-						      <p class="durationstop ps-3 mb-0" id="show" style="display: none;">Check Details</p>
-						      <p class="durationstop ps-3 mb-0" id="hide">Hide Details</p>
-						      <span class="accordion-button toggle-arrow" id="toggle-arrowOne" type="button" data-bs-toggle="collapse"
-						        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-						        aria-controls="panelsStayOpen-collapseOne">
-
-						      </span>
-						    </div>
-						  </div>
-
+							<div class="row pt-2 pb-2 justify-content-center align-items-center ">
+								<div class="col-md-10 col-sm-6 col-6 d-flex text-start align-items-center ">
+									<p class="durationstop ps-3 pt-2 me-2">Cost Includes</p>
+									<img src="assets/media/briefcase.png" alt="" width="16px">
+								</div>
+								<div class="col-md-2 col-sm-6 col-6 text-end">
+									<span class="accordion-button accordion-button-custom toggle-arrow" id="toggle-arrow3" type="button"
+										data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+										aria-controls="panelsStayOpen-collapseOne">
+										<span class="accordion-text ps-3 mb-0" id="showThree" style="display: none;">Check Details</span>
+										<span class="accordion-text ps-3 mb-0" id="hideThree">Hide Details</span>
+									</span>
+								</div>
+								<div class="col-md-7 col-sm-8 col-6  ">
+								</div>
+							</div>
 						</section>
 					</div>
 					<!-- FLights Tabs -->
@@ -1741,23 +1749,22 @@
 						  </div>
 						</div>
 						<section class="hideshow ">
-						  <div class="row pt-1 pb-1 justify-content-center align-items-center d-flex ">
-						    <div class="col-md-10 col-sm-8 col-6 d-flex pt-2  ">
-						      <p class="durationstop ps-5">Cost Includes</p>
-						      <!-- <img src="assets/media/briefcase.png" alt="" class="briefcase"> -->
-						      <i class="fas fa-briefcase briefcase"></i>
-						    </div>
-						    <div class="col-md-2 col-sm-6 col-6 d-flex text-end  ">
-						      <p class="durationstop ps-3 mb-0" id="showFive" style="display: none;">Check Details</p>
-						      <p class="durationstop ps-3 mb-0" id="hideFive">Hide Details</p>
-						      <span class="accordion-button toggle-arrow" id="toggle-arrowFive" type="button" data-bs-toggle="collapse"
-						        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-						        aria-controls="panelsStayOpen-collapseOne">
-
-						      </span>
-						    </div>
-						  </div>
-
+							<div class="row pt-2 pb-2 justify-content-center align-items-center ">
+								<div class="col-md-10 col-sm-6 col-6 d-flex text-start align-items-center ">
+									<p class="durationstop ps-3 pt-2 me-2">Cost Includes</p>
+									<img src="assets/media/briefcase.png" alt="" width="16px">
+								</div>
+								<div class="col-md-2 col-sm-6 col-6 text-end">
+									<span class="accordion-button accordion-button-custom toggle-arrow" id="toggle-arrow5" type="button"
+										data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+										aria-controls="panelsStayOpen-collapseOne">
+										<span class="accordion-text ps-3 mb-0" id="showFive" style="display: none;">Check Details</span>
+										<span class="accordion-text ps-3 mb-0" id="hideFive">Hide Details</span>
+									</span>
+								</div>
+								<div class="col-md-7 col-sm-8 col-6  ">
+								</div>
+							</div>
 						</section>
 					</div>
 					<!-- FLights Tabs -->
@@ -1810,19 +1817,32 @@
 
 	<script src='assets/js/bootstrap.min.js'></script>
 	<script src="assets/js/jquery.js"></script>
+	 <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
 	 <script>
-	 	$('#toggle-arrowOne').click(function () {
+		 $("#datepicker-multi1").datepicker({
+		 dateFormat: 'd M - yy'
+		 });
+
+		 $("#datepicker-multi2").datepicker({
+		 dateFormat: 'd M - yy'
+		 });
+	 	$('.toggle-arrow').click(function () {
 	 		$('#hide').toggle();
 	 		$('#show').toggle();
 	 	});
 
-	 	$('#toggle-arrowTwo').click(function () {
+	 	$('#toggle-arrow2').click(function () {
 	 		$('#hideTwo').toggle();
 	 		$('#showTwo').toggle();
 	 	});
 
-	 	$('#toggle-arrowFive').click(function () {
+	 	$('#toggle-arrow3').click(function () {
+			$('#hideThree').toggle();
+			$('#showThree').toggle();
+		});
+
+	 	$('#toggle-arrow5').click(function () {
 	 		$('#hideFive').toggle();
 	 		$('#showFive').toggle();
 	 	});
