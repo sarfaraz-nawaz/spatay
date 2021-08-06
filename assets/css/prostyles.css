@@ -264,6 +264,11 @@ body {
 
 
 }
+
+.adjust-text {
+  color: #fff !important;
+  margin-left: -2.75rem;
+}
 .profilebox th {
   font-family: "Product sans";
   font-size: 13px !important;
@@ -813,7 +818,29 @@ td {
   flex: 1 1 auto;
   padding: 0rem 0rem !important;
 }
+.profilebox tr th {
+  background-color: #1A1C3D;
+  width: 85px;
+  padding-left: 23px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
 
+.profilebox th {
+  font-family: "Product sans";
+  font-size: 16px !important;
+  color: #1A1C3D;
+  font-weight: bold;
+}.profilebox td {
+  font-family: "Product Sans";
+  font-size: 14px !important;
+  color: #A1A1B4;
+  padding: .7rem .5rem !important;
+  border-color: #A1A1B4;
+}.profilebox th, td {
+  width: 76px;
+}
 
 /* booking card section */
 .card {

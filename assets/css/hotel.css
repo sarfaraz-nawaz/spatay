@@ -29,12 +29,12 @@ body {
 #ui-datepicker-div {
 	width: 341px !important;
 	left: 179px !important;
-	top: 457px !important;
+	top: 462px !important;
 }
 
 #flightbox {
 	opacity: 0.9;
-	padding: 2.3rem;
+	padding: 2.5rem;
 }
 
 #flightbox input {
@@ -80,7 +80,7 @@ body {
 }
 
 .filter-section .hotel-filter .checkmark {
-	width: 41px;
+	width: 47px;
 }
 
 .filter-section .hotel-filter .checkmark i {

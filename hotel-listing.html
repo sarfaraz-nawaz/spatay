@@ -7,16 +7,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spatay</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <!-- <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/flights.css">
   <link rel="stylesheet" href="assets/css/hotel.css">
-  <!-- <link rel="stylesheet" href="assets/css/home.css"> -->
+  <link rel="stylesheet" href="assets/css/nouislider.min.css">
+  <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    #ui-datepicker-div {
+    left: 457px  !important;
+    top: 167px !important;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgb(49 52 129 / 24%);
+    background: #fff;
+    padding: 0;
+}
+
+.ui-datepicker {
+    z-index: 1000 !important;
+}
+
+.ui-datepicker-calendar td {
+    font-family: "Product Sans";
+    color: rgb(161, 161, 180);
+    border-color: rgb(161, 161, 180);
+    font-size: 16px !important;
+    padding: 0rem 0.53em !important;
+}
+
+#ui-datepicker-div .ui-widget-header {
+    background: transparent !important;
+    border: 0px solid #ffffff00 !important;
+}
+
+#ui-datepicker-div .ui-datepicker-title {
+    color: #1A1C3D;
+    font-size: 17px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Product Sans';
+}
+
+#ui-datepicker-div table tr td:first-child {
+    border-left: 0;
+}
+
+#ui-datepicker-div table tr td:last-child {
+    border-right: 0;
+}
+
+#ui-datepicker-div table tr:last-child td {
+    border-bottom: 0;
+}
+
+#ui-datepicker-div td {
+    border: 1px solid #A1A1B4;
+    padding: 0px;
+}
+
+#ui-datepicker-div td a {
+    background: #fff !important;
+    text-align: center;
+    font-size: 12px;
+    color: #1A1C3D;
+    border: 0;
+    line-height: 30px;
+    border-radius: 15px;
+}
+
+#ui-datepicker-div td .ui-state-highlight {
+    border: 1px solid #1A1C3D;
+    background: #1A1C3D !important;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 0;
+}
+
+#ui-datepicker-div .ui-datepicker-next .ui-icon {
+    background-image: url(../media/home/arrowRight.png);
+    background-position: center center;
+}
+
+#ui-datepicker-div .ui-datepicker-prev .ui-icon {
+    background-image: url(../media/home/arrowLeft.png);
+    background-position: center center;
+}
+
+#ui-datepicker-div .ui-datepicker-prev.ui-state-hover,
+#ui-datepicker-div .ui-datepicker-prev.ui-state-focus,
+#ui-datepicker-div .ui-datepicker-next.ui-state-hover,
+#ui-datepicker-div .ui-datepicker-next.ui-state-focus {
+    border: 1px solid #fff !important;
+    background: #fff !important;
+    font-weight: bold;
+    /*color: #c77405;*/
+}
+
+#ui-datepicker-div .ui-datepicker-prev,
+#ui-datepicker-div .ui-datepicker-next {
+    position: absolute;
+    top: 2px;
+    width: 1.8em;
+    height: 1.8em;
+    /*background-color: #A1A1B4;*/
+}
+
+input[type="button"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+.rounded-4 {
+    border-radius: .5rem !important;
+}
+  </style>
 </head>
 
 <body>
@@ -53,7 +163,7 @@
       <form action="" method="POST">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-1 mb-2 ">
-            <img src="assets/media/hotel/double-bedlist.png" alt="plane" class="planeimage">
+            <img src="assets/media/hotel/double-bedlist.png" alt="plane" class="hotel-icon-image">
           </div>
           <div class="col-lg-2 mb-2 px-3">
             <label class="from text-uppercase">City</label>
@@ -69,8 +179,8 @@
             <label class="from text-uppercase">Check in</label>
             <div class="input-container d-flex align-items-center">
               <i class="far fa-calendar-alt locationicon"></i>
-               <input type="text" placeholder="24 Jan’ 20 - Friday" name="calander" id="daatepicker-multi1"
-                 class="inputfield datepiccker ">
+               <input type="text" placeholder="24 Jan’ 20 - Friday" name="calander" id="datepicker-multi1"
+                 class="inputfield datepicker ">
 
 
             </div>
@@ -79,8 +189,8 @@
             <label class="from text-uppercase">Check out</label>
             <div class="input-container d-flex align-items-center">
               <i class="far fa-calendar-alt locationicon"></i>
-              <input type="text" placeholder="30 Jan’ 20 - Thursday" name="calander" id="daatepicker-multi2"
-                class="inputfield datepiccker ">
+              <input type="text" placeholder="30 Jan’ 20 - Thursday" name="calander" id="datepicker-multi2"
+                class="inputfield datepicker ">
 
 
             </div>
@@ -265,13 +375,14 @@
                   <ul class="dropdown-menu show pricerangedropdown" aria-labelledby="">
                     <p class="text-capitalize mb-0 pb-2 mt-3 dropdown-title">Price Range</p>
                     <div class="stopdropdown text-center pb-4">
-                      <div class="d-flex">
-                        <p class="pricetitle">price:</p> &nbsp;&nbsp;&nbsp;
-                        <p class="pricerange" id="demo">RS 750000/-</p>
-                      </div>
                       <div class="slidecontainer pb-1 align-items-center justify-content-center">
-                        <input type="range" min="15000" max="1000000" value="nn" class="slider" id="myRange">
-                        <!-- <p>Value: <span id="demo"></span></p> -->
+                        <div class="range-slider range-slider-blue" data-range-options='{"start": 75000, "range": {"min": 15000, "max": 100000}}'>
+                          <div class="d-flex align-items-center">
+                            <p class="pricetitle">price:</p> &nbsp;&nbsp;&nbsp;
+                            <p class="pricerange d-flex align-items-center" id="demo">RS <input type="text" class="form-control d-inline-block fw-bold range-slider-value-min p-0 border-0 ms-1" value="75000">/-</p>
+                          </div>
+                          <div class="range-slider-ui"></div>
+                        </div>
                       </div>
                       <div class="d-flex justify-content-between mt-2">
                         <small class="minmaxprice"> RS 15000/-</small>
@@ -465,6 +576,26 @@
 
   <script src='assets/js/bootstrap.min.js'></script>
   <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/nouislider.min.js"></script>
+  <script>
+    let rangeSlider = document.querySelectorAll('.range-slider');
+      for (let i = 0; i < rangeSlider.length; i++) { let rangeSliderUI=rangeSlider[i].querySelector(".range-slider-ui"),
+        rangeSliderValueMin=rangeSlider[i].querySelector(".range-slider-value-min"),
+        rangeSliderValueMax=rangeSlider[i].querySelector(".range-slider-value-max"),
+        rangeSliderOptions=rangeSlider[i].dataset.rangeOptions, rangeSliderPrefix=rangeSlider[i].dataset.rangePrefix;
+        let defaults={ start: 0, connect: 'lower' , tooltips: !!0, step: 1, format: { to: function (e) { if
+        (rangeSliderPrefix) { return rangeSliderPrefix + parseInt(e, 10); } else { return parseInt(e, 10) } }, from:
+        function (e) { return Number(e) } } }; let userOptions; if(rangeSliderOptions !=undefined)
+        userOptions=JSON.parse(rangeSliderOptions); let options={...defaults, ...userOptions};
+        noUiSlider.create(rangeSliderUI, options); if (rangeSliderValueMin || rangeSliderValueMax) {
+        rangeSliderUI.noUiSlider.on("update", function (values, handle) { if (rangeSliderPrefix) {
+        values=(values=values[handle]).replace(/\D/g, "" ); } else { values=(values=values[handle]); } if (handle) {
+        rangeSliderValueMax.value=Math.round(values); } else { rangeSliderValueMin.value=Math.round(values); } }); } if
+        (rangeSliderValueMin) { rangeSliderValueMin.addEventListener("change", function () {
+        rangeSliderUI.noUiSlider.set([this.value, null]) }); } if (rangeSliderValueMax) {
+        rangeSliderValueMax.addEventListener("change", function () { rangeSliderUI.noUiSlider.set([null, this.value])
+        }); } }
+  </script>
   <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
   <script>
