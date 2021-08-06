@@ -716,7 +716,7 @@ td {
 
 .baggage-include {
   font-family: "Product Sans";
-  font-size: 15px !important;
+  font-size: 17px !important;
   color: #A1A1B4;
 
 }
@@ -774,6 +774,7 @@ td {
 .maincity {
   color: white;
   font-family: "Product Sans";
+  font-size: 42px;
   font-weight: bold;
 
 }
@@ -861,6 +862,16 @@ td {
   padding-right: 2rem;
 }
 
+.discount-fare
+{
+  font-weight: bold;
+  color: #A1A1B4;
+  font-size: 15px;
+  font-family: 'Roboto',
+  sans-serif;
+  text-decoration: line-through;
+  
+}
 /* summary box */
 
 .maincitymobile {
@@ -887,13 +898,10 @@ td {
 .td {
   background-color: #1A1C3D;
   color: white;
-  /* width: 19%; */
   padding-left: 45px;
   padding-right: 45px;
   font-size: 16px;
-  letter-spacing: 2px;
   left: 0;
-  /* position: absolute; */
   padding-top: 10px;
   font-weight: bold;
   padding-bottom: 10px;
@@ -1082,12 +1090,11 @@ hr {
 .cd {
   background-color: #1A1C3D;
   color: white;
-  /* width: 19%; */
   padding-left: 45px;
   padding-right: 45px;
   ;
   font-size: 16px;
-  letter-spacing: 2px;
+  box-shadow: 0 34px 64px 0 rgba(175, 175, 175,.21) ;
   padding-top: 10px;
   font-weight: bold;
   padding-bottom: 10px;
@@ -1104,14 +1111,14 @@ hr {
 
 .labelname {
   font-family: "Product Sans";
-  font-size: 16px;
+  font-size: 18px;
   color: #A1A1B4;
   margin: auto;
 }
 
 .name {
   font-family: "Product Sans";
-  font-size: 18px;
+  font-size: 20px;
   color: #1A1C3D;
   font-weight: bold;
 
@@ -1196,9 +1203,9 @@ hr {
   font-size: 16px;
   border: 1px solid #A1A1B4;
   color: #A1A1B4;
-  font-weight: 500;
-  padding-left: 2.2rem;
-  padding-right: 2.2rem;
+   font-weight: 500;
+   width: 250px;
+ 
 }
 
 #printpage-btn {
@@ -1207,10 +1214,10 @@ hr {
   font-size: 16px;
   border: 1px solid #A1A1B4;
   color: white;
+  width: 250px;
   font-weight: 500;
   margin-left: 10px;
-  padding-left: 2.8rem;
-  padding-right: 2.8rem;
+ 
 }
 
 .timersection {
@@ -1243,14 +1250,15 @@ hr {
   padding: 0;
   font-family: "Product Sans";
 }
-
-.contactsection {
-  background-color: white;
-  box-shadow: 0 8px 20px 0 #ebecf0;
-  margin: 0;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-
+.contactsection
+{
+    background-color: white;
+    box-shadow: 0 8px 20px 0 #ebecf0;
+    margin: 0;
+    border-radius: 8px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+   
 }
 
 .promo::placeholder {
@@ -1273,21 +1281,20 @@ hr {
   font-family: "Product Sans";
   text-decoration: none;
   margin-top: 1.3rem;
+  font-weight: bold;
   margin-left: 1.5rem;
 }
-
-.contacticon {
-  width: 38px;
-  margin-top: 4px;
-  height: 38px;
-  object-fit: contain;
-  padding: 0px;
+.contacticon
+{
+ width: 38px;
+ height: 38px;
+ object-fit: contain;
+ padding: 0px;
 }
-
-.contact-phone-icon {
-  width: 31px;
-  margin-top: 11px;
-  height: 31px;
+.contact-phone-icon
+{
+       width: 31px;
+       height: 31px;
 }
 
 .tablesection {
@@ -1346,9 +1353,9 @@ hr {
   font-weight: bold;
   padding-right: 3rem;
 }
-
-.example {
-  font-size: 12px;
+.example
+{
+  font-size: 11px;
   margin-top: 8px;
   color: #A1A1B4;
   letter-spacing: 1px;

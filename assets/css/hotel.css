@@ -356,6 +356,8 @@ button.slick-prev:hover {
 .room-select .form-select {
 	font-size: 16px !important;
 	line-height: 2 !important;
+	border: 2px solid #1B1B23;
+	border-radius: 4px;
 }
 
 .nearby h4 {
@@ -383,6 +385,25 @@ button.slick-prev:hover {
 
 .room-row {
 	border: 1px solid #EBECF0;
+	border-radius: 8px;
+}
+.room3-form
+{
+	border: 2px solid #1B1B23 !important;
+	border-radius: 4px !important;
+}
+
+.maincity2{
+	color: white;
+	font-family: "Product Sans";
+	font-size: 30px;
+	font-weight: bold;
+}
+.maincity3{
+	color: white;
+	font-family: "Product Sans";
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .room-img img {
