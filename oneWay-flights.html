@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spatay</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/slider.css">
-  <link rel="stylesheet" href="assets/css/flights.css">
+  <!-- <link rel="stylesheet" href="assets/css/slider.css"> -->
+  <link rel="stylesheet" href="assets/css/nouislider.min.css">
+  <!-- <link rel="stylesheet" href="assets/css/home.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
@@ -21,10 +21,9 @@
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon"></span> -->
         <i class="fas fa-bars" aria-hidden="true"></i>
       </button>
-      <a class="navbar-brand" href="index.html"><img src="assets/media/logo.png" class="w-75"></a>
+      <a class="navbar-brand text-start mx-auto mx-lg-0" href="index.html"><img src="assets/media/logo.png" class="w-75"></a>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav main-nav main-nav ms-auto  mt-lg-0">
           <li class="nav-item">
@@ -39,7 +38,6 @@
           <li class="nav-item">
             <a class="nav-link" href="#">My Profile</a>
           </li>
-
         </ul>
       </div>
     </div>
@@ -47,62 +45,45 @@
   <!---------------------------------------------- end nav section -------------------------------------->
 
   <!---------------------------------------------- start Flight search -------------------------------------->
-  <section class="flight-search pt-4 pb-4  ">
+  <section class="flight-search pt-4 pb-4 h-auto">
     <div class="container">
       <form action="" method="POST">
         <div class="row justify-content-center align-items-center">
-          <div class="col-lg-1 mb-2 ">
-            <img src="assets/media/flightfilter/plane.png" alt="plane" class="planeimage">
+          <div class="col-xl-1 d-none d-xl-block flex-shrink-0 mb-2 text-center">
+            <img src="assets/media/flightfilter/plane.png" width="80" alt="plane" class="planeimage">
           </div>
 
-          <div class="col-lg-2 mb-2 flightsearchway ">
+          <div class="col-xl-2 col-5 mb-2 flightsearchway ">
             <label class="from">From</label>
             <div class="input-container d-flex align-items-center">
               <i class="fas fa-map-marker-alt locationicon"></i><input type="text" placeholder="Lahore (LHE)"
                 name="From" class="inputfield">
-
             </div>
-            <div>
-            </div>
-            <!-- <h5><i class="fas fa-map-marker-alt"></i>Lahore (LHE) </h5> -->
-
           </div>
-          <div class="col-lg-1 toway mb-2 ">
+
+          <div class="col-xl-1 col-2 toway mb-2 text-center">
             <img src="assets/media/flightfilter/twoway.png" alt="Twoway" class=" towayimage">
           </div>
 
-          <div class="col-lg-2 mb-2 flightsearchway ">
+          <div class="col-xl-2 col-5 mb-3 mb-md-2 flightsearchway ">
             <label class="from">To</label>
             <div class="input-container d-flex align-items-center">
               <i class="fas fa-map-marker-alt locationicon"></i><input type="text" placeholder="Karachi (KHI)"
                 name="From" class="inputfield">
 
             </div>
-            <div>
-            </div>
-            <!-- <h5><i class="fas fa-map-marker-alt"></i>Lahore (LHE) </h5> -->
-
           </div>
 
-          <div class="col-lg-2 mb-2 flightsearchway ">
+          <div class="col-xl-2 col-5 mb-3 mb-md-2 flightsearchway ">
             <label class="from">Date</label>
             <div class="input-container d-flex align-items-center">
               <i class="far fa-calendar-alt locationicon"></i>
-              <input type="text" placeholder="12 May - Return" name="calander" id="datepicker-multi1"
-                class="inputfield datepicker ">
-
-
+              <input type="text" placeholder="12 May - Return" name="calander" class="inputfield">
             </div>
-            <div>
-            </div>
-            <!-- <h5><i class="fas fa-map-marker-alt"></i>Lahore (LHE) </h5> -->
-
-
-
           </div>
 
-          <div class="col-lg-2  mb-2 flightsearchway">
-            <label class="from ">Travellers</label>
+          <div class="col-xl-2 col-5 offset-2 offset-xl-0 mb-3 mb-md-2 flightsearchway">
+            <label class="from text-uppercase">Travellers</label>
             <div class="input-container d-flex align-items-center">
               <i class="fas fa-user-friends locationicon"></i>
               <select id="items">
@@ -110,21 +91,12 @@
                 <option value="item-2">2 Travellers</option>
                 <option value="item-3">3 Travellers</option>
               </select>
-
-
             </div>
-            <div>
-            </div>
-            <!-- <h5><i class="fas fa-map-marker-alt"></i>Lahore (LHE) </h5> -->
-
-
-
           </div>
 
-          <div class="col-lg-2  mb-2 text-end flightsearchway">
+          <div class="col-xl-2 mb-3 mb-md-2 text-end flightsearchway">
             <button type="button" id="search-btn" class="btn">Search Again</button>
           </div>
-
         </div>
       </form>
     </div>
@@ -257,8 +229,8 @@
                 </a>
                 <div class="" id="airline-filter" style="display: none;">
                   <div class="arrow-up airlinearrow"></div>
-                  <ul class="dropdown-menu show airlinedropdown pb-3" aria-labelledby="">
-                    <p class="text-capitalize mb-0 pb-2 dropdown-title">Airelines</p>
+                  <ul class="dropdown-menu show airlinedropdown pb-4" aria-labelledby="">
+                    <p class="text-capitalize mb-0 pb-3 dropdown-title">Airelines</p>
                     <div class="d-flex">
                       <img src="assets/media/search.png" alt="" class="search-icon">
                       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Airline"
@@ -315,21 +287,19 @@
                   <ul class="dropdown-menu show pricerangedropdown" aria-labelledby="">
                     <p class="text-capitalize mb-0 pb-2 mt-3 dropdown-title">Price Range</p>
                     <div class="stopdropdown text-center pb-4">
-                      <div class="d-flex">
-                        <p class="pricetitle">price:</p> &nbsp;&nbsp;&nbsp;
-                        <p class="pricerange" id="demo">RS 75000/-</p>
+                      <div class="range-slider" data-range-options='{"start": 75000, "range": {"min": 15000, "max": 100000}}'>
+                        <div class="d-flex align-items-center">
+                          <p class="pricetitle">price:</p> &nbsp;&nbsp;&nbsp;
+                          <p class="pricerange d-flex align-items-center" id="demo">RS <input type="text" class="form-control d-inline-block fw-bold range-slider-value-min p-0 border-0 ms-1" value="75000" style="color:#A1A1B4;font-size:12px;width: 42px;outline:none !important;"> /-</p>
+                        </div>
+                        <div class="range-slider-ui"></div>
                       </div>
-                      <div class="slidecontainer pb-1 align-items-center justify-content-center">
-                        <input type="range" min="15000" max="1000000" value="nn" class="slider" id="myRange">
-                        <!-- <p>Value: <span id="demo"></span></p> -->
-                      </div>
-                      <div class="d-flex justify-content-between mt-2">
+                      <div class="d-flex justify-content-between">
                         <small class="minmaxprice"> RS 15000/-</small>
                         <small class="minmaxprice">RS 100,000/-</small>
-
                       </div>
                       <div>
-                        <label class="refundcontainers mt-3">Refundable
+                        <label class="refundcontainers">Refundable
                           <input type="checkbox" checked="checked">
                           <span class="checkmark2"></span>
                         </label>
@@ -469,8 +439,7 @@
                          </div>
                          <div class="refundbtndiv align-items-center pt-4">
                            <button type="button" id="refund-btn" class="btn w-100 ">Refundable</button>
-                           <p class="durationstop pt-2" style="font-size: 14px !important;">* From The Date Of Depature
-                           </p>
+                           <p class="durationstop pt-2">* From The Date Of Depature</p>
                          </div>
                        </div>
                        <div class="col-md-6 align-items-center pe-4">
@@ -514,8 +483,7 @@
                          </div>
                          <div class="refundbtndiv align-items-center pt-4 ">
                            <button type="button" id="refund-btn" class="btn w-100 ps-5 pe-5">Refundable</button>
-                           <p class="durationstop pt-2" style="font-size: 14px !important;">* From The Date Of Depature
-                           </p>
+                           <p class="durationstop pt-2">* From The Date Of Depature</p>
                          </div>
                        </div>
                        <div class="col-md-6 align-items-center pe-5">
@@ -626,28 +594,26 @@
            </div>
          </div>
        </div>
-      <section class="hideshow ">
-        <div class="row pt-2 pb-2 justify-content-center align-items-center ">
-          <div class="col-md-10 col-sm-6 col-6 d-flex text-start align-items-center ">
-            <p class="durationstop ps-3 pt-2 me-2">Cost Includes</p>
-            <img src="assets/media/briefcase.png" alt="" width="16px">
-          </div>
-          <div class="col-md-2 col-sm-6 col-6 text-end">
-            <span class="accordion-button accordion-button-custom toggle-arrow" type="button" data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-              aria-controls="panelsStayOpen-collapseOne">
-              <span class="accordion-text ps-3 mb-0" id="show" style="display: none;">Check Details</span>
-              <span class="accordion-text ps-3 mb-0" id="hide">Hide Details</span>
-            </span>
-            <!-- <span data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
-                            aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" class="toggle-arrow"><i class=" fas
-                            fa-chevron-down checkdetail"></i></span> -->
-          </div>
-          <div class="col-md-7 col-sm-8 col-6  ">
-          </div>
-        </div>
+       <section class="hideshow ">
+         <div class="row py-2 justify-content-center align-items-center d-flex ">
+           <div class="col-md-10 col-sm-8 col-6 d-flex align-items-center ">
+             <p class="durationstop ps-5 mb-0">Cost Includes</p>
+             <!-- <img src="assets/media/briefcase.png" alt="" class="briefcase"> -->
+             <!-- <i class="fas fa-briefcase briefcase"></i> -->
+              <img src="assets/media/briefcase.png" alt="" width="16px" class="ms-2">
+           </div>
+           <div class="col-md-2 col-sm-6 col-6 d-flex text-end  pt-1">
+             <p class="durationstop ps-3 mb-0" id="show" style="display: none;">Check Details</p>
+             <p class="durationstop ps-3 mb-0" id="hide">Hide Details</p>
+             <span class="accordion-button toggle-arrow" id="toggle-arrowOne" type="button" data-bs-toggle="collapse"
+               data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+               aria-controls="panelsStayOpen-collapseOne">
 
-      </section>
+             </span>
+           </div>
+         </div>
+
+       </section>
      </div>
 
       <!-- Flight List -->
@@ -697,21 +663,40 @@
 
   <script src='assets/js/bootstrap.min.js'></script>
   <script src="assets/js/jquery.js"></script>
-  <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-  <script src="assets/js/selectordrop.js"></script>
+  <script src="assets/js/nouislider.min.js"></script>
+  <script>
+    let rangeSlider = document.querySelectorAll('.range-slider');
+      for (let i = 0; i < rangeSlider.length; i++) { let rangeSliderUI=rangeSlider[i].querySelector(".range-slider-ui"),
+        rangeSliderValueMin=rangeSlider[i].querySelector(".range-slider-value-min"),
+        rangeSliderValueMax=rangeSlider[i].querySelector(".range-slider-value-max"),
+        rangeSliderOptions=rangeSlider[i].dataset.rangeOptions, rangeSliderPrefix=rangeSlider[i].dataset.rangePrefix;
+        let defaults={ start: 0, connect: 'lower' , tooltips: !!0, step: 1, format: { to: function (e) { if
+        (rangeSliderPrefix) { return rangeSliderPrefix + parseInt(e, 10); } else { return parseInt(e, 10) } }, from:
+        function (e) { return Number(e) } } }; let userOptions; if(rangeSliderOptions !=undefined)
+        userOptions=JSON.parse(rangeSliderOptions); let options={...defaults, ...userOptions};
+        noUiSlider.create(rangeSliderUI, options); if (rangeSliderValueMin || rangeSliderValueMax) {
+        rangeSliderUI.noUiSlider.on("update", function (values, handle) { if (rangeSliderPrefix) {
+        values=(values=values[handle]).replace(/\D/g, "" ); } else { values=(values=values[handle]); } if (handle) {
+        rangeSliderValueMax.value=Math.round(values); } else { rangeSliderValueMin.value=Math.round(values); } }); } if
+        (rangeSliderValueMin) { rangeSliderValueMin.addEventListener("change", function () {
+        rangeSliderUI.noUiSlider.set([this.value, null]) }); } if (rangeSliderValueMax) {
+        rangeSliderValueMax.addEventListener("change", function () { rangeSliderUI.noUiSlider.set([null, this.value])
+        }); } }
+  </script>
+  <!-- <script src="assets/js/selectordrop.js"></script> -->
   <script src="assets/js/bootstrap-slider.js"></script>
 
   
   <script>
-   $('.toggle-arrow').click(function () {
-   $('#hide').toggle();
-   $('#show').toggle();
-   });
+    $('#toggle-arrowOne').click(function () {
+      $('#hide').toggle();
+      $('#show').toggle();
+    });
 
-   $('.toggle-arrow1').click(function () {
-   $('#hide1').toggle();
-   $('#show1').toggle();
-   });
+    $('#toggle-arrowTwo').click(function () {
+      $('#hideTwo').toggle();
+      $('#showTwo').toggle();
+    });
 
     $('#stops').click(function () {
       $('#stop-filter').toggle();
@@ -798,9 +783,6 @@
     slider.oninput = function () {
       output.innerHTML = 'RS ' + this.value + '/-';
     }
-     $( "#datepicker-multi1" ).datepicker({
-     dateFormat: 'd M - Return'
-     });
   </script>
   
 </body>
