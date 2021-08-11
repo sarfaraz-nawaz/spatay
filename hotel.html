@@ -10,6 +10,7 @@
          rel = "stylesheet">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/hotel.css">
 
@@ -20,7 +21,6 @@
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <!-- <span class="navbar-toggler-icon"></span> -->
       <i class="fas fa-bars" aria-hidden="true"></i>
       </button>
       <a class="navbar-brand" href="hotel.html"><img src="assets/media/hotel/hotel_logo.png" class="w-75"></a>
@@ -35,9 +35,6 @@
           <li class="nav-item">
             <a class="nav-link" href="#">About us</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">My Profile</a>
-          </li> -->
           
         </ul>
       </div>
@@ -48,8 +45,8 @@
   <!-- Top Menu -->
   <section class="top-menu">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col col-sm-8 text-center menu-col">
+      <div class="row justify-content-center mx-0 mx-md-3">
+        <div class="col-lg-10 col-sm-8 text-center menu-col">
           <ul class="list-inline main-menu d-flex justify-content-between">
             <li class="list-inline-item">
               <a href="index.html"><img src="assets/media/hotel/plane.png"><br>Flights</a>
@@ -275,69 +272,71 @@
   <!-- End Banner Section -->
   <!-- Special Offers -->
   <section class="special-offers">
-    <div class="container">
+    <div class="container-fluid px-0">
       <div class="section-heading text-center">
         <h2 class="main-heading">Special Offers</h2>
         <h1 class="style-heading">With Love</h1>
       </div>
-      <div class="row">
-        <div class="col-12 col-sm-4">
-          <div class="card offer-card first border-0 rounded-4 overflow-hidden" style="width: 22rem;">
-            <img src="assets/media/hotel/offer1.png" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">Save Upto 20%</h5>
-              <div class="code d-flex">
-                <div class="w-50 text-start">
-                  <p class="text-uppercase  mb-0 code-caption">Use Code</p>
-                  <p class="code-text"><strong>XMC8399</strong></p>
+      <div class="col-xl-11 px-0 px-xl-4 mx-auto">
+        <div class="slider-center px-0">
+          <div class="py-3 px-4">
+            <div class="card offer-card first border-0 rounded-4 overflow-hidden">
+              <img src="assets/media/hotel/offer1.png" class="card-img-top" alt="...">
+              <div class="card-body text-center pb-5">
+                <h5 class="card-title">Save Upto 20%</h5>
+                <div class="code d-flex">
+                  <div class="w-50 text-start">
+                    <p class="text-uppercase mb-0 code-caption">Use Code</p>
+                    <p class="code-text"><strong>XMC8399</strong></p>
+                  </div>
+                  <div class="w-50 text-end">
+                    <p class="mb-0 code-caption">Deal</p>
+                    <p class="code-text pe-1"><strong>14</strong></p>
+                  </div>
                 </div>
-                <div class="w-50 text-end">
-                  <p class=" mb-0 code-caption">Deal</p>
-                  <p class="code-text pe-1"><strong>14</strong></p>
-                </div>
+                <p class="card-text text-start mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                <a href="#" class="btn btn-primary btn-style-one">One Way</a>
               </div>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary btn-style-one">One Way</a>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-4">
-          <div class="card offer-card border-0 rounded-4 overflow-hidden" style="width: 22rem;">
-            <img src="assets/media/hotel/offer2.png" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">Save Upto 40%</h5>
-              <div class="code d-flex">
-                <div class="w-50 text-start">
-                  <p class="text-uppercase  mb-0 code-caption">Use Code</p>
-                  <p class="code-text"><strong>XMC8399</strong></p>
+          <div class="py-3 px-4">
+            <div class="card offer-card border-0 rounded-4 overflow-hidden">
+              <img src="assets/media/hotel/offer2.png" class="card-img-top" alt="...">
+              <div class="card-body text-center pb-5">
+                <h5 class="card-title">Save Upto 40%</h5>
+                <div class="code d-flex">
+                  <div class="w-50 text-start">
+                    <p class="text-uppercase mb-0 code-caption">Use Code</p>
+                    <p class="code-text"><strong>XMC8399</strong></p>
+                  </div>
+                  <div class="w-50 text-end">
+                    <p class="mb-0 code-caption">Deal</p>
+                    <p class="code-text pe-1"><strong>14</strong></p>
+                  </div>
                 </div>
-                <div class="w-50 text-end">
-                  <p class=" mb-0 code-caption">Deal</p>
-                  <p class="code-text pe-1"><strong>14</strong></p>
-                </div>
+                <p class="card-text text-start mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                <a href="#" class="btn btn-primary btn-style-2">One Way</a>
               </div>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary btn-style-2">One Way</a>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-sm-4">
-          <div class="card offer-card border-0 rounded-4 overflow-hidden" style="width: 22rem;">
-            <img src="assets/media/hotel/offer3.png" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-              <h5 class="card-title">Save Upto 10%</h5>
-              <div class="code d-flex">
-                <div class="w-50 text-start">
-                  <p class="text-uppercase code-caption  mb-0">Use Code</p>
-                  <p class="code-text"><strong>XMC8399</strong></p>
+          <div class="py-3 px-4">
+            <div class="card offer-card border-0 rounded-4 overflow-hidden ">
+              <img src="assets/media/hotel/offer3.png" class="card-img-top" alt="...">
+              <div class="card-body text-center pb-5">
+                <h5 class="card-title">Save Upto 10%</h5>
+                <div class="code d-flex">
+                  <div class="w-50 text-start">
+                    <p class="text-uppercase mb-0 code-caption">Use Code</p>
+                    <p class="code-text"><strong>XMC8399</strong></p>
+                  </div>
+                  <div class="w-50 text-end">
+                    <p class="mb-0 code-caption">Deal</p>
+                    <p class="code-text pe-1"><strong>14</strong></p>
+                  </div>
                 </div>
-                <div class="w-50 text-end">
-                  <p class=" mb-0 code-caption">Deal</p>
-                  <p class="code-text pe-1"><strong>14</strong></p>
-                </div>
+                <p class="card-text text-start mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                <a href="#" class="btn btn-primary btn-style-one">One Way</a>
               </div>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary btn-style-one">One Way</a>
             </div>
           </div>
         </div>
@@ -364,15 +363,15 @@
   </section>
   <!-- Popular Destinations -->
   <section class="popular-section">
-    <div class="container">
+    <div class="container-fluid px-0 px-xl-4">
       <div class="section-heading text-center">
         <h2 class="main-heading">Popular Destinations</h2>
-        <h1 class="style-heading style-heading-orange ">All Time</h1>
+        <h1 class="style-heading style-heading-orange">All Time</h1>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-sm-8">
-          <div class="row justify-content-between flight-row">
-            <div class="col-6 col-sm-4">
+      <div class="row gx-0 justify-content-center">
+        <div class="col-xl-9">
+          <div class="slider-center flight-row">
+            <div class="pt-1 px-4">
               <div class="destination-box">
                 <div class="location d-flex">
                   <div>
@@ -381,7 +380,7 @@
                   <div class="flight">
                     <div class="top-flight">
                       <h4 class="mb-0">Lahore</h4>
-                      <small class="text-muted">28 Jan' 21</small>
+                      <small class="flight-date">28 Jan'21</small>
                     </div>
                     <div class="bottom-flight">
                       <h4>Karachi</h4>
@@ -389,12 +388,12 @@
                   </div>
                 </div>
                 <div class="dest-footer">
-                  <p class="text-muted mb-0 mt-2">Starting From</p>
+                  <p class="mb-0 mt-2">Starting from</p>
                   <h2 class="text-uppercase">pkr 8,000</h2>
                 </div>
               </div>
             </div>
-            <div class="col-6 col-sm-4">
+            <div class="pt-1 px-4">
               <div class="destination-box">
                 <div class="location d-flex">
                   <div>
@@ -403,7 +402,7 @@
                   <div class="flight">
                     <div class="top-flight">
                       <h4 class="mb-0">Lahore</h4>
-                      <small class="text-muted">28 Jan' 21</small>
+                      <small class="flight-date">28 Jan'21</small>
                     </div>
                     <div class="bottom-flight">
                       <h4>Karachi</h4>
@@ -411,12 +410,12 @@
                   </div>
                 </div>
                 <div class="dest-footer">
-                  <p class="text-muted mb-0 mt-2">Starting From</p>
+                  <p class="mb-0 mt-2">Starting from</p>
                   <h2 class="text-uppercase">pkr 8,000</h2>
                 </div>
               </div>
             </div>
-            <div class="col-6 col-sm-4">
+            <div class="pt-1 px-4">
               <div class="destination-box">
                 <div class="location d-flex">
                   <div>
@@ -425,7 +424,7 @@
                   <div class="flight">
                     <div class="top-flight">
                       <h4 class="mb-0">Lahore</h4>
-                      <small class="text-muted">28 Jan' 21</small>
+                      <small class="flight-date">28 Jan'21</small>
                     </div>
                     <div class="bottom-flight">
                       <h4>Karachi</h4>
@@ -433,12 +432,12 @@
                   </div>
                 </div>
                 <div class="dest-footer">
-                  <p class="text-muted mb-0 mt-2">Starting From</p>
+                  <p class="mb-0 mt-2">Starting from</p>
                   <h2 class="text-uppercase">pkr 8,000</h2>
                 </div>
               </div>
             </div>
-            <div class="col-6 col-sm-4">
+            <div class="pt-1 px-4">
               <div class="destination-box">
                 <div class="location d-flex">
                   <div>
@@ -447,7 +446,7 @@
                   <div class="flight">
                     <div class="top-flight">
                       <h4 class="mb-0">Lahore</h4>
-                      <small class="text-muted">28 Jan' 21</small>
+                      <small class="flight-date">28 Jan'21</small>
                     </div>
                     <div class="bottom-flight">
                       <h4>Karachi</h4>
@@ -455,12 +454,12 @@
                   </div>
                 </div>
                 <div class="dest-footer">
-                  <p class="text-muted mb-0 mt-2">Starting From</p>
+                  <p class="mb-0 mt-2">Starting from</p>
                   <h2 class="text-uppercase">pkr 8,000</h2>
                 </div>
               </div>
             </div>
-            <div class="col-6 col-sm-4">
+            <div class="pt-1 px-4">
               <div class="destination-box">
                 <div class="location d-flex">
                   <div>
@@ -469,7 +468,7 @@
                   <div class="flight">
                     <div class="top-flight">
                       <h4 class="mb-0">Lahore</h4>
-                      <small class="text-muted">28 Jan' 21</small>
+                      <small class="flight-date">28 Jan'21</small>
                     </div>
                     <div class="bottom-flight">
                       <h4>Karachi</h4>
@@ -477,12 +476,12 @@
                   </div>
                 </div>
                 <div class="dest-footer">
-                  <p class="text-muted mb-0 mt-2">Starting From</p>
+                  <p class="mb-0 mt-2">Starting from</p>
                   <h2 class="text-uppercase">pkr 8,000</h2>
                 </div>
               </div>
             </div>
-            <div class="col-6 col-sm-4">
+            <div class="pt-1 px-4">
               <div class="destination-box">
                 <div class="location d-flex">
                   <div>
@@ -491,7 +490,7 @@
                   <div class="flight">
                     <div class="top-flight">
                       <h4 class="mb-0">Lahore</h4>
-                      <small class="text-muted">28 Jan' 21</small>
+                      <small class="flight-date">28 Jan'21</small>
                     </div>
                     <div class="bottom-flight">
                       <h4>Karachi</h4>
@@ -499,7 +498,77 @@
                   </div>
                 </div>
                 <div class="dest-footer">
-                  <p class="text-muted mb-0 mt-2">Starting From</p>
+                  <p class="mb-0 mt-2">Starting from</p>
+                  <h2 class="text-uppercase">pkr 8,000</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9 d-none d-xl-block">
+          <div class="slider-center flight-row">
+            <div class="pt-1 px-4">
+              <div class="destination-box">
+                <div class="location d-flex">
+                  <div>
+                    <img src="assets/media/home/plane-round.png" class="w-75">
+                  </div>
+                  <div class="flight">
+                    <div class="top-flight">
+                      <h4 class="mb-0">Lahore</h4>
+                      <small class="flight-date">28 Jan'21</small>
+                    </div>
+                    <div class="bottom-flight">
+                      <h4>Karachi</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="dest-footer">
+                  <p class="mb-0 mt-2">Starting from</p>
+                  <h2 class="text-uppercase">pkr 8,000</h2>
+                </div>
+              </div>
+            </div>
+            <div class="pt-1 px-4">
+              <div class="destination-box">
+                <div class="location d-flex">
+                  <div>
+                    <img src="assets/media/home/plane-round.png" class="w-75">
+                  </div>
+                  <div class="flight">
+                    <div class="top-flight">
+                      <h4 class="mb-0">Lahore</h4>
+                      <small class="flight-date">28 Jan'21</small>
+                    </div>
+                    <div class="bottom-flight">
+                      <h4>Karachi</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="dest-footer">
+                  <p class="mb-0 mt-2">Starting from</p>
+                  <h2 class="text-uppercase">pkr 8,000</h2>
+                </div>
+              </div>
+            </div>
+            <div class="pt-1 px-4">
+              <div class="destination-box">
+                <div class="location d-flex">
+                  <div>
+                    <img src="assets/media/home/plane-round.png" class="w-75">
+                  </div>
+                  <div class="flight">
+                    <div class="top-flight">
+                      <h4 class="mb-0">Lahore</h4>
+                      <small class="flight-date">28 Jan'21</small>
+                    </div>
+                    <div class="bottom-flight">
+                      <h4>Karachi</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="dest-footer">
+                  <p class="mb-0 mt-2">Starting from</p>
                   <h2 class="text-uppercase">pkr 8,000</h2>
                 </div>
               </div>
@@ -538,7 +607,7 @@
       </div>
       <div class="row">
         <div class="col-12 text-center">
-          <ul class="list-inline menu-links">
+          <ul class="list-inline menu-links mb-4">
             <li class="list-inline-item"><a href="">Home</a></li>
             <li class="list-inline-item"><a href="">My Trips</a></li>
             <li class="list-inline-item"><a href="">About Us</a></li>
@@ -564,6 +633,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="assets/js/jquery.js"></script>
   <script src='assets/js/bootstrap.min.js'></script>
+  <script src='assets/js/slick.js'></script>
   <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
   <script src='assets/js/all.min.js'></script>
   <script>
@@ -618,9 +688,33 @@
     }).focusout(function () {
       $("#search-from").hide();
     });
-    
-  
 
+    $('.slider-center').slick({
+      centerMode: false,
+      centerPadding: '0px',
+      slidesToShow: 3,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 1190,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '140px',
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 840,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '90px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
   </script>
 </body>
 </html>
